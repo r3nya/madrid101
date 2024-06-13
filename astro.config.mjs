@@ -4,7 +4,7 @@ import starlight from '@astrojs/starlight';
 // https://astro.build/config
 export default defineConfig({
 	site: 'https://r3nya.github.io',
-	base: 'how-to-madrid',
+	base: '/how-to-madrid/',
 	integrations: [
 		starlight({
 			title: 'How to Madrid',
