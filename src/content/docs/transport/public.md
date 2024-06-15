@@ -16,5 +16,4 @@ title: Общественный транспорт
 ## Приложения
 
 - Схемы и расписание транспорта ([Android](https://play.google.com/store/apps/details?id=com.greenlionsoft.free.madrid&hl=es), [iOS](https://apps.apple.com/es/app/madrid-metro-bus-cercanias/id1359656589?l=en-GB))
-
 - Электрички Renfe ([Android](https://play.google.com/store/apps/details?id=com.renfe.renfecercanias), [iOS](https://apps.apple.com/es/app/renfe-cercanias/id953441960?l=en-GB))
