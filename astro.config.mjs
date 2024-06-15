@@ -36,13 +36,23 @@ export default defineConfig({
             },
           ],
         },
-        // {
-        //   label: "🎭 Культура",
-        //   autogenerate: { directory: "culture" },
-        // },
+        {
+          label: "🧘‍♂️ Досуг",
+          items: [
+            {
+              label: "Спорт",
+              autogenerate: { directory: "spare-time/sport" },
+            },
+            {
+              label: "🎭 Культура",
+              autogenerate: { directory: "spare-time/culture" },
+            },
+          ],
+        },
         { label: "🏠 Жильё", autogenerate: { directory: "housing" } },
         { label: "🇪🇸 Испанский язык", autogenerate: { directory: "spanish" } },
         // { label: "Новости", autogenerate: { directory: "news" } },
+        { label: "🚗 Транспорт", autogenerate: { directory: "transport" } },
       ],
     }),
   ],
