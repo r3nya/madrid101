@@ -4,7 +4,7 @@ import { defineConfig } from "astro/config";
 // https://astro.build/config
 export default defineConfig({
   site: "https://r3nya.github.io",
-  base: "/how-to-madrid/",
+  base: "/madrid101/",
   integrations: [
     starlight({
       title: "Madrid 101",
