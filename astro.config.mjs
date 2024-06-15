@@ -7,10 +7,15 @@ export default defineConfig({
   integrations: [
     starlight({
       title: "Madrid 101",
-      defaultLocale: "ru",
       social: {
         github: "https://github.com/r3nya/how-to-madrid",
         telegram: "https://t.me/+4ccS_x5DADAwMjM6",
+      },
+      defaultLocale: "ru",
+      locales: {
+        ru: {
+          label: 'Русский',
+        },
       },
       lastUpdated: true,
       sidebar: [
