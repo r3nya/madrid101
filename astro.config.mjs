@@ -3,8 +3,7 @@ import { defineConfig } from "astro/config";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://r3nya.github.io",
-  base: "/madrid101/",
+  site: "http://madrid101.xyz/",
   integrations: [
     starlight({
       title: "Madrid 101",
