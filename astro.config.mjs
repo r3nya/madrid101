@@ -25,6 +25,10 @@ export default defineConfig({
           label: "⁉️ FAQ",
           items: [
             {
+              label: "Районы города",
+              link: "faq/maps/districts",
+            },
+            {
               label: "Административные услуги",
               autogenerate: { directory: "faq/city-authorities" },
             },
