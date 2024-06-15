@@ -14,7 +14,7 @@ export default defineConfig({
       defaultLocale: "ru",
       locales: {
         ru: {
-          label: 'Русский',
+          label: "Русский",
         },
       },
       lastUpdated: true,
