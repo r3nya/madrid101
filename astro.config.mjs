@@ -31,13 +31,13 @@ export default defineConfig({
             },
           ],
         },
-        {
-          label: "🎭 Культура",
-          autogenerate: { directory: "culture" },
-        },
+        // {
+        //   label: "🎭 Культура",
+        //   autogenerate: { directory: "culture" },
+        // },
         { label: "🏠 Жильё", autogenerate: { directory: "housing" } },
         { label: "🇪🇸 Испанский язык", autogenerate: { directory: "spanish" } },
-        { label: "Новости", autogenerate: { directory: "news" } },
+        // { label: "Новости", autogenerate: { directory: "news" } },
       ],
     }),
   ],
