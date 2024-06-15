@@ -1,11 +1,13 @@
 import starlight from "@astrojs/starlight";
 import { defineConfig } from "astro/config";
+import starlightLinksValidator from "starlight-links-validator";
 
 // https://astro.build/config
 export default defineConfig({
   site: "http://madrid101.xyz/",
   integrations: [
     starlight({
+      plugins: [starlightLinksValidator()],
       title: "Madrid 101",
       social: {
         github: "https://github.com/r3nya/how-to-madrid",
