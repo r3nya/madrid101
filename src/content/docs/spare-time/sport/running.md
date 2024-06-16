@@ -6,7 +6,12 @@ title: Бег
 
 ### Апрель
 
+- [Movistar Medio Maratón Madrid](https://www.mediomaratonmadrid.es/) – полумарафон
 - [Zurich Rock ‘n’ Roll Running Series Madrid](https://rocknrollmadridrun.com/) – главный марафон города. Дистанции: 10 км, полумарафон, марафон
+
+### Май
+
+- [Carrera de la Mujer](https://www.carreradelamujer.com/) – женский забег, 6.7 км
 
 ### Июнь
 
