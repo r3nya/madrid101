@@ -1,5 +1,9 @@
 ---
-title: How to Madrid 
+title: How to Madrid
 ---
 
 Сборник ответов на частые вопросы чата "Номады в Мадриде".
+
+:::tip
+Есть Вам нужно почитать по теме налогов, ведение autónomo, правовые нормы, то обратите внимание на сайт [ponaehali.es](https://ponaehali.es/) и канал [Españevo](https://t.me/espanevo)
+:::
