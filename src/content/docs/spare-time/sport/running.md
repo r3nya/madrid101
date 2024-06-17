@@ -2,6 +2,10 @@
 title: Бег
 ---
 
+## Где побегать?
+
+- Для поиска популярных маршрутов воспользуйтесь [Strava](https://www.strava.com/) ([Global Heatmap](https://www.strava.com/maps/global-heatmap?sport=Run&style=dark&terrain=false&labels=true&poi=true&cPhotos=true&gColor=blue&gOpacity=100#10/40.4181/-3.6649)) или [Wikiloc](https://www.wikiloc.com/)
+
 ## События
 
 ### Апрель
@@ -21,7 +25,3 @@ title: Бег
 ### Сентябрь
 
 - [Ibercaja Madrid Corre Por Madrid](https://madridcorrepormadrid.org/) – быстрые 10 километров, с уклоном вниз
-
-## Где побегать?
-
-- Для поиска популярных маршрутов воспользуйтесь [Strava](https://www.strava.com/) ([Global Heatmap](https://www.strava.com/maps/global-heatmap?sport=Run&style=dark&terrain=false&labels=true&poi=true&cPhotos=true&gColor=blue&gOpacity=100#10/40.4181/-3.6649)) или [Wikiloc](https://www.wikiloc.com/)
