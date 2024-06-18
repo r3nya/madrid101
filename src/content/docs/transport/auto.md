@@ -15,10 +15,10 @@ title: Автомобилистам
 
 #### Подземные/гаражные парковки
 
-- P-App Interparking ([Android](https://play.google.com/store/apps/details?id=ipkhApp.Droid), [iOS](https://apps.apple.com/es/app/p-app/id1219330408))
 - Indigo Neo ([Android](https://play.google.com/store/apps/details?id=com.opngo.live), [iOS](https://apps.apple.com/es/app/indigo-neo-ex-opngo/id1109398417))
+- P-App Interparking ([Android](https://play.google.com/store/apps/details?id=ipkhApp.Droid), [iOS](https://apps.apple.com/es/app/p-app/id1219330408))
 
 #### Уличные парковки
 
-- ElParking ([Android](https://play.google.com/store/apps/details?id=com.elparking.elparking), [iOS](https://apps.apple.com/es/app/elparking-app-para-conductores/id1120207710))
 - EasyPark ([Android](https://play.google.com/store/apps/details?id=dk.easypark.android), [iOS](https://apps.apple.com/es/app/easypark-parking-made-easy/id449594317?l=en-GB))
+- ElParking ([Android](https://play.google.com/store/apps/details?id=com.elparking.elparking), [iOS](https://apps.apple.com/es/app/elparking-app-para-conductores/id1120207710))
