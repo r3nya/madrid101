@@ -92,6 +92,7 @@ export default defineConfig({
           ],
         },
         { label: "🏠 Жильё", autogenerate: { directory: "housing" } },
+        { label: "🫒 Еда", autogenerate: { directory: "food" } },
         { label: "🇪🇸 Испанский язык", autogenerate: { directory: "spanish" } },
         // {label: "Новости", autogenerate: {directory: "news" } },
         { label: "🚗 Транспорт", autogenerate: { directory: "transport" } },
