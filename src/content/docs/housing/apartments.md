@@ -13,3 +13,5 @@ title: Апартаменты
 - [daryamodernliving.com](http://www.daryamodernliving.com)
 - [gaztambide14.com](https://gaztambide14.com)
 - [testaresidencial.com](https://www.testaresidencial.com)
+- [nuvaliving.com](https://nuvaliving.com/en/) – краткосрочная (от 30 дней) и долгосрочная аренда
+- [vivenio.com](https://www.vivenio.com/buildings/)
