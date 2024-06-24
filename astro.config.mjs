@@ -91,7 +91,11 @@ export default defineConfig({
             },
           ],
         },
-        { label: "🏠 Жильё", autogenerate: { directory: "housing" } },
+        {
+          label: "🏠 Жильё",
+          autogenerate: { directory: "housing" },
+          badge: "Обновлено",
+        },
         { label: "🫒 Еда", autogenerate: { directory: "food" } },
         { label: "🇪🇸 Испанский язык", autogenerate: { directory: "spanish" } },
         // {label: "Новости", autogenerate: {directory: "news" } },
