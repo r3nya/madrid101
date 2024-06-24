@@ -1,7 +1,7 @@
 ---
 title: Бег
 description: Беговые маршруты и события в Мадриде
-lastUpdated: 2024-06-22
+lastUpdated: 2024-06-24
 ---
 
 ## Где побегать?
@@ -30,3 +30,7 @@ lastUpdated: 2024-06-22
 ### Сентябрь
 
 - [Ibercaja Madrid Corre Por Madrid](https://madridcorrepormadrid.org/) – быстрые 10 километров, с уклоном вниз
+
+### Декабрь
+
+- [San Silvestre Vallecana](https://www.sansilvestrevallecana.com/) – забег на 10 км в последний день года
