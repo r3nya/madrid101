@@ -8,10 +8,10 @@
     "build": "astro check && astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "biome:format": "npx @biomejs/biome format --write .",
-    "biome:lint": "npx @biomejs/biome lint .",
-    "biome:check": "npx @biomejs/biome check --write .",
-    "biome:check:unsafe": "npx @biomejs/biome check --write --unsafe .",
+    "biome:format": "npx @biomejs/biome format --write",
+    "biome:lint": "npx @biomejs/biome lint",
+    "biome:check": "npx @biomejs/biome check --write",
+    "biome:check:unsafe": "npx @biomejs/biome check --write --unsafe",
     "biome:ci": "npx @biomejs/biome ci ."
   },
   "dependencies": {
