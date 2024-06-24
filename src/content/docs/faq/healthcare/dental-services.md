@@ -1,6 +1,7 @@
 ---
 title: Стоматологические услуги
 description: Стоматологические услуги в Мадриде
+lastUpdated: 2024-06-24
 ---
 
 - [Что входит в услуги по стомотологии бесплатно по ОМС](https://www.comunidad.madrid/servicios/salud/atencion-salud-bucodental)
