@@ -7,6 +7,9 @@ export default defineConfig({
   site: "http://madrid101.xyz/",
   integrations: [
     starlight({
+      components: {
+        Head: './src/components/Head.astro',
+      },
       plugins: [starlightLinksValidator()],
       title: "Madrid 101",
       favicon: "/favicon.ico",
