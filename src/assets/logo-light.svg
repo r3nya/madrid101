@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 100">
+  <!-- Background -->
+  <rect x="0" y="0" width="200" height="100" fill="rgb(255, 255, 255)"/>
+
+  <!-- Simplified skyline of Madrid -->
+  <path d="M10 80 L30 80 L40 60 L50 80 L60 70 L70 80 L80 50 L90 80 L100 60 L110 80 L120 70 L130 80 L140 50 L150 80 L160 60 L170 80 L190 80" fill="none" stroke="#333" stroke-width="2"/>
+
+  <!-- Sun -->
+  <circle cx="180" cy="20" r="12" fill="#FFD700"/>
+
+  <!-- Puerta de Alcalá -->
+  <path d="M20 40 L30 20 L40 40 M25 40 L35 40 M20 40 L40 40" fill="none" stroke="#333" stroke-width="2"/>
+
+  <!-- Bear and Strawberry Tree (Madroño) -->
+  <path d="M85 70 Q80 60 90 50 Q100 60 95 70 Z" fill="#4A2B0F"/> <!-- Bear body -->
+  <circle cx="87" cy="55" r="1.5" fill="#000"/> <!-- Bear eye -->
+  <path d="M90 70 L90 40 Q95 35 100 40 Q105 35 110 40 L110 70" fill="#228B22"/> <!-- Tree -->
+  <circle cx="100" cy="45" r="2.5" fill="#cc0000"/> <!-- Strawberry -->
+  <circle cx="105" cy="50" r="2.5" fill="#cc0000"/> <!-- Strawberry -->
+  <circle cx="95" cy="48" r="2.5" fill="#cc0000"/> <!-- Strawberry -->
+
+  <!-- Flamenco dancer silhouette -->
+  <path d="M140 70 Q145 60 150 70 Q155 60 160 70 L155 40 L145 40 Z" fill="#cc0000"/>
+
+  <!-- Plaza Mayor outline -->
+  <rect x="50" y="50" width="20" height="15" fill="none" stroke="#333" stroke-width="2"/>
+  <line x1="60" y1="50" x2="60" y2="65" stroke="#333" stroke-width="1"/>
+
+  <!-- Churros -->
+  <path d="M170 60 C175 55, 180 65, 185 60" fill="none" stroke="#8B4513" stroke-width="3"/>
+  <path d="M172 57 C177 52, 182 62, 187 57" fill="none" stroke="#8B4513" stroke-width="3"/>
+</svg>
