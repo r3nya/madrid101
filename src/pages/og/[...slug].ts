@@ -24,6 +24,32 @@ export const { getStaticPaths, GET } = OGImageRoute({
       bgGradient: [[24, 24, 27]],
       border: { color: [63, 63, 70], width: 20 },
       padding: 120,
+      font: {
+        title: {
+          size: 72,
+          lineHeight: 1.2,
+          families: [
+            "Inter",
+            "Noto Sans",
+          ],
+          weight: "Medium",
+          color: [255, 255, 255],
+        },
+        description: {
+          size: 42,
+          lineHeight: 1.2,
+          families: ["Noto Sans"],
+          weight: "Normal",
+          color: [255, 255, 255],
+        },
+      },
+      fonts: [
+        "./src/pages/og/_fonts/inter/inter-400-normal.ttf",
+        "./src/pages/og/_fonts/inter/inter-500-normal.ttf",
+
+        "./src/pages/og/_fonts/noto-sans/noto-400-normal.ttf",
+        "./src/pages/og/_fonts/noto-sans/noto-500-normal.ttf",
+      ],
     }
   },
 })
