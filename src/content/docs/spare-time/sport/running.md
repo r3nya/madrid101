@@ -1,7 +1,7 @@
 ---
 title: Бег
 description: Беговые маршруты и события в Мадриде
-lastUpdated: 2024-06-24
+lastUpdated: 2024-06-25
 ---
 
 ## Где побегать?
@@ -30,6 +30,10 @@ lastUpdated: 2024-06-24
 ### Сентябрь
 
 - [Ibercaja Madrid Corre Por Madrid](https://madridcorrepormadrid.org/) – быстрые 10 километров, с уклоном вниз
+
+### Октябрь
+
+- [Carrera Down Madrid](https://carreradownmadrid.org/) – 2.5 км, 5 км, 10 км в Парке Хуан Карлос I, забег для поддержки людей с синдромом Дауна.
 
 ### Декабрь
 
