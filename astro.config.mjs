@@ -8,7 +8,7 @@ export default defineConfig({
   integrations: [
     starlight({
       components: {
-        Head: './src/components/Head.astro',
+        Head: "./src/components/Head.astro",
       },
       plugins: [starlightLinksValidator()],
       title: "Madrid 101",
@@ -78,6 +78,10 @@ export default defineConfig({
             {
               label: "Образование",
               autogenerate: { directory: "faq/education" },
+            },
+            {
+              label: "Обмен валюты",
+              link: "faq/currency-exchange",
             },
           ],
         },
