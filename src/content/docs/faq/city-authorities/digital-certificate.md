@@ -1,6 +1,6 @@
 ---
 title: Цифровая подпись
-description: FNMT, cla@ve – Цифровые подписи в Испании
+description: FNMT, cla@ve – цифровые подписи в Испании
 lastUpdated: 2024-06-26
 sidebar:
     badge: "Новое"
