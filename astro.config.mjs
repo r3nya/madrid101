@@ -80,8 +80,8 @@ export default defineConfig({
               autogenerate: { directory: "faq/education" },
             },
             {
-              label: "Обмен валюты",
-              link: "faq/currency-exchange",
+              label: "Финансы",
+              autogenerate: { directory: "faq/finance" },
             },
           ],
         },
