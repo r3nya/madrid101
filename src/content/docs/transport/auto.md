@@ -24,3 +24,8 @@ lastUpdated: 2024-06-18
 
 - EasyPark ([Android](https://play.google.com/store/apps/details?id=dk.easypark.android), [iOS](https://apps.apple.com/es/app/easypark-parking-made-easy/id449594317?l=en-GB))
 - ElParking ([Android](https://play.google.com/store/apps/details?id=com.elparking.elparking), [iOS](https://apps.apple.com/es/app/elparking-app-para-conductores/id1120207710))
+
+## Сайты по покупке/продаже автомобилей 
+
+- [coches.net](https://www.coches.net)
+- [wallapop.com](https://es.wallapop.com/coches-segunda-mano)
