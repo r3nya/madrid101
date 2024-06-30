@@ -13,18 +13,6 @@ lastUpdated: 2024-06-24
 - В каждом автобусе предусмотрено 2 места для коляски (детской или инвалидной). Если оба места заняты, возможно, не получится сесть, но такое случается крайне редко
 - В автобусах существуют зеленые сиденья, которые предназначены для определенных групп людей (пожилые, беременные, с детьми и т д). Возможно, не самая лучшая идея занимать их, если вы не из этой группы
 
-## Транспортная карта / Tarjeta Transporte Público
-
-:::note[Условия]
-- До 4х лет бесплатно, карта не нужна
-- 4-6 лет – бесплатно по специальной детской карте
-- 7-26 лет – со скидкой по [Carné Joven](https://carnejovenmadrid.com/)
-:::
-
-- [Оформить карту (онлайн или оффлайн по записи)](https://tarjetatransportepublico.crtm.es/CRTM-ABONOS/home.aspx)
-- Приложения для пополнения и просмотра баланса ([Android](https://play.google.com/store/apps/details?id=com.crtm.recarga&hl=es), [iOS](https://apps.apple.com/es/app/tarjeta-transporte/id1619770175?l=en-GB))
-- Для поездки в аэропорт нужно доплатить 3€ ([Suplemento aeropuerto](https://www.aena.es/es/adolfo-suarez-madrid-barajas/como-llegar/metro.html#:~:text=Suplemento%20aeropuerto%3A%203%20%E2%82%AC,viajes%20metrob%C3%BAs%20y%20sencillo%20combinado)) дополнительно к одной поедке с карты.
-
 ## Приложения
 - Интерактивная карта метро ([Android](https://play.google.com/store/apps/details?id=com.mapway.global), [iOS](https://apps.apple.com/gb/app/mapway-city-journey-planner/id6443581415))
 - Официальное приложение метро Мадрид. В отличии от интерактивной карты здесь есть информация про наличие лифтов на станциях (с колясками актуально) ([Android](https://play.google.com/store/apps/details?id=es.metromadrid.metroandroid), [iOS](https://apps.apple.com/es/app/metro-de-madrid-oficial/id481638277))
