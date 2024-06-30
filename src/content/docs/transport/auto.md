@@ -1,7 +1,7 @@
 ---
 title: Автомобилистам
 description: "Информация для автомобилистов в Мадриде: штрафы, парковки, зоны пониженных выбросов, полезные приложения"
-lastUpdated: 2024-06-28
+lastUpdated: 2024-06-30
 ---
 
 ## Карты и схемы
@@ -25,7 +25,16 @@ lastUpdated: 2024-06-28
 - EasyPark ([Android](https://play.google.com/store/apps/details?id=dk.easypark.android), [iOS](https://apps.apple.com/es/app/easypark-parking-made-easy/id449594317?l=en-GB))
 - ElParking ([Android](https://play.google.com/store/apps/details?id=com.elparking.elparking), [iOS](https://apps.apple.com/es/app/elparking-app-para-conductores/id1120207710))
 
-## Сайты по покупке/продаже автомобилей 
+## Сайты по покупке/продаже автомобилей
 
 - [coches.net](https://www.coches.net)
 - [wallapop.com](https://es.wallapop.com/coches-segunda-mano)
+
+## FAQ / Часто задаваемые вопросы
+
+<details>
+<summary>Как поменять российские водительские права на испанские?</summary>
+
+Никак… 🤷‍♂️
+
+</details>
