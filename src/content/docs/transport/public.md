@@ -32,3 +32,13 @@ lastUpdated: 2024-06-24
 - Приложение от ЕМТ Мадрид. Можно смотреть в реальном времени время прибытия транспорта по городу ([Android](https://play.google.com/store/apps/details?id=com.emtmadrid.emt), [iOS](https://apps.apple.com/es/app/emt-madrid/id332237215))
 - Электрички Renfe ([Android](https://play.google.com/store/apps/details?id=com.renfe.renfecercanias), [iOS](https://apps.apple.com/es/app/renfe-cercanias/id953441960?l=en-GB))
 - Время ожидания автобуса по номеру автобуса/остановки (https://busmadrid.es/buscar/)
+
+## Ночные автобусы (Autobuses Nocturnos Búhos de Madrid)
+
+- Ночные автобусы, известные как "Búhos" (Совы), курсируют в ночное время, когда не работает метро
+- Маршруты начинаются от Plaza de Cibeles и расходятся по всему городу
+Работают с 23:45 до 6:00 утра
+- Интервал движения обычно составляет 15-30 минут в зависимости от маршрута и дня недели
+- Для оплаты проезда можно использовать обычные транспортные карты или купить билет у водителя
+- Маршруты обозначаются буквой N перед номером (например, N1, N2 и т.д.)
+- [Карта маршрутов ночных автобусов](https://www.madrid.es/UnidadesDescentralizadas/UDCMedios/noticias/2009/05Mayo/18Lunes/NotasdePrensa/Buhos/ficheros/EMT%20Noct7aMy09s3%20remarcado.pdf)
