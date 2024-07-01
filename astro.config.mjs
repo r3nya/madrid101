@@ -1,3 +1,4 @@
+import sitemap from "@astrojs/sitemap";
 import starlight from "@astrojs/starlight";
 import { defineConfig } from "astro/config";
 import starlightLinksValidator from "starlight-links-validator";
@@ -45,6 +46,13 @@ export default defineConfig({
           attrs: {
             rel: "manifest",
             href: "/site.webmanifest",
+          },
+        },
+        {
+          tag: "link",
+          attrs: {
+            rel: "sitemap",
+            href: "/sitemap-index.xml",
           },
         },
       ],
@@ -108,5 +116,6 @@ export default defineConfig({
         { label: "🚗 Транспорт", autogenerate: { directory: "transport" } },
       ],
     }),
+    sitemap(),
   ],
 });

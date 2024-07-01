@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: http://madrid101.xyz/sitemap-index.xml
