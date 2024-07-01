@@ -55,6 +55,13 @@ export default defineConfig({
             href: "/sitemap-index.xml",
           },
         },
+        {
+          tag: "meta",
+          attrs: {
+            name: "yandex-verification",
+            content: "99657cbd8b636aa4",
+          },
+        },
       ],
       social: {
         github: "https://github.com/r3nya/how-to-madrid",
