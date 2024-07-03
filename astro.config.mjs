@@ -10,6 +10,7 @@ export default defineConfig({
     starlight({
       components: {
         Head: "./src/components/Head.astro",
+        Footer: "./src/components/Footer.astro",
       },
       plugins: [starlightLinksValidator()],
       title: "Madrid 101",
