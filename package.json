@@ -22,7 +22,7 @@
     "astro-og-canvas": "^0.5.1",
     "sharp": "^0.33.4",
     "starlight-links-validator": "^0.9.1",
-    "typescript": "^5.5.2"
+    "typescript": "^5.5.3"
   },
   "devDependencies": {
     "@biomejs/biome": "1.8.3"
