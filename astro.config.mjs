@@ -62,6 +62,13 @@ export default defineConfig({
             content: "99657cbd8b636aa4",
           },
         },
+        {
+          tag: "meta",
+          attrs: {
+            name: "theme-color",
+            content: "#40224e",
+          },
+        },
       ],
       social: {
         github: "https://github.com/r3nya/how-to-madrid",
