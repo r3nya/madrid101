@@ -15,7 +15,7 @@
     "biome:ci": "npx @biomejs/biome ci ."
   },
   "dependencies": {
-    "@astrojs/check": "^0.7.0",
+    "@astrojs/check": "^0.8.1",
     "@astrojs/sitemap": "^3.1.6",
     "@astrojs/starlight": "^0.25.0",
     "astro": "^4.11.5",
