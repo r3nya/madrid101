@@ -90,6 +90,10 @@ export default defineConfig({
               link: "faq/maps/districts",
             },
             {
+              label: "💬 Чаты",
+              link: "groups/chats",
+            },
+            {
               label: "Административные услуги",
               autogenerate: { directory: "faq/city-authorities" },
             },
