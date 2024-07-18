@@ -92,6 +92,7 @@ export default defineConfig({
             {
               label: "💬 Чаты",
               link: "groups/chats",
+              badge: "Новое",
             },
             {
               label: "Административные услуги",
@@ -130,7 +131,6 @@ export default defineConfig({
         },
         { label: "🫒 Еда", autogenerate: { directory: "food" } },
         { label: "🇪🇸 Испанский язык", autogenerate: { directory: "spanish" } },
-        // {label: "Новости", autogenerate: {directory: "news" } },
         { label: "🚗 Транспорт", autogenerate: { directory: "transport" } },
       ],
     }),
