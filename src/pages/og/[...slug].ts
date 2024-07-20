@@ -33,14 +33,14 @@ export const { getStaticPaths, GET } = OGImageRoute({
         title: {
           size: 72,
           lineHeight: 1.2,
-          families: ["Inter", "Noto Sans"],
+          families: ["Inter", "Noto Sans", "Noto Color Emoji"],
           weight: "Medium",
           color: [255, 255, 255],
         },
         description: {
           size: 42,
           lineHeight: 1.2,
-          families: ["Noto Sans"],
+          families: ["Noto Sans", "Noto Color Emoji"],
           weight: "Normal",
           color: [255, 255, 255],
         },
@@ -51,6 +51,8 @@ export const { getStaticPaths, GET } = OGImageRoute({
 
         "./src/pages/og/_fonts/noto-sans/noto-400-normal.ttf",
         "./src/pages/og/_fonts/noto-sans/noto-500-normal.ttf",
+
+        "./src/pages/og/_fonts/NotoColorEmoji-Regular.ttf"
       ],
     };
   },
