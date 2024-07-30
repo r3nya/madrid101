@@ -1,7 +1,7 @@
 ---
 title: Общественный транспорт
 description: Общественный транспорт в Мадриде
-lastUpdated: 2024-06-30
+lastUpdated: 2024-07-30
 ---
 
 ## Важные нюансы
@@ -14,6 +14,8 @@ lastUpdated: 2024-06-30
 - В автобусах существуют зеленые сиденья, которые предназначены для определенных групп людей (пожилые, беременные, с детьми и т д). Возможно, не самая лучшая идея занимать их, если вы не из этой группы
 
 ## Приложения
+
+- Приложение для пополнения и просмотра баланса Транспортной карты ([Android](https://play.google.com/store/apps/details?id=com.crtm.recarga&hl=es), [iOS](https://apps.apple.com/es/app/tarjeta-transporte/id1619770175?l=en-GB))
 - Интерактивная карта метро ([Android](https://play.google.com/store/apps/details?id=com.mapway.global), [iOS](https://apps.apple.com/gb/app/mapway-city-journey-planner/id6443581415))
 - Официальное приложение метро Мадрид. В отличии от интерактивной карты здесь есть информация про наличие лифтов на станциях (с колясками актуально) ([Android](https://play.google.com/store/apps/details?id=es.metromadrid.metroandroid), [iOS](https://apps.apple.com/es/app/metro-de-madrid-oficial/id481638277))
 - Схемы и расписание транспорта ([Android](https://play.google.com/store/apps/details?id=com.greenlionsoft.free.madrid&hl=es), [iOS](https://apps.apple.com/es/app/madrid-metro-bus-cercanias/id1359656589?l=en-GB))
