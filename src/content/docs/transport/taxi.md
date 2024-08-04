@@ -50,7 +50,7 @@ sidebar:
 
 #### TXMAD
 - Официальное приложение от мэрии Мадрида
-- [Android](https://play.google.com/store/apps/details?id=es.madrid.GTAXIMVTAXAND&hl=en_US) | [iOS](https://apps.apple.com/es/app/txmad/id1585568768)
+- [Android](https://play.google.com/store/apps/details?id=es.madrid.GTAXIMVTAXAND&hl=en_US) | [iOS](https://apps.apple.com/es/app/txmad/id1253402459)
 
 #### FreeNow (бывший MyTaxi)
 - Телефон: [+34 902 050 570](tel:+34902050570)
@@ -70,7 +70,7 @@ sidebar:
 
 #### Cabify
 - Сервис заказа поездок с профессиональными водителями, головной офис в Мадриде
-- [Android](https://play.google.com/store/apps/details?id=com.cabify.rider) | [iOS](https://apps.apple.com/app/id476087818)
+- [Android](https://play.google.com/store/apps/details?id=com.cabify.rider) | [iOS](https://apps.apple.com/es/app/cabify/id476087442)
 
 #### Uber
 - Международный сервис заказа поездок
