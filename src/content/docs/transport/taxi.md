@@ -50,7 +50,7 @@ sidebar:
 
 #### TXMAD
 - Официальное приложение от мэрии Мадрида
-- [Android](https://play.google.com/store/apps/details?id=es.madrid.txmad) | [iOS](https://apps.apple.com/es/app/txmad/id1585568768)
+- [Android](https://play.google.com/store/apps/details?id=es.madrid.GTAXIMVTAXAND&hl=en_US) | [iOS](https://apps.apple.com/es/app/txmad/id1585568768)
 
 #### FreeNow (бывший MyTaxi)
 - Телефон: [+34 902 050 570](tel:+34902050570)
