@@ -91,6 +91,11 @@ export default defineConfig({
               link: "faq/maps/districts",
             },
             {
+              label: "💬 Чаты",
+              link: "groups/chats",
+              badge: "Новое",
+            },
+            {
               label: "Административные услуги",
               autogenerate: { directory: "faq/city-authorities" },
             },
@@ -127,7 +132,6 @@ export default defineConfig({
         },
         { label: "🫒 Еда", autogenerate: { directory: "food" } },
         { label: "🇪🇸 Испанский язык", autogenerate: { directory: "spanish" } },
-        // {label: "Новости", autogenerate: {directory: "news" } },
         { label: "🚗 Транспорт", autogenerate: { directory: "transport" } },
       ],
     }),
