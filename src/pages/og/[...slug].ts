@@ -52,7 +52,7 @@ export const { getStaticPaths, GET } = OGImageRoute({
         "./src/pages/og/_fonts/noto-sans/noto-400-normal.ttf",
         "./src/pages/og/_fonts/noto-sans/noto-500-normal.ttf",
 
-        "./src/pages/og/_fonts/NotoColorEmoji-Regular.ttf"
+        "./src/pages/og/_fonts/NotoColorEmoji-Regular.ttf",
       ],
     };
   },
