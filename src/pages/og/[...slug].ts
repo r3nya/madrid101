@@ -22,12 +22,13 @@ export const { getStaticPaths, GET } = OGImageRoute({
       description: page.data.description,
       // Customize various colors and add a border.
       bgGradient: [
-        [63, 63, 70],
-        [63, 63, 70],
-        [99, 101, 102],
-        [225, 175, 54],
+        [107, 144, 128],
+        [164, 195, 178],
+        [204, 227, 222],
+        [234, 244, 244],
+        [246, 255, 248],
       ],
-      border: { color: [63, 63, 70], width: 20 },
+      border: { color: [107, 144, 128], width: 20 },
       padding: 120,
       font: {
         title: {
@@ -35,14 +36,14 @@ export const { getStaticPaths, GET } = OGImageRoute({
           lineHeight: 1.2,
           families: ["Inter", "Noto Sans", "Noto Color Emoji"],
           weight: "Medium",
-          color: [255, 255, 255],
+          color: [0, 0, 0],
         },
         description: {
           size: 42,
           lineHeight: 1.2,
           families: ["Noto Sans", "Noto Color Emoji"],
           weight: "Normal",
-          color: [255, 255, 255],
+          color: [57, 78, 69],
         },
       },
       fonts: [
