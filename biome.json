@@ -7,6 +7,7 @@
     "enabled": true
   },
   "formatter": {
+    "useEditorconfig": true,
     "attributePosition": "multiline",
     "indentStyle": "space",
     "enabled": true
