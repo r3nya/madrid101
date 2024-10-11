@@ -18,7 +18,7 @@
     "@astrojs/check": "^0.9.4",
     "@astrojs/sitemap": "^3.2.0",
     "@astrojs/starlight": "^0.28.3",
-    "astro": "^4.16.0",
+    "astro": "^4.16.1",
     "astro-og-canvas": "^0.5.3",
     "sharp": "^0.33.5",
     "starlight-links-validator": "^0.12.3",
