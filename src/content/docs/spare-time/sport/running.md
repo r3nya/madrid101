@@ -62,6 +62,7 @@ lastUpdated: 2024-06-25
 
 - [Derbi de las Aficiones](https://derbidelasaficiones.com/)
 - [Carrera Ponle Freno](https://compromiso.atresmedia.com/ponlefreno/carreras-ponle-freno/) – 5 км, 10 км
+- [Speed run](https://www.speedrun.es/) – быстрые 10 км от Zara
 
 ### Декабрь
 
