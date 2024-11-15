@@ -130,7 +130,10 @@ export default defineConfig({
           autogenerate: { directory: "housing" },
         },
         { label: "🫒 Еда", autogenerate: { directory: "food" } },
-        { label: "🇪🇸 Испанский язык", autogenerate: { directory: "spanish" } },
+        {
+          label: "🧞 Услуги и сервисы",
+          autogenerate: { directory: "services" },
+        },
         { label: "🚗 Транспорт", autogenerate: { directory: "transport" } },
       ],
     }),
