@@ -71,7 +71,7 @@ export default defineConfig({
         },
       ],
       social: {
-        github: "https://github.com/r3nya/how-to-madrid",
+        github: "https://github.com/r3nya/madrid101",
         telegram: "https://t.me/+4ccS_x5DADAwMjM6",
       },
       defaultLocale: "ru",
