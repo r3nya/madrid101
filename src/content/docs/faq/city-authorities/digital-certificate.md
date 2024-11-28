@@ -1,7 +1,7 @@
 ---
 title: Цифровая подпись
 description: FNMT, cla@ve – цифровые подписи в Испании
-lastUpdated: 2024-06-26
+lastUpdated: 2024-11-29
 ---
 
 ## Виды цифровых подписей
