@@ -10,4 +10,4 @@ lastUpdated: 2024-11-28
 3D-печать, пайка, программирование железа
 :::
 
-- [Makespace Madrid](https://makespacemadrid.org/)
+- [Makespace Madrid](https://makespacemadrid.org/) - членство в клубе платное, но по вторникам с 19:00 вечер открытых дверей
