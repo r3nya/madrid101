@@ -83,7 +83,7 @@ export default defineConfig({
       lastUpdated: true,
       sidebar: [
         {
-          label: "⁉️ FAQ",
+          label: "⁉ FAQ",
           items: [
             {
               label: "Районы города",
@@ -113,7 +113,7 @@ export default defineConfig({
           ],
         },
         {
-          label: "🧘‍♂️ Досуг",
+          label: "🧘 Досуг",
           items: [
             {
               label: "Спорт",
@@ -123,6 +123,7 @@ export default defineConfig({
               label: "🎭 Культура",
               autogenerate: { directory: "spare-time/culture" },
             },
+            { label: "Хобби", link: "spare-time/hobby" },
           ],
         },
         {
@@ -135,7 +136,7 @@ export default defineConfig({
           autogenerate: { directory: "services" },
         },
         { label: "🚗 Транспорт", autogenerate: { directory: "transport" } },
-        { label: "🇪🇸 Испанский язык", autogenerate: { directory: "spanish" } },
+        { label: "🇪 Испанский язык", autogenerate: { directory: "spanish" } },
       ],
     }),
     sitemap(),
