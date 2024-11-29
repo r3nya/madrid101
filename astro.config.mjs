@@ -124,6 +124,7 @@ export default defineConfig({
               autogenerate: { directory: "spare-time/culture" },
             },
             { label: "Хобби", link: "spare-time/hobby" },
+            { label: "420", link: "spare-time/x-420" },
           ],
         },
         {
