@@ -137,7 +137,7 @@ export default defineConfig({
           autogenerate: { directory: "services" },
         },
         { label: "🚗 Транспорт", autogenerate: { directory: "transport" } },
-        { label: "🇪 Испанский язык", autogenerate: { directory: "spanish" } },
+        { label: "🇪🇸 Испанский язык", autogenerate: { directory: "spanish" } },
       ],
     }),
     sitemap(),
