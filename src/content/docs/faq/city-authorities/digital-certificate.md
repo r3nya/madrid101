@@ -24,8 +24,6 @@ FNMT (Fábrica Nacional de Moneda y Timbre) - национальный моне�
 
 ## Как получить?
 
-- [Подробный гайд](https://espanium.notion.site/FNMT-RCM-5bad84eae585424cac1b59bdb4945ddb) как получить FNMT от канала [Espānium](https://t.me/espanium_expert)
-
 - [Как получить цифровой сертификат (все типы)](https://barcelona-startups-relocation.notion.site/How-to-get-a-Digital-Certificate-8ca4ec3ea31b43cd995bfdf2012e622a)
 
 - [Как сделать сертификат ACCV online](https://t.me/lev2tarragona/1977) от канала [Львиные истории про Таррагону](https://t.me/lev2tarragona)
