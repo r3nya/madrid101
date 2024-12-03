@@ -92,7 +92,6 @@ export default defineConfig({
             {
               label: "💬 Чаты",
               link: "groups/chats",
-              badge: "Новое",
             },
             {
               label: "Административные услуги",
