@@ -106,10 +106,6 @@ export default defineConfig({
               autogenerate: { directory: "faq/education" },
             },
             {
-              label: "Провайдеры",
-              autogenerate: { directory: "faq/providers" },
-            },
-            {
               label: "Финансы",
               autogenerate: { directory: "faq/finance" },
             },
@@ -132,7 +128,18 @@ export default defineConfig({
         },
         {
           label: "🏠 Жильё",
-          autogenerate: { directory: "housing" },
+          items: [
+            { label: "Долгосрочная аренда", link: "housing/long-term-rental" },
+            {
+              label: "Краткосрочная аренда",
+              link: "housing/short-term-rental",
+            },
+            { label: "Коливинг", link: "housing/co-living" },
+            {
+              label: "Провайдеры",
+              autogenerate: { directory: "housing/providers" },
+            },
+          ],
         },
         { label: "🫒 Еда", autogenerate: { directory: "food" } },
         {
