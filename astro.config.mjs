@@ -106,6 +106,10 @@ export default defineConfig({
               autogenerate: { directory: "faq/education" },
             },
             {
+              label: "Провайдеры",
+              autogenerate: { directory: "faq/providers" },
+            },
+            {
               label: "Финансы",
               autogenerate: { directory: "faq/finance" },
             },
