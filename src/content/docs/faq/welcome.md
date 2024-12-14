@@ -1,6 +1,7 @@
 ---
 title: How to Madrid
 description: Сборник ответов на частые вопросы чата «Номады в Мадриде»
+tableOfContents: false
 lastUpdated: 2024-06-18
 ---
 

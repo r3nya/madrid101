@@ -1,6 +1,7 @@
 ---
 title: Записаться на прием
 description: Как записаться на прием к врачу в Мадриде
+tableOfContents: false
 lastUpdated: 2024-10-16
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: Обмен валюты
 description: Поиск наиболее выгодного курса обмена валюты в Мадриде
+tableOfContents: false
 lastUpdated: 2024-06-26
 ---
 
