@@ -74,12 +74,12 @@ export default defineConfig({
         github: "https://github.com/r3nya/madrid101",
         telegram: "https://t.me/+4ccS_x5DADAwMjM6",
       },
-      defaultLocale: "ru",
-      locales: {
-        ru: {
-          label: "Русский",
-        },
-      },
+      // defaultLocale: "ru",
+      // locales: {
+      //   ru: {
+      //     label: "Русский",
+      //   },
+      // },
       lastUpdated: true,
       sidebar: [
         {
