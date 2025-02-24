@@ -1,32 +1,114 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 100">
+  <!-- Light Theme Version -->
+  <defs>
+    <!-- Patterns and gradients -->
+    <linearGradient id="skyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#87CEEB" />
+      <stop offset="100%" stop-color="#E6F7FF" />
+    </linearGradient>
+    
+    <linearGradient id="treeGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#228B22" />
+      <stop offset="100%" stop-color="#32CD32" />
+    </linearGradient>
+    
+    <linearGradient id="bearGradient">
+      <stop offset="0%" stop-color="#8B4513" />
+      <stop offset="100%" stop-color="#A0522D" />
+    </linearGradient>
+    
+    <linearGradient id="strawberryGradient">
+      <stop offset="0%" stop-color="#FF3030" />
+      <stop offset="100%" stop-color="#FF6347" />
+    </linearGradient>
+    
+    <filter id="dropShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="1" />
+      <feOffset dx="1" dy="1" result="offsetblur" />
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.3" />
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
   <!-- Background -->
-  <rect x="0" y="0" width="200" height="100" fill="rgb(255, 255, 255)"/>
-
-  <!-- Simplified skyline of Madrid -->
-  <path d="M10 80 L30 80 L40 60 L50 80 L60 70 L70 80 L80 50 L90 80 L100 60 L110 80 L120 70 L130 80 L140 50 L150 80 L160 60 L170 80 L190 80" fill="none" stroke="#333" stroke-width="2"/>
-
+  <rect x="0" y="0" width="200" height="100" fill="#ffffff" />
+  
+  <!-- Stylized Sky -->
+  <rect x="0" y="0" width="200" height="40" fill="url(#skyGradient)" opacity="0.3" />
+  
   <!-- Sun -->
-  <circle cx="180" cy="20" r="12" fill="#FFD700"/>
-
-  <!-- Puerta de Alcalá -->
-  <path d="M20 40 L30 20 L40 40 M25 40 L35 40 M20 40 L40 40" fill="none" stroke="#333" stroke-width="2"/>
-
-  <!-- Bear and Strawberry Tree (Madroño) -->
-  <path d="M85 70 Q80 60 90 50 Q100 60 95 70 Z" fill="#4A2B0F"/> <!-- Bear body -->
-  <circle cx="87" cy="55" r="1.5" fill="#000"/> <!-- Bear eye -->
-  <path d="M90 70 L90 40 Q95 35 100 40 Q105 35 110 40 L110 70" fill="#228B22"/> <!-- Tree -->
-  <circle cx="100" cy="45" r="2.5" fill="#cc0000"/> <!-- Strawberry -->
-  <circle cx="105" cy="50" r="2.5" fill="#cc0000"/> <!-- Strawberry -->
-  <circle cx="95" cy="48" r="2.5" fill="#cc0000"/> <!-- Strawberry -->
-
-  <!-- Flamenco dancer silhouette -->
-  <path d="M140 70 Q145 60 150 70 Q155 60 160 70 L155 40 L145 40 Z" fill="#cc0000"/>
-
-  <!-- Plaza Mayor outline -->
-  <rect x="50" y="50" width="20" height="15" fill="none" stroke="#333" stroke-width="2"/>
-  <line x1="60" y1="50" x2="60" y2="65" stroke="#333" stroke-width="1"/>
-
-  <!-- Churros -->
-  <path d="M170 60 C175 55, 180 65, 185 60" fill="none" stroke="#8B4513" stroke-width="3"/>
-  <path d="M172 57 C177 52, 182 62, 187 57" fill="none" stroke="#8B4513" stroke-width="3"/>
+  <circle cx="180" cy="20" r="12" fill="#FFD700" filter="url(#dropShadow)" />
+  <circle cx="180" cy="20" r="9" fill="#FFEC80" />
+  
+  <!-- Simplified skyline of Madrid with depth -->
+  <path d="M10 80 L30 80 L40 60 L50 80 L60 70 L70 80 L80 50 L90 80 L100 60 L110 80 L120 70 L130 80 L140 50 L150 80 L160 60 L170 80 L190 80" 
+        fill="#f5f5f5" stroke="#40224e" stroke-width="2.5" stroke-linejoin="round" />
+  <path d="M10 80 L30 80 L40 60 L50 80 L60 70 L70 80 L80 50 L90 80 L100 60 L110 80 L120 70 L130 80 L140 50 L150 80 L160 60 L170 80 L190 80" 
+        fill="none" stroke="#333" stroke-width="1.5" stroke-linejoin="round" />
+  
+  <!-- Puerta de Alcalá - enhanced -->
+  <path d="M20 40 L30 20 L40 40 Z" fill="#E3D3B8" stroke="#333" stroke-width="1" />
+  <path d="M25 40 L35 40 M20 40 L40 40" fill="none" stroke="#333" stroke-width="1.5" />
+  <rect x="27" y="30" width="6" height="10" fill="#8B4513" />
+  
+  <!-- Plaza Mayor - enhanced -->
+  <rect x="50" y="50" width="20" height="15" fill="#E3D3B8" stroke="#333" stroke-width="1.5" />
+  <line x1="60" y1="50" x2="60" y2="65" stroke="#333" stroke-width="1" />
+  <line x1="50" y1="55" x2="70" y2="55" stroke="#333" stroke-width="0.75" />
+  <line x1="50" y1="60" x2="70" y2="60" stroke="#333" stroke-width="0.75" />
+  
+  <!-- Bear and Strawberry Tree (Madroño) - enhanced -->
+  <g transform="translate(100, 55) scale(1.1)">
+    <!-- Tree -->
+    <rect x="-5" y="-10" width="10" height="25" fill="#8B4513" />
+    <path d="M-15,-15 C-15,-25 0,-30 15,-15 C15,-25 0,-35 -15,-15" fill="url(#treeGradient)" />
+    
+    <!-- Strawberries -->
+    <circle cx="-5" cy="-20" r="3" fill="url(#strawberryGradient)" />
+    <circle cx="5" cy="-25" r="3" fill="url(#strawberryGradient)" />
+    <circle cx="0" cy="-15" r="3" fill="url(#strawberryGradient)" />
+    
+    <!-- Bear -->
+    <g transform="translate(-20, 0) scale(0.8)">
+      <!-- Body -->
+      <path d="M-10 20 Q-20 0 -10 -10 Q0 -15 10 -10 Q20 0 10 20 Z" fill="url(#bearGradient)" />
+      
+      <!-- Head -->
+      <circle cx="0" cy="-15" r="10" fill="url(#bearGradient)" />
+      
+      <!-- Ears -->
+      <circle cx="-7" cy="-22" r="4" fill="url(#bearGradient)" />
+      <circle cx="7" cy="-22" r="4" fill="url(#bearGradient)" />
+      
+      <!-- Face details -->
+      <circle cx="-4" cy="-16" r="1.5" fill="#000" />
+      <circle cx="4" cy="-16" r="1.5" fill="#000" />
+      <ellipse cx="0" cy="-12" rx="2" ry="1" fill="#000" />
+    </g>
+  </g>
+  
+  <!-- Flamenco dancer silhouette - enhanced -->
+  <path d="M140 70 Q145 60 150 70 Q155 60 160 70 L155 40 L145 40 Z" fill="#cc0000" filter="url(#dropShadow)" />
+  <path d="M149 40 L151 40 L151 50 L149 50 Z" fill="#000" />
+  <path d="M145 60 C143 55, 147 50, 150 55" fill="none" stroke="#000" stroke-width="1" />
+  
+  <!-- Churros with Chocolate - enhanced -->
+  <g transform="translate(175, 60)">
+    <!-- Chocolate cup -->
+    <ellipse cx="0" cy="10" rx="8" ry="4" fill="#6B4226" filter="url(#dropShadow)" />
+    <ellipse cx="0" cy="9" rx="6" ry="2" fill="#4A2C18" />
+    
+    <!-- Churros -->
+    <path d="M-10 0 C-5 -3, 0 3, 5 0 C10 -3, 15 3, 20 0" fill="none" stroke="#D4AA7D" stroke-width="3" stroke-linecap="round" />
+    <path d="M-10 -5 C-5 -8, 0 -2, 5 -5 C10 -8, 15 -2, 20 -5" fill="none" stroke="#D4AA7D" stroke-width="3" stroke-linecap="round" />
+    
+    <!-- Sugar on churros -->
+    <path d="M-8 -5 L-7 -5 M-3 -5 L-2 -5 M3 -5 L4 -5 M8 -5 L9 -5 M13 -5 L14 -5 M18 -5 L19 -5" stroke="#FFF" stroke-width="0.5" stroke-linecap="round" />
+    <path d="M-8 0 L-7 0 M-3 0 L-2 0 M3 0 L4 0 M8 0 L9 0 M13 0 L14 0 M18 0 L19 0" stroke="#FFF" stroke-width="0.5" stroke-linecap="round" />
+  </g>
 </svg>
