@@ -148,6 +148,10 @@ export default defineConfig({
         },
         { label: "🚗 Транспорт", autogenerate: { directory: "transport" } },
         { label: "🇪🇸 Испанский язык", autogenerate: { directory: "spanish" } },
+        {
+          label: "♻️ Управление отходами",
+          autogenerate: { directory: "waste-management" },
+        },
       ],
     }),
     sitemap(),
