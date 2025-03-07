@@ -146,7 +146,43 @@ export default defineConfig({
           label: "🧞 Услуги и сервисы",
           autogenerate: { directory: "services" },
         },
-        { label: "🚗 Транспорт", autogenerate: { directory: "transport" } },
+        {
+          label: "🚗 Транспорт",
+          items: [
+            {
+              label: "Автомобилистам",
+              autogenerate: { directory: "transport/auto" },
+            },
+            {
+              label: "Велосипедистам",
+              link: "transport/bike"
+            },
+            {
+              label: "Каршеринг",
+              link: "transport/carsharing"
+            },
+            {
+              label: "Мотошеринг",
+              link: "transport/motosharing"
+            },
+            {
+              label: "Общественный транспорт",
+              link: "transport/public"
+            },
+            {
+              label: "Такси",
+              link: "transport/taxi"
+            },
+            {
+              label: "Поезда 🚂",
+              link: "transport/trains"
+            },
+            {
+              label: "Транспортные карты",
+              link: "transport/transport-cards"
+            }
+          ]
+        },
         { label: "🇪🇸 Испанский язык", autogenerate: { directory: "spanish" } },
         {
           label: "♻️ Управление отходами",
