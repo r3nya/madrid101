@@ -14,12 +14,16 @@ lastUpdated: 2025-04-01
 - **Период добровольной оплаты**: с 1 апреля по 1 июня текущего года оплачивается налог за текущий год
 - Если оплата не произведена вовремя, начисляются штрафы и пени
 
+## Проверка начисленного налога
+
+- [madrid.es/micarpeta](https://madrid.es/micarpeta)
+
 ## Способы оплаты
 
 ### Онлайн
 
 Оплатить налог можно через официальный сайт мэрии Мадрида:
-- [Портал оплаты налогов Мадрида](https://sede.madrid.es/portal/site/tramites/menuitem.62876cb64654a55e2dbd7003a8a409a0/?vgnextoid=703cd3b8c86f0410VgnVCM2000000c205a0aRCRD&vgnextchannel=60d71bde750e1410VgnVCM1000000b205a0aRCRD&vgnextfmt=default)
+- [Портал оплаты налогов Мадрида](https://agenciatributaria.madrid.es/portales/contribuyente/es/Gestiones-y-tramites/Pagos/Pago-de-impuestos-tasas-precios-publicos-y-multas-de-circulacion/?vgnextfmt=default&vgnextchannel=27b0e9ef4fad6810VgnVCM2000001f4a900aRCRD)
 
 ### Другие способы
 
