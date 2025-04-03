@@ -123,6 +123,10 @@ export default defineConfig({
               autogenerate: { directory: "spare-time/culture" },
             },
             { label: "Хобби", link: "spare-time/hobby" },
+            {
+              label: "Билеты на футбол и Fan ID",
+              link: "spare-time/football-tickets",
+            },
             { label: "420", link: "spare-time/x-420" },
           ],
         },
@@ -155,33 +159,33 @@ export default defineConfig({
             },
             {
               label: "Велосипедистам",
-              link: "transport/bike"
+              link: "transport/bike",
             },
             {
               label: "Каршеринг",
-              link: "transport/carsharing"
+              link: "transport/carsharing",
             },
             {
               label: "Мотошеринг",
-              link: "transport/motosharing"
+              link: "transport/motosharing",
             },
             {
               label: "Общественный транспорт",
-              link: "transport/public"
+              link: "transport/public",
             },
             {
               label: "Такси",
-              link: "transport/taxi"
+              link: "transport/taxi",
             },
             {
               label: "Поезда 🚂",
-              link: "transport/trains"
+              link: "transport/trains",
             },
             {
               label: "Транспортные карты",
-              link: "transport/transport-cards"
-            }
-          ]
+              link: "transport/transport-cards",
+            },
+          ],
         },
         { label: "🇪🇸 Испанский язык", autogenerate: { directory: "spanish" } },
         {
