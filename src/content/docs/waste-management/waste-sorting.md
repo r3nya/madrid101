@@ -47,7 +47,10 @@ sidebar:
 - Краски и химические продукты
 - Мебель и крупные предметы
 
-[Найти ближайший пункт чистоты](https://www.madrid.es/portales/munimadrid/es/Inicio/Medio-ambiente/Recogida-de-Residuos/Puntos-Limpios/Puntos-Limpios-Fijos/)
+##### Найти ближайший пункт чистоты (мобильный и стационарный)
+
+- [Puntos Limpios Moviles](https://www.madrid.es/portales/munimadrid/es/Inicio/El-Ayuntamiento/Medio-Ambiente/Residuos-y-limpieza-urbana/Puntos-Limpios-Moviles?vgnextfmt=default&vgnextoid=cf894b46e48dc010VgnVCM1000000b205a0aRCRD&vgnextchannel=6f5c9ad016e07010VgnVCM100000dc0ca8c0RCRD&idioma=es&idiomaPrevio=es&rmColeccion=a30815e08aa62110VgnVCM1000000b205a0aRCRD)
+- [Puntos Limpios Fijos](https://www.madrid.es/portales/munimadrid/es/Inicio/El-Ayuntamiento/Medio-Ambiente/Residuos-y-limpieza-urbana/Puntos-Limpios-Fijos?vgnextfmt=default&vgnextoid=b49b217058662110VgnVCM2000000c205a0aRCRD&vgnextchannel=6f5c9ad016e07010VgnVCM100000dc0ca8c0RCRD&idioma=es&idiomaPrevio=es&rmColeccion=a30815e08aa62110VgnVCM1000000b205a0aRCRD)
 
 #### Лекарства
 Фармацевтические отходы можно сдать в специальные контейнеры SIGRE, которые находятся в аптеках.
