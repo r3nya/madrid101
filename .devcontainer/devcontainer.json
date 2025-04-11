@@ -1,15 +1,16 @@
 {
   "name": "madrid101-astro",
   "image": "mcr.microsoft.com/devcontainers/typescript-node:22",
+  "forwardPorts": [4321],
+  "postCreateCommand": "npm install",
+  "postStartCommand": "npm run dev",
   "features": {},
   "customizations": {
     "vscode": {
       "settings": {
         "json.schemas": [
           {
-            "fileMatch": [
-              "*/devcontainer-feature.json"
-            ],
+            "fileMatch": ["*/devcontainer-feature.json"],
             "url": "https://raw.githubusercontent.com/devcontainers/spec/main/schemas/devContainerFeature.schema.json"
           }
         ]
