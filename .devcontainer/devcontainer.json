@@ -1,0 +1,6 @@
+{
+  "name": "madrid101-astro",
+  "image": "mcr.microsoft.com/devcontainers/typescript-node:22",
+  "features": {},
+  "remoteUser": "node"
+}
