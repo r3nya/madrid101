@@ -9,6 +9,7 @@ lastUpdated: 2024-06-30
 - [Карта центра Мадрида, где ограничен въезд, отмечены авторизованные парковки, которые спасают от штрафа за въезд](https://www.madrid.es/UnidadesDescentralizadas/UDCMovilidadTransportes/AreaCentral/02Ambito/Madrid%20Central_271219.pdf)
 - [Зоны пониженных выбросов](https://www.madrid.es/portales/munimadrid/es/Inicio/Movilidad-y-transportes/Zonas-de-Bajas-Emisiones/Madrid-Zona-de-Bajas-Emisiones/Madrid-Zona-de-Bajas-Emisiones-ZBE-/?vgnextfmt=default&vgnextoid=93e63877029eb710VgnVCM1000001d4a900aRCRD&vgnextchannel=d2d2edf0f70ab710VgnVCM2000001f4a900aRCRD)
 - [Интерактивная карта с перекрытием дорог из-за непогоды](https://infocar.dgt.es/etraffic/)
+- [Интерактивная карта электрозаправок "Mapa Reve"](https://www.mapareve.es/mapa-puntos-recarga)
 
 ## Полезные приложения
 
