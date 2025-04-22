@@ -5,7 +5,7 @@ import type { Props } from "@astrojs/starlight/props";
 // Get the URL of the generated image for the current page using its
 // ID and replace the file extension with `.png`.
 const ogImageUrl = new URL(
-  `/og/${Astro.props.id.replace(/\.\w+$/, ".png")}`,
+  `/og/${Astro.props.id?.replace(/\.\w+$/, ".png")}`,
   Astro.site,
 );
 ---
