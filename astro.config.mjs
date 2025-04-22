@@ -70,10 +70,18 @@ export default defineConfig({
           },
         },
       ],
-      social: {
-        github: "https://github.com/r3nya/madrid101",
-        telegram: "https://t.me/+4ccS_x5DADAwMjM6",
-      },
+      social: [
+        {
+          icon: "github",
+          label: "GitHub",
+          href: "https://github.com/r3nya/madrid101",
+        },
+        {
+          icon: "telegram",
+          label: "Telegram chat",
+          href: "https://t.me/+4ccS_x5DADAwMjM6",
+        },
+      ],
       // defaultLocale: "ru",
       // locales: {
       //   ru: {
