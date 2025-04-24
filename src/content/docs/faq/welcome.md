@@ -9,8 +9,8 @@ lastUpdated: 2024-06-18
 
 :::tip
 Если Вам нужно почитать что-то по теме налогов, ведение autónomo, правовые нормы, то обратите внимание на следующие сайты и телеграм каналы:
-- [ponaehali.es](https://ponaehali.es/)
-- [Autónomo: полное руководство](https://nomadtax.es/).
+- [Понаехали в Испанию](https://ponaehali.es/)
+- [Autónomo: полное руководство](https://nomadtax.es/)
 - [Иберийские Разборки](https://t.me/desmontaje_iberico)
 - [Españevo](https://t.me/espanevo)
 :::
