@@ -130,6 +130,10 @@ export default defineConfig({
               label: "🎭 Культура",
               autogenerate: { directory: "spare-time/culture" },
             },
+            {
+              label: "Книги на русском языке",
+              link: "spare-time/russian-books",
+            },
             { label: "Хобби", link: "spare-time/hobby" },
             {
               label: "Билеты на футбол и Fan ID",
