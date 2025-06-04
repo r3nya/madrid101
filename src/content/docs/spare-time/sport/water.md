@@ -10,7 +10,13 @@ lastUpdated: 2024-11-29
 По умолчанию купаться в водоемах возле Мадрида запрещено.
 :::
 
-- Единственный общественный водоем, где купаться разрешено - [Embalse de San Juan](https://maps.app.goo.gl/kxsgKGtaA6Y797mk6). Есть несколько пляжей.
+Есть четыре водоёма, где купаться всё же разрешено:
+- [Presillas de Rascafria](https://maps.app.goo.gl/nukUoxpvQqTb5yuQ6)
+- [Playa de Estremera](https://maps.app.goo.gl/2nkJQmhZ5mxNWjEUA)
+- [Playa del Alberche](https://maps.app.goo.gl/8c6FCM7uEKWmxV7r9)
+- [Embalse de San Juan](https://maps.app.goo.gl/kxsgKGtaA6Y797mk6) (два пляжа)
+
+Подробнее можно прочесть [на сайте коммунидада](https://maps.app.goo.gl/8c6FCM7uEKWmxV7r9).
 
 ### Открытые бассейны с пресной водой
 
