@@ -2,6 +2,8 @@
 title: Испанские деликатесы
 description: Испанские деликатесы
 lastUpdated: 2024-11-29
+sidebar:
+  order: 2
 ---
 
 :::note
