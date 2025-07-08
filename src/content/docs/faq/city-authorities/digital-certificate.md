@@ -32,7 +32,6 @@ FNMT (Fábrica Nacional de Moneda y Timbre) - национальный моне�
 
 Список офисов, для подтверждения личности во время оформления FNMT, почти всегда без очередей и предварительной записи (ситы):
 
-- [Calle de Manuel Cortina, 2, Chamberí](https://maps.app.goo.gl/rUiJrpVDbeSmy2eJ8)
 - [Calle de José Marañón, 10, Chamberí](https://maps.app.goo.gl/8JbPR6QvBbgPS6397)
 - [Calle del Barquillo, 5, Centro](https://maps.app.goo.gl/tu3kPbiYK2C7V5hw6)
 - [Calle de Alcalá, 47, Centro](https://maps.app.goo.gl/PnrqdrGKhS9NTtbG6)
