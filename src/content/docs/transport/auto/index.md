@@ -1,7 +1,7 @@
 ---
 title: Общая информация
 description: "Информация для автомобилистов в Мадриде: штрафы, парковки, зоны пониженных выбросов, полезные приложения"
-lastUpdated: 2024-06-30
+lastUpdated: 2025-07-08
 ---
 
 ## Карты и схемы
@@ -24,8 +24,12 @@ lastUpdated: 2024-06-30
 
 #### Уличные парковки
 
-- EasyPark ([Android](https://play.google.com/store/apps/details?id=dk.easypark.android), [iOS](https://apps.apple.com/es/app/easypark-parking-made-easy/id449594317?l=en-GB))
 - ElParking ([Android](https://play.google.com/store/apps/details?id=com.elparking.elparking), [iOS](https://apps.apple.com/es/app/elparking-app-para-conductores/id1120207710))
+- Telpark ([Android](https://play.google.com/store/apps/details?id=com.delaware.empark&hl=en-US), [iOS](https://apps.apple.com/es/app/telpark/id658204860))
+- ParkingLibre ([Android](https://play.google.com/store/apps/details?id=net.smarturban.smartpark&hl=en-US), [iOS](https://apps.apple.com/es/app/parkinglibre-parqu%C3%ADmetro/id897222810))
+- Parclick ([Android](https://play.google.com/store/apps/details?id=com.parclick&hl=en-US), [iOS](https://apps.apple.com/es/app/parquimetro-y-parking-parclick/id1175900386))
+- Bip&Drive ([Android](https://play.google.com/store/apps/details?id=com.bipdrive.appmovil&hl=en-US), [iOS](https://apps.apple.com/es/app/bip-drive-parking-gasolineras/id1101193002))
+- EasyPark ([Android](https://play.google.com/store/apps/details?id=net.easypark.android), [iOS](https://apps.apple.com/es/app/easypark-parking-made-easy/id449594317?l=en-GB))
 
 ## Сайты по покупке/продаже автомобилей
 
