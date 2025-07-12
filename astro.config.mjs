@@ -199,6 +199,10 @@ export default defineConfig({
             },
           ],
         },
+        {
+          label: "💸 Налоги",
+          autogenerate: { directory: "taxes" },
+        },
         { label: "🇪🇸 Испанский язык", autogenerate: { directory: "spanish" } },
         {
           label: "♻️ Управление отходами",
