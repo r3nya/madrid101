@@ -131,6 +131,10 @@ export default defineConfig({
               autogenerate: { directory: "spare-time/culture" },
             },
             {
+              label: "🔫 Airsoft",
+              autogenerate: { directory: "spare-time/airsoft" },
+            },
+            {
               label: "Книги на русском языке",
               link: "spare-time/russian-books",
             },
