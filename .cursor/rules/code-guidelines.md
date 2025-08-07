@@ -1,17 +1,17 @@
-## Astro Components
+## Astro & TypeScript
 
-- Follow Astro's component conventions
-- Use TypeScript for type safety
-- Import Starlight components at the top of MDX files
+- Follow Astro component conventions; keep components small and focused.
+- Use TypeScript for any utilities or configuration where applicable.
+- Avoid adding global CSS; rely on Starlight theming and semantic HTML.
 
-## Styling
+## Assets
 
-- Rely on Starlight's built-in theming
-- Avoid custom CSS unless absolutely necessary
-- Use semantic HTML elements
+- Prefer modern formats: `.webp`/`.avif` for images where possible.
+- Provide descriptive `alt` text in Russian; avoid decorative-only images.
+- Keep images under ~500 KB when feasible.
+- Store images alongside the page or in a local `images/` subfolder; use `public/` only for shared, site-wide assets.
 
-## Images and Assets
+## MD/MDX Usage
 
-- Store images in appropriate subdirectories
-- Use descriptive alt text
-- Optimize images for web
+- Use `.md` by default; switch to `.mdx` only when you need components.
+- Do not embed third-party scripts in MDX content.

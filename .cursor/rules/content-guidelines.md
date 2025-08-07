@@ -1,6 +1,6 @@
 ## Frontmatter Structure
 
-Always include these frontmatter fields:
+Always include these fields:
 
 ```yaml
 ---
@@ -10,38 +10,32 @@ lastUpdated: YYYY-MM-DD
 ---
 ```
 
-Optional frontmatter fields:
+Optional fields:
 - `tableOfContents`: Customize TOC behavior
 - `sidebar`: Configure sidebar appearance
 - `template`: For special page types like splash pages
+- `prev`/`next`: Override navigation when needed
 
 ## Writing Style
 
-- **Target audience**: Digital nomads, expats, and residents in Madrid
-- **Language**: Primarily Russian, with some Spanish terms
-- **Tone**: Helpful, informative, practical
-- **Include practical information**: Addresses, phone numbers, costs, requirements
+- **Audience**: Digital nomads, expats, and residents in Madrid
+- **Language**: Primarily Russian; keep key Spanish terms in-line when needed
+- **Tone**: Helpful, neutral, practical
+- **Facts**: Prefer official sources; include addresses, phone numbers, costs, requirements
+- **Dates**: Use `YYYY-MM-DD`
 
 ## Content Patterns
 
-- Use Starlight components when appropriate:
+- Favor Starlight components when they aid clarity:
   - `<LinkCard>` for external links
-  - `<CardGrid>` for organized link collections
+  - `<CardGrid>` for link collections
   - `<Steps>` for step-by-step instructions
   - `<Aside>` for notes, tips, warnings
   - `<Badge>` for categorization
 
-## Links and References
+## Links & References
 
-- Use descriptive link text
-- Include both Spanish and English resource names when relevant
-- Provide direct links to official sources
-- Include phone numbers in clickable format: `[+34 xxx xxx xxx](tel:+34xxxxxxxxx)`
-
-## Badges and Categorization
-
-Common badge types for housing/services:
-- `<Badge text="Коливинг" variant="note" size="small" />`
-- `<Badge text="Квартира" variant="success" size="small" />`
-- `<Badge text="Комната" variant="tip" size="small" />`
-- `<Badge text="Pet-friendly" variant="caution" size="small" />`
+- Descriptive link text only; avoid "here".
+- Include both Spanish and English names when relevant.
+- Prefer absolute internal links (e.g., `/housing/long-term-rental`).
+- Clickable phone format: `[+34 612 345 678](tel:+34612345678)`.

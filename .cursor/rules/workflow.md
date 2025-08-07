@@ -1,23 +1,20 @@
 ## Local Development
 
 ```bash
-npm run dev          # Start development server
-npm run build        # Build for production
-npm run preview      # Preview production build
-npm run astro check  # Type checking
+npm run dev           # Start development server
+npm run build         # Type-check (astro check) + production build
+npm run preview       # Preview production build
 ```
+
+## Pre-commit Checklist
+
+- `npm run biome:ci` — Lint + format check should pass
+- `npm run build` — Build and type-check should pass
+- Fix any link warnings from `starlight-links-validator`
 
 ## Content Updates
 
-1. Update the `lastUpdated` field when modifying content
+1. Update `lastUpdated` in frontmatter when modifying content
 2. Ensure all links are working and up-to-date
 3. Test locally before committing
 4. Consider SEO implications of content changes
-
-## Code Quality
-
-```bash
-npm run biome:check  # Check code formatting and linting
-npm run biome:format # Format code
-npm run biome:lint   # Lint code
-```

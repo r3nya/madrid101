@@ -1,6 +1,5 @@
 ## Spanish Context Awareness
 
-- Include both Spanish official names and Russian translations
-- Provide context for Spanish bureaucratic processes
-- Include relevant Spanish legal/administrative terms
-- Consider Madrid-specific vs Spain-wide information
+- Include official Spanish terms with Russian explanations when needed
+- Provide context for Spanish bureaucratic processes and common acronyms
+- Clarify Madrid-specific vs Spain-wide rules and links
