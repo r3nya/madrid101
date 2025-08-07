@@ -1,0 +1,147 @@
+# Madrid 101 - Cursor Rules
+
+## Project Overview
+Madrid 101 is a comprehensive FAQ and guide website for digital nomads and residents in Madrid, Spain. Built with Astro and Starlight, it provides information about living, working, and navigating life in Madrid.
+
+## Technology Stack
+- **Framework**: Astro 5
+- **Theme**: Starlight 0.35
+- **Language**: TypeScript 5.9
+- **Content**: MDX/Markdown files
+- **Styling**: Built-in Starlight theming
+- **Site Map**: @astrojs/sitemap
+
+## Content Structure
+The content is organized in a hierarchical structure under `/src/content/docs/`:
+- `/faq/` - Frequently asked questions (city authorities, healthcare, education, finance)
+- `/food/` - Food and dining
+- `/groups/` - Community chats and groups
+- `/housing/` - Housing information (rental, co-living, providers)
+- `/services/` - Services and utilities
+- `/spanish/` - Spanish language resources
+- `/spare-time/` - Leisure activities (sport, culture, hobby)
+- `/taxes/` - Tax information and resources
+- `/transport/` - Transportation options
+- `/waste-management/` - Waste management information and resources
+
+## File Naming and Organization
+- Use kebab-case for file names (`long-term-rental.mdx`, `tarjeta-sanitaria.mdx`)
+- Organize content by topic in appropriate subdirectories
+- Use `.mdx` for files with components, `.md` for plain markdown
+- Include `index.mdx` files for section overviews
+
+## Content Guidelines
+
+### Frontmatter Structure
+Always include these frontmatter fields:
+```yaml
+---
+title: "Page Title"
+description: "Brief description for SEO and navigation"
+lastUpdated: YYYY-MM-DD
+---
+```
+
+Optional frontmatter fields:
+- `tableOfContents`: Customize TOC behavior
+- `sidebar`: Configure sidebar appearance
+- `template`: For special page types like splash pages
+
+### Writing Style
+- **Target audience**: Digital nomads, expats, and residents in Madrid
+- **Language**: Primarily Russian, with some Spanish terms
+- **Tone**: Helpful, informative, practical
+- **Include practical information**: Addresses, phone numbers, costs, requirements
+
+### Content Patterns
+- Use Starlight components when appropriate:
+  - `<LinkCard>` for external links
+  - `<CardGrid>` for organized link collections
+  - `<Steps>` for step-by-step instructions
+  - `<Aside>` for notes, tips, warnings
+  - `<Badge>` for categorization
+
+### Links and References
+- Use descriptive link text
+- Include both Spanish and English resource names when relevant
+- Provide direct links to official sources
+- Include phone numbers in clickable format: `[+34 xxx xxx xxx](tel:+34xxxxxxxxx)`
+
+### Badges and Categorization
+Common badge types for housing/services:
+- `<Badge text="Коливинг" variant="note" size="small" />`
+- `<Badge text="Квартира" variant="success" size="small" />`
+- `<Badge text="Комната" variant="tip" size="small" />`
+- `<Badge text="Pet-friendly" variant="caution" size="small" />`
+
+## Code Guidelines
+
+### Astro Components
+- Follow Astro's component conventions
+- Use TypeScript for type safety
+- Import Starlight components at the top of MDX files
+
+### Styling
+- Rely on Starlight's built-in theming
+- Avoid custom CSS unless absolutely necessary
+- Use semantic HTML elements
+
+### Images and Assets
+- Store images in appropriate subdirectories
+- Use descriptive alt text
+- Optimize images for web
+
+## Development Workflow
+
+### Local Development
+```bash
+npm run dev          # Start development server
+npm run build        # Build for production
+npm run preview      # Preview production build
+npm run astro check  # Type checking
+```
+
+### Content Updates
+1. Update the `lastUpdated` field when modifying content
+2. Ensure all links are working and up-to-date
+3. Test locally before committing
+4. Consider SEO implications of content changes
+
+### Code Quality
+```bash
+npm run biome:check  # Check code formatting and linting
+npm run biome:format # Format code
+npm run biome:lint   # Lint code
+```
+
+## Content Maintenance
+
+### Regular Updates Needed
+- Transportation prices and schedules
+- Government service procedures
+- Housing market information
+- Restaurant and service recommendations
+- Contact information and websites
+
+### Seasonal Content
+- Event calendars (running events, cultural activities)
+- Seasonal transportation changes
+- Holiday-specific information
+
+## Spanish Context Awareness
+- Include both Spanish official names and Russian translations
+- Provide context for Spanish bureaucratic processes
+- Include relevant Spanish legal/administrative terms
+- Consider Madrid-specific vs Spain-wide information
+
+## SEO and Accessibility
+- Use descriptive titles and meta descriptions
+- Structure content with proper heading hierarchy
+- Include relevant keywords naturally
+- Ensure accessible link text and image alt attributes
+
+## Community Contributions
+- Encourage community input through Telegram channels
+- Verify information from multiple sources
+- Include disclaimers for time-sensitive information
+- Provide attribution when using community-contributed content
