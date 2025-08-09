@@ -107,3 +107,4 @@ Regular updates needed for:
 - TypeScript checking included in build process
 - Link validation runs automatically via starlight-links-validator
 - Verify information from multiple sources; include disclaimers for time-sensitive content
+- **IMPORTANT**: Always run `npm run biome:check` after making any code changes
