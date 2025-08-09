@@ -8,9 +8,8 @@ export default defineConfig({
   site: "http://madrid101.xyz/",
   integrations: [
     starlight({
-      components: {
-        Head: "./src/components/Head.astro",
-      },
+      // Use the route data middleware to add the Open Graph images.
+      routeMiddleware: "./src/routeData.ts",
       plugins: [starlightLinksValidator()],
       title: "Madrid 101",
       favicon: "/favicon.ico",
