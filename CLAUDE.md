@@ -62,6 +62,7 @@ All content lives in `/src/content/docs/` with these main sections:
 - **Tone**: Helpful, neutral, practical
 - **Facts**: Include official sources, addresses, phone numbers, costs, requirements
 - **Dates**: Use `YYYY-MM-DD` format
+- **Grammar Check**: Always check grammar when updating content in `/src/content/docs/`
 
 ### Content Formatting
 - Always include frontmatter with `title`, `description`, `lastUpdated` (update when modifying content)
