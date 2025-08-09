@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run build)",
+      "Bash(npm run biome:format)",
+      "Bash(npm run biome:check)"
+    ]
+  }
+}
