@@ -137,10 +137,17 @@ export default defineConfig({
               label: "Книги на русском языке",
               link: "spare-time/russian-books",
             },
-            { label: "Хобби", link: "spare-time/hobby" },
             {
               label: "Билеты на футбол и Fan ID",
               link: "spare-time/football-tickets",
+            },
+            {
+              label: "Хакерспейсы",
+              link: "spare-time/hackerspaces",
+            },
+            {
+              label: "Сбор грибов",
+              link: "spare-time/mushroom-foraging",
             },
             { label: "420", link: "spare-time/x-420" },
           ],
