@@ -190,9 +190,15 @@ sort_sidebar_pages() {
     echo "Sorted order:"
     local order=1
     while IFS='|' read -r sort_key title file; do
-        echo "$order. $title ($(basename "$file"))"
-        update_sidebar_order "$file" "$order"
-        ((order++))
+        # Special case: if title matches "420*" pattern, set order to 99
+        if [[ "$title" =~ ^420.* ]]; then
+            echo "Special: $title ($(basename "$file")) -> order: 99"
+            update_sidebar_order "$file" "99"
+        else
+            echo "$order. $title ($(basename "$file"))"
+            update_sidebar_order "$file" "$order"
+            ((order++))
+        fi
     done < "$sorted_data"
     
     local file_count=$((order - 1))
