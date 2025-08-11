@@ -58,8 +58,10 @@ All content lives in `/src/content/docs/` with these main sections:
 
 ### Sidebar Ordering
 - All pages in content directories should use `sidebar: order: N` in frontmatter
-- Order pages alphabetically by Russian title:
-  - Use Russian alphabet order: А, Б, В, Г, Д, Е, Ё, Ж, З, И, Й, К, Л, М, Н, О, П, Р, С, Т, У, Ф, Х, Ц, Ч, Ш, Щ, Ъ, Ы, Ь, Э, Ю, Я
+- Order pages alphabetically with Latin alphabet first, then Russian alphabet:
+  - Latin titles (A-Z) come first
+  - Russian titles (А-Я) come second: А, Б, В, Г, Д, Е, Ё, Ж, З, И, Й, К, Л, М, Н, О, П, Р, С, Т, У, Ф, Х, Ц, Ч, Ш, Щ, Ъ, Ы, Ь, Э, Ю, Я
+  - Other characters come last
   - Example: `sidebar: order: 1` for first page alphabetically
   - When adding new pages, update existing order numbers to maintain alphabetical sequence
 
@@ -109,6 +111,10 @@ Regular updates needed for:
 - Housing market information
 - Restaurant and service recommendations
 - Contact information and websites
+
+## Custom Commands
+Available in `/scripts/`:
+- `sort-sidebar` - Sort pages by Latin alphabet first, then Russian alphabet, and update sidebar order
 
 ## Development Notes
 - Biome handles all formatting and linting (configured in `biome.json`)

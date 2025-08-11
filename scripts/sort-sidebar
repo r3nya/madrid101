@@ -1,0 +1,235 @@
+#!/bin/bash
+
+# Latin and Russian alphabets for sorting
+LATIN_ALPHABET="abcdefghijklmnopqrstuvwxyz"
+RUSSIAN_ALPHABET="абвгдеёжзийклмнопрстуфхцчшщъыьэюя"
+
+# Function to get sort key for a string (Latin first, then Russian)
+get_russian_sort_key() {
+    local text="$1"
+    local normalized=$(echo "$text" | tr '[:upper:]' '[:lower:]' | sed 's/^[[:space:]]*//' | sed 's/[[:space:]]*$//')
+    local first_char="${normalized:0:1}"
+    local sort_key=""
+    
+    # Check if first character is Latin
+    if [[ "$LATIN_ALPHABET" =~ "$first_char" ]]; then
+        # Latin alphabet - prefix with "01" for primary sorting
+        sort_key="01"
+        for (( i=0; i<${#normalized}; i++ )); do
+            char="${normalized:$i:1}"
+            # Find position of character in alphabet (1-based)
+            pos=0
+            for (( j=0; j<${#LATIN_ALPHABET}; j++ )); do
+                if [[ "${LATIN_ALPHABET:$j:1}" == "$char" ]]; then
+                    pos=$((j + 1))
+                    break
+                fi
+            done
+            if [[ $pos -gt 0 ]]; then
+                sort_key="${sort_key}$(printf "%02d" $pos)"
+            else
+                # Non-Latin characters in Latin text
+                ascii_val=$(printf "%d" "'$char")
+                sort_key="${sort_key}99$(printf "%05d" $ascii_val)"
+            fi
+        done
+    elif [[ "$RUSSIAN_ALPHABET" =~ "$first_char" ]]; then
+        # Russian alphabet - prefix with "02" for secondary sorting
+        sort_key="02"
+        for (( i=0; i<${#normalized}; i++ )); do
+            char="${normalized:$i:1}"
+            # Find position of character in alphabet (1-based)
+            pos=0
+            for (( j=0; j<${#RUSSIAN_ALPHABET}; j++ )); do
+                if [[ "${RUSSIAN_ALPHABET:$j:1}" == "$char" ]]; then
+                    pos=$((j + 1))
+                    break
+                fi
+            done
+            if [[ $pos -gt 0 ]]; then
+                sort_key="${sort_key}$(printf "%02d" $pos)"
+            else
+                # Non-Russian characters in Russian text
+                ascii_val=$(printf "%d" "'$char")
+                sort_key="${sort_key}99$(printf "%05d" $ascii_val)"
+            fi
+        done
+    else
+        # Other characters - prefix with "03" for tertiary sorting
+        sort_key="03"
+        for (( i=0; i<${#normalized}; i++ )); do
+            char="${normalized:$i:1}"
+            ascii_val=$(printf "%d" "'$char")
+            sort_key="${sort_key}$(printf "%05d" $ascii_val)"
+        done
+    fi
+    
+    echo "$sort_key"
+}
+
+# Function to extract title from markdown file
+extract_title() {
+    local file="$1"
+    local title=$(awk '
+        BEGIN { in_frontmatter=0; title="" }
+        /^---$/ { 
+            if (!in_frontmatter) in_frontmatter=1
+            else exit
+        }
+        in_frontmatter && /^title:[[:space:]]*/ {
+            gsub(/^title:[[:space:]]*/, "")
+            gsub(/^["'"'"']|["'"'"']$/, "")
+            title=$0
+            exit
+        }
+        END { print (title ? title : "Untitled") }
+    ' "$file")
+    
+    echo "$title"
+}
+
+# Function to update sidebar order in file
+update_sidebar_order() {
+    local file="$1"
+    local order="$2"
+    local temp_file=$(mktemp)
+    
+    local in_frontmatter=false
+    local frontmatter_ended=false
+    local sidebar_found=false
+    local order_updated=false
+    
+    while IFS= read -r line; do
+        if [[ "$frontmatter_ended" == true ]]; then
+            echo "$line" >> "$temp_file"
+        elif [[ "$line" == "---" ]]; then
+            if [[ "$in_frontmatter" == false ]]; then
+                in_frontmatter=true
+                echo "$line" >> "$temp_file"
+            else
+                # End of frontmatter
+                if [[ "$sidebar_found" == false ]]; then
+                    echo "sidebar:" >> "$temp_file"
+                    echo "  order: $order" >> "$temp_file"
+                elif [[ "$order_updated" == false ]]; then
+                    echo "  order: $order" >> "$temp_file"
+                fi
+                echo "$line" >> "$temp_file"
+                frontmatter_ended=true
+            fi
+        elif [[ "$in_frontmatter" == true ]]; then
+            if [[ "$line" =~ ^sidebar:[[:space:]]*$ ]]; then
+                sidebar_found=true
+                echo "$line" >> "$temp_file"
+            elif [[ "$sidebar_found" == true && "$line" =~ ^[[:space:]]+order:[[:space:]]*[0-9]+ ]]; then
+                echo "  order: $order" >> "$temp_file"
+                order_updated=true
+            elif [[ "$sidebar_found" == true && "$line" =~ ^[a-zA-Z] ]]; then
+                # Hit another top-level key, add order if not added
+                if [[ "$order_updated" == false ]]; then
+                    echo "  order: $order" >> "$temp_file"
+                    order_updated=true
+                fi
+                echo "$line" >> "$temp_file"
+                sidebar_found=false
+            else
+                echo "$line" >> "$temp_file"
+            fi
+        else
+            echo "$line" >> "$temp_file"
+        fi
+    done < "$file"
+    
+    # Handle case where file doesn't end with frontmatter
+    if [[ "$in_frontmatter" == true && "$frontmatter_ended" == false ]]; then
+        if [[ "$sidebar_found" == false ]]; then
+            echo "sidebar:" >> "$temp_file"
+            echo "  order: $order" >> "$temp_file"
+        elif [[ "$order_updated" == false ]]; then
+            echo "  order: $order" >> "$temp_file"
+        fi
+        echo "---" >> "$temp_file"
+    fi
+    
+    mv "$temp_file" "$file"
+}
+
+# Function to sort sidebar pages in a directory
+sort_sidebar_pages() {
+    local directory="$1"
+    echo
+    echo "Sorting sidebar pages in $directory..."
+    
+    # Find all markdown files excluding index files
+    local files=()
+    while IFS= read -r -d '' file; do
+        if [[ ! "$file" =~ index\.(md|mdx)$ ]]; then
+            files+=("$file")
+        fi
+    done < <(find "$directory" -maxdepth 1 -name "*.md" -o -name "*.mdx" -print0 2>/dev/null)
+    
+    if [[ ${#files[@]} -eq 0 ]]; then
+        echo "No content files found in $directory"
+        return
+    fi
+    
+    # Create temporary file with file data
+    local temp_data=$(mktemp)
+    
+    for file in "${files[@]}"; do
+        title=$(extract_title "$file")
+        sort_key=$(get_russian_sort_key "$title")
+        echo "$sort_key|$title|$file" >> "$temp_data"
+    done
+    
+    # Sort by Russian alphabetical order
+    local sorted_data=$(mktemp)
+    sort "$temp_data" > "$sorted_data"
+    
+    echo
+    echo "Sorted order:"
+    local order=1
+    while IFS='|' read -r sort_key title file; do
+        echo "$order. $title ($(basename "$file"))"
+        update_sidebar_order "$file" "$order"
+        ((order++))
+    done < "$sorted_data"
+    
+    local file_count=$((order - 1))
+    echo
+    echo "Updated $file_count files with new sidebar order."
+    
+    rm "$temp_data" "$sorted_data"
+}
+
+# Function to find all subdirectories recursively
+find_all_subdirs() {
+    local base_dir="$1"
+    find "$base_dir" -type d | sort
+}
+
+# Main execution
+main() {
+    local target_dir="${1:-src/content/docs}"
+    
+    # Convert relative path to absolute if needed
+    if [[ "$target_dir" != /* ]]; then
+        target_dir="$(pwd)/$target_dir"
+    fi
+    
+    if [[ ! -d "$target_dir" ]]; then
+        echo "Error: Directory '$target_dir' does not exist"
+        echo "Usage: $0 [directory]"
+        echo "  directory: Path to content directory (default: src/content/docs)"
+        exit 1
+    fi
+    
+    echo "Processing directories in: $target_dir"
+    
+    # Find all subdirectories and process them
+    while IFS= read -r directory; do        
+        sort_sidebar_pages "$directory"
+    done < <(find_all_subdirs "$target_dir")
+}
+
+main "$@"
