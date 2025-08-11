@@ -22,8 +22,4 @@ lastUpdated: 2025-08-11
 
 После покупки реплики, переходите на сайт [Sede Electrónica - Solicitud de tarjeta de armas 4ª categoría](https://sede.madrid.es/portal/site/tramites/menuitem.62876cb64654a55e2dbd7003a8a409a0/?vgnextoid=72cd78d4dfaed010VgnVCM1000000b205a0aRCRD&vgnextchannel=28b737c190180210VgnVCM100000c90da8c0RCRD), заполняете заявку, оплачиваете сбор (можно через bizium или карту), и ждете. Вам придет email/sms, если нужно добавить какие-то данные в заявку, либо же код, с которым можно получить ситу (ссылка будет в email/sms).
 
-### Локальные сообщества
-
-- https://t.me/airsoftspainchat
-- https://t.me/AirsoftspainCompraVenta
 
