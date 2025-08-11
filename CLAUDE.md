@@ -56,6 +56,13 @@ All content lives in `/src/content/docs/` with these main sections:
 - Keep assets in same folder or local `images/` directory
 - Include `index.mdx` for section overviews
 
+### Sidebar Ordering
+- All pages in content directories should use `sidebar: order: N` in frontmatter
+- Order pages alphabetically by Russian title:
+  - Use Russian alphabet order: А, Б, В, Г, Д, Е, Ё, Ж, З, И, Й, К, Л, М, Н, О, П, Р, С, Т, У, Ф, Х, Ц, Ч, Ш, Щ, Ъ, Ы, Ь, Э, Ю, Я
+  - Example: `sidebar: order: 1` for first page alphabetically
+  - When adding new pages, update existing order numbers to maintain alphabetical sequence
+
 ### Writing Standards
 - **Primary Language**: Russian
 - **Audience**: Digital nomads, expats, residents in Madrid
