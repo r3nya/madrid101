@@ -114,7 +114,7 @@ Regular updates needed for:
 
 ## Custom Commands
 Available in `/scripts/`:
-- `sort-sidebar-mixed.sh` - Sort pages by Latin alphabet first, then Russian alphabet, and update sidebar order
+- `sort-sidebar` - Sort pages by Latin alphabet first, then Russian alphabet, and update sidebar order
 
 ## Development Notes
 - Biome handles all formatting and linting (configured in `biome.json`)

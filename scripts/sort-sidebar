@@ -17,8 +17,15 @@ get_russian_sort_key() {
         sort_key="01"
         for (( i=0; i<${#normalized}; i++ )); do
             char="${normalized:$i:1}"
-            pos=$(echo "$LATIN_ALPHABET" | grep -o -n "$char" | cut -d: -f1)
-            if [ ! -z "$pos" ]; then
+            # Find position of character in alphabet (1-based)
+            pos=0
+            for (( j=0; j<${#LATIN_ALPHABET}; j++ )); do
+                if [[ "${LATIN_ALPHABET:$j:1}" == "$char" ]]; then
+                    pos=$((j + 1))
+                    break
+                fi
+            done
+            if [[ $pos -gt 0 ]]; then
                 sort_key="${sort_key}$(printf "%02d" $pos)"
             else
                 # Non-Latin characters in Latin text
@@ -31,8 +38,15 @@ get_russian_sort_key() {
         sort_key="02"
         for (( i=0; i<${#normalized}; i++ )); do
             char="${normalized:$i:1}"
-            pos=$(echo "$RUSSIAN_ALPHABET" | grep -o -n "$char" | cut -d: -f1)
-            if [ ! -z "$pos" ]; then
+            # Find position of character in alphabet (1-based)
+            pos=0
+            for (( j=0; j<${#RUSSIAN_ALPHABET}; j++ )); do
+                if [[ "${RUSSIAN_ALPHABET:$j:1}" == "$char" ]]; then
+                    pos=$((j + 1))
+                    break
+                fi
+            done
+            if [[ $pos -gt 0 ]]; then
                 sort_key="${sort_key}$(printf "%02d" $pos)"
             else
                 # Non-Russian characters in Russian text
@@ -213,12 +227,7 @@ main() {
     echo "Processing directories in: $target_dir"
     
     # Find all subdirectories and process them
-    while IFS= read -r directory; do
-        # Skip the root directory itself
-        if [[ "$directory" == "$target_dir" ]]; then
-            continue
-        fi
-        
+    while IFS= read -r directory; do        
         sort_sidebar_pages "$directory"
     done < <(find_all_subdirs "$target_dir")
 }
