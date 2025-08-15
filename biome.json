@@ -39,3 +39,20 @@
     "useIgnoreFile": true
   }
 }
+biomejs.dev/schemas/2.2.0/schema.json",
+  "files": {
+    "includes": ["**/*"],
+    "ignoreUnknown": false
+  },
+  "formatter": {
+    "enabled": true,
+    "useEditorconfig": true,
+    "formatWithErrors": false,
+    "indentStyle": "space",
+    "indentWidth": 2,
+    "lineEnding": "lf",
+    "lineWidth": 80,
+    "attributePosition": "multiline"
+  },
+  "assist": {
+    "enabled": true
