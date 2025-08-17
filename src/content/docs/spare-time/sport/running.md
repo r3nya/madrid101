@@ -1,7 +1,7 @@
 ---
 title: Бег
 description: Беговые маршруты и события в Мадриде
-lastUpdated: 2024-11-07
+lastUpdated: 2025-08-17
 ---
 
 ## Где побегать?
@@ -49,6 +49,7 @@ lastUpdated: 2024-11-07
 
 ### Сентябрь
 
+- [Carrera La Melonera TRIBOOST](https://www.carreralamelonera.com/) – 5 км, 10 км. Единственный забег в мире, который заканчивается поеданием дыни
 - [Ibercaja Madrid Corre Por Madrid](https://madridcorrepormadrid.org/) – быстрые 10 километров, с уклоном вниз
 - [Carrera Popular del Corazón](https://www.carrerapopulardelcorazon.com/)
 - [Corre por los ODS](https://correporlosods.com/) – виртуальный, глобальный и благотворительный забег
