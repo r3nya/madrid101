@@ -157,12 +157,13 @@ export default defineConfig({
             label: "⚽ Футбол",
             items: [
               {
-                label: "Общая часть",
+                label: "Билеты на футбол",
                 link: "spare-time/football-tickets",
               },
               {
                 label: "Клубы",
                 autogenerate: { directory: "spare-time/football" },
+                collapsed: true,
               },
             ],
           },
