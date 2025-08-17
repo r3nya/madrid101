@@ -154,12 +154,17 @@ export default defineConfig({
             link: "spare-time/russian-books",
           },
           {
-            label: "Билеты на футбол",
-            link: "spare-time/football-tickets",
-          },
-          {
-            label: "⚽ Футбольные клубы",
-            autogenerate: { directory: "spare-time/football" },
+            label: "⚽ Футбол",
+            items: [
+              {
+                label: "Общая часть",
+                link: "spare-time/football-tickets",
+              },
+              {
+                label: "Клубы",
+                autogenerate: { directory: "spare-time/football" },
+              },
+            ],
           },
           {
             label: "Хакерспейсы",
