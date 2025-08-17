@@ -35,7 +35,7 @@ lastUpdated: 2025-08-17
 - [Arganzuela](https://www.google.com/maps/search/?api=1&query=Arganzuela%2C%20Madrid) (Legazpi, Delicias, Imperial/Acacias): набережная Madrid Río, велодорожки, современные дома; удобен для колясок.
 - [Fuencarral–El Pardo](https://www.google.com/maps/search/?api=1&query=Fuencarral-El%20Pardo%2C%20Madrid) (Mirasierra, Montecarmelo, Las Tablas, El Pilar): новые кварталы, крупные парки, семейная среда; чаще нужен автомобиль.
 - [Hortaleza](https://www.google.com/maps/search/?api=1&query=Hortaleza%2C%20Madrid) (Sanchinarro, Pinar del Rey, Valdefuentes/Valdebebas): современные ЖК, дворы, детские площадки; удобен к северным офисным кластерам.
-- [Barajas](https://www.google.com/maps/search/?api=1&query=Barajas%2C%20Madrid) (Alameda de Osuna, Corralejos): тихо, зелено, парки El Capricho/Valdebebas; близость к аэропорту.
+- [Barajas](https://www.google.com/maps/search/?api=1&query=Barajas%2C%20Madrid) (Alameda de Osuna, Corralejos): тихо, зелено, парки El Capricho (небольшой) и Juan Carlos I; близость к аэропорту.
 - [Moratalaz](https://www.google.com/maps/search/?api=1&query=Moratalaz%2C%20Madrid), [Ciudad Lineal](https://www.google.com/maps/search/?api=1&query=Ciudad%20Lineal%2C%20Madrid) (Concepción, San Pascual): спокойные спальные районы с адекватной ценой и хорошим транспортом.
 - [Villa de Vallecas](https://www.google.com/maps/search/?api=1&query=Villa%20de%20Vallecas%2C%20Madrid) (Ensanche, Santa Eugenia), [Vicálvaro](https://www.google.com/maps/search/?api=1&query=Vic%C3%A1lvaro%2C%20Madrid) (Valdebernardo, Valderrivas): новые кварталы по адекватной цене, семейная среда.
 
@@ -65,7 +65,7 @@ lastUpdated: 2025-08-17
 
 ### Тихо и зелено
 
-- Вдоль крупных парков: [Retiro](https://www.google.com/maps/search/?api=1&query=Retiro%2C%20Madrid), Casa de Campo (Argüelles/Moncloa, [Latina](https://www.google.com/maps/search/?api=1&query=Latina%2C%20Madrid)), Madrid Río ([Arganzuela](https://www.google.com/maps/search/?api=1&query=Arganzuela%2C%20Madrid)), El Capricho/Valdebebas ([Barajas](https://www.google.com/maps/search/?api=1&query=Barajas%2C%20Madrid)/[Hortaleza](https://www.google.com/maps/search/?api=1&query=Hortaleza%2C%20Madrid)), El Pardo ([Fuencarral–El Pardo](https://www.google.com/maps/search/?api=1&query=Fuencarral-El%20Pardo%2C%20Madrid)).
+- Вдоль крупных парков: [Retiro](https://www.google.com/maps/search/?api=1&query=Retiro%2C%20Madrid), Casa de Campo (Argüelles/Moncloa, [Latina](https://www.google.com/maps/search/?api=1&query=Latina%2C%20Madrid)), Madrid Río ([Arganzuela](https://www.google.com/maps/search/?api=1&query=Arganzuela%2C%20Madrid)), Juan Carlos I/Valdebebas ([Barajas](https://www.google.com/maps/search/?api=1&query=Barajas%2C%20Madrid)/[Hortaleza](https://www.google.com/maps/search/?api=1&query=Hortaleza%2C%20Madrid)), El Pardo ([Fuencarral–El Pardo](https://www.google.com/maps/search/?api=1&query=Fuencarral-El%20Pardo%2C%20Madrid)).
 - Спальные «оазисы»: [Moratalaz](https://www.google.com/maps/search/?api=1&query=Moratalaz%2C%20Madrid), Баррио‑парк Valdebernardo ([Vicálvaro](https://www.google.com/maps/search/?api=1&query=Vic%C3%A1lvaro%2C%20Madrid)), Mirasierra ([Fuencarral–El Pardo](https://www.google.com/maps/search/?api=1&query=Fuencarral-El%20Pardo%2C%20Madrid)), Alameda de Osuna ([Barajas](https://www.google.com/maps/search/?api=1&query=Barajas%2C%20Madrid)).
 
 ### Близко к офисным кластерам и теху
