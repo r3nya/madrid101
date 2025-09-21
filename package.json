@@ -24,7 +24,7 @@
     "astro-compress": "^2.3.8",
     "astro-og-canvas": "^0.7.0",
     "sharp": "^0.34.3",
-    "starlight-links-validator": "^0.17.2",
+    "starlight-links-validator": "^0.18.0",
     "typescript": "^5.9.2",
     "xml2js": "^0.6.2"
   },
