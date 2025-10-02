@@ -1,7 +1,7 @@
 ---
 title: Прописка
 description: Информация о прописке в Мадриде
-lastUpdated: 2025-02-06
+lastUpdated: 2025-10-02
 ---
 
 :::note[Прописка/падрон (empadronamiento)]
