@@ -146,6 +146,10 @@ export default defineConfig({
             autogenerate: { directory: "spare-time/culture" },
           },
           {
+            label: "🎢 Парки и аттракционы",
+            link: "spare-time/theme-parks",
+          },
+          {
             label: "🔫 Airsoft",
             autogenerate: { directory: "spare-time/airsoft" },
           },
