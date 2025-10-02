@@ -55,6 +55,7 @@ http://madrid101.xyz/
 
 ### Досуг и культура
 - Афиши, театры, музеи: http://madrid101.xyz/spare-time/culture/events/
+- Парки и аттракционы: http://madrid101.xyz/spare-time/theme-parks/
 - Спортивные активности: http://madrid101.xyz/spare-time/sport/
   - Падел: http://madrid101.xyz/spare-time/sport/padel/
   - Бег: http://madrid101.xyz/spare-time/sport/running/
@@ -120,4 +121,4 @@ http://madrid101.xyz/
 
 ---
 
-Обновлено: 2025-09-30
+Обновлено: 2025-10-02
