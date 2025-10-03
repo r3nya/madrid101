@@ -25,7 +25,7 @@
     "astro-og-canvas": "^0.7.0",
     "sharp": "^0.34.4",
     "starlight-links-validator": "^0.18.0",
-    "typescript": "^5.9.2",
+    "typescript": "^5.9.3",
     "xml2js": "^0.6.2"
   },
   "devDependencies": {
