@@ -29,6 +29,6 @@
     "xml2js": "^0.6.2"
   },
   "devDependencies": {
-    "@biomejs/biome": "2.2.4"
+    "@biomejs/biome": "2.2.5"
   }
 }
