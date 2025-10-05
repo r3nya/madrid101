@@ -10,6 +10,8 @@
     "bundle-analyzer": "du -sh dist/ && find dist/ -name '*.js' -o -name '*.css' | head -10 | xargs ls -lh",
     "preview": "astro preview",
     "astro": "astro",
+    "test": "vitest",
+    "test:run": "vitest run",
     "biome:format": "npx @biomejs/biome format --write",
     "biome:lint": "npx @biomejs/biome lint",
     "biome:check": "npx @biomejs/biome check --write",
@@ -29,6 +31,8 @@
     "xml2js": "^0.6.2"
   },
   "devDependencies": {
-    "@biomejs/biome": "2.2.5"
+    "@biomejs/biome": "2.2.5",
+    "@vitest/ui": "^3.2.4",
+    "vitest": "^3.2.4"
   }
 }
