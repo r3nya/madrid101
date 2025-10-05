@@ -4,6 +4,7 @@ import { defineConfig } from "astro/config";
 import starlightLinksValidator from "starlight-links-validator";
 
 import compress from "astro-compress";
+import { SITE_CONFIG } from "./src/config";
 
 // https://astro.build/config
 export default defineConfig({
@@ -89,7 +90,7 @@ export default defineConfig({
       {
         icon: "github",
         label: "GitHub",
-        href: "https://github.com/r3nya/madrid101",
+        href: SITE_CONFIG.github,
       },
       // {
       //   icon: "telegram",

@@ -15,6 +15,7 @@ hero:
       variant: primary
 ---
 import { Card, CardGrid } from '@astrojs/starlight/components';
+import { SITE_CONFIG } from '../../config';
 
 <CardGrid stagger>
   <Card title="FAQ" icon="information">
@@ -83,5 +84,5 @@ import { Card, CardGrid } from '@astrojs/starlight/components';
 ## Внести вклад
 
 Нашли неточность или хотите дополнить информацию? Вы можете:
-- Связаться по [email](mailto:hola-madrid101@pm.me)
-- Создать pull request в [GitHub](https://github.com/r3nya/how-to-madrid)
+- Связаться по <a href={`mailto:${SITE_CONFIG.email}`}>email</a>
+- Создать pull request в <a href={SITE_CONFIG.github}>GitHub</a>
