@@ -1,4 +1,6 @@
 name: Weekly Tests
+permissions:
+  contents: read
 
 on:
   schedule:
