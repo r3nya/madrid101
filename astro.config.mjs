@@ -4,6 +4,8 @@ import { defineConfig } from "astro/config";
 import compress from "astro-compress";
 import starlightLinksValidator from "starlight-links-validator";
 
+import { SITE_CONFIG } from "./src/config";
+
 // https://astro.build/config
 export default defineConfig({
   site: "http://madrid101.xyz/",
@@ -17,6 +19,144 @@ export default defineConfig({
         output: {
           manualChunks: {
             starlight: ["@astrojs/starlight"],
+          }
+        }
+      }
+    }
+  },
+  integrations: [starlight({
+    // Use the route data middleware to add the Open Graph images.
+    routeMiddleware: "./src/routeData.ts",
+    plugins: [starlightLinksValidator()],
+    title: "Madrid 101",
+    favicon: "/favicon.ico",
+    head: [
+      {
+        tag: "link",
+        attrs: {
+          rel: "apple-touch-icon",
+          sizes: "180x180",
+          href: "/apple-touch-icon.png",
+        },
+      },
+      {
+        tag: "link",
+        attrs: {
+          rel: "icon",
+          type: "image/png",
+          sizes: "32x32",
+          href: "/favicon-32x32.png",
+        },
+      },
+      {
+        tag: "link",
+        attrs: {
+          rel: "icon",
+          type: "image/png",
+          sizes: "16x16",
+          href: "/favicon-16x16.png",
+        },
+      },
+      {
+        tag: "link",
+        attrs: {
+          rel: "manifest",
+          href: "/site.webmanifest",
+        },
+      },
+      {
+        tag: "link",
+        attrs: {
+          rel: "sitemap",
+          href: "/sitemap-index.xml",
+        },
+      },
+      {
+        tag: "meta",
+        attrs: {
+          name: "yandex-verification",
+          content: "99657cbd8b636aa4",
+        },
+      },
+      {
+        tag: "meta",
+        attrs: {
+          name: "theme-color",
+          content: "#40224e",
+        },
+      },
+    ],
+    social: [
+      {
+        icon: "github",
+        label: "GitHub",
+        href: SITE_CONFIG.github,
+      },
+      // {
+      //   icon: "telegram",
+      //   label: "Telegram chat",
+      //   href: "https://t.me/+4ccS_x5DADAwMjM6",
+      // },
+    ],
+    // defaultLocale: "ru",
+    // locales: {
+    //   ru: {
+    //     label: "Русский",
+    //   },
+    // },
+    lastUpdated: true,
+    sidebar: [
+      {
+        label: "⁉ FAQ",
+        items: [
+          {
+            label: "Районы города",
+            link: "faq/maps/districts",
+          },
+          {
+            label: "💬 Чаты",
+            link: "groups/chats",
+          },
+          {
+            label: "Административные услуги",
+            autogenerate: { directory: "faq/city-authorities" },
+          },
+          {
+            label: "Медицинские услуги",
+            autogenerate: { directory: "faq/healthcare" },
+          },
+          {
+            label: "Образование",
+            autogenerate: { directory: "faq/education" },
+          },
+          {
+            label: "Финансы",
+            autogenerate: { directory: "faq/finance" },
+          },
+        ],
+      },
+      {
+        label: "🧘 Досуг",
+        items: [
+          {
+            label: "Спорт",
+            autogenerate: { directory: "spare-time/sport" },
+          },
+          {
+            label: "🎭 Культура",
+            autogenerate: { directory: "spare-time/culture" },
+          },
+          {
+            label: "🎢 Парки и аттракционы",
+            link: "spare-time/theme-parks",
+          },
+          {
+            label: "🔫 Airsoft",
+            autogenerate: { directory: "spare-time/airsoft" },
+          },
+          {
+            label: "Книги на русском языке",
+            link: "spare-time/russian-books",
           },
         },
       },

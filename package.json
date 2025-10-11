@@ -10,6 +10,8 @@
     "bundle-analyzer": "du -sh dist/ && find dist/ -name '*.js' -o -name '*.css' | head -10 | xargs ls -lh",
     "preview": "astro preview",
     "astro": "astro",
+    "test": "vitest",
+    "test:run": "vitest run",
     "biome:format": "npx @biomejs/biome format --write",
     "biome:lint": "npx @biomejs/biome lint",
     "biome:check": "npx @biomejs/biome check --write",
@@ -20,7 +22,7 @@
     "@astrojs/check": "^0.9.4",
     "@astrojs/sitemap": "^3.6.0",
     "@astrojs/starlight": "^0.36.0",
-    "astro": "^5.14.1",
+    "astro": "^5.14.4",
     "astro-compress": "^2.3.8",
     "astro-og-canvas": "^0.7.0",
     "sharp": "^0.34.4",
@@ -29,6 +31,8 @@
     "xml2js": "^0.6.2"
   },
   "devDependencies": {
-    "@biomejs/biome": "2.2.5"
+    "@biomejs/biome": "2.2.5",
+    "@vitest/ui": "^3.2.4",
+    "vitest": "^3.2.4"
   }
 }
