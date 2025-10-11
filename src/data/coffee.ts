@@ -119,6 +119,12 @@ export const coffeeRoasters = [
     location: "Малага",
   },
   {
+    name: "MALAKABRA",
+    url: "https://malakabra.com",
+    subscription: false,
+    location: "Castelldefels, Barcelona",
+  },
+  {
     name: "Mundo Novo Coffee",
     url: "https://mundonovocoffee.com/",
     subscription: true,
@@ -183,6 +189,12 @@ export const coffeeRoasters = [
     url: "https://www.rightsidecoffee.com/",
     subscription: true,
     location: "Кастельдефельс",
+  },
+  {
+    name: "San Jorge Café",
+    url: "https://sanjorge.cafe",
+    subscription: true,
+    location: "Zaragoza",
   },
   {
     name: "Sensorial",
