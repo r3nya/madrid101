@@ -15,7 +15,7 @@ hero:
       variant: primary
 ---
 import { Card, CardGrid } from '@astrojs/starlight/components';
-import { SITE_CONFIG } from '../../config';
+import { SITE_CONFIG } from '@/data/config.ts';
 
 <CardGrid stagger>
   <Card title="FAQ" icon="information">
@@ -86,3 +86,7 @@ import { SITE_CONFIG } from '../../config';
 Нашли неточность или хотите дополнить информацию? Вы можете:
 - Связаться по <a href={`mailto:${SITE_CONFIG.email}`}>email</a>
 - Создать pull request в <a href={SITE_CONFIG.github}>GitHub</a>
+
+## Поддержать
+
+Если этот сайт был вам полезен, вы можете <a href={SITE_CONFIG.bmc} target="_blank">купить кофе</a> ☕
