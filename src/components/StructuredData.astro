@@ -1,0 +1,58 @@
+---
+export interface Props {
+  title: string;
+  description: string;
+  url: string;
+  image?: string;
+  datePublished?: string;
+  dateModified?: string;
+  author?: string;
+}
+
+const {
+  title,
+  description,
+  url,
+  image,
+  datePublished,
+  dateModified,
+  author = "Madrid 101",
+} = Astro.props;
+
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: title,
+  description: description,
+  url: url,
+  image: image || "https://madrid101.xyz/og/index.png",
+  datePublished: datePublished || "2024-01-01",
+  dateModified: dateModified || new Date().toISOString().split("T")[0],
+  author: {
+    "@type": "Organization",
+    name: author,
+    url: "https://madrid101.xyz",
+  },
+  publisher: {
+    "@type": "Organization",
+    name: "Madrid 101",
+    url: "https://madrid101.xyz",
+    logo: {
+      "@type": "ImageObject",
+      url: "https://madrid101.xyz/logo-light.svg",
+    },
+  },
+  mainEntityOfPage: {
+    "@type": "WebPage",
+    "@id": url,
+  },
+  inLanguage: "ru",
+  isPartOf: {
+    "@type": "WebSite",
+    name: "Madrid 101",
+    url: "https://madrid101.xyz",
+  },
+};
+---
+
+<script type="application/ld+json" set:html={JSON.stringify(structuredData)}></script>
