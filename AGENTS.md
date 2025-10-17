@@ -13,6 +13,8 @@ This repository is an Astro 5 + Starlight documentation site for practical guide
 - `npm run dev`: Start local dev server at `http://localhost:4321`.
 - `npm run build`: Production build + TypeScript validation; runs link checks.
 - `npm run preview`: Preview the built site locally.
+- `npm run test`: Run tests in watch mode.
+- `npm run test:run`: Run tests once (CI mode).
 - `npm run biome:check`: Format and lint with auto-fix.
 - `npm run biome:lint` / `npm run biome:format`: Lint or format only.
 - `npm run biome:ci`: CI-friendly lint/format check (must pass before PR).
@@ -39,8 +41,10 @@ This is an **Astro 5 + Starlight** documentation site for Madrid living guides, 
 All content lives in `/src/content/docs/` with these main sections:
 - `/faq/` - FAQ organized by topic (city authorities, healthcare, education, finance)
 - `/food/` - Food and dining information
+- `/groups/` - Community groups and chat information
 - `/housing/` - Housing (rental, co-living, providers)
 - `/services/` - Services and utilities
+- `/spanish/` - Spanish language learning resources
 - `/spare-time/` - Leisure activities (sport, culture, hobby)
 - `/transport/` - Transportation options
 - `/taxes/` - Tax information
@@ -117,11 +121,17 @@ Regular updates needed for:
 - Contact information and websites
 
 ## Testing & Validation
-- No unit tests; rely on: TypeScript check (via build), link validation, and Biome. Run: `npm run biome:ci` and `npm run build`. Fix all warnings/errors before committing.
+- Unit tests: Vitest for data utilities (e.g., `/src/data/coffee.test.ts`)
+- Run tests: `npm run test` (watch mode) or `npm run test:run` (CI mode)
+- TypeScript validation: Via `astro check` in build process
+- Link validation: Via starlight-links-validator plugin
+- Code quality: Biome for formatting and linting
+- Before committing: Run `npm run biome:ci` and `npm run build` - fix all warnings/errors
 
 ## Custom Commands
 Available in `/scripts/`:
 - `sort-sidebar` - Sort pages by Latin alphabet first, then Russian alphabet, and update sidebar order
+- `submit-urls-to-bing.mjs` - Submit sitemap URLs to Bing Webmaster Tools
 
 ## Development Notes
 - Biome handles all formatting and linting (configured in `biome.json`)
