@@ -8,7 +8,7 @@ import { SITE_CONFIG } from "./src/data/config.ts";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "http://madrid101.xyz/",
+  site: "https://madrid101.xyz/",
   build: {
     inlineStylesheets: "auto",
   },
@@ -84,6 +84,35 @@ export default defineConfig({
           attrs: {
             name: "theme-color",
             content: "#40224e",
+          },
+        },
+        {
+          tag: "meta",
+          attrs: {
+            name: "robots",
+            content: "index, follow",
+          },
+        },
+        {
+          tag: "meta",
+          attrs: {
+            name: "language",
+            content: "ru",
+          },
+        },
+        {
+          tag: "meta",
+          attrs: {
+            "http-equiv": "content-language",
+            content: "ru",
+          },
+        },
+        {
+          tag: "link",
+          attrs: {
+            rel: "alternate",
+            hreflang: "ru",
+            href: "https://madrid101.xyz/",
           },
         },
       ],

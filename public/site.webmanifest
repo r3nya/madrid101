@@ -1,6 +1,7 @@
 {
-  "name": "",
-  "short_name": "",
+  "name": "Madrid 101 - FAQ по Мадриду для номадов и эмигрантов",
+  "short_name": "Madrid 101",
+  "description": "Полное руководство по жизни в Мадриде: жилье, транспорт, медицина, образование и многое другое",
   "icons": [
     {
       "src": "/android-chrome-192x192.png",
@@ -13,7 +14,10 @@
       "type": "image/png"
     }
   ],
-  "theme_color": "#ffffff",
+  "theme_color": "#40224e",
   "background_color": "#ffffff",
-  "display": "standalone"
+  "display": "standalone",
+  "start_url": "/",
+  "scope": "/",
+  "lang": "ru"
 }
