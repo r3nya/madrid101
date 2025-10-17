@@ -115,10 +115,23 @@ http://madrid101.xyz/
 ## Технологии
 
 Сайт построен с использованием:
-- Astro
-- Starlight (документационная тема)
+- Astro 5 с TypeScript
+- Starlight (документационная тема для Astro)
+- Biome (линтинг и форматирование кода)
+- Vitest (тестирование)
 - Размещен на GitHub Pages
+
+## Внести вклад
+
+Проект открыт для вклада сообщества:
+- GitHub репозиторий: https://github.com/r3nya/madrid101
+- Email для связи: hola-madrid101@pm.me
+- Поддержать проект: https://buymeacoffee.com/madrid101
+
+## Лицензия
+
+Все материалы опубликованы под лицензией Creative Commons BY-NC-SA 4.0.
 
 ---
 
-Обновлено: 2025-10-02
+Обновлено: 2025-10-17
