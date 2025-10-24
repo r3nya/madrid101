@@ -46,6 +46,7 @@ http://madrid101.xyz/
 - Транспортные карты: http://madrid101.xyz/transport/transport-cards/
 - Информация для автомобилистов: http://madrid101.xyz/transport/auto/
 - Обмен водительских прав: http://madrid101.xyz/transport/auto/exchange/
+- Получение Испанского МВУ: http://madrid101.xyz/transport/auto/permiso-internacional/
 - Налог на автомобиль: http://madrid101.xyz/transport/auto/auto-tax/
 - Велосипеды: http://madrid101.xyz/transport/bike/
 - Каршеринг: http://madrid101.xyz/transport/carsharing/
