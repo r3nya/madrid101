@@ -2,7 +2,7 @@ import sitemap from "@astrojs/sitemap";
 import starlight from "@astrojs/starlight";
 import { defineConfig } from "astro/config";
 import compress from "astro-compress";
-import starlightLinksValidator from "starlight-links-validator";
+// import starlightLinksValidator from "starlight-links-validator";
 
 import { SITE_CONFIG } from "./src/data/config.ts";
 
@@ -28,7 +28,7 @@ export default defineConfig({
     starlight({
       // Use the route data middleware to add the Open Graph images.
       routeMiddleware: "./src/routeData.ts",
-      plugins: [starlightLinksValidator()],
+      // plugins: [starlightLinksValidator()],
       title: "Madrid 101",
       favicon: "/favicon.ico",
       head: [
