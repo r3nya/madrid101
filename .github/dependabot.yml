@@ -9,6 +9,12 @@ updates:
     directory: "/"
     schedule:
       interval: "weekly"
+    groups:
+      vitest-group:
+        patterns:
+          - "vitest"
+          - "@vitest/ui"
+        applies-to: "version-updates"
     assignees:
       - "r3nya"
 
