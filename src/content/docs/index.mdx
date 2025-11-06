@@ -21,6 +21,8 @@ hero:
 ---
 import { Card, CardGrid } from '@astrojs/starlight/components';
 import { SITE_CONFIG } from '@/data/config.ts';
+import Footer from '@/components/Footer.astro';
+
 
 <CardGrid stagger>
   <Card title="FAQ" icon="information">
@@ -86,18 +88,4 @@ import { SITE_CONFIG } from '@/data/config.ts';
   </Card>
 </CardGrid>
 
-## Внести вклад
-
-Нашли неточность или хотите дополнить информацию? Вы можете:
-- Связаться по <a href={`mailto:${SITE_CONFIG.email}`}>email</a>
-- Создать pull request в <a href={SITE_CONFIG.github}>GitHub</a>
-
-## Поддержать
-
-Если этот сайт был вам полезен, вы можете <a href={SITE_CONFIG.bmc} target="_blank">купить кофе</a> ☕
-
-## Лицензия
-
-Все материалы на этом сайте опубликованы под лицензией [Creative Commons BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).
-
-*Использование контента возможно только в исходной форме, без изменений и в некоммерческих целях, с обязательным указанием источника.*
+<Footer />
