@@ -8,106 +8,106 @@ Madrid 101 - это комплексный русскоязычный гид п�
 
 ## Основной URL
 
-http://madrid101.xyz/
+https://madrid101.xyz/
 
 ## Ключевые разделы
 
 ### FAQ и административные услуги
-- Главная страница FAQ: http://madrid101.xyz/faq/welcome/
-- Районы Мадрида: http://madrid101.xyz/faq/maps/districts/
-- Прописка (Empadronamiento): http://madrid101.xyz/faq/city-authorities/residence-registration/
-- Цифровая подпись (FNMT, Cl@ve): http://madrid101.xyz/faq/city-authorities/digital-certificate/
-- Nota simple: http://madrid101.xyz/faq/city-authorities/nota-simple/
+- Главная страница FAQ: https://madrid101.xyz/faq/welcome/
+- Районы Мадрида: https://madrid101.xyz/faq/maps/districts/
+- Прописка (Empadronamiento): https://madrid101.xyz/faq/city-authorities/residence-registration/
+- Цифровая подпись (FNMT, Cl@ve): https://madrid101.xyz/faq/city-authorities/digital-certificate/
+- Nota simple: https://madrid101.xyz/faq/city-authorities/nota-simple/
 
 ### Медицинские услуги
-- Tarjeta Sanitaria: http://madrid101.xyz/faq/healthcare/tarjeta-sanitaria/
-- Tarjeta Sanitaria Europea: http://madrid101.xyz/faq/healthcare/tarjeta-sanitaria-europea/
-- Запись к врачу: http://madrid101.xyz/faq/healthcare/appointments/
-- Стоматологические услуги: http://madrid101.xyz/faq/healthcare/dental-services/
+- Tarjeta Sanitaria: https://madrid101.xyz/faq/healthcare/tarjeta-sanitaria/
+- Tarjeta Sanitaria Europea: https://madrid101.xyz/faq/healthcare/tarjeta-sanitaria-europea/
+- Запись к врачу: https://madrid101.xyz/faq/healthcare/appointments/
+- Стоматологические услуги: https://madrid101.xyz/faq/healthcare/dental-services/
 
 ### Образование
-- Школы для детей: http://madrid101.xyz/faq/education/school-for-children/
+- Школы для детей: https://madrid101.xyz/faq/education/school-for-children/
 
 ### Финансы
-- Открытие банковского счета: http://madrid101.xyz/faq/finance/basic-account/
-- Обмен валюты: http://madrid101.xyz/faq/finance/currency-exchange/
-- Ипотека: http://madrid101.xyz/faq/finance/mortgage/
+- Открытие банковского счета: https://madrid101.xyz/faq/finance/basic-account/
+- Обмен валюты: https://madrid101.xyz/faq/finance/currency-exchange/
+- Ипотека: https://madrid101.xyz/faq/finance/mortgage/
 
 ### Жильё
-- Ресурсы для поиска жилья: http://madrid101.xyz/housing/resources/
-- Долгосрочная аренда: http://madrid101.xyz/housing/long-term-rental/
-- Краткосрочная аренда: http://madrid101.xyz/housing/short-term-rental/
-- Коливинг: http://madrid101.xyz/housing/co-living/
-- Телекоммуникации: http://madrid101.xyz/housing/providers/telecom/
-- Коммунальные услуги: http://madrid101.xyz/housing/providers/utilities/
+- Ресурсы для поиска жилья: https://madrid101.xyz/housing/resources/
+- Долгосрочная аренда: https://madrid101.xyz/housing/long-term-rental/
+- Краткосрочная аренда: https://madrid101.xyz/housing/short-term-rental/
+- Коливинг: https://madrid101.xyz/housing/co-living/
+- Телекоммуникации: https://madrid101.xyz/housing/providers/telecom/
+- Коммунальные услуги: https://madrid101.xyz/housing/providers/utilities/
 
 ### Транспорт
-- Общественный транспорт: http://madrid101.xyz/transport/public/
-- Транспортные карты: http://madrid101.xyz/transport/transport-cards/
-- Информация для автомобилистов: http://madrid101.xyz/transport/auto/
-- Обмен водительских прав: http://madrid101.xyz/transport/auto/exchange/
-- Получение Испанского МВУ: http://madrid101.xyz/transport/auto/permiso-internacional/
-- Налог на автомобиль: http://madrid101.xyz/transport/auto/auto-tax/
-- Велосипеды: http://madrid101.xyz/transport/bike/
-- Каршеринг: http://madrid101.xyz/transport/carsharing/
-- Мотошеринг: http://madrid101.xyz/transport/motosharing/
-- Такси: http://madrid101.xyz/transport/taxi/
-- Поезда: http://madrid101.xyz/transport/trains/
+- Общественный транспорт: https://madrid101.xyz/transport/public/
+- Транспортные карты: https://madrid101.xyz/transport/transport-cards/
+- Информация для автомобилистов: https://madrid101.xyz/transport/auto/
+- Обмен водительских прав: https://madrid101.xyz/transport/auto/exchange/
+- Получение Испанского МВУ: https://madrid101.xyz/transport/auto/permiso-internacional/
+- Налог на автомобиль: https://madrid101.xyz/transport/auto/auto-tax/
+- Велосипеды: https://madrid101.xyz/transport/bike/
+- Каршеринг: https://madrid101.xyz/transport/carsharing/
+- Мотошеринг: https://madrid101.xyz/transport/motosharing/
+- Такси: https://madrid101.xyz/transport/taxi/
+- Поезда: https://madrid101.xyz/transport/trains/
 
 ### Досуг и культура
-- Афиши, театры, музеи: http://madrid101.xyz/spare-time/culture/events/
-- Парки и аттракционы: http://madrid101.xyz/spare-time/theme-parks/
-- Спортивные активности: http://madrid101.xyz/spare-time/sport/
-  - Падел: http://madrid101.xyz/spare-time/sport/padel/
-  - Бег: http://madrid101.xyz/spare-time/sport/running/
-  - Водные виды спорта: http://madrid101.xyz/spare-time/sport/water/
-- Книги на русском языке: http://madrid101.xyz/spare-time/russian-books/
-- Хакерспейсы: http://madrid101.xyz/spare-time/hackerspaces/
-- Сбор грибов: http://madrid101.xyz/spare-time/mushroom-foraging/
-- 420: http://madrid101.xyz/spare-time/x-420/
+- Афиши, театры, музеи: https://madrid101.xyz/spare-time/culture/events/
+- Парки и аттракционы: https://madrid101.xyz/spare-time/theme-parks/
+- Спортивные активности: https://madrid101.xyz/spare-time/sport/
+  - Падел: https://madrid101.xyz/spare-time/sport/padel/
+  - Бег: https://madrid101.xyz/spare-time/sport/running/
+  - Водные виды спорта: https://madrid101.xyz/spare-time/sport/water/
+- Книги на русском языке: https://madrid101.xyz/spare-time/russian-books/
+- Хакерспейсы: https://madrid101.xyz/spare-time/hackerspaces/
+- Сбор грибов: https://madrid101.xyz/spare-time/mushroom-foraging/
+- 420: https://madrid101.xyz/spare-time/x-420/
 - Футбол:
-  - Билеты на футбол: http://madrid101.xyz/spare-time/football-tickets/
-  - Реал Мадрид: http://madrid101.xyz/spare-time/football/real-madrid/
-  - Атлетико Мадрид: http://madrid101.xyz/spare-time/football/atletico-madrid/
-  - Райо Вальекано: http://madrid101.xyz/spare-time/football/rayo-vallecano/
-  - Хетафе: http://madrid101.xyz/spare-time/football/getafe/
+  - Билеты на футбол: https://madrid101.xyz/spare-time/football-tickets/
+  - Реал Мадрид: https://madrid101.xyz/spare-time/football/real-madrid/
+  - Атлетико Мадрид: https://madrid101.xyz/spare-time/football/atletico-madrid/
+  - Райо Вальекано: https://madrid101.xyz/spare-time/football/rayo-vallecano/
+  - Хетафе: https://madrid101.xyz/spare-time/football/getafe/
 - Airsoft:
-  - Главная: http://madrid101.xyz/spare-time/airsoft/
-  - Экипировка: http://madrid101.xyz/spare-time/airsoft/equipment/
-  - Разрешения: http://madrid101.xyz/spare-time/airsoft/permit/
-  - Площадки: http://madrid101.xyz/spare-time/airsoft/venues/
+  - Главная: https://madrid101.xyz/spare-time/airsoft/
+  - Экипировка: https://madrid101.xyz/spare-time/airsoft/equipment/
+  - Разрешения: https://madrid101.xyz/spare-time/airsoft/permit/
+  - Площадки: https://madrid101.xyz/spare-time/airsoft/venues/
 
 ### Еда
-- Где найти продукты: http://madrid101.xyz/food/where-to-find/
-- Кофе: http://madrid101.xyz/food/coffee/
-- Чай: http://madrid101.xyz/food/tea/
-- Испанская кухня: http://madrid101.xyz/food/spanish/
-- Коробки с едой: http://madrid101.xyz/food/food-subscriptions/
-- Коробки с вином: http://madrid101.xyz/food/wine-subscriptions/
+- Где найти продукты: https://madrid101.xyz/food/where-to-find/
+- Кофе: https://madrid101.xyz/food/coffee/
+- Чай: https://madrid101.xyz/food/tea/
+- Испанская кухня: https://madrid101.xyz/food/spanish/
+- Коробки с едой: https://madrid101.xyz/food/food-subscriptions/
+- Коробки с вином: https://madrid101.xyz/food/wine-subscriptions/
 
 ### Услуги и сервисы
-- Главная страница: http://madrid101.xyz/services/
-- Выгул собак и передержка: http://madrid101.xyz/services/pets/
-- Клининг: http://madrid101.xyz/services/cleaning/
-- Няни: http://madrid101.xyz/services/nannies/
-- Присяжные переводчики: http://madrid101.xyz/services/traductor-jurado/
-- Торты на заказ: http://madrid101.xyz/services/cakes-order/
-- Фото/Видео услуги: http://madrid101.xyz/services/photo-video/
-- Цветы: http://madrid101.xyz/services/flowers/
-- Экскурсии: http://madrid101.xyz/services/excursions/
+- Главная страница: https://madrid101.xyz/services/
+- Выгул собак и передержка: https://madrid101.xyz/services/pets/
+- Клининг: https://madrid101.xyz/services/cleaning/
+- Няни: https://madrid101.xyz/services/nannies/
+- Присяжные переводчики: https://madrid101.xyz/services/traductor-jurado/
+- Торты на заказ: https://madrid101.xyz/services/cakes-order/
+- Фото/Видео услуги: https://madrid101.xyz/services/photo-video/
+- Цветы: https://madrid101.xyz/services/flowers/
+- Экскурсии: https://madrid101.xyz/services/excursions/
 
 ### Налоги
-- Налоги на недвижимость: http://madrid101.xyz/taxes/property-taxes/
+- Налоги на недвижимость: https://madrid101.xyz/taxes/property-taxes/
 
 ### Испанский язык
-- Языковые курсы: http://madrid101.xyz/spanish/language-courses/
-- Мобильные приложения: http://madrid101.xyz/spanish/apps/
+- Языковые курсы: https://madrid101.xyz/spanish/language-courses/
+- Мобильные приложения: https://madrid101.xyz/spanish/apps/
 
 ### Управление отходами
-- Сортировка отходов: http://madrid101.xyz/waste-management/waste-sorting/
+- Сортировка отходов: https://madrid101.xyz/waste-management/waste-sorting/
 
 ### Сообщество
-- Чаты и группы: http://madrid101.xyz/groups/chats/
+- Чаты и группы: https://madrid101.xyz/groups/chats/
 
 ## Контакты
 
@@ -135,4 +135,4 @@ http://madrid101.xyz/
 
 ---
 
-Обновлено: 2025-10-17
+Обновлено: 2025-11-09
