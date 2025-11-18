@@ -43,12 +43,12 @@ lastUpdated: 2025-11-18
 
 Крупные госпитали с хорошей репутацией, где можно обслуживаться по страховке или платно.
 
-| Название | Районы | Официальный сайт | Google Maps |
-|----------|--------|------------------|-------------|
-| Hospital Universitario Quirónsalud Madrid | Pozuelo de Alarcón | [Сайт](https://www.quironsalud.com/hospital-madrid) | [Карта](https://www.google.com/maps/search/?api=1&query=Hospital+Universitario+Quirónsalud+Madrid) |
-| Hospital Universitario HM Sanchinarro | Hortaleza (Sanchinarro) | [Сайт](https://www.hmhospitales.com/) | [Карта](https://www.google.com/maps/search/?api=1&query=Hospital+Universitario+HM+Sanchinarro) |
-| Hospital Ruber Internacional | Chamartín (Mirasierra) | [Сайт](https://www.ruberinternacional.es/) | [Карта](https://www.google.com/maps/search/?api=1&query=Hospital+Ruber+Internacional) |
-| Hospital Universitario Sanitas La Moraleja | Alcobendas | [Сайт](https://www.sanitas.es/) | [Карта](https://www.google.com/maps/search/?api=1&query=Hospital+Universitario+Sanitas+La+Moraleja) |
-| Clínica Universidad de Navarra | San Blas-Canillejas | [Сайт](https://www.cun.es/sede-madrid) | [Карта](https://www.google.com/maps/search/?api=1&query=Clínica+Universidad+de+Navarra+Madrid) |
-| Hospital HLA Moncloa | Moncloa-Aravaca | [Сайт](https://www.hla.com/hospitales/hospital-hla-moncloa) | [Карта](https://www.google.com/maps/search/?api=1&query=Hospital+HLA+Moncloa+Madrid) |
-| Vithas | Ciudad Lineal, Alcobendas, etc. | [Сайт](https://www.vithas.es/) | [Карта](https://www.google.com/maps/search/?api=1&query=Vithas+Madrid) |
+| Название | Расположение 📍 |
+|----------|-----------------|
+| [Hospital Universitario Quirónsalud Madrid](https://www.quironsalud.com/hospital-madrid) | [Pozuelo de Alarcón](https://www.google.com/maps/search/?api=1&query=Hospital+Universitario+Quirónsalud+Madrid) |
+| [Hospital Universitario HM Sanchinarro](https://www.hmhospitales.com/) | [Hortaleza (Sanchinarro)](https://www.google.com/maps/search/?api=1&query=Hospital+Universitario+HM+Sanchinarro) |
+| [Hospital Ruber Internacional](https://www.ruberinternacional.es/) | [Chamartín (Mirasierra)](https://www.google.com/maps/search/?api=1&query=Hospital+Ruber+Internacional) |
+| [Hospital Universitario Sanitas La Moraleja](https://www.sanitas.es/) | [Alcobendas](https://www.google.com/maps/search/?api=1&query=Hospital+Universitario+Sanitas+La+Moraleja) |
+| [Clínica Universidad de Navarra](https://www.cun.es/sede-madrid) | [San Blas-Canillejas](https://www.google.com/maps/search/?api=1&query=Clínica+Universidad+de+Navarra+Madrid) |
+| [Hospital HLA Moncloa](https://www.hla.com/hospitales/hospital-hla-moncloa) | [Moncloa-Aravaca](https://www.google.com/maps/search/?api=1&query=Hospital+HLA+Moncloa+Madrid) |
+| [Vithas](https://www.vithas.es/) | [Ciudad Lineal, Alcobendas, etc.](https://www.google.com/maps/search/?api=1&query=Vithas+Madrid) |
