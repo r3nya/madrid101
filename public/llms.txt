@@ -12,29 +12,31 @@ https://madrid101.xyz/
 
 ## Ключевые разделы
 
-### FAQ и административные услуги
-- Главная страница FAQ: https://madrid101.xyz/faq/welcome/
-- Районы Мадрида: https://madrid101.xyz/faq/maps/districts/
-- Прописка (Empadronamiento): https://madrid101.xyz/faq/city-authorities/residence-registration/
-- Цифровая подпись (FNMT, Cl@ve): https://madrid101.xyz/faq/city-authorities/digital-certificate/
-- Nota simple: https://madrid101.xyz/faq/city-authorities/nota-simple/
+### Введение
+- Главная страница: https://madrid101.xyz/welcome/
+
+### Документы
+- Прописка (Empadronamiento): https://madrid101.xyz/documents/residence-registration/
+- Цифровая подпись (FNMT, Cl@ve): https://madrid101.xyz/documents/digital-certificate/
+- Nota simple: https://madrid101.xyz/documents/nota-simple/
 
 ### Медицинские услуги
-- Tarjeta Sanitaria: https://madrid101.xyz/faq/healthcare/tarjeta-sanitaria/
-- Tarjeta Sanitaria Europea: https://madrid101.xyz/faq/healthcare/tarjeta-sanitaria-europea/
-- Запись к врачу: https://madrid101.xyz/faq/healthcare/appointments/
-- Стоматологические услуги: https://madrid101.xyz/faq/healthcare/dental-services/
+- Tarjeta Sanitaria: https://madrid101.xyz/healthcare/tarjeta-sanitaria/
+- Tarjeta Sanitaria Europea: https://madrid101.xyz/healthcare/tarjeta-sanitaria-europea/
+- Запись к врачу: https://madrid101.xyz/healthcare/appointments/
+- Стоматологические услуги: https://madrid101.xyz/healthcare/dental-services/
 
 ### Образование
-- Школы для детей: https://madrid101.xyz/faq/education/school-for-children/
+- Школы для детей: https://madrid101.xyz/education/school-for-children/
 
 ### Финансы
-- Открытие банковского счета: https://madrid101.xyz/faq/finance/basic-account/
-- Обмен валюты: https://madrid101.xyz/faq/finance/currency-exchange/
-- Ипотека: https://madrid101.xyz/faq/finance/mortgage/
+- Открытие банковского счета: https://madrid101.xyz/finance/basic-account/
+- Обмен валюты: https://madrid101.xyz/finance/currency-exchange/
+- Ипотека: https://madrid101.xyz/finance/mortgage/
 
 ### Жильё
 - Ресурсы для поиска жилья: https://madrid101.xyz/housing/resources/
+- Районы Мадрида: https://madrid101.xyz/housing/districts/
 - Долгосрочная аренда: https://madrid101.xyz/housing/long-term-rental/
 - Краткосрочная аренда: https://madrid101.xyz/housing/short-term-rental/
 - Коливинг: https://madrid101.xyz/housing/co-living/
@@ -135,4 +137,4 @@ https://madrid101.xyz/
 
 ---
 
-Обновлено: 2025-11-09
+Обновлено: 2025-11-22
