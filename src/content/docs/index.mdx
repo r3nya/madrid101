@@ -15,7 +15,7 @@ hero:
       alt: Digital nomad
   actions:
     - text: Открыть все гайды
-      link: faq/welcome
+      link: welcome
       icon: right-arrow
       variant: primary
 ---
@@ -25,33 +25,32 @@ import Footer from '@/components/Footer.astro';
 
 
 <CardGrid stagger>
-  <Card title="FAQ" icon="information">
-    [Районы города](/faq/maps/districts/),
-    [Чаты](/groups/chats/),
-    [Прописка](/faq/city-authorities/residence-registration/),
-    [Школы](/faq/education/school-for-children/),
-    [Nota simple](/faq/city-authorities/nota-simple/),
-    [Цифровая подпись (FNMT, Cl@ve](/faq/city-authorities/digital-certificate/))
-  </Card>
-  <Card title="Медицина" icon="heart">
-    [Tarjeta Sanitaria](/faq/healthcare/tarjeta-sanitaria/),
-    [Tarjeta Sanitaria Europea](/faq/healthcare/tarjeta-sanitaria-europea/),
-    [Записаться на прием](/faq/healthcare/appointments/)
-  </Card>
-  <Card title="Досуг" icon="information">
-    [Афиши, театры, музеи, концерты](/spare-time/culture/events/),
-    [Парки и аттракционы](/spare-time/theme-parks/),
-    [Спорт](/spare-time/sport/),
-    [Книги на русском языке](/spare-time/russian-books),
-    [Хакерспейсы](/spare-time/hackerspaces/),
-    [Сбор грибов](/spare-time/mushroom-foraging/),
-    [Билеты на футбол](/spare-time/football-tickets),
-    [Airsoft](/spare-time/airsoft/)
+  <Card title="Документы" icon="document">
+    [Прописка](/documents/residence-registration/),
+    [Nota simple](/documents/nota-simple/),
+    [Цифровая подпись (FNMT, Cl@ve)](/documents/digital-certificate/)
   </Card>
   <Card title="Жильё" icon="moon">
-	  [Где искать?](/housing/resources/),
+    [Районы города](/housing/districts/),
+    [Где искать?](/housing/resources/),
     [Телекоммуникации](/housing/providers/telecom/),
     [Коммунальные услуги](/housing/providers/utilities/)
+  </Card>
+  <Card title="Медицина" icon="heart">
+    [Tarjeta Sanitaria](/healthcare/tarjeta-sanitaria/),
+    [Tarjeta Sanitaria Europea](/healthcare/tarjeta-sanitaria-europea/),
+    [Записаться на прием](/healthcare/appointments/)
+  </Card>
+  <Card title="Финансы" icon="seti:db">
+    [Базовый счет](/finance/basic-account/),
+    [Обмен валют](/finance/currency-exchange/),
+    [Ипотека](/finance/mortgage/)
+  </Card>
+  <Card title="Налоги" icon="seti:shell">
+    [На недвижимость](/taxes/property-taxes/)
+  </Card>
+  <Card title="Образование" icon="open-book">
+    [Школы для детей](/education/school-for-children/)
   </Card>
   <Card title="Транспорт" icon="rocket">
     [Общественный транспорт](/transport/public/),
@@ -69,8 +68,9 @@ import Footer from '@/components/Footer.astro';
     [Коробки с едой](/food/food-subscriptions/),
     [Коробки с вином](/food/wine-subscriptions/)
   </Card>
-  <Card title="Налоги" icon="seti:shell">
-    [На недвижимость](/taxes/property-taxes/)
+  <Card title="Испанский язык" icon="translate">
+    [Языковые курсы](/spanish/language-courses/),
+    [Мобильные приложения для изучения](/spanish/apps/)
   </Card>
   <Card title="Услуги и сервисы" icon="seti:bicep">
     [Выгул собак и передержка животных](/services/pets/),
@@ -82,12 +82,21 @@ import Footer from '@/components/Footer.astro';
     [Цветы](/services/flowers/),
     [Экскурсии](/services/excursions/)
   </Card>
-  <Card title="Испанский язык" icon="translate">
-    [Языковые курсы](/spanish/language-courses/),
-    [Мобильные приложения для изучения](/spanish/apps/)
+  <Card title="Досуг" icon="information">
+    [Афиши, театры, музеи, концерты](/spare-time/culture/events/),
+    [Парки и аттракционы](/spare-time/theme-parks/),
+    [Спорт](/spare-time/sport/),
+    [Книги на русском языке](/spare-time/russian-books),
+    [Хакерспейсы](/spare-time/hackerspaces/),
+    [Сбор грибов](/spare-time/mushroom-foraging/),
+    [Билеты на футбол](/spare-time/football-tickets),
+    [Airsoft](/spare-time/airsoft/)
   </Card>
   <Card title="Управление отходами" icon="threads">
     [Сортировка бытовых отходов](/waste-management/waste-sorting/)
+  </Card>
+  <Card title="Сообщество" icon="comment">
+    [Чаты](/groups/chats/)
   </Card>
 </CardGrid>
 
