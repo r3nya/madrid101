@@ -58,13 +58,14 @@ lastUpdated: 2025-08-17
 - [Chamberí](https://www.google.com/maps/search/?api=1&query=Chamber%C3%AD%2C%20Madrid) (Almagro): классическая архитектура, посольства, тишина рядом с центром.
 - [Chamartín](https://www.google.com/maps/search/?api=1&query=Chamart%C3%ADn%2C%20Madrid) (El Viso, Hispanoamérica/бернабеу): тихие улицы частных домов, быстрый доступ к бизнес‑кластерам.
 - [Retiro](https://www.google.com/maps/search/?api=1&query=Retiro%2C%20Madrid) (Jerónimos): у парка, малый фонд, самый высокий ценовой сегмент.
+- [Ciudad Lineal](https://www.google.com/maps/search/?api=1&query=Ciudad%20Lineal%2C%20Madrid) (Arturo Soria): престижная зеленая зона, частные школы, посольства, качественные ЖК и виллы.
 - [Moncloa–Aravaca](https://www.google.com/maps/search/?api=1&query=Moncloa-Aravaca%2C%20Madrid) (Valdemarín, Aravaca): таунхаусы, зелень, семейность; чаще нужен автомобиль.
 
 ### Бюджетнее и практично
 
 - [Carabanchel](https://www.google.com/maps/search/?api=1&query=Carabanchel%2C%20Madrid) (Opañel, Vista Alegre, Abrantes), [Latina](https://www.google.com/maps/search/?api=1&query=Latina%2C%20Madrid) (Aluche, Lucero): разумные цены, хорошая связность, много локальной инфраструктуры.
 - [Puente de Vallecas](https://www.google.com/maps/search/?api=1&query=Puente%20de%20Vallecas%2C%20Madrid) (Numancia, Portazgo, Palomeras): быстрая дорога до центра по метро/Сercanías; смотреть улицу и дом точечно.
-- [Usera](https://www.google.com/maps/search/?api=1&query=Usera%2C%20Madrid) (Moscardó, Almendrales, Orcasitas): мультикультурно, много магазинов и кафе; разнородные кварталы.
+- [Usera](https://www.google.com/maps/search/?api=1&query=Usera%2C%20Madrid) (Moscardó, Almendrales, Orcasitas): мадридский Чайна-таун, много азиатских кафе и магазинов, мультикультурно; разнородные кварталы.
 - [San Blas–Canillejas](https://www.google.com/maps/search/?api=1&query=San%20Blas-Canillejas%2C%20Madrid) (Simancas, Arcos, Rejas), [Ciudad Lineal](https://www.google.com/maps/search/?api=1&query=Ciudad%20Lineal%2C%20Madrid) (Pueblo Nuevo, Quintana): спальные массивы с хорошим транспортом.
 - [Villaverde](https://www.google.com/maps/search/?api=1&query=Villaverde%2C%20Madrid) (Los Ángeles, San Cristóbal, Butarque): самый бюджетный юг; оценивать конкретные дома и маршруты.
 
