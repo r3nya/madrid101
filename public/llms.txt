@@ -47,6 +47,7 @@ https://madrid101.xyz/
 - Общественный транспорт: https://madrid101.xyz/transport/public/
 - Транспортные карты: https://madrid101.xyz/transport/transport-cards/
 - Информация для автомобилистов: https://madrid101.xyz/transport/auto/
+- Водительские права: https://madrid101.xyz/transport/auto/driver-license/
 - Обмен водительских прав: https://madrid101.xyz/transport/auto/exchange/
 - Получение Испанского МВУ: https://madrid101.xyz/transport/auto/permiso-internacional/
 - Налог на автомобиль: https://madrid101.xyz/transport/auto/auto-tax/
@@ -99,6 +100,7 @@ https://madrid101.xyz/
 - Экскурсии: https://madrid101.xyz/services/excursions/
 
 ### Налоги
+- Подоходный налог (IRPF): https://madrid101.xyz/taxes/irpf/
 - Налоги на недвижимость: https://madrid101.xyz/taxes/property-taxes/
 
 ### Испанский язык
@@ -137,4 +139,4 @@ https://madrid101.xyz/
 
 ---
 
-Обновлено: 2025-11-22
+Обновлено: 2025-12-06
