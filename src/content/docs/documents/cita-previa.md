@@ -26,7 +26,7 @@ Cita previa — предварительная запись на приём. Б�
 
 [Номер соцстрахования](/documents/numero-seguridad-social/), пособия, пенсия.
 
-- [Записаться на приём](https://sede.seg-social.gob.es/wps/portal/sede/sede/Ciudadanos/CiijubilacionSimulador/citaprevia)
+- [Записаться на приём](https://sede.seg-social.gob.es/wps/portal/sede/sede/Ciudadanos/cita+previa+para+pensiones+y+otras+prestaciones/13cita+previa+para+pensiones+y+otras+prestaciones)
 
 ### Hacienda / AEAT (налоговая)
 
