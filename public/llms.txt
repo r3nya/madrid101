@@ -19,6 +19,9 @@ https://madrid101.xyz/
 - Прописка (Empadronamiento): https://madrid101.xyz/documents/residence-registration/
 - Цифровая подпись (FNMT, Cl@ve): https://madrid101.xyz/documents/digital-certificate/
 - Nota simple: https://madrid101.xyz/documents/nota-simple/
+- Número de Seguridad Social: https://madrid101.xyz/documents/numero-seguridad-social/
+- Vida laboral: https://madrid101.xyz/documents/vida-laboral/
+- Cita previa: https://madrid101.xyz/documents/cita-previa/
 
 ### Медицинские услуги
 - Tarjeta Sanitaria: https://madrid101.xyz/healthcare/tarjeta-sanitaria/
