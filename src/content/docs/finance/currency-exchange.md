@@ -15,7 +15,7 @@ lastUpdated: 2025-12-16
 - Единственный русскоязычный лицензированный сервис в Испании (D663)
 - Сделки проходят в охраняемом офисе с оборудованием для проверки купюр.
 - Работают без предоплат.
-- Есть [Telegram-бот на русском языке](https://t.me/btcsarria_bot).
+- Есть [Telegram-бот на русском языке](https://t.me/btcsarria_bot?start=madrid).
 
 [Список офисов в Мадриде](https://gbtcfinance.com/tienda-cajero-bitcoin/cajero-bitcoin-madrid/)
 
