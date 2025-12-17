@@ -32,7 +32,7 @@
   },
   "devDependencies": {
     "@biomejs/biome": "2.3.8",
-    "@vitest/ui": "^4.0.15",
+    "@vitest/ui": "^4.0.16",
     "vitest": "^4.0.3"
   }
 }
