@@ -1,0 +1,20 @@
+---
+import { SITE_CONFIG } from "@/data/config.ts";
+---
+
+{SITE_CONFIG.enableSnowFall && (
+	<>
+		<snow-fall></snow-fall>
+		<style>
+			snow-fall {
+				--snow-fall-color: #a8d4f0;
+			}
+			:root[data-theme="dark"] snow-fall {
+				--snow-fall-color: #fff;
+			}
+		</style>
+		<script>
+			import "@zachleat/snow-fall/snow-fall.js";
+		</script>
+	</>
+)}

@@ -22,6 +22,7 @@
     "@astrojs/check": "^0.9.6",
     "@astrojs/sitemap": "^3.6.0",
     "@astrojs/starlight": "^0.37.1",
+    "@zachleat/snow-fall": "^1.0.3",
     "astro": "^5.16.6",
     "astro-compress": "^2.3.8",
     "astro-og-canvas": "^0.7.2",
