@@ -27,10 +27,36 @@ jobs:
         with:
           node-version: ${{ env.NODE_VERSION }}
           cache: "npm"
+      - name: Calculate snowfall period
+        id: snowfall
+        run: |
+          month=$(date -u +"%m")
+          day=$(date -u +"%d")
+          current_date=$(date -u +"%Y-%m-%d")
+          echo "Current UTC date: $current_date"
+          echo "Month: $month, Day: $day"
+          snow_fall="false"
+          if [ "$month" = "12" ] && [ "$day" -ge 20 ]; then
+            snow_fall="true"
+            echo "Snowfall period: YES (Dec 20 - Dec 31)"
+          elif [ "$month" = "01" ] && [ "$day" -le 15 ]; then
+            snow_fall="true"
+            echo "Snowfall period: YES (Jan 1 - Jan 15)"
+          else
+            echo "Snowfall period: NO"
+          fi
+          echo "enabled=$snow_fall" >> $GITHUB_OUTPUT
+          echo "Calculated PUBLIC_SNOW_FALL_ENABLED: $snow_fall"
+      - name: Log snowfall environment variable
+        run: echo "PUBLIC_SNOW_FALL_ENABLED=$PUBLIC_SNOW_FALL_ENABLED"
+        env:
+          PUBLIC_SNOW_FALL_ENABLED: ${{ steps.snowfall.outputs.enabled }}
       - name: Install, build, and upload your site
         uses: withastro/action@v5
         with:
           node-version: ${{ env.NODE_VERSION }} # The specific version of Node that should be used to build your site. Defaults to 20. (optional)
+        env:
+          PUBLIC_SNOW_FALL_ENABLED: ${{ steps.snowfall.outputs.enabled }}
         # package-manager: pnpm@latest # The Node package manager that should be used to install dependencies and build your site. Automatically detected based on your lockfile. (optional)
 
   deploy:
