@@ -25,7 +25,7 @@
     "@zachleat/snow-fall": "^1.0.3",
     "astro": "^5.16.6",
     "astro-compress": "^2.3.8",
-    "astro-og-canvas": "^0.8.0",
+    "astro-og-canvas": "^0.10.0",
     "sharp": "^0.34.5",
     "starlight-links-validator": "^0.19.2",
     "typescript": "^5.9.3",
