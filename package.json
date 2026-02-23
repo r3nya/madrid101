@@ -32,7 +32,7 @@
     "xml2js": "^0.6.2"
   },
   "devDependencies": {
-    "@biomejs/biome": "2.4.0",
+    "@biomejs/biome": "2.4.4",
     "@vitest/ui": "^4.0.18",
     "vitest": "^4.0.3"
   }
