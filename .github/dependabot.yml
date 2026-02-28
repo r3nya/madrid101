@@ -9,11 +9,19 @@ updates:
     directory: "/"
     schedule:
       interval: "weekly"
+    open-pull-requests-limit: 6
     groups:
-      vitest-group:
+      dev-dependencies:
+        dependency-type: "development"
         patterns:
-          - "vitest"
-          - "@vitest/ui"
+          - "*"
+        applies-to: "version-updates"
+      astro-and-starlight:
+        patterns:
+          - "astro"
+          - "@astrojs/*"
+          - "astro-*"
+          - "starlight-*"
         applies-to: "version-updates"
     assignees:
       - "r3nya"
@@ -22,5 +30,10 @@ updates:
     directory: "/"
     schedule:
       interval: "monthly"
+    groups:
+      github-actions:
+        patterns:
+          - "*"
+        applies-to: "version-updates"
     assignees:
       - "r3nya"
