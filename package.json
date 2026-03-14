@@ -32,8 +32,8 @@
     "xml2js": "^0.6.2"
   },
   "devDependencies": {
-    "@biomejs/biome": "2.4.6",
-    "@vitest/ui": "^4.0.18",
+    "@biomejs/biome": "2.4.7",
+    "@vitest/ui": "^4.1.0",
     "vitest": "^4.0.3"
   }
 }
