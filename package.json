@@ -19,15 +19,15 @@
     "biome:ci": "npx @biomejs/biome ci ."
   },
   "dependencies": {
-    "@astrojs/check": "^0.9.6",
-    "@astrojs/sitemap": "^3.7.0",
-    "@astrojs/starlight": "^0.37.7",
+    "@astrojs/check": "^0.9.8",
+    "@astrojs/sitemap": "^3.7.2",
+    "@astrojs/starlight": "^0.38.2",
     "@zachleat/snow-fall": "^1.0.3",
-    "astro": "^5.18.0",
-    "astro-compress": "^2.3.9",
+    "astro": "^6.1.1",
+    "astro-compress": "^2.4.0",
     "astro-og-canvas": "^0.10.1",
     "sharp": "^0.34.5",
-    "starlight-links-validator": "^0.19.2",
+    "starlight-links-validator": "^0.21.0",
     "typescript": "^5.9.3",
     "xml2js": "^0.6.2"
   },
