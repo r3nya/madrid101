@@ -52,7 +52,7 @@ jobs:
         env:
           PUBLIC_SNOW_FALL_ENABLED: ${{ steps.snowfall.outputs.enabled }}
       - name: Install, build, and upload your site
-        uses: withastro/action@v5
+        uses: withastro/action@v6
         with:
           node-version: ${{ env.NODE_VERSION }} # The specific version of Node that should be used to build your site. Defaults to 20. (optional)
         env:
@@ -68,4 +68,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
