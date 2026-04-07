@@ -1,7 +1,5 @@
-# To get started with Dependabot version updates, you'll need to specify which
-# package ecosystems to update and where the package manifests are located.
-# Please see the documentation for all configuration options:
-# https://docs.github.com/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file
+# Dependabot configuration for supply-chain security with grouped updates
+# Documentation: https://docs.github.com/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file
 
 version: 2
 updates:
@@ -9,13 +7,27 @@ updates:
     directory: "/"
     schedule:
       interval: "weekly"
-    open-pull-requests-limit: 6
+      timezone: "Europe/Madrid"
+      time: "09:00"
+      day: "monday"
+    open-pull-requests-limit: 10
+    # Groups for version updates - security updates create individual PRs automatically
     groups:
-      dev-dependencies:
-        dependency-type: "development"
+      # Production dependencies (all except astro-related)
+      prod-dependencies:
+        dependency-type: "production"
         patterns:
           - "*"
+        exclude-patterns:
+          - "astro"
+          - "@astrojs/*"
+          - "astro-*"
+          - "starlight-*"
         applies-to: "version-updates"
+        update-types:
+          - "minor"
+          - "patch"
+      # Astro ecosystem - separate for careful testing
       astro-and-starlight:
         patterns:
           - "astro"
@@ -23,17 +35,35 @@ updates:
           - "astro-*"
           - "starlight-*"
         applies-to: "version-updates"
+        update-types:
+          - "minor"
+          - "patch"
+      # Development dependencies
+      dev-dependencies:
+        dependency-type: "development"
+        patterns:
+          - "*"
+        applies-to: "version-updates"
+        update-types:
+          - "minor"
+          - "patch"
     assignees:
       - "r3nya"
 
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
-      interval: "monthly"
+      interval: "weekly"
+      timezone: "Europe/Madrid"
+      time: "09:00"
+      day: "monday"
     groups:
       github-actions:
         patterns:
           - "*"
         applies-to: "version-updates"
+        update-types:
+          - "minor"
+          - "patch"
     assignees:
       - "r3nya"
