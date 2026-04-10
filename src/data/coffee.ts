@@ -176,13 +176,13 @@ export const coffeeRoasters = [
     name: "Randall Coffee",
     url: "https://randallcoffee.com/",
     subscription: true,
-    location: "-",
+    location: "Мадрид",
   },
   {
     name: "Religion",
     url: "https://religioncoffeeshop.com/",
     subscription: true,
-    location: "-",
+    location: "Мадрид",
   },
   {
     name: "Right Side coffee",
