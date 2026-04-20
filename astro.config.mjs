@@ -239,7 +239,23 @@ export default defineConfig({
         { label: "🇪🇸 Испанский язык", autogenerate: { directory: "spanish" } },
         {
           label: "🧞 Услуги и сервисы",
-          autogenerate: { directory: "services" },
+          items: [
+            { label: "Выгул собак, передержка", link: "services/pets" },
+            { label: "Клининг", link: "services/cleaning" },
+            { label: "Няни", link: "services/nannies" },
+            {
+              label: "Присяжные переводчики",
+              link: "services/traductor-jurado",
+            },
+            { label: "Торты на заказ", link: "services/cakes-order" },
+            {
+              label: "Ремонт дома",
+              autogenerate: { directory: "services/home-repairs" },
+            },
+            { label: "Фото / Видео", link: "services/photo-video" },
+            { label: "Экскурсии", link: "services/excursions" },
+            { label: "Цветы", link: "services/flowers" },
+          ],
         },
         {
           label: "🧘 Досуг",
