@@ -9,17 +9,15 @@ describe("Coffee Roasters URLs", () => {
     }
   });
 
-  it.each(coffeeRoasters)(
-    "returns HTTP 200 for $name",
-    { timeout: 10000 },
-    async (roaster) => {
-      const response = await fetch(roaster.url, {
-        method: "HEAD",
-        redirect: "follow",
-      });
+  it.each(coffeeRoasters)("returns HTTP 200 for $name", {
+    timeout: 10000,
+  }, async (roaster) => {
+    const response = await fetch(roaster.url, {
+      method: "HEAD",
+      redirect: "follow",
+    });
 
-      expect(response.ok).toBe(true);
-      expect(response.status).toBe(200);
-    },
-  );
+    expect(response.ok).toBe(true);
+    expect(response.status).toBe(200);
+  });
 });
