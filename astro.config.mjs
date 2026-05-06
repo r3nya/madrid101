@@ -55,45 +55,86 @@ export default defineConfig({
         },
       },
       lastUpdated: true,
-      sidebar: [
-        // Russian sidebar (root)
-        {
-          label: "📄 Документы",
-          autogenerate: { directory: "documents" },
-        },
-        {
-          label: "🏠 Жильё",
-          items: [
-            { label: "Районы города", link: "housing/districts" },
-            { label: "Долгосрочная аренда", link: "housing/long-term-rental" },
-            { label: "Краткосрочная аренда", link: "housing/short-term-rental" },
-            { label: "Коливинг", link: "housing/co-living" },
-            { label: "Провайдеры", autogenerate: { directory: "housing/providers" } },
-          ],
-        },
-        {
-          label: "🏥 Медицина",
-          autogenerate: { directory: "healthcare" },
-        },
-        {
-          label: "💰 Финансы",
-          autogenerate: { directory: "finance" },
-        },
-        {
-          label: "💸 Налоги",
-          autogenerate: { directory: "taxes" },
-        },
-        {
-          label: "🎓 Образование",
-          autogenerate: { directory: "education" },
-        },
-        {
-          label: "🚗 Транспорт",
-          items: [ /* ... keep the same */ ],
-        },
-        // ... other sections
-      ],
-      // English sidebar will be added in next step
+      sidebar: {
+        root: [
+          {
+            label: "📄 Документы",
+            autogenerate: { directory: "documents" },
+          },
+          {
+            label: "🏠 Жильё",
+            items: [
+              { label: "Районы города", link: "housing/districts" },
+              { label: "Долгосрочная аренда", link: "housing/long-term-rental" },
+              { label: "Краткосрочная аренда", link: "housing/short-term-rental" },
+              { label: "Коливинг", link: "housing/co-living" },
+              { label: "Провайдеры", autogenerate: { directory: "housing/providers" } },
+            ],
+          },
+          {
+            label: "🏥 Медицина",
+            autogenerate: { directory: "healthcare" },
+          },
+          {
+            label: "💰 Финансы",
+            autogenerate: { directory: "finance" },
+          },
+          {
+            label: "💸 Налоги",
+            autogenerate: { directory: "taxes" },
+          },
+          {
+            label: "🎓 Образование",
+            autogenerate: { directory: "education" },
+          },
+          {
+            label: "🚗 Транспорт",
+            items: [
+              { label: "Автомобилистам", autogenerate: { directory: "transport/auto" } },
+              { label: "Велосипедистам", link: "transport/bike" },
+              { label: "Каршеринг", link: "transport/carsharing" },
+              { label: "Мотошеринг", link: "transport/motosharing" },
+              { label: "Общественный транспорт", link: "transport/public" },
+              { label: "Такси", link: "transport/taxi" },
+              { label: "Поезда", link: "transport/trains" },
+              { label: "Транспортные карты", link: "transport/transport-cards" },
+            ],
+          },
+          { label: "🫒 Еда", autogenerate: { directory: "food" } },
+          { label: "🇪🇸 Испанский язык", autogenerate: { directory: "spanish" } },
+          { label: "🧞 Услуги и сервисы", autogenerate: { directory: "services" } },
+          { label: "🧘 Досуг", autogenerate: { directory: "spare-time" } },
+          { label: "♻️ Управление отходами", autogenerate: { directory: "waste-management" } },
+          { label: "💬 Чаты", link: "groups/chats" },
+        ],
+        en: [
+          // English sidebar will only include Phase 1 translated pages for now
+          {
+            label: "📄 Documents",
+            autogenerate: { directory: "en/documents" },
+          },
+          {
+            label: "🏠 Housing",
+            autogenerate: { directory: "en/housing" },
+          },
+          {
+            label: "🏥 Healthcare",
+            autogenerate: { directory: "en/healthcare" },
+          },
+          {
+            label: "💰 Finance",
+            autogenerate: { directory: "en/finance" },
+          },
+          {
+            label: "💸 Taxes",
+            autogenerate: { directory: "en/taxes" },
+          },
+          {
+            label: "🚗 Transport",
+            autogenerate: { directory: "en/transport" },
+          },
+        ],
+      },
     }),
     sitemap(),
     compress(),
