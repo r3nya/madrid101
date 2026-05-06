@@ -1,0 +1,67 @@
+---
+title: Madrid 101
+description: Complete guide to living in Madrid for digital nomads and expats. FAQ on housing, transportation, healthcare, education, taxes and more.
+template: splash
+keywords: "Madrid, Spain, digital nomads, expats, guide, FAQ, housing, transportation, healthcare"
+author: "Madrid 101"
+canonicalUrl: "https://madrid101.xyz/en/"
+articleSection: "Home"
+tags: ["Madrid", "Spain", "digital nomads", "expats", "guide", "FAQ"]
+hero:
+  tagline: Madrid FAQ for digital nomads and expats
+  image:
+      light: ../../assets/logo-light.svg
+      dark: ../../assets/logo-dark.svg
+      alt: Digital nomad
+  actions:
+    - text: Open all guides
+      link: welcome
+      icon: right-arrow
+      variant: primary
+---
+import { Card, CardGrid } from '@astrojs/starlight/components';
+import Footer from '@/components/Footer.astro';
+import SnowFall from '@/components/SnowFall.astro';
+
+<SnowFall />
+
+<CardGrid stagger>
+  <Card title="Documents" icon="document">
+    [Residence registration](/en/documents/residence-registration/),
+    [Nota simple](/en/documents/nota-simple/),
+    [Digital certificate](/en/documents/digital-certificate/),
+    [Social security number](/en/documents/numero-seguridad-social/),
+    [Vida laboral](/en/documents/vida-laboral/),
+    [Cita previa](/en/documents/cita-previa/)
+  </Card>
+  <Card title="Housing" icon="moon">
+    [Districts](/en/housing/districts/),
+    [Where to search](/en/housing/resources/),
+    [Telecom](/en/housing/providers/telecom/),
+    [Utilities](/en/housing/providers/utilities/)
+  </Card>
+  <Card title="Healthcare" icon="heart">
+    [Tarjeta Sanitaria](/en/healthcare/tarjeta-sanitaria/),
+    [European Health Insurance Card](/en/healthcare/tarjeta-sanitaria-europea/),
+    [Book an appointment](/en/healthcare/appointments/)
+  </Card>
+  <Card title="Finance" icon="seti:db">
+    [Basic bank account](/en/finance/basic-account/),
+    [Currency exchange](/en/finance/currency-exchange/),
+    [Mortgage](/en/finance/mortgage/)
+  </Card>
+  <Card title="Taxes" icon="seti:shell">
+    [Income tax (IRPF)](/en/taxes/irpf/),
+    [Property taxes](/en/taxes/property-taxes/)
+  </Card>
+  <Card title="Transport" icon="rocket">
+    [Public transport](/en/transport/public/),
+    [For drivers](/en/transport/auto/),
+    [Trains](/en/transport/trains/),
+    [Carsharing](/en/transport/carsharing/),
+    [Motosharing](/en/transport/motosharing/),
+    [Taxi](/en/transport/taxi/)
+  </Card>
+</CardGrid>
+
+<Footer />
