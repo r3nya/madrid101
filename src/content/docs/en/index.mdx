@@ -1,0 +1,32 @@
+---
+title: Madrid 101
+ description: Complete guide to living in Madrid for digital nomads and expats. FAQ on housing, transport, healthcare, education and more.
+template: splash
+keywords: "Madrid, Spain, digital nomads, expats, guide, FAQ, housing, transport, healthcare"
+author: "Madrid 101"
+canonicalUrl: "https://madrid101.xyz/en/"
+hero:
+  tagline: FAQ about Madrid for digital nomads and expats
+  image:
+      light: ../../assets/logo-light.svg
+      dark: ../../assets/logo-dark.svg
+      alt: Digital nomad
+  actions:
+    - text: Open all guides
+      link: welcome
+      icon: right-arrow
+      variant: primary
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+<CardGrid stagger>
+  <Card title="Documents" icon="document">
+    [Residence registration](/en/documents/residence-registration/),
+    [Nota simple](/en/documents/nota-simple/),
+    [Digital certificate](/en/documents/digital-certificate/),
+    [Social security number](/en/documents/numero-seguridad-social/),
+    [Cita previa](/en/documents/cita-previa/)
+  </Card>
+  <!-- More cards will be added as we translate more pages -->
+</CardGrid>
