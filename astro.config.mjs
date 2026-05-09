@@ -97,6 +97,14 @@ export default defineConfig({
             content: "99657cbd8b636aa4",
           },
         },
+        
+        {
+          tag: "meta",
+          attrs: {
+            name: "google-adsense-account",
+            content: "ca-pub-9137609528971569",
+          },
+        },
         {
           tag: "meta",
           attrs: {
