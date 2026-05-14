@@ -97,7 +97,7 @@ export default defineConfig({
             content: "99657cbd8b636aa4",
           },
         },
-        
+
         {
           tag: "meta",
           attrs: {
@@ -169,7 +169,7 @@ export default defineConfig({
       sidebar: [
         {
           label: "📄 Документы",
-          autogenerate: { directory: "documents" },
+          items: [{ autogenerate: { directory: "documents" } }],
         },
         {
           label: "🏠 Жильё",
@@ -186,32 +186,32 @@ export default defineConfig({
             { label: "Коливинг", link: "housing/co-living" },
             {
               label: "Провайдеры",
-              autogenerate: { directory: "housing/providers" },
+              items: [{ autogenerate: { directory: "housing/providers" } }],
             },
           ],
         },
         {
           label: "🏥 Медицина",
-          autogenerate: { directory: "healthcare" },
+          items: [{ autogenerate: { directory: "healthcare" } }],
         },
         {
           label: "💰 Финансы",
-          autogenerate: { directory: "finance" },
+          items: [{ autogenerate: { directory: "finance" } }],
         },
         {
           label: "💸 Налоги",
-          autogenerate: { directory: "taxes" },
+          items: [{ autogenerate: { directory: "taxes" } }],
         },
         {
           label: "🎓 Образование",
-          autogenerate: { directory: "education" },
+          items: [{ autogenerate: { directory: "education" } }],
         },
         {
           label: "🚗 Транспорт",
           items: [
             {
               label: "Автомобилистам",
-              autogenerate: { directory: "transport/auto" },
+              items: [{ autogenerate: { directory: "transport/auto" } }],
             },
             {
               label: "Велосипедистам",
@@ -243,18 +243,26 @@ export default defineConfig({
             },
           ],
         },
-        { label: "🫒 Еда", autogenerate: { directory: "food" } },
-        { label: "🇪🇸 Испанский язык", autogenerate: { directory: "spanish" } },
+        {
+          label: "🫒 Еда",
+
+          items: [{ autogenerate: { directory: "food" } }],
+        },
+        {
+          label: "🇪🇸 Испанский язык",
+
+          items: [{ autogenerate: { directory: "spanish" } }],
+        },
         {
           label: "🧞 Услуги и сервисы",
-          autogenerate: { directory: "services" },
+          items: [{ autogenerate: { directory: "services" } }],
         },
         {
           label: "🧘 Досуг",
           items: [
             {
               label: "Спорт",
-              autogenerate: { directory: "spare-time/sport" },
+              items: [{ autogenerate: { directory: "spare-time/sport" } }],
             },
             {
               label: "⚽ Футбол",
@@ -265,14 +273,16 @@ export default defineConfig({
                 },
                 {
                   label: "Клубы",
-                  autogenerate: { directory: "spare-time/football" },
                   collapsed: true,
+                  items: [
+                    { autogenerate: { directory: "spare-time/football" } },
+                  ],
                 },
               ],
             },
             {
               label: "🎭 Культура",
-              autogenerate: { directory: "spare-time/culture" },
+              items: [{ autogenerate: { directory: "spare-time/culture" } }],
             },
             {
               label: "🎢 Парки и аттракционы",
@@ -288,7 +298,9 @@ export default defineConfig({
               items: [
                 {
                   label: "🔫 Airsoft",
-                  autogenerate: { directory: "spare-time/airsoft" },
+                  items: [
+                    { autogenerate: { directory: "spare-time/airsoft" } },
+                  ],
                 },
                 {
                   label: "Хакерспейсы",
@@ -305,7 +317,7 @@ export default defineConfig({
         },
         {
           label: "♻️ Управление отходами",
-          autogenerate: { directory: "waste-management" },
+          items: [{ autogenerate: { directory: "waste-management" } }],
         },
         {
           label: "💬 Чаты",
