@@ -11,6 +11,13 @@ updates:
       time: "09:00"
       day: "monday"
     open-pull-requests-limit: 10
+    cooldown:
+      default-days: 14
+      semver-major-days: 30
+      semver-minor-days: 14
+      semver-patch-days: 7
+      include:
+        - "*"
     # Groups for version updates - security updates create individual PRs automatically
     groups:
       # Production dependencies (all except astro-related)
@@ -57,6 +64,11 @@ updates:
       timezone: "Europe/Madrid"
       time: "09:00"
       day: "monday"
+    open-pull-requests-limit: 3
+    cooldown:
+      default-days: 14
+      include:
+        - "*"
     groups:
       github-actions:
         patterns:
