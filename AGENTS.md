@@ -1,6 +1,6 @@
 # Repository Guidelines
 
-This repository is an Astro 5 + Starlight documentation site for practical guides to living in Madrid. Use the commands and conventions below to contribute consistently and safely.
+This repository is an Astro 6 + Starlight documentation site for practical guides to living in Madrid. Use the commands and conventions below to contribute consistently and safely.
 
 ## Project Structure & Module Organization
 - Content: `src/content/docs/` (use `.md` by default; `.mdx` only when components are needed).
@@ -28,10 +28,10 @@ Before committing changes, ensure these checks pass:
 
 ## Project Architecture
 
-This is an **Astro 5 + Starlight** documentation site for Madrid living guides, targeting Russian-speaking digital nomads and expats.
+This is an **Astro 6 + Starlight** documentation site for Madrid living guides, targeting Russian-speaking digital nomads and expats.
 
 ### Key Technologies
-- **Framework**: Astro 5 with TypeScript
+- **Framework**: Astro 6 with TypeScript
 - **Theme**: Starlight (Astro's documentation theme)
 - **Content**: Markdown/MDX files in `/src/content/docs/`
 - **Code Quality**: Biome (replaces ESLint/Prettier)
