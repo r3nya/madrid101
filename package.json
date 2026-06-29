@@ -35,5 +35,10 @@
     "@biomejs/biome": "2.4.16",
     "@vitest/ui": "^4.1.8",
     "vitest": "^4.0.3"
+  },
+  "allowScripts": {
+    "esbuild@0.27.7": true,
+    "sharp@0.34.5": true,
+    "fsevents@2.3.3": true
   }
 }
