@@ -1,7 +1,7 @@
 ---
 title: Получение международного водительского удостоверения
 description: "Информация о процедуре получения международного водительского удостоверения в Испании"
-lastUpdated: 2025-03-07
+lastUpdated: 2026-06-30
 sidebar:
   label: Получение МВУ
 ---
@@ -22,7 +22,7 @@ sidebar:
 
 ### Шаг 1. Анкета
 
-Анкета заполняется на сайте [Registro Electrónico de DGT](https://sede.dgt.gob.es/.galleries/enlaces/enlaces_sedeclave/Registro-electronico.html), для авторизации вам потребуется электронная подпись. Например, [FNMT или Cl@ve](/faq/city-authorities/digital-certificate).
+Анкета заполняется на сайте [Registro Electrónico de DGT](https://sede.dgt.gob.es/.galleries/enlaces/enlaces_sedeclave/Registro-electronico.html), для авторизации вам потребуется электронная подпись. Например, [FNMT или Cl@ve](/documents/digital-certificate/).
 
 После входа, часть полей анкеты будет заполнена автоматически на основе ваших данных. Заполняете оставшиеся поля. В блоке "Solicitud" необходимо указать дату рождения, выбрать офис, там же будет предложено оплатить онлайн заявку, нажимаем кнопку "Pagar" и в появившемся окне заполняем данные для Direct Debit или данные карты. Стоимость услуги €10,51.
 

@@ -124,7 +124,7 @@ https://madrid101.xyz/
 ## Технологии
 
 Сайт построен с использованием:
-- Astro 5 с TypeScript
+- Astro 6 с TypeScript
 - Starlight (документационная тема для Astro)
 - Biome (линтинг и форматирование кода)
 - Vitest (тестирование)

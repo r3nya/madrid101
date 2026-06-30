@@ -1,7 +1,7 @@
 ---
 title: Прописка
 description: Информация о прописке в Мадриде
-lastUpdated: 2025-10-02
+lastUpdated: 2026-06-30
 ---
 
 :::note[Прописка/падрон (empadronamiento)]
@@ -42,7 +42,7 @@ lastUpdated: 2025-10-02
 
 ### Онлайн
 
-С использованием [цифрового сертификата](/faq/city-authorities/digital-certificate/) можно [оформить прописку онлайн](https://servpub.madrid.es/sta/CarpetaPrivate/doEvent?APP_CODE=STA&PAGE_CODE=PADRON_ALTA) без необходимости посещения офиса муниципалитета.
+С использованием [цифрового сертификата](/documents/digital-certificate/) можно [оформить прописку онлайн](https://servpub.madrid.es/sta/CarpetaPrivate/doEvent?APP_CODE=STA&PAGE_CODE=PADRON_ALTA) без необходимости посещения офиса муниципалитета.
 
 :::caution
 Прописку необходимо обновлять каждые 2 года для граждан стран, не входящих в ЕС, и каждые 5 лет для граждан ЕС.

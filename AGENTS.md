@@ -39,7 +39,9 @@ This is an **Astro 6 + Starlight** documentation site for Madrid living guides, 
 
 ### Content Structure
 All content lives in `/src/content/docs/` with these main sections:
-- `/faq/` - FAQ organized by topic (city authorities, healthcare, education, finance)
+- `/documents/` - Administrative documents and appointments
+- `/healthcare/` - Public healthcare, appointments, and health cards
+- `/finance/` - Banking, payroll, exchange, and mortgage information
 - `/food/` - Food and dining information
 - `/groups/` - Community groups and chat information
 - `/housing/` - Housing (rental, co-living, providers)
@@ -54,7 +56,7 @@ All content lives in `/src/content/docs/` with these main sections:
 - **Config**: `astro.config.mjs` contains Starlight sidebar structure and site metadata
 - **Content Schema**: `/src/content/config.ts` uses Starlight's docs schema
 - **Custom Head**: `/src/components/Head.astro` adds OpenGraph image generation
-- **Site URL**: http://madrid101.xyz/
+- **Site URL**: https://madrid101.xyz/
 
 ## Content Guidelines
 

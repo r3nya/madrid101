@@ -1,7 +1,7 @@
 ---
 title: Бег
 description: Беговые маршруты и события в Мадриде
-lastUpdated: 2025-08-21
+lastUpdated: 2026-06-30
 ---
 
 ## Где побегать?
@@ -12,6 +12,8 @@ lastUpdated: 2025-08-21
   - [Wikiloc](https://www.wikiloc.com/)
 
 ## Беговые события
+
+Список ниже используйте как ориентир по повторяющимся городским забегам. Даты, маршруты и регистрация меняются каждый год, поэтому перед планированием проверяйте сайт организатора или спортивный календарь Ayuntamiento de Madrid.
 
 ### Январь
 
@@ -29,7 +31,7 @@ lastUpdated: 2025-08-21
 |---------|-----------|-------|
 | [CARRERA POR LA SALUD MENTAL](http://www.carrerasaludmental.com/) | 5 км, 10 км | MONCLOA, CENTRO, CHAMBERÍ |
 | [LVI CROSS DON BOSCO](http://www.ciudaddelosmuchachos.es/xlvi-cross-municipal-don-bosco/) | 4 км | CARABANCHEL |
-| [CARRERA DE LA PRIMAVERA COMUNIDAD DE MADRID 2025 AÑO DE LA SERPIENTE](http://www.carreradelaprimavera.es/) | 5.8 км, 16 км | CENTRO, SALAMANCA, CHAMARTÍN |
+| [CARRERA DE LA PRIMAVERA COMUNIDAD DE MADRID](http://www.carreradelaprimavera.es/) | 5.8 км, 16 км | CENTRO, SALAMANCA, CHAMARTÍN |
 | [MEDIO MARATÓN FUENCARRAL-EL PARDO](http://www.mediamaratonfuencarralelpardo.com/) | 21.097 км | FUENCARRAL-EL PARDO |
 | [DUATLON DE VALDEBEBAS](http://www.duatlonvaldebebas.es/) | Спринт, Суперспринт | HORTALEZA |
 | [CORRE POR L@S HUERFAN@S DE LA VIOLENCIA DE GÉNERO](http://www.carrerasolidariahuerfanos.com/) | 6.5 км, 10 км | MONCLOA, CENTRO |
@@ -76,7 +78,7 @@ lastUpdated: 2025-08-21
 | [XXI CARRERA DE LA MUJER CENTRAL LECHERA ASTURIANA](http://www.carreradelamujer.com/) | 8 км | CHAMARTÍN, SALAMANCA, CHAMBERÍ, MONCLOA |
 | [MILLA POPULAR DE VALLECAS](http://www.madrid.es) | 1.6 км | VILLA DE VALLECAS |
 | [CARRERA POPULAR DE ZOFIO](http://www.carreradelzofio.wordpress.com/) | 5 км, 10 км | USERA |
-| [PLOGGING TOUR 2025](http://www.ploggingtour.com/) | 2 км, 6 км, 11 км | MONCLOA-ARAVACA |
+| [PLOGGING TOUR](http://www.ploggingtour.com/) | 2 км, 6 км, 11 км | MONCLOA-ARAVACA |
 | [CARRERA SOLIDARIA FUNDACIÓN REAL MADRID](http://www.runningfundacionrealmadrid.es) | 5 км, 10 км | CHAMARTÍN, SALAMANCA |
 | [CARRERA DE LOS COLORES](http://www.colorescontralaviolencia.com/) | 5 км | SALAMANCA, TETUÁN, CHAMARTÍN, CHAMBERÍ |
 | [CARRERA SAN FILIPPO](http://www.eventsthinker.com/carrerasanfilippo/) | 5 км, 10 км | FUENCARRAL |
@@ -129,7 +131,7 @@ lastUpdated: 2025-08-21
 |---------|-----------|-------|
 | [CARRERA MELONERA x TRIBOOST](http://www.carreralamelonera.com/) | 5 км, 10 км, Детские | ARGANZUELA |
 | [CARRERA POPULAR FIESTAS DE LA ELIPA](http://www.eventsthinker.com/) | 10 км | CIUDAD LINEAL |
-| [LA VUELTA 2025](http://www.lavuelta.es/es) | Не определено | Не определено |
+| [LA VUELTA](http://www.lavuelta.es/es) | Маршрут меняется каждый год | Проверяйте официальный маршрут |
 | [BARAJAS SOBRE RUEDAS](http://www.madrid.es) | 5 км | BARAJAS |
 | [V MARCHA A PIÑÓN FIJO POR LA MOVILIDAD](http://www.paudevallecas.org/iv-marcha-ciclista-a-pinon-fijo-por-la-movilidad/) | Велоспорт | VILLA DE VALLECAS |
 | [MADRID CORRE POR MADRID](http://www.madridcorrepormadrid.org/) | 10 км | TETUAN, SALAMANCA, MONCLOA-ARAVACA |
