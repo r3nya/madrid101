@@ -21,13 +21,13 @@
   "dependencies": {
     "@astrojs/check": "^0.9.9",
     "@astrojs/sitemap": "^3.7.3",
-    "@astrojs/starlight": "^0.39.3",
+    "@astrojs/starlight": "^0.41.2",
     "@zachleat/snow-fall": "^1.0.3",
     "astro": "^6.4.8",
     "astro-compress": "^2.4.1",
-    "astro-og-canvas": "^0.11.1",
+    "astro-og-canvas": "^0.13.0",
     "sharp": "^0.35.3",
-    "starlight-links-validator": "^0.24.0",
+    "starlight-links-validator": "^0.25.2",
     "typescript": "^6.0.3",
     "xml2js": "^0.6.2"
   },
