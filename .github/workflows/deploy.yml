@@ -21,7 +21,7 @@ jobs:
       NODE_VERSION: 24
     steps:
       - name: Checkout your repository using git
-        uses: actions/checkout@v7.0.0
+        uses: actions/checkout@v7.0.1
       - name: Setup Node.js
         uses: actions/setup-node@v6
         with:
@@ -52,7 +52,7 @@ jobs:
         env:
           PUBLIC_SNOW_FALL_ENABLED: ${{ steps.snowfall.outputs.enabled }}
       - name: Install, build, and upload your site
-        uses: withastro/action@v6.1.1
+        uses: withastro/action@v6.1.2
         with:
           node-version: ${{ env.NODE_VERSION }} # The specific version of Node that should be used to build your site. Defaults to 20. (optional)
         env:
