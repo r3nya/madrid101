@@ -21,9 +21,9 @@ jobs:
         with:
           node-version: "22"
 
-      - run: npm install
+      - run: npm ci --min-release-age=0 --ignore-scripts
 
-      - run: npx biome migrate --write
+      - run: npx @biomejs/biome migrate --write
 
       - run: |
           if git diff --quiet; then
