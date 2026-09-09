@@ -21,9 +21,9 @@ jobs:
         with:
           node-version: "22"
 
-      - run: npm install
-
-      - run: npx biome migrate --write
+      - run: |
+          BIOME_VERSION=$(node -p "require('./package.json').devDependencies['@biomejs/biome']")
+          npx --yes "@biomejs/biome@${BIOME_VERSION}" migrate --write
 
       - run: |
           if git diff --quiet; then
