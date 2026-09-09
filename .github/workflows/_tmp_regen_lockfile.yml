@@ -3,6 +3,8 @@ name: tmp regen lockfile
 on:
   push:
     branches: [chore/deps-dev-biome-vitest-435]
+    paths:
+      - .github/workflows/_tmp_regen_lockfile.yml
 
 permissions:
   contents: write
@@ -11,31 +13,32 @@ jobs:
   regen:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7.0.1
         with:
           ref: chore/deps-dev-biome-vitest-435
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v7
         with:
           node-version: "22"
 
       - name: Regenerate package-lock.json
         run: |
-          npm config set min-release-age 0
-          npm install --package-lock-only --ignore-scripts --legacy-peer-deps
+          npm install --package-lock-only --ignore-scripts --legacy-peer-deps --min-release-age=0
 
       - name: Commit lockfile and remove this workflow
         run: |
+          set -eux
           git config user.name "lockfile-regen-bot"
           git config user.email "hola-madrid101@pm.me"
           git add package-lock.json
-          if git diff --cached --quiet; then
-            echo "No lockfile changes"
-          else
+          if ! git diff --cached --quiet; then
             git commit -m "chore: regenerate package-lock for biome 2.5.11 and @vitest/ui 4.1.11"
+          else
+            echo "No lockfile changes"
           fi
           rm -f .github/workflows/_tmp_regen_lockfile.yml
           git add -A .github/workflows/_tmp_regen_lockfile.yml
-          git commit -m "chore: remove temporary lockfile regen workflow" || true
+          git status
+          git commit -m "chore: remove temporary lockfile regen workflow" || echo "nothing to commit for workflow removal"
           git push
