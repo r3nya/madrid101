@@ -1,0 +1,34 @@
+name: tmp-regen-lockfile-ts6
+on:
+  workflow_dispatch:
+  push:
+    branches: [fix/pin-typescript-6-astro-check]
+    paths:
+      - .github/workflows/tmp-regen-lockfile-ts6.yml
+      - package.json
+permissions:
+  contents: write
+jobs:
+  regen:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: fix/pin-typescript-6-astro-check
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+      - name: Regenerate package-lock for TypeScript 6
+        run: npm install --package-lock-only --ignore-scripts
+      - name: Commit lockfile if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add package-lock.json
+          if git diff --cached --quiet; then
+            echo "No lockfile changes"
+            exit 0
+          fi
+          git commit -m "fix(ci): regenerate package-lock.json for TypeScript 6.0.3"
+          git push
