@@ -3,20 +3,20 @@ title: Налоги на недвижимость
 description: Краткий обзор налогов на недвижимость в Мадриде для номадов и экспатов
 sidebar:
   label: На недвижимость
-lastUpdated: 2026-06-30
+lastUpdated: 2026-09-14
 ---
 
 Если вы владеете недвижимостью в Мадриде, важно знать ключевые налоги. Они зависят от статуса (резидент/нерезидент) и операций (владение, продажа). Ниже — основные налоги на владение, их названия и сроки оплаты. Информация актуализирована на 2026 год; перед оплатой проверяйте даты на сайтах [Ayuntamiento de Madrid](https://www.madrid.es/) и [Agencia Tributaria](https://sede.agenciatributaria.gob.es/Sede/en_gb/inicio.html).
 
 ## IBI (Impuesto sobre Bienes Inmuebles) — муниципальный налог на недвижимость
-Ежегодный налог на владение, рассчитывается от кадастровой стоимости (0,4–1,1% в Мадриде).
+Ежегодный налог на владение, рассчитывается от кадастровой стоимости (**0,414%** в Мадриде).
 
 - **Кто платит?** Владельцы на 1 января.
 - **Сроки оплаты:** Добровольный период IBI 2026 — с 1 октября по 30 ноября 2026 г. Оплата онлайн или в банке; возможнo автоматическое списание с банковского счета.
 - **Где проверить и оплатить?** Официальный портал Ayuntamiento de Madrid: [Портал налогоплательщика для IBI](https://agenciatributaria.madrid.es/portales/contribuyente/es/Impuestos-tasas-y-precios-publicos/Bienes-Inmuebles-IBI-/?vgnextfmt=default&vgnextchannel=3cd1e5bcc9c78710VgnVCM1000008a4a900aRCRD) и [страница для оплаты в добровольный период](https://agenciatributaria.madrid.es/portales/contribuyente/es/Tramites/Impuesto-sobre-Bienes-Inmuebles-IBI-Pago-en-periodo-voluntario-recibo-/?vgnextfmt=default&vgnextoid=d8fb9374bcaed010VgnVCM1000000b205a0aRCRD&vgnextchannel=97d608f9be116810VgnVCM1000001d4a900aRCRD).
 
 ## IRNR (Impuesto sobre la Renta de No Residentes) — налог на доход нерезидентов
-Для нерезидентов — налог на вменённый доход от недвижимости (эффективно ~0,48% от кадастра), даже если не сдается. Если сдается — на реальный доход (19–24%).
+Для нерезидентов при владении для собственного использования (без аренды) — renta imputada: **1,1%** или **2%** от кадастровой стоимости × **19%** (резиденты ЕС/ЕЭЗ) или **24%** (остальные). Если сдаётся — налог с реального дохода (**19%** / **24%**).
 
 - **Кто платит?** Нерезиденты.
 - **Сроки оплаты:** Для вменённого дохода от недвижимости (renta imputada) Modelo 210 подают в течение 2026 г. за 2025 г. Если недвижимость сдаётся в аренду, сроки зависят от типа дохода и обычно считаются по кварталам.
@@ -30,5 +30,5 @@ lastUpdated: 2026-06-30
 - **Где проверить и оплатить?** Официальный портал Ayuntamiento de Madrid: [Автоликидация Plusvalía](https://www.madrid.es/go/AutoliquidacionPlusvalia) и [страница для платежей](https://agenciatributaria.madrid.es/portales/contribuyente/es/Impuestos-tasas-y-precios-publicos/Incremento-de-Valor-de-los-Terrenos-de-Naturaleza-Urbana-Plusvalia-/Pagos/?vgnextfmt=default&vgnextchannel=5312e5bcc9c78710VgnVCM1000008a4a900aRCRD).
 
 ## Дополнительные советы
-- При покупке: ITP (6–10%) для вторички, IVA (10%) для новостроя.
+- При покупке: ITP (**6%** в Мадриде) для вторички, IVA (10%) для новостроя.
 - Штрафы за просрочку — 5–20% + проценты.
