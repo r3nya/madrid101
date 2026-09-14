@@ -4,7 +4,7 @@ description: Гид по подоходному налогу для резиде
 sidebar:
   label: Подоходный налог (IRPF)
   order: 1
-lastUpdated: 2026-06-30
+lastUpdated: 2026-09-14
 ---
 
 IRPF (Impuesto sobre la Renta de las Personas Físicas) — это испанский налог на доходы физических лиц. Это основной налог, который платят все налоговые резиденты Испании со своих **общемировых доходов**.
@@ -120,7 +120,7 @@ IRPF (Impuesto sobre la Renta de las Personas Físicas) — это испанс�
 
 Большинство других вычетов (аренда жилья, рождение детей, образование, уход за детьми/пожилыми, покупка жилья, многодетные семьи) имеют лимиты по base imponible от **26.414€** до **37.322€**, что делает их недоступными для доходов выше. 
 
-👉 **Полный список всех вычетов, актуальные лимиты и условия смотрите на официальном портале [Comunidad de Madrid](https://www.comunidad.madrid/servicios/atencion-contribuyente/irpf-0).**
+👉 **Полный список всех вычетов, актуальные лимиты и условия смотрите на официальном портале [Comunidad de Madrid](https://www.comunidad.madrid/atencion-contribuyente/irpf).**
 
 ## Как и когда подавать декларацию?
 
