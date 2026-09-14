@@ -71,3 +71,12 @@ FNMT (Fábrica Nacional de Moneda y Timbre) - национальный моне�
 - [Как получить цифровой сертификат (все типы)](https://barcelona-startups-relocation.notion.site/How-to-get-a-Digital-Certificate-8ca4ec3ea31b43cd995bfdf2012e622a)
 
 - [Как сделать сертификат ACCV online](https://t.me/lev2tarragona/1977) от канала [Львиные истории про Таррагону](https://t.me/lev2tarragona)
+
+## Советы
+
+Список офисов, для подтверждения личности во время оформления FNMT, почти всегда без очередей и предварительной записи (ситы):
+
+- [Calle de José Marañón, 10, Chamberí](https://maps.app.goo.gl/8JbPR6QvBbgPS6397)
+- [Calle del Barquillo, 5, Centro](https://maps.app.goo.gl/tu3kPbiYK2C7V5hw6)
+- [Calle de Alcalá, 47, Centro](https://maps.app.goo.gl/PnrqdrGKhS9NTtbG6)
+- [Calle de Miguel Fleta, 3, San Blas-Canillejas](https://maps.app.goo.gl/QNpBmWg4rRBhWdak6)
