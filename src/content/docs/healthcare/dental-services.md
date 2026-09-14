@@ -1,9 +1,41 @@
 ---
 title: Стоматологические услуги
-description: Стоматологические услуги в Мадриде
-tableOfContents: false
-lastUpdated: 2024-06-24
+description: Стоматологические услуги в Мадриде по ОМС и программа PADI
+tableOfContents: true
+lastUpdated: 2026-09-14
 ---
 
-- [Что входит в услуги по стомотологии бесплатно по ОМС](https://www.comunidad.madrid/servicios/salud/atencion-salud-bucodental)
-- [Стандартный пакет услуг для детей 7-16 лет](https://www.comunidad.madrid/sites/default/files/doc/sanidad/prim/cartera_de_servicios._so_107._atencion_bucodental_en_la_infancia._2021.pdf)
+Государственная стоматология в Comunidad de Madrid идёт через **Unidades de Salud Bucodental (USBD)** в центрах первичной помощи (`Centro de Salud`).
+
+Официальная страница: [Atención a la Salud Bucodental](https://www.comunidad.madrid/salud/atencion-salud-bucodental).
+
+## Что входит бесплатно по ОМС
+
+Для всего населения (через USBD):
+
+- острая боль и травмы зубов;
+- контроль инфекций;
+- удаления (`exodoncias`);
+- оценка поражений мягких тканей полости рта.
+
+Также есть отдельные программы для беременных, людей старше 80 лет и людей с инвалидностью — подробности на официальной странице.
+
+## PADI — дети 6–16 лет
+
+**Programa de Atención Dental Infanto/juvenil (PADI)** покрывает детей **с 6 до 16 лет**, проживающих в Comunidad de Madrid.
+
+В USBD обычно входят ежегодные осмотры, чистки, обучение гигиене, фтор, герметизация фиссур, пломбы и эндодонтия постоянных зубов.
+
+Если нужны дополнительные процедуры по соглашению SERMAS–COEM, после осмотра в USBD выдают направление к частному стоматологу из списка участников программы.
+
+PDF с пакетом услуг 2021 года больше не доступен (404) — актуальное описание см. на официальной странице выше.
+
+## Как записаться
+
+Направление от семейного врача или педиатра **не нужно**. Запись к стоматологу USBD:
+
+- по телефону или лично в `Centro de Salud`;
+- онлайн через [Cita Sanitaria](https://www.comunidad.madrid/servicios/salud/cita-sanitaria);
+- в приложениях «Tarjeta Sanitaria Virtual» или «Cita Sanitaria Madrid».
+
+Подробнее про запись: [Записаться на прием](/healthcare/appointments/).
