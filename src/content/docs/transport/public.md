@@ -6,13 +6,13 @@ author: "Madrid 101"
 canonicalUrl: "https://madrid101.xyz/transport/public/"
 articleSection: "Транспорт"
 tags: ["транспорт", "метро", "автобусы", "Мадрид", "билеты", "тарифы", "Cercanías"]
-lastUpdated: 2026-06-30
+lastUpdated: 2026-09-14
 ---
 
 ## Важные нюансы
 - По одной карте можно проходить нескольким людям без задержек
 - Если карта именная с фото, делаете это на свой страх и риск нарваться на штраф
-- В метро и автобусах по-прежнему удобнее пользоваться Tarjeta Multi или персональной TTP. В метро с 2026 года начали вводить прямую оплату банковской картой на турникетах: работает только для разовых билетов и не на каждом турникете. На станциях ищите турникет с поддержкой contactless; на станциях со старыми турникетами таких должно быть минимум два. В первой фазе списывается единая сниженная цена разовой поездки 1,50€.
+- В метро и автобусах по-прежнему удобнее пользоваться Tarjeta Multi или персональной TTP. С июня 2026 contactless-оплата банковской картой / телефоном / часами работает на турникетах **всех станций** метро: пока только для разовых билетов. На станциях ищите турникет с поддержкой contactless; на станциях со старыми турникетами таких должно быть минимум два. Contactless уже списывает фиксированные 1,50€ за поездку в Zona A. С октября 2026 та же фиксированная цена 1,50€ действует и для обычного billete sencillo Zona A (больше не зависит от числа станций).
 - До 2026-12-31 действуют существенные скидки на проездные (Abono Transporte) и билеты на 10 поездок. Подробнее о ценах в разделе [Транспортные карты](/transport/transport-cards/).
 - [Транспортные зоны](https://www.comunidad.madrid/servicios/transporte/zonas-tarifarias). В Мадриде существует разграничения транспорта по зонам, более дальняя зона дороже. Есть проездные, покрывающие определенные зоны.
 - Автобусы [001](https://www.madridbuses.com/autobuses-emt/horarios-001-madrid.html) и [002](https://www.madridbuses.com/autobuses-emt/horarios-002-madrid.html) полностью бесплатны, но карту прикладывать нужно. С неё не списываются поездки
@@ -21,7 +21,7 @@ lastUpdated: 2026-06-30
 
 ## Приложения
 
-- Приложение для пополнения и просмотра баланса Транспортной карты ([Android](https://play.google.com/store/apps/details?id=com.crtm.recarga&hl=es), [iOS](https://apps.apple.com/es/app/tarjeta-transporte/id1619770175?l=en-GB))
+- Пополнение и баланс транспортной карты: [Mi Tarjeta Transporte](https://play.google.com/store/apps/details?id=com.crtm.integrated&hl=es) (Android; заменяет старые Tarjeta Transporte и Tarjeta Transporte Virtual). На iOS по-прежнему [Tarjeta Transporte](https://apps.apple.com/es/app/tarjeta-transporte/id1619770175?l=en-GB). Приложение Virtual снято с публикации
 - Интерактивная карта метро ([Android](https://play.google.com/store/apps/details?id=com.mapway.global), [iOS](https://apps.apple.com/gb/app/mapway-city-journey-planner/id6443581415))
 - Официальное приложение метро Мадрид. В отличии от интерактивной карты здесь есть информация про наличие лифтов на станциях (с колясками актуально) ([Android](https://play.google.com/store/apps/details?id=es.metromadrid.metroandroid), [iOS](https://apps.apple.com/es/app/metro-de-madrid-oficial/id481638277))
 - Схемы и расписание транспорта ([Android](https://play.google.com/store/apps/details?id=com.greenlionsoft.free.madrid&hl=es), [iOS](https://apps.apple.com/es/app/madrid-metro-bus-cercanias/id1359656589?l=en-GB))
@@ -31,10 +31,7 @@ lastUpdated: 2026-06-30
 
 ## Ночные автобусы (Autobuses Nocturnos Búhos de Madrid)
 
-- Ночные автобусы, известные как "Búhos" (Совы), курсируют в ночное время, когда не работает метро
-- Маршруты начинаются от Plaza de Cibeles и расходятся по всему городу
-Работают с 23:45 до 6:00 утра
-- Интервал движения обычно составляет 15-30 минут в зависимости от маршрута и дня недели
-- Для оплаты проезда можно использовать обычные транспортные карты или купить билет у водителя
-- Маршруты обозначаются буквой N перед номером (например, N1, N2 и т.д.)
-- [Карта маршрутов ночных автобусов](https://www.madrid.es/UnidadesDescentralizadas/UDCMedios/noticias/2009/05Mayo/18Lunes/NotasdePrensa/Buhos/ficheros/EMT%20Noct7aMy09s3%20remarcado.pdf)
+- Ночные автобусы, известные как "Búhos" (Совы), ходят ночью, когда не работает метро
+- Маршруты обозначаются буквой N перед номером (например, N1, N2)
+- Оплата как в обычных автобусах EMT: транспортные карты (Multi / TTP) или банковская карта contactless. Билет у водителя тоже возможен
+- Актуальные маршруты, интервалы и схемы — только на официальных сайтах [CRTM](https://www.crtm.es/) и [EMT Madrid](https://www.emtmadrid.es/). Старые PDF-карты (в том числе схема 2009 года) не используйте
