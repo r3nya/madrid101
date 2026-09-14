@@ -1,7 +1,7 @@
 ---
 title: Número de Seguridad Social
 description: Как получить номер социального страхования в Испании
-lastUpdated: 2025-12-06
+lastUpdated: 2026-09-14
 ---
 
 Número de Seguridad Social (NUSS) — номер социального страхования в Испании. Это 12-значный номер, который присваивается один раз и остаётся с вами навсегда.
@@ -15,20 +15,21 @@ Número de Seguridad Social (NUSS) — номер социального стр�
 
 ## Как получить
 
-### Онлайн (с цифровым сертификатом)
+### Онлайн через Import@ss
 
-1. Зайдите на портал [Import@ss](https://portal.seg-social.gob.es/)
-2. Авторизуйтесь через [цифровой сертификат](/documents/digital-certificate) или Cl@ve
-3. Выберите «Ciudadanos» → «Afiliación e Inscripción» → «Solicitud de número de Seguridad Social»
-4. Заполните данные и отправьте заявку
+1. Откройте [Solicitar el Número de la Seguridad Social](https://portal.seg-social.gob.es/wps/portal/importass/importass/Categorias/Altas,%20bajas%20y%20modificaciones/Altas%20y%20afiliacion%20de%20trabajadores/Solicitar%20el%20numero%20de%20la%20Seguridad%20Social) на Import@ss
+2. С [цифровым сертификатом](/documents/digital-certificate) или Cl@ve — номер обычно присваивается сразу
+3. Без Cl@ve и сертификата — загрузите фото обеих сторон DNI/NIE/паспорта и selfie с документом; TGSS проверит заявку
 
-Номер присваивается сразу.
+### Уже есть номер
 
-### Лично в офисе
+Скачайте [Acreditación del Número de la Seguridad Social](https://portal.seg-social.gob.es/wps/portal/importass/importass/Categorias/Vida%20laboral%20e%20informes/Informes%20sobre%20tu%20situacion%20laboral/Acreditacion_NUSS) в Import@ss (PDF).
 
-1. Найдите ближайший офис [Tesorería General de la Seguridad Social](https://www.seg-social.es/wps/portal/wss/internet/OficinaSeguridadSocial)
-2. Запишитесь на приём (cita previa) через [этот портал](https://sede.seg-social.gob.es/wps/portal/sede/sede/Ciudadanos/CiijubilacionSimulador/citaprevia)
-3. Принесите документы и заполненную форму TA.1
+### Лично в офисе TGSS
+
+1. Найдите офис [Tesorería General de la Seguridad Social (TGSS)](https://www.seg-social.es/wps/portal/wss/internet/OficinaSeguridadSocial)
+2. Cita previa INSS здесь не нужна: NUSS оформляет TGSS, это другая служба
+3. Принесите документы и форму TA.1
 
 ## Необходимые документы
 
@@ -39,4 +40,5 @@ Número de Seguridad Social (NUSS) — номер социального стр�
 ## Полезные ссылки
 
 - [Import@ss — личный кабинет](https://portal.seg-social.gob.es/)
-- [Проверить свой номер, если забыли](https://sede.seg-social.gob.es/wps/portal/sede/sede/Ciudadanos/CiijubilacionSimulador/206702)
+- [Solicitar NUSS](https://portal.seg-social.gob.es/wps/portal/importass/importass/Categorias/Altas,%20bajas%20y%20modificaciones/Altas%20y%20afiliacion%20de%20trabajadores/Solicitar%20el%20numero%20de%20la%20Seguridad%20Social)
+- [Acreditación NUSS](https://portal.seg-social.gob.es/wps/portal/importass/importass/Categorias/Vida%20laboral%20e%20informes/Informes%20sobre%20tu%20situacion%20laboral/Acreditacion_NUSS)
