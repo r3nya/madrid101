@@ -33,13 +33,6 @@ export default defineConfig({
   vite: {
     build: {
       cssCodeSplit: true,
-      rollupOptions: {
-        output: {
-          manualChunks: {
-            starlight: ["@astrojs/starlight"],
-          },
-        },
-      },
     },
   },
   integrations: [
