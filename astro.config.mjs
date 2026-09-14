@@ -33,14 +33,6 @@ export default defineConfig({
   vite: {
     build: {
       cssCodeSplit: true,
-      rollupOptions: {
-        output: {
-          // Rolldown (Astro 7) requires a function; object form throws.
-          // Prior map { starlight: ["@astrojs/starlight"] } aborts static
-          // generation when expressed as a function, so do not assign chunks.
-          manualChunks() {},
-        },
-      },
     },
   },
   integrations: [
