@@ -13,4 +13,4 @@ sidebar:
 :::
 
 - [Сайт для покупки разрешения в Sierra de Guadarrama](https://www.reservasparquesnacionales.es/real/ParquesNac/usu/html/detalle-actividad-oapn.aspx?cen=27&act=26)
-- [Общая информация](https://www.comunidad.madrid/servicios/salud/setas-silvestres)
+- [Общая информация](https://www.comunidad.madrid/salud/setas-silvestres)
