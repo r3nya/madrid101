@@ -27,7 +27,7 @@ lastUpdated: 2026-09-14
 - Лица, ищущие убежища
 - Лица без вида на жительство, находящиеся в особых обстоятельствах
 
-:::нote
+:::note
 Обязательное условие: **нет другого счёта в Испании**. Банк не имеет права отказать в открытии базового счёта, если вы соответствуете требованиям.
 :::
 
@@ -38,7 +38,7 @@ lastUpdated: 2026-09-14
 1. Запросите письменное обоснование отказа
 2. Подайте жалобу в службу поддержки клиентов банка (Servicio de Atención al Cliente)
 3. Если проблема не решена в срок, обратитесь в Банк Испании:
-   - [Рекламации BdE (седе электроника)](https://sedeelectronica.bde.es/sede/es/tramites/reclamaciones-transparencia-buenas-practicas-p104.html)
+   - [Рекламации BdE (sede electrónica)](https://sedeelectronica.bde.es/sede/es/tramites/reclamaciones-transparencia-buenas-practicas-p104.html)
    - Телефон: 900 545 454
 
 ## Банки с базовыми счетами в Испании
