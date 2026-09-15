@@ -1,9 +1,15 @@
 {
   "$schema": "https://biomejs.dev/schemas/2.5.11/schema.json",
   "files": {
-    "includes": ["**", "!**/.astro", "!**/dist"]
+    "includes": ["**", "!**/.astro", "!**/dist", "!**/*.svg"]
   },
-  "assist": { "actions": { "source": { "organizeImports": "on" } } },
+  "assist": {
+    "actions": {
+      "source": {
+        "organizeImports": "on"
+      }
+    }
+  },
   "formatter": {
     "useEditorconfig": true,
     "attributePosition": "multiline",
