@@ -230,7 +230,7 @@ export const coffeeRoasters = [
     name: "Toma cafe",
     url: "https://toma.cafe/es/",
     subscription: true,
-    location: "Барселона",
+    location: "Мадрид",
   },
   {
     name: "WAKE UP COFFEE",
