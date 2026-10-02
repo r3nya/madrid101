@@ -6,58 +6,46 @@ author: "Madrid 101"
 canonicalUrl: "https://madrid101.xyz/healthcare/tarjeta-sanitaria/"
 articleSection: "Медицина"
 tags: ["Tarjeta Sanitaria", "медицина", "Мадрид", "страховка", "Seguridad Social", "здравоохранение"]
-lastUpdated: 2026-06-30
+lastUpdated: 2026-10-02
 sidebar:
   order: 1
 ---
 
 import { Steps } from '@astrojs/starlight/components';
 
-:::note[Tarjeta Sanitaria]
-Это документ, выданный Департаментом здравоохранения Мадридского сообщества, который удостоверяет личность граждан как пользователей системы общественного здравоохранения Мадридского сообщества и облегчает доступ к медицинским услугам.
-[[Источник]](https://www.comunidad.madrid/servicios/salud/tarjeta-sanitaria)
+:::note[Tarjeta Sanitaria Individual (TSI)]
+TSI — медицинская карта для доступа к государственной системе здравоохранения Comunidad de Madrid. Это не полис частной страховки. На карте указан CIPA — идентификатор пациента, который нужен, например, для [записи к врачу](/healthcare/appointments/). [Официальная информация о карте](https://www.comunidad.madrid/salud/tarjeta-sanitaria).
 :::
 
-## Как оформить?
-:::caution
-Для работы с [sede-tu.seg-social.gob.es](https://sede-tu.seg-social.gob.es/), необходимо иметь [цифровую подпись](/documents/digital-certificate/).
-:::
-:::tip
-По сообщениям в чате, оформление оффлайн будет быстрее, чем онлайн.
-:::
+## Перед оформлением
 
-### Оффлайн
+Проверьте, что INSS признал ваше право на медицинскую помощь — *derecho a asistencia sanitaria*. Подтверждение (Documento Acreditativo del Derecho, DAD) можно получить через [Tu Seguridad Social](https://sede-tu.seg-social.gob.es/).
+
+Для недавно зарегистрированного autónomo первое списание взноса само по себе не является обязательным условием выдачи TSI. Если после alta подтверждение права недоступно, уточните статус в INSS. Ожидание первого списания не заменяет проверку права.
+
+## Оформление в поликлинике
 
 <Steps>
-1. [Найти государственную поликлинику по прописке](https://centrossanitarios.sanidadmadrid.org/CentrosDireccion/misCentroPorDireccion.aspx)
-
-1. Подготовить документы:
-    - TIE
-    - [Прописка](/documents/residence-registration/)
-    - Документ из соцстраха
-      - Открыть сайт [sede-tu.seg-social.gob.es](https://sede-tu.seg-social.gob.es/)
-      - В пункте “ASISTENCIA SANITARIA” скачать сертификат (кнопка “DESCARGAR CERTIFICADO”)
-    :::tip
-    Если вы только зарегистрировались в соцстрахе и не можете скачать сертификат, то необходимо подождать первого списания за соцстрах
-    :::
-
-1. Прийти в поликлинику со всеми подготовленными документами, чтобы получить Tarjeta Sanitaria. После подачи заявки, выдадут временную бумагу по которой можно обращаться в поликлинику, там же указан семейный врач.
-1. Ожидание самой карты – 3 недели. Забирать в той же поликлинике, где оформляли заявку.
-
+1. [Найдите centro de salud по адресу проживания](https://centrossanitarios.sanidadmadrid.org/CentrosDireccion/misCentroPorDireccion.aspx).
+1. Уточните документы в регистратуре: удостоверение личности и документ о действующем разрешении на проживание или его продлении, [padrón](/documents/residence-registration/) и подтверждение права INSS. Для ребёнка без DNI/TIE потребуется документ о рождении. Часть сведений администрация проверяет самостоятельно; актуальный перечень есть в [карточке процедуры](https://sede.comunidad.madrid/prestacion-social/tarjeta-sanitaria).
+1. Подайте заявление. Уточните CIPA, назначенный centro de salud и врача, а также документ для обращения до получения пластиковой карты.
+1. После проверки документов карта обычно поступает в поликлинику примерно через 3–4 недели. Срок выдачи временного документа уточняйте в своём центре.
 </Steps>
 
-### Онлайн
+## Оформление онлайн
 
 <Steps>
-1. Заполнить форму заявления на [sede.comunidad.madrid/prestacion-social/tarjeta-sanitaria/tramitar](https://sede.comunidad.madrid/prestacion-social/tarjeta-sanitaria/tramitar). После подачи заявки, в электронный кабинет придёт подтверждение.
-1. На следующий день, придёт временная бумага по которой можно обращаться в поликлинику, там же указан семейный врач.
-1. Саму карту, нужно будет забрать в поликлинике, примерно через месяц.
+1. Откройте [электронную процедуру оформления TSI](https://sede.comunidad.madrid/prestacion-social/tarjeta-sanitaria) и перейдите к заявлению в Cuenta Digital.
+1. Подготовьте документы и средство электронной подписи, признаваемое Comunidad de Madrid, например [цифровой сертификат](/documents/digital-certificate/) или DNI electrónico. Подпишите и отправьте заявление, сохраните подтверждение подачи.
+1. Проверяйте уведомления: администрация может запросить дополнительные документы. Получение карты и доступ к медпомощи до её выдачи уточните в назначенной поликлинике.
 </Steps>
 
-## Как добавить к своему соц страху фамильяра (ребёнка, пареху)?
+## Виртуальная карта
 
-<Steps>
-1. Открыть сайт [sede-tu.seg-social.gob.es](https://sede-tu.seg-social.gob.es/) ([Прямая ссылка на необходимый раздел](https://sede-tu.seg-social.gob.es/wps/myportal/tussR/tuss))
-2. В блоке "ASISTENCIA SANITARIA" выбрать "Añadir beneficiario" / "Ver beneficiarios"
-3. Ввести данные фамильяра. Для ребёнка нужно добавить свидетельство о рождении, для партнёра – свидетельство о браке.
-</Steps>
+После оформления можно активировать [Tarjeta Sanitaria Virtual](https://www.comunidad.madrid/salud/tarjeta-sanitaria-virtual) в официальном приложении. Условия активации и доступные способы подтверждения личности проверяйте на странице сервиса.
+
+## Карта для ребёнка или другого бенефициара
+
+Сначала оформите право бенефициара в INSS через раздел **ASISTENCIA SANITARIA → Añadir beneficiario / Ver beneficiarios** в [Tu Seguridad Social](https://sede-tu.seg-social.gob.es/). INSS проверяет основания и запрашивает подтверждающие документы: например, свидетельство о рождении или браке. Само родство не означает автоматическое признание права.
+
+После признания права подайте отдельное заявление на TSI для каждого бенефициара в поликлинике или онлайн.
