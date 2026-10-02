@@ -4,7 +4,7 @@ description: Гид по подоходному налогу для резиде
 sidebar:
   label: Подоходный налог (IRPF)
   order: 1
-lastUpdated: 2026-09-14
+lastUpdated: 2026-10-02
 ---
 
 IRPF (Impuesto sobre la Renta de las Personas Físicas) — это испанский налог на доходы физических лиц. Это основной налог, который платят все налоговые резиденты Испании со своих **общемировых доходов**.
@@ -124,7 +124,9 @@ IRPF (Impuesto sobre la Renta de las Personas Físicas) — это испанс�
 
 ## Как и когда подавать декларацию?
 
-Кампания **Renta 2025** проходит в 2026 году. По [календарю AEAT](https://sede.agenciatributaria.gob.es/Sede/ayuda/contenidos-lectura-facil/calendario-contribuyente-2026-simplificado-personas-fisicas/fechas-campana-renta-patrimonio.html): онлайн-подача открыта с **2026-04-02**, последний день подачи — **2026-06-30**.
+Кампания **Renta 2025** прошла в 2026 году. По [календарю AEAT](https://sede.agenciatributaria.gob.es/Sede/ayuda/contenidos-lectura-facil/calendario-contribuyente-2026-simplificado-personas-fisicas/fechas-campana-renta-patrimonio.html): обычный срок онлайн-подачи был с **2026-04-08** по **2026-06-30**.
 
 *   **Modelo 100:** Основная форма декларации.
 *   Подать можно онлайн через сайт [Agencia Tributaria](https://sede.agenciatributaria.gob.es/) используя Cl@ve или цифровой сертификат.
+
+На 2026-10-02 обычный срок уже завершён. Проверить поданную декларацию, статус обработки и доступные способы исправления можно в [Renta 2025 на сайте AEAT](https://sede.agenciatributaria.gob.es/Sede/Renta.html). Если декларация не подана или обнаружена ошибка, уточните применимую процедуру и последствия подачи после срока; исправление не означает автоматического освобождения от доплат или санкций. Календарь кампании за доходы 2026 года проверяйте после его публикации AEAT.
