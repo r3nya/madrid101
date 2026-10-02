@@ -1,16 +1,19 @@
 ---
 title: Сбор грибов
 description: Сбор грибов в горах около Мадрида, разрешения и правила
-lastUpdated: 2024-11-29
+lastUpdated: 2026-10-02
 sidebar:
   order: 4
 ---
 
-## Сбор грибов
+## Где разрешён сбор
 
-:::note
-Грибы растут в горах, для их сбора нужно купить разрешение онлайн. Собирать нужно обязательно в плетеную корзинку, чтобы споры грибов рассеивались по лесу, за пластиковые ведра и пакеты могут оштрафовать.
+Разрешение относится к конкретному участку и владельцу территории, а не ко всем горам Sierra de Guadarrama. На [сайте национальных парков](https://reservasparquesnacionales.es/real/ParquesNac/usu/html/detalle-actividad-oapn.aspx?cen=27&act=26) оформляют разрешения для **Montes de Valsaín**, в провинции Сеговия; перед покупкой проверяйте границы, сезон, лимиты и правила выбранной зоны.
+
+:::caution
+По [Comunidad de Madrid](https://www.comunidad.madrid/medio-ambiente/buenas-practicas-medio-natural), на мадридской стороне национального парка Sierra de Guadarrama пока нет утверждённых планов использования грибных ресурсов, поэтому сбор там не разрешён. Разрешение для Valsaín не даёт права собирать грибы в других частях парка.
 :::
 
-- [Сайт для покупки разрешения в Sierra de Guadarrama](https://www.reservasparquesnacionales.es/real/ParquesNac/usu/html/detalle-actividad-oapn.aspx?cen=27&act=26)
-- [Общая информация](https://www.comunidad.madrid/salud/setas-silvestres)
+## Практические правила
+
+На территории, где сбор разрешён, соблюдайте условия разрешения и используйте проветриваемую корзину. Не повреждайте грибницу и не собирайте незнакомые экземпляры для еды: сходство с фотографией не подтверждает съедобность. [Рекомендации по диким грибам](https://www.comunidad.madrid/salud/setas-silvestres).
