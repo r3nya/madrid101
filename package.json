@@ -21,18 +21,18 @@
   "dependencies": {
     "@astrojs/check": "^0.9.10",
     "@astrojs/sitemap": "^3.7.4",
-    "@astrojs/starlight": "^0.41.11",
+    "@astrojs/starlight": "^0.42.2",
     "@zachleat/snow-fall": "^1.0.3",
-    "astro": "^7.3.2",
+    "astro": "^7.3.3",
     "astro-compress": "^2.4.3",
-    "astro-og-canvas": "^0.13.1",
+    "astro-og-canvas": "^0.13.2",
     "sharp": "^0.35.4",
-    "starlight-links-validator": "^0.25.3",
-    "typescript": "^7.0.2",
+    "starlight-links-validator": "^0.26.0",
+    "typescript": "^6.0.3",
     "xml2js": "^0.6.2"
   },
   "devDependencies": {
-    "@biomejs/biome": "2.5.11",
+    "@biomejs/biome": "2.5.14",
     "@vitest/ui": "^4.1.11",
     "vitest": "^4.1.11"
   },
