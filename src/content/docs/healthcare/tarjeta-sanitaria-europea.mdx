@@ -1,38 +1,38 @@
 ---
 title: Tarjeta Sanitaria Europea
-description: Как получить Европейскую карту медицинского страхования (TSE) онлайн
+description: Как получить Европейскую карту медицинского страхования (TSE) не выходя из дома
 tableOfContents: false
-lastUpdated: 2026-09-14
+lastUpdated: 2026-10-02
 sidebar:
   order: 2
 ---
 import { Steps } from '@astrojs/starlight/components';
 
-:::note[Tarjeta Sanitaria Europea (TSE)]
-TSE — документ, подтверждающий право на необходимую медицинскую помощь во время временного пребывания в странах **ЕС / ЕЭЗ / Швейцарии** и **Великобритании (UK)**.
+## Где действует TSE
+
+Tarjeta Sanitaria Europea (TSE) подтверждает право на необходимую государственную медицинскую помощь во время временной поездки в ЕС, ЕЭЗ, Швейцарию и Великобританию. Условия и доплаты такие же, как у застрахованных жителей страны пребывания: помощь не всегда бесплатна.
+
+:::caution[Ограничения для граждан третьих стран]
+Для граждан России и других стран вне ЕС/ЕЭЗ, Швейцарии и Великобритании TSE по общему правилу **не даёт права на помощь в Дании, Исландии, Лихтенштейне, Норвегии и Швейцарии**. Испанская резиденция сама по себе этого не меняет. [Памятка INSS об ограничениях](https://www.seg-social.es/descarga/es/Notainformativaparaimprimir).
+
+Есть исключения по статусу. Например, [правила для Норвегии](https://employment-social-affairs.ec.europa.eu/policies-and-activities/moving-working-europe/eu-social-security-coordination/european-health-insurance-card/how-use-card/norway-european-health-insurance-card_en) допускают использование карты членом семьи, застрахованным вместе с гражданином ЕС, а также признанными беженцами и лицами без гражданства. Применимость исключения уточняйте в INSS и у службы здравоохранения страны поездки; не переносите его автоматически на все пять стран.
 :::
 
-## Как получить TSE
+**Великобритания — отдельный случай:** она не входит в эти пять стран. Для временной поездки из Испании действующая TSE позволяет получить необходимую государственную помощь. Порядок обращения может различаться в Англии, Шотландии, Уэльсе и Северной Ирландии; проверьте [официальные правила для посетителей из ЕС](https://www.gov.uk/guidance/healthcare-for-eu-and-efta-citizens-visiting-the-uk).
 
-Простой путь — официальный сервис Seguridad Social:
+TSE не предназначена для планового лечения за границей или переезда на постоянное место жительства. Она не заменяет туристическую страховку. Право на TSE проверяет INSS; регистрация в качестве autónomo сама по себе не гарантирует выдачу карты. [Правила TSE и CPS](https://www.seg-social.es/wps/portal/wss/internet/Trabajadores/PrestacionesPensionesTrabajadores/10938/11566).
 
-- [Tarjeta sanitaria europea y certificado provisional sustitutorio](https://prestaciones.seg-social.es/servicio/tarjeta-sanitaria-europea-certificado-provisional-sustitutorio.html)
-- В sede: процедура **202046SinC**
+## Как заказать карту
 
 <Steps>
-1. Нужны право на asistencia sanitaria в Испании и вход через Cl@ve или цифровой сертификат.
-
-2. Откройте [сервис TSE / CPS](https://prestaciones.seg-social.es/servicio/tarjeta-sanitaria-europea-certificado-provisional-sustitutorio.html) и авторизуйтесь.
-
-3. Выберите:
-   - **TSE** — пластиковая карта, приходит по почте за **~5 дней**;
-   - **CPS** (Certificado Provisional Sustitutorio) — временный PDF (до 90 дней), скачивается сразу, если карта ещё не успеет.
-
-4. Укажите себя и при необходимости бенефициаров. Адрес доставки должен совпадать с адресом в Afiliación.
-
-5. Отправьте заявку. Письмо в поле «observaciones» не нужно — это не основной путь.
+1. Откройте [специализированный сервис TSE и Certificado Provisional Sustitutorio](https://prestaciones.seg-social.es/servicio/tarjeta-sanitaria-europea-certificado-provisional-sustitutorio.html?categoria=certificados).
+1. Выберите доступный способ идентификации. Есть варианты с сертификатом или Cl@ve permanente, по SMS и без сертификата. Для SMS номер должен быть зарегистрирован в Seguridad Social.
+1. Проверьте данные заявителя, бенефициаров и адрес. При обращении без сертификата адрес доставки должен совпадать с адресом в Seguridad Social; после входа по SMS или сертификату можно выбрать адрес доставки.
+1. Отправьте запрос и сохраните подтверждение. При наличии права карточку пришлют почтой. Если сервис не подтверждает право, обратитесь в INSS для уточнения, а не подавайте общий запрос как обязательный первый шаг.
 </Steps>
 
-:::note
-Ссылка `INSS_2.37` к TSE не относится. Используйте сервис выше (prestaciones / `202046SinC`).
-:::
+Способы подачи описаны в [официальной памятке Seguridad Social](https://www.seg-social.es/descarga/es/FolletoTSE).
+
+## Если поездка скоро: CPS
+
+Certificado Provisional Sustitutorio (CPS) временно заменяет TSE. При признанном праве его можно получить в том же сервисе после электронной идентификации и сразу скачать в PDF. Проверяйте период действия, указанный в документе: он покрывает только эти даты.

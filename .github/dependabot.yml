@@ -11,6 +11,10 @@ updates:
       time: "09:00"
       day: "monday"
     open-pull-requests-limit: 10
+    # Stay on TypeScript 6 until @astrojs/check supports TS7 (needs Language Service API / Astro 7.1+)
+    ignore:
+      - dependency-name: "typescript"
+        update-types: ["version-update:semver-major"]
     commit-message:
       prefix: "chore(deps)"
       prefix-development: "chore(deps-dev)"
