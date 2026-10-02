@@ -16,7 +16,7 @@ lastUpdated: 2024-11-29
 - [Playa del Alberche](https://maps.app.goo.gl/8c6FCM7uEKWmxV7r9)
 - [Embalse de San Juan](https://maps.app.goo.gl/kxsgKGtaA6Y797mk6) (два пляжа)
 
-Подробнее можно прочесть [на сайте коммунидада](https://maps.app.goo.gl/8c6FCM7uEKWmxV7r9).
+Подробнее можно прочесть [на сайте коммунидада](https://www.comunidad.madrid/salud/zonas-bano).
 
 ### Открытые бассейны с пресной водой
 

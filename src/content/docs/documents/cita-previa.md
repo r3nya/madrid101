@@ -1,32 +1,47 @@
 ---
 title: Cita previa
 description: Как записаться на приём в государственные учреждения Испании
-lastUpdated: 2025-12-06
+lastUpdated: 2026-09-14
 ---
 
-Cita previa — предварительная запись на приём. Без неё в большинство госучреждений Испании попасть невозможно. Записываться нужно заранее — слоты разбирают быстро.
+Cita previa — предварительная запись на приём. Без неё в большинство госучреждений Испании попасть невозможно. Записывайтесь заранее — слоты разбирают быстро.
 
 ## Основные учреждения
 
-### Extranjería (миграционные вопросы)
+### Extranjería и Policía (ICPPlus)
 
-Продление резиденции, разрешения на работу, статус беженца.
+Запись на миграционные и полицейские процедуры — через **ICPPlus**:
 
-- [Записаться на приём](https://icp.administracionelectronica.gob.es/icpplus/index.html)
-- Выберите провинцию → «Extranjería» → нужную процедуру
+- [Хаб ICPPlus](https://sede.administracionespublicas.gob.es/pagina/index/directorio/icpplus/)
+- [Записаться (ICPPlus)](https://icp.administracionelectronica.gob.es/icpplus/index.html)
 
-### Policía Nacional (полиция)
+**Extranjería** — продление резиденции, разрешения на работу, статус беженца.
 
-Получение и продление TIE, снятие отпечатков пальцев (huella).
+- Провинция → «Extranjería» → нужная процедура
 
-- [Записаться на приём](https://icp.administracionelectronica.gob.es/icpplus/index.html)
-- Выберите провинцию → «Policía - Toma de huellas» или «Expedición de tarjeta»
+**Policía Nacional** — NIE, TIE, отпечатки (huella):
 
-### Seguridad Social (соцстрахование)
+- **NIE** — номер иностранца
+- **TIE** — пластиковая карта (выдача / продление)
+- Huella — снятие отпечатков для TIE
 
-[Номер соцстрахования](/documents/numero-seguridad-social/), пособия, пенсия.
+- Провинция → «Policía - Toma de huellas» или «Expedición de Tarjeta de Identidad de Extranjero»
 
-- [Записаться на приём](https://sede.seg-social.gob.es/wps/portal/sede/sede/Ciudadanos/cita+previa+para+pensiones+y+otras+prestaciones/13cita+previa+para+pensiones+y+otras+prestaciones)
+### Seguridad Social: INSS и TGSS
+
+Это разные органы — каналы записи разные.
+
+#### INSS (престации и пенсии)
+
+Пособия, пенсия, IMV и другие prestaciones.
+
+- [Cita previa INSS](https://sede.seg-social.gob.es/wps/portal/sede/sede/Ciudadanos/cita+previa+para+pensiones+y+otras+prestaciones/13cita+previa+para+pensiones+y+otras+prestaciones)
+
+#### TGSS (афилиация и cotización)
+
+[Номер соцстрахования](/documents/numero-seguridad-social/), cotización, autónomos, deudas.
+
+Обычно **без cita previa**: онлайн через [Import@ss](https://portal.seg-social.gob.es/) или лично в офис TGSS (пн–пт, утро; уточняйте расписание).
 
 ### Hacienda / AEAT (налоговая)
 
