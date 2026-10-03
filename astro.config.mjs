@@ -171,6 +171,7 @@ export default defineConfig({
               label: "Районы города",
               link: "housing/districts",
             },
+            { label: "Стоимость жизни", link: "housing/cost-of-living" },
             { label: "Долгосрочная аренда", link: "housing/long-term-rental" },
             {
               label: "Краткосрочная аренда",
