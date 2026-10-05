@@ -30,7 +30,7 @@ export const utilityProviders = [
     ],
     referral: {
       href: "https://share.octopusenergy.es/metal-leaf-749",
-      note: "дадут 50–80 EUR (зависит от акций)",
+      note: "по 50 € каждой стороне",
     },
     cardDescription: "Электричество и газ",
   },
