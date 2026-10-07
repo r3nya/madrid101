@@ -1,46 +1,14 @@
 ---
 title: Телекоммуникации
 description: Провайдеры интернета и мобильной связи в Мадриде
-lastUpdated: 2026-10-05
+lastUpdated: 2026-10-07
+tableOfContents:
+  maxHeadingLevel: 4
 sidebar:
   order: 2
 ---
 
 import { LinkCard } from '@astrojs/starlight/components';
-import { telecomProviders } from '@/data/telecom';
-
-export const byCategory = (category) =>
-  telecomProviders.filter((provider) => provider.category === category);
-
-export const slug = (name) =>
-  name
-    .toLowerCase()
-    .normalize('NFD')
-    .replace(/[\u0300-\u036f]/g, '')
-    .replace(/[^a-z0-9]+/g, '-')
-    .replace(/(^-|-$)/g, '');
-
-export const renderProviders = (category) =>
-  byCategory(category).map((provider) => (
-    <div key={provider.name}>
-      <h4 id={slug(provider.name)}>{provider.name}</h4>
-      <ul>
-        {provider.bullets.map((bullet) => (
-          <li key={bullet}>{bullet}</li>
-        ))}
-        {provider.referral && (
-          <li>
-            <a href={provider.referral.href}>Реферальная ссылка</a>, {provider.referral.note}
-          </li>
-        )}
-      </ul>
-      <LinkCard
-        title={provider.name}
-        description={provider.cardDescription}
-        href={provider.url}
-      />
-    </div>
-  ));
 
 Все операторы ниже продают частным клиентам в Мадриде. Покрытие оптоволокна всегда зависит от конкретного адреса — проверяйте его на сайте оператора перед заключением контракта.
 
@@ -48,15 +16,159 @@ export const renderProviders = (category) =>
 
 ### Основные операторы
 
-{renderProviders('major')}
+#### Movistar
+
+- Крупнейший оператор в Испании, собственная сеть оптоволокна
+- Полный набор: интернет, ТВ, мобильная связь
+- Высокое качество связи, но цены выше среднего
+- Movistar Plus+ — основной вариант для футбола (LaLiga, Champions League), Формулы 1 и MotoGP, есть 4K
+
+<LinkCard title="Movistar" description="Интернет, ТВ и мобильная связь" href="https://www.movistar.es/" />
+
+#### Orange
+
+- С 08.06.2026 Orange владеет 100% MasOrange
+- С сентября 2026 корпоративный бренд — Orange España; коммерческие бренды (Orange, MásMóvil, Yoigo, Jazztel и др.) сохраняются
+- Хорошее покрытие 5G, пакеты интернет + мобильная + ТВ
+
+<LinkCard title="Orange" description="Интернет, ТВ и мобильная связь" href="https://www.orange.es/" />
+
+#### Vodafone
+
+- Широкий выбор тарифов и пакеты с ТВ-каналами
+- Хорошее покрытие в городах
+- Есть специальные предложения для молодежи
+
+<LinkCard title="Vodafone" description="Интернет, ТВ и мобильная связь" href="https://www.vodafone.es/" />
 
 ### Виртуальные и альтернативные операторы
 
-{renderProviders('alt')}
+#### MásMóvil
+
+- Бренд группы Orange España (бывший MasOrange)
+- Работает на сетях группы Orange
+- Привлекательные цены и простые тарифы
+
+<LinkCard title="MásMóvil" description="Интернет и мобильная связь" href="https://www.masmovil.es/" />
+
+#### Yoigo
+
+- Бренд группы Orange España
+- Собственная мобильная сеть плюс сеть Orange
+- Простые тарифы, конкурентные цены
+- Без длительных контрактов
+
+<LinkCard title="Yoigo" description="Интернет и мобильная связь" href="https://www.yoigo.com/" />
+
+#### Jazztel
+
+- Бренд Orange с 2015 года, использует инфраструктуру Orange
+- Конкурентные пакеты интернет + мобильная связь
+- Известен агрессивными промо для новых клиентов
+- Оптоволокно до 1 Гбит/с
+
+<LinkCard title="Jazztel" description="Интернет и мобильная связь" href="https://www.jazztel.com/" />
+
+#### Digi
+
+- Уже не просто виртуальный оператор: собственный спектр и сеть 5G, плюс роуминг на сети Movistar там, где своей сети нет
+- Собственная сеть оптоволокна
+- Одни из самых низких цен на рынке
+- Популярен среди экспатов: выгодные тарифы с международными звонками
+
+<LinkCard title="Digi" description="Интернет, мобильная связь и ТВ" href="https://www.digimobil.es/" />
+
+#### Lowi
+
+- Лоукост-бренд Vodafone, работает на сети Vodafone
+- Неиспользованные гигабайты накапливаются
+- Простое управление через приложение, без долгосрочных контрактов
+
+<LinkCard title="Lowi" description="Мобильная связь и интернет" href="https://www.lowi.es/" />
+
+#### O2
+
+- Бренд Telefónica, работает на сети Movistar
+- Дешевле Movistar при той же сети
+- Без permanencia (контрактных обязательств)
+- Простые тарифы без лишних услуг
+
+<LinkCard title="O2" description="Интернет и мобильная связь" href="https://o2online.es/" />
+
+#### Pepephone
+
+- Известен качественной поддержкой клиентов
+- Прозрачные тарифы без скрытых платежей
+- Бренд группы Orange España (ранее MásMóvil)
+- Мобильная связь и оптоволокно
+- [Реферальная ссылка](https://ppph.es/bosquepepe?mgm=T3MBQYNX), обещают посадить дерево
+
+<LinkCard title="Pepephone" description="Интернет и мобильная связь" href="https://www.pepephone.com/" />
+
+#### Simyo
+
+- Бренд Orange, работает на сети Orange
+- Гибкий конструктор тарифов: выбираете точное количество минут и гигабайт
+- Неиспользованные гигабайты накапливаются
+- Без обязательств по сроку (кроме покупки телефона)
+
+<LinkCard title="Simyo" description="Мобильная связь и оптоволокно" href="https://www.simyo.es/" />
+
+#### Finetwork
+
+- Бренд Vodafone (finetwork.es) с июля 2026; с 10.10.2026 старый оператор на finetwork.com не может использовать имя
+- Работает на сети Vodafone
+- Одни из самых низких цен на рынке
+- Гигабайты можно накапливать и делиться с другими абонентами Finetwork
+
+<LinkCard title="Finetwork" description="Мобильная связь и оптоволокно" href="https://www.finetwork.es/" />
+
+#### Suop
+
+- Первый «совместный» (collaborative) оператор в Испании: бонусы за активность в сообществе
+- Работает на сети Orange
+- Простые тарифы без скрытых условий, без permanencia на мобильную связь
+
+<LinkCard title="Suop" description="Мобильная связь и интернет" href="https://www.suop.es/" />
+
+#### Adamo
+
+- Специализируется на оптоволокне (до 1 Гбит/с), собственная сеть
+- Фокус на пригороды и частный сектор, куда не доходят другие; часто единственный вариант быстрого интернета в урбанизациях
+- Есть пакеты интернет + мобильная связь
+- Покрытие в Мадриде и Комунидад зависит от адреса — проверьте на сайте
+
+<LinkCard title="Adamo" description="Высокоскоростной интернет" href="https://adamo.es/" />
+
+#### Lebara
+
+- Предоплаченные тарифы (prepago) без контракта и permanencia
+- Фокус на международные звонки: в бонусы входят минуты на десятки стран
+- Работает на мобильной сети группы Orange, есть 5G
+- Только мобильная связь, без домашнего интернета
+
+<LinkCard title="Lebara" description="Мобильная связь prepago" href="https://lebaraspain.es/" />
+
+#### Avatel
+
+- Оператор оптоволокна (FTTH), исторически силен в сельских и пригородных зонах
+- С июня 2026 оптовое соглашение с MasOrange: потенциальное покрытие около 95% домохозяйств Испании, включая крупные города
+- Покрытие нужно проверять по конкретному адресу
+- Есть пакеты с мобильной связью и ТВ (CLICtv)
+
+<LinkCard title="Avatel" description="Оптоволокно, мобильная связь и ТВ" href="https://avatel.es/" />
 
 ### Спутниковый интернет
 
-{renderProviders('satellite')}
+#### Starlink
+
+- Спутниковый интернет от SpaceX
+- Решение для удаленных мест без оптоволокна
+- Относительно дорогие оборудование и подписка
+- Простая самостоятельная установка
+- Можно использовать в разных местах (за доплату)
+
+<LinkCard title="Starlink" description="Спутниковый интернет" href="https://www.starlink.com/es" />
 
 ## Важная информация
 

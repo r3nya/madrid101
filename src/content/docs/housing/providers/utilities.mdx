@@ -1,21 +1,12 @@
 ---
 title: Коммунальные услуги
 description: Поставщики газа и электроэнергии в Мадриде
-lastUpdated: 2026-10-05
+lastUpdated: 2026-10-07
 sidebar:
   order: 1
 ---
 
 import { LinkCard } from '@astrojs/starlight/components';
-import { utilityProviders } from '@/data/utilities';
-
-export const slug = (name) =>
-  name
-    .toLowerCase()
-    .normalize('NFD')
-    .replace(/[\u0300-\u036f]/g, '')
-    .replace(/[^a-z0-9]+/g, '-')
-    .replace(/(^-|-$)/g, '');
 
 ## Как это работает
 
@@ -47,26 +38,79 @@ export const slug = (name) =>
 
 Все поставщики ниже продают частным клиентам в Мадриде.
 
-{utilityProviders.map((provider) => (
-  <div key={provider.name}>
-    <h3 id={slug(provider.name)}>{provider.name}</h3>
-    <ul>
-      {provider.bullets.map((bullet) => (
-        <li key={bullet}>{bullet}</li>
-      ))}
-      {provider.referral && (
-        <li>
-          <a href={provider.referral.href}>Реферальная ссылка</a>, {provider.referral.note}
-        </li>
-      )}
-    </ul>
-    <LinkCard
-      title={provider.name}
-      description={provider.cardDescription}
-      href={provider.url}
-    />
-  </div>
-))}
+### Octopus Energy
+
+- 100% возобновляемая электроэнергия
+- Прозрачное ценообразование
+- Удобное приложение для управления услугами
+- Хорошая служба поддержки
+- [Реферальная ссылка](https://share.octopusenergy.es/metal-leaf-749), по 50 € каждой стороне
+
+<LinkCard title="Octopus Energy" description="Электричество и газ" href="https://octopusenergy.es/" />
+
+### Naturgy
+
+- Один из крупнейших поставщиков газа и электроэнергии в Испании
+- Комбинированные тарифы газ + электричество
+- Специальные тарифы для новых клиентов
+
+<LinkCard title="Naturgy" description="Газ и электричество" href="https://www.naturgy.es/" />
+
+### Iberdrola
+
+- Крупный поставщик электроэнергии
+- Есть «зеленые» тарифы и тарифы со стабильной ценой
+- Удобное приложение для управления услугами
+
+<LinkCard title="Iberdrola" description="Электричество и газ" href="https://www.iberdrola.es/" />
+
+### Endesa
+
+- Один из старейших поставщиков энергии в Испании
+- Фиксированные тарифы
+- Программа лояльности для постоянных клиентов
+
+<LinkCard title="Endesa" description="Электричество и газ" href="https://www.endesa.com/" />
+
+### TotalEnergies
+
+- Международная компания, в Испании работает с бывшей клиентской базой EDP
+- Конкурентные тарифы на газ и электричество
+
+<LinkCard title="TotalEnergies" description="Газ и электричество" href="https://totalenergies.es/" />
+
+### Repsol
+
+- Известный бренд в энергетике
+- Скидки при подключении нескольких услуг
+
+<LinkCard title="Repsol" description="Газ и электричество" href="https://www.repsol.es/" />
+
+### Gana Energía
+
+- Независимая комерсиализадора из Валенсии, работает по всей полуостровной Испании и Балеарам
+- Без permanencia, контракт онлайн за несколько минут
+- Три тарифа на свет: фиксированный 24 часа, по временным периодам и по рыночной цене
+- Газ по себестоимости в зависимости от уровня потребления
+
+<LinkCard title="Gana Energía" description="Электричество и газ" href="https://ganaenergia.com/" />
+
+### Podo
+
+- 100% онлайн-комерсиализадора, работает по всей Испании
+- Без permanencia
+- Фиксированные тарифы и тарифы по рыночной цене
+
+<LinkCard title="Podo" description="Электричество и газ" href="https://www.mipodo.com/" />
+
+### Plenitude
+
+- Энергетическая компания группы Eni
+- Работает во всех муниципалитетах полуостровной Испании и на Балеарах
+- Фиксированная цена на 12 месяцев без permanencia или переменный тариф по рынку
+- Электричество из возобновляемых источников, есть солнечные панели
+
+<LinkCard title="Plenitude" description="Электричество и газ" href="https://eniplenitude.es/" />
 
 ## Необходимые документы
 
