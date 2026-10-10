@@ -21,9 +21,9 @@
   "dependencies": {
     "@astrojs/check": "^0.9.10",
     "@astrojs/sitemap": "^3.7.4",
-    "@astrojs/starlight": "^0.42.2",
+    "@astrojs/starlight": "^0.42.4",
     "@zachleat/snow-fall": "^1.0.3",
-    "astro": "^7.3.3",
+    "astro": "^7.3.5",
     "astro-compress": "^2.4.3",
     "astro-og-canvas": "^0.13.2",
     "sharp": "^0.35.5",
