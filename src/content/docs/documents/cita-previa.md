@@ -1,7 +1,7 @@
 ---
 title: Cita previa
 description: Как записаться на приём в государственные учреждения Испании
-lastUpdated: 2026-09-14
+lastUpdated: 2026-10-05
 ---
 
 Cita previa — предварительная запись на приём. Без неё в большинство госучреждений Испании попасть невозможно. Записывайтесь заранее — слоты разбирают быстро.
@@ -45,15 +45,17 @@ Cita previa — предварительная запись на приём. Б�
 
 ### Hacienda / AEAT (налоговая)
 
-Декларация IRPF, вопросы по налогам, получение справок.
+Вопросы по налогам, censo, получение справок. Приём в офисах AEAT — только по записи (кроме подачи документов через registro). Учтите: через этот сервис не помогают заполнить декларацию Renta — запись на помощь с Renta открывается отдельно, во время кампании.
 
-- [Записаться на приём](https://sede.agenciatributaria.gob.es/Sede/procedimientoini/GC27.shtml)
+- [Записаться на приём (Asistencia y Cita)](https://sede.agenciatributaria.gob.es/Sede/procedimientoini/GC29.shtml) → «Asistencia y Cita para particulares»
+- Также можно через приложение «AEAT» или по телефону [91 333 5 333](tel:+34913335333) (пн–пт, 9:00–19:00; в августе до 15:00)
 
 ### DGT (дорожная полиция)
 
 Обмен водительских прав, получение испанских прав.
 
-- [Записаться на приём](https://sede.dgt.gob.es/es/tramites-y-multas/cita-previa/)
+- [Записаться на приём](https://sede.dgt.gob.es/es/otros-tramites/cita-previa/)
+- Также через приложение miDGT или по телефону [060](tel:060) (из-за границы — [+34 902 887 060](tel:+34902887060))
 
 ### Ayuntamiento de Madrid (муниципалитет)
 
@@ -74,4 +76,4 @@ Cita previa — предварительная запись на приём. Б�
 Если слотов нет, можно отслеживать появление через сторонние сервисы:
 
 - [Cita previa alert bot](https://t.me/citapreviabot) — Telegram-бот для уведомлений
-- [Citaprevia.es](https://www.citaprevia.es/) — мониторинг слотов
+- [Citaprevia.es](https://www.citaprevia.es/) — неофициальный справочник: где и как записаться в разные организации (слоты не отслеживает)
