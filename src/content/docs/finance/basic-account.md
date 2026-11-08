@@ -1,12 +1,12 @@
 ---
 title: Базовый банковский счёт
 description: Информация о базовом банковском счёте (cuenta básica) в Испании, его преимуществах и процедуре оформления
-lastUpdated: 2026-10-02
+lastUpdated: 2026-11-08
 ---
 
 ## Что такое базовый банковский счёт?
 
-Базовый банковский счёт (cuenta de pago básica) обеспечивает доступ к основным платёжным услугам. Обязанность банков предлагать его предусмотрена [Real Decreto-ley 19/2017](https://www.boe.es/buscar/act.php?id=BOE-A-2017-13885), комиссии регулирует [Orden ECE/228/2019](https://www.boe.es/eli/es/o/2019/02/28/ece228/con), а бесплатное обслуживание для экономически уязвимых клиентов — [Real Decreto 164/2019](https://www.boe.es/buscar/act.php?id=BOE-A-2019-4951).
+Базовый банковский счёт (cuenta de pago básica) обеспечивает доступ к основным платёжным услугам. Обязанность банков предлагать его предусмотрена [Real Decreto-ley 19/2017](https://www.boe.es/buscar/act.php?id=BOE-A-2017-13644), комиссии регулирует [Orden ECE/228/2019](https://www.boe.es/eli/es/o/2019/02/28/ece228/con), а бесплатное обслуживание для экономически уязвимых клиентов — [Real Decreto 164/2019](https://www.boe.es/buscar/act.php?id=BOE-A-2019-4906).
 
 ## Основные характеристики
 
@@ -15,7 +15,7 @@ lastUpdated: 2026-10-02
   - Открытие, обслуживание и закрытие счёта
   - Дебетовая карта
   - До **120 операций в год суммарно**: переводы и прямые дебеты в евро в пределах ЕС. За превышение лимита возможна отдельная комиссия
-  - Снятие наличных в банкоматах своего банка
+  - Снятие наличных в отделениях и банкоматах в ЕС; условия снятия в чужих банкоматах уточните у банка
   - Прямой дебет (для оплаты счетов)
   - Доступ к онлайн-банкингу
 
@@ -46,14 +46,16 @@ lastUpdated: 2026-10-02
 | Банк | Ссылка на информацию о базовом счёте |
 |------|--------------------------------------|
 | BBVA | [Cuenta de Pago Básica BBVA](https://www.bbva.es/personas/productos/cuentas/cuenta-pago-basica.html) |
-| CaixaBank | [Cuenta de Pago Básico](https://www.caixabank.es/particular/cuentas/cuenta-de-pago-basica.html) |
+| CaixaBank | [Cuenta de Pago Básica](https://www.caixabank.es/particular/cuentas/cuenta-de-pago-basica.html) |
 | Banco Santander | [Cuenta de Pago Básica](https://www.bancosantander.es/particulares/cuentas-bancarias/cuenta-basica/) |
 | Bankinter | [Cuenta de Pago Básica](https://www.bankinter.com/banca/cuentas-tarjetas/cuentas/cuenta-basica) |
-| Abanca | [Cuenta de Pago Básica](https://www.abanca.com/es/cuentas/cuenta-pago-basica/) |
+| Abanca | [Cuenta de Pago Básica](https://www.abanca.com/es/cuentas-bancarias/cuenta-bancaria-pago-basica/) |
 | Unicaja | [Cuenta de Pago Básica](https://www.unicajabanco.es/es/particulares/cuentas-y-tarjetas/cuentas/cuenta-de-pago-basica) |
 | Kutxabank | [Cuenta de Pago Básica](https://portal.kutxabank.es/cs/Satellite/kb/es/particulares/productos/cuentas-y-planes-1/cuenta-de-pago-basica-/pys) |
 
-## Цифровые банки с базовыми счетами
+## Базовый счёт в Revolut
+
+У Revolut есть отдельная Cuenta Básica. Это регулируемый базовый счёт, а не обычный тариф Standard. На [странице продукта](https://www.revolut.com/es-ES/basic-account/) указаны бесплатное обслуживание и форма заявки; перед подачей проверьте требования и условия.
 
 | Банк | Ссылка на информацию о базовом счёте |
 |------|--------------------------------------|
