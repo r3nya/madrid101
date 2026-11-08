@@ -1,7 +1,7 @@
 ---
 title: Ресурсы для новых мадридцев
 description: Список полезных ресурсов для новых мадридцев
-lastUpdated: 2026-10-02
+lastUpdated: 2026-11-08
 ---
 
 ## Новости города и региона
@@ -12,7 +12,7 @@ lastUpdated: 2026-10-02
 ## Официальные публикации
 
 - [Boletín Oficial del Ayuntamiento de Madrid (BOAM)](https://www.madrid.es/boam) — муниципальные решения, конкурсы и объявления. Полезен, когда нужно проверить опубликованный документ, а не только новость о нём.
-- [Boletín Oficial de la Comunidad de Madrid (BOCM)](https://www.bocm.es/) — региональные нормативные акты и объявления. Можно искать по дате, номеру бюллетеня или CVE документа.
+- [Boletín Oficial de la Comunidad de Madrid (BOCM)](https://www.bocm.es/) — региональные нормативные акты и объявления. Можно искать по дате, номеру бюллетеня или CVE документа, его проверочному коду.
 - [Sede Electrónica Ayuntamiento de Madrid](https://sede.madrid.es/) — действующие муниципальные процедуры: документы, способы подачи и сроки.
 - [Administración Digital Comunidad de Madrid](https://sede.comunidad.madrid/) — региональные заявления и услуги, календарь отдельных конкурсов и уведомления.
 
