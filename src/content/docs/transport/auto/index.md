@@ -1,7 +1,7 @@
 ---
 title: Общая информация
 description: "Информация для автомобилистов в Мадриде: штрафы, парковки, зоны пониженных выбросов, полезные приложения"
-lastUpdated: 2026-10-02
+lastUpdated: 2026-11-08
 ---
 
 ## Карты и схемы
@@ -26,7 +26,7 @@ lastUpdated: 2026-10-02
 
 ## Полезные приложения
 
-- Официальное приложение местного гаи (DGT), позволяет просмотреть свои штрафы и показать вод.права в электронном виде ([Android](https://play.google.com/store/apps/details?id=com.dgt.midgt), [iOS](https://apps.apple.com/es/app/midgt/id1463054197?platform=iphone))
+- Официальное приложение miDGT позволяет проверить штрафы и показать водительское удостоверение в электронном виде в Испании ([Android](https://play.google.com/store/apps/details?id=com.dgt.midgt), [iOS](https://apps.apple.com/es/app/midgt/id1463054197?platform=iphone))
 
 ### Парковки
 
