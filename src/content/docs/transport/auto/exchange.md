@@ -21,6 +21,8 @@ sidebar:
 :::note
 Если у вас есть водительские права другой страны EU/EEA, вы не обязаны их менять. Однако вы можете сделать это на добровольной основе. [Подробная информация на сайте DGT](https://sede.dgt.gob.es/es/permisos-de-conducir/canjes-de-permisos/canjes-de-permisos-extranjeros/canjes-inscripcion-renovacion-y-sustitucion-de-permisos-de-la-ue-y-eee/canje-de-permisos-de-la-ue-y-eee/).
 
+Если права ЕС/ЕЭЗ выданы взамен удостоверения третьей страны, заранее уточните возможность обмена в DGT.
+
 Отдельно от добровольного canje существует обязательное продление (**renovación**). При обычном проживании (*residencia normal*) в Испании права продлевают здесь по истечении срока. Для бессрочных прав или прав со сроком действия свыше **15 лет** для категорий AM, A1, A2, A, B, BE продление обязательно после **2 лет** residencia normal. Для категорий C1, C1E, C, CE, D1, D1E, D, DE соответствующий порог срока действия — **свыше 5 лет**, а не 15. [Процедуры для прав ЕС/ЕЭЗ](https://sede.dgt.gob.es/es/permisos-de-conducir/canjes-de-permisos/canjes-de-permisos-extranjeros/canjes-inscripcion-renovacion-y-sustitucion-de-permisos-de-la-ue-y-eee/) и [пояснение DGT по категориям](https://www.dgt.es/comunicacion/noticias/20250221-sin-los-papeles-en-regla).
 
 Также можно избежать части следующих шагов, если обратиться к "ситоловам" или "помогаторам". В некоторых медицинских центрах, где вы будете делать справку, есть услуга подачи всех документов за вас. Судя по ценам на сайтах, это стоит недорого, но я не могу рекомендовать этот вариант, так как сам не пользовался.
