@@ -1,10 +1,10 @@
 ---
 title: Vida laboral
 description: Как получить отчёт о трудовом стаже в Испании
-lastUpdated: 2026-10-02
+lastUpdated: 2026-11-08
 ---
 
-Informe de Vida Laboral — официальный документ, содержащий полную историю вашей трудовой деятельности в Испании. Показывает периоды регистрации (alta/baja), работодателей и стаж в системе социального страхования. Размеры баз для взносов смотрите в отдельном Informe de bases de cotización.
+Informe de Vida Laboral — официальный документ, содержащий полную историю вашей трудовой деятельности в Испании. Показывает периоды регистрации (alta/baja), работодателей и стаж в системе социального страхования. Размеры баз для взносов смотрите в отдельном Informe de bases de cotización. Отчёт не включает периоды работы за границей. Если вы никогда не были зарегистрированы в Seguridad Social, получить его нельзя.
 
 ## Зачем нужен
 
@@ -39,7 +39,7 @@ Informe de Vida Laboral — официальный документ, содер�
 
 ### Лично в офисе
 
-Обратитесь в любой офис [Tesorería General de la Seguridad Social](https://www.seg-social.es/wps/portal/wss/internet/OficinaSeguridadSocial) с паспортом/NIE.
+Если нужна помощь, найдите офис [Tesorería General de la Seguridad Social](https://www.seg-social.es/wps/portal/wss/internet/OficinaSeguridadSocial) и заранее уточните порядок обращения и документы.
 
 ## Что содержит документ
 
