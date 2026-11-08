@@ -1,7 +1,7 @@
 ---
 title: Поезда 🚂
 description: Информация о железнодорожных операторах в Мадриде и Испании
-lastUpdated: 2026-09-14
+lastUpdated: 2026-11-02
 ---
 
 В Мадриде и по всей Испании действуют несколько операторов железнодорожного транспорта, предлагающих как высокоскоростные, так и обычные поезда. 
@@ -17,7 +17,7 @@ lastUpdated: 2026-09-14
 
 ### Renfe Combinado Cercanías
 
-Renfe предлагает специальную услугу под названием ["Combinado Cercanías"](https://blog.renfe.com/asi-puedes-canjear-el-combinado-cercanias/):
+Renfe предлагает специальную услугу под названием ["Combinado Cercanías"](https://www.renfe.com/es/es/viajar/prepara-tu-viaje/billetes-ave-y-largadistancia/todos-los-billetes):
 
 - Бесплатный проезд на пригородных поездах Cercanías, Rodalies и FEVE, а также на трамваях Аликанте при покупке билета на поезда AVE или другие дальние маршруты Renfe (не в Avlo)
 - Действует в течение 4 часов до отправления и 4 часов после прибытия дальнего поезда
@@ -36,6 +36,14 @@ Renfe предлагает специальную услугу под назва
 Оформление: приложение [Renfe Cercanías](https://play.google.com/store/apps/details?id=com.renfe.renfecercanias), сайт Renfe, автоматы или кассы на станциях.
 
 Источник и актуальные правила: [Abonos Bonificados](https://www.renfe.com/es/es/promociones/abonos-renfe/abonos-bonificados).
+
+### Abono Único (2026)
+
+С **19 января 2026** действует персональный [Abono Único](https://www.renfe.com/es/es/normativa): **60€ на 30 дней**. Льготный вариант **30€** предназначен для граждан Испании и иностранцев с законным проживанием, родившихся с 1 января 2000 по 31 декабря 2026; требуется предварительная регистрация в системе Ministerio de Transportes и код скидки.
+
+Он покрывает Cercanías/Rodalies, обычные Media Distancia и автобусные маршруты государственной концессии. Это не билет на все поезда и автобусы: **AVE и Avlo не включены**, а для Avant действуют отдельные перечисленные в правилах исключения. Для поездов с закреплённым местом необходимо заранее оформить бронирование на конкретный рейс; действуют ограничения и правила отмены.
+
+Для поездок только по Мадриду сначала проверьте свой [Abono Transporte](/transport/transport-cards/): он уже включает Cercanías в оплаченных зонах. Отдельный Renfe-абонемент нужен не всегда.
 
 ## Ouigo
 
