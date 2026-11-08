@@ -1,7 +1,7 @@
 ---
 title: Мотошеринг
 description: Как пользоваться мотошерингом в Мадриде и какие сервисы доступны 
-lastUpdated: 2026-09-14
+lastUpdated: 2026-11-02
 ---
 
 ## Как это работает?
@@ -24,13 +24,13 @@ lastUpdated: 2026-09-14
 
 - Более 1000 мотоциклов в Мадриде
 - Три тарифных плана
-- Приложение: [Apple Store](https://apps.apple.com/app/id1458243832) / [Google Play](https://play.google.com/store/apps/details?id=com.acciona.mobility)
+- Приложение: [Apple Store](https://apps.apple.com/es/app/id1431664935) / [Google Play](https://play.google.com/store/apps/details?id=com.acciona.mobility.app)
 
 ### COOLTRA
 
 - Предлагает суточную аренду
 - Средняя автономность: 47 км
-- Приложение: [Apple Store](https://apps.apple.com/app/id1435811871) / [Google Play](https://play.google.com/store/apps/details?id=com.mobime.cooltra)
+- Приложение: [Apple Store](https://apps.apple.com/es/app/id1083424977) / [Google Play](https://play.google.com/store/apps/details?id=com.mobime.ecooltra)
 
 ### CABIFY
 
