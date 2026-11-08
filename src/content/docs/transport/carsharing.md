@@ -1,7 +1,7 @@
 ---
 title: Каршеринг
 description: Как пользоваться каршерингом в Мадриде и какие сервисы доступны
-lastUpdated: 2026-09-14
+lastUpdated: 2026-11-02
 ---
 
 ## Как это работает?
@@ -19,13 +19,13 @@ lastUpdated: 2026-09-14
 - **Парк:** около 700 электромобилей
 - **Модели:** Fiat 500e, Peugeot e-208 и другие электрические модели Stellantis
 - **Особенности:** Free-floating по Home Area; тарифы по минутам, часам и дням; уличная парковка в зоне сервиса бесплатна; есть точки у аэропорта Барахас
-- **Приложение:** [Android](https://play.google.com/store/apps/details?id=com.free2move.app) | [iOS](https://apps.apple.com/app/free2move-carsharing/id1131638759)
+- **Приложение:** [Android](https://play.google.com/store/apps/details?id=com.car2go) | [iOS](https://apps.apple.com/es/app/id514921710)
 
 ### WIBLE
 - **Парк:** более 650 автомобилей
 - **Модели:** Kia Niro PHEV, Kia XCeed (гибриды-плагины)
 - **Особенности:** Одна из самых широких зон обслуживания (включая пригороды); метка CERO — доступ в Madrid Central и парковка в SER
-- **Приложение:** [Android](https://play.google.com/store/apps/details?id=com.kia.wible) | [iOS](https://apps.apple.com/app/wible/id1330318323)
+- **Приложение:** [Android](https://play.google.com/store/apps/details?id=com.vulog.carshare.kia) | [iOS](https://apps.apple.com/es/app/id1407339605)
 
 ### guppy (бывший GoTo)
 - **Парк:** порядка 500+ электромобилей в Мадриде (в т.ч. бывший парк GoTo и часть машин закрывшегося ZITY)
@@ -37,7 +37,7 @@ lastUpdated: 2026-09-14
 - **Парк:** около 1000 электромобилей (проект Mutua Madrileña)
 - **Модели:** Fiat 500e и Opel Corsa-e (100% электрические)
 - **Особенности:** Free-floating; зона шире M-30 (пригороды); доступен также через Cabify (категория Carsharing)
-- **Приложение:** [Android](https://play.google.com/store/apps/details?id=com.voltio.android) | [iOS](https://apps.apple.com/app/voltio/id1599965166)
+- **Приложение:** [Android](https://play.google.com/store/apps/details?id=com.mutuamadsharing.voltio) | [iOS](https://apps.apple.com/es/app/id6444582191)
 
 ## Важно помнить
 
