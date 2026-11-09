@@ -40,7 +40,7 @@ import { Badge, LinkCard } from '@astrojs/starlight/components';
 
 ## Verify and finish
 
-Update `lastUpdated` to the review date and check Russian grammar. Run repository checks from `AGENTS.md`. Compare failures against the current base; leave unrelated formatting and failures out of the patch.
+Update `lastUpdated` to the review date in `YYYY-MM-DD` format. Write dates and date ranges in article prose in Russian (e.g., `9 ноября 2026 года`), and check Russian grammar. Run repository checks from `AGENTS.md`. Compare failures against the current base; leave unrelated formatting and failures out of the patch.
 
 Build and inspect the compiled telecom page: operator headings, links, badges, date, restrictions and intended referrals. Static prose needs no new unit tests.
 

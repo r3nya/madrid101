@@ -22,7 +22,7 @@ Update `src/content/docs/housing/providers/utilities.mdx` from official sources.
 
 Preserve current base-branch edits, provider ordering and intentional links when updating a PR. Do not restore a referral the base branch removed. Keep other guides and new utility categories out of scope unless requested.
 
-Use concise descriptions with supporting links. Keep supplier switching, contract-holder changes and reconnection separate; do not promise a completion date or free installation without evidence for that procedure. Update `lastUpdated` to the review date and check Russian grammar.
+Use concise descriptions with supporting links. Keep supplier switching, contract-holder changes and reconnection separate; do not promise a completion date or free installation without evidence for that procedure. Update `lastUpdated` to the review date in `YYYY-MM-DD` format. Write dates and date ranges in article prose in Russian (e.g., `9 ноября 2026 года`), and check Russian grammar.
 
 ## Verify and finish
 
