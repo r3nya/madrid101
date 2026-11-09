@@ -36,6 +36,13 @@
     "@vitest/ui": "^5.0.5",
     "vitest": "^5.0.2"
   },
+  "overrides": {
+    "astro-compress": {
+      "deepmerge-ts": "8.0.2",
+      "sharp": "$sharp",
+      "svgo": "4.1.0"
+    }
+  },
   "allowScripts": {
     "esbuild@0.27.7": true,
     "sharp@0.34.5": true,
