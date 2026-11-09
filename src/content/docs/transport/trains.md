@@ -1,7 +1,7 @@
 ---
 title: Поезда 🚂
 description: Информация о железнодорожных операторах в Мадриде и Испании
-lastUpdated: 2026-10-02
+lastUpdated: 2026-11-02
 ---
 
 В Мадриде и по всей Испании действуют несколько операторов железнодорожного транспорта, предлагающих как высокоскоростные, так и обычные поезда. 
@@ -17,7 +17,7 @@ lastUpdated: 2026-10-02
 
 ### Renfe Combinado Cercanías
 
-Renfe предлагает специальную услугу под названием ["Combinado Cercanías"](https://blog.renfe.com/asi-puedes-canjear-el-combinado-cercanias/):
+Renfe предлагает специальную услугу под названием ["Combinado Cercanías"](https://www.renfe.com/es/es/viajar/prepara-tu-viaje/billetes-ave-y-largadistancia/todos-los-billetes):
 
 - Бесплатный проезд на пригородных поездах Cercanías, Rodalies и FEVE, а также на трамваях Аликанте при покупке билета на поезда AVE или другие дальние маршруты Renfe (не в Avlo)
 - Действует в течение 4 часов до отправления и 4 часов после прибытия дальнего поезда
