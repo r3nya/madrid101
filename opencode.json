@@ -22,19 +22,5 @@
         ".yml"
       ]
     }
-  },
-  "command": {
-    "build": {
-      "template": "Run npm run build to build the project",
-      "description": "Build the project"
-    },
-    "lint": {
-      "template": "Run npm run check to check code formatting and linting",
-      "description": "Check code formatting and linting"
-    },
-    "format": {
-      "template": "Run npm run format to format code",
-      "description": "Format code with Oxfmt"
-    }
   }
 }
