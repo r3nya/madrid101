@@ -33,7 +33,7 @@ import { Badge, LinkCard } from '@astrojs/starlight/components';
 | No minimum commitment           | `tip`     | Specify fibre or mobile scope                        |
 | Prepaid or international calls  | `caution` | Explain eligibility and destination restrictions     |
 - Use Russian labels and standard names such as eSIM and 5G. Prefer up to four useful badges per operator. Explain the legend once; an omitted badge means unconfirmed, not necessarily unavailable.
-- Distinguish advertised speed from usable throughput. Explain address and equipment limits beside the offer.
+- Distinguish advertised speed from usable throughput. Confirm that the residential offer is commercially available; a rollout announcement or router capability alone is insufficient. Explain address and equipment limits, eligible bundles and any add-on fee beside the badge. Prefer direct current product or contract terms over community posts.
 - Explain eSIM restrictions: contract-only, physical SIM first, store visits or activation within Spain. Phone eSIM does not establish smartwatch or MultiSIM support.
 - Check installation recovery, promotions, router returns and device financing separately from tariff commitment. A mobile no-commitment claim does not establish the same for fibre.
 - Link supporting pages in descriptions. National measurement rankings do not guarantee performance at an address.
