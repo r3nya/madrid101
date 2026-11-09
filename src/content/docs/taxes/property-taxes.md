@@ -3,7 +3,7 @@ title: Налоги на недвижимость
 description: Краткий обзор налогов на недвижимость в Мадриде для номадов и экспатов
 sidebar:
   label: На недвижимость
-lastUpdated: 2026-11-08
+lastUpdated: 2026-11-09
 ---
 
 Если вы владеете недвижимостью в Мадриде, важно знать ключевые налоги. Они зависят от статуса (резидент/нерезидент) и операций (владение, продажа). Ниже — основные налоги на владение, их названия и сроки оплаты. Информация актуализирована на 2026 год; перед оплатой проверяйте даты на сайтах [Ayuntamiento de Madrid](https://www.madrid.es/) и [Agencia Tributaria](https://sede.agenciatributaria.gob.es/Sede/en_gb/inicio.html).
@@ -19,17 +19,7 @@ lastUpdated: 2026-11-08
 Для нерезидентов при владении для собственного использования (без аренды) — renta imputada: **1,1%** или **2%** от кадастровой стоимости × **19%** (резиденты ЕС/ЕЭЗ) или **24%** (остальные). При сдаче в аренду налог рассчитывают с дохода от аренды по ставке **19%** или **24%**. Для резидентов ЕС/ЕЭЗ при соблюдении условий AEAT разрешён вычет связанных с арендой расходов. [Правила налогообложения недвижимости нерезидентов](https://sede.agenciatributaria.gob.es/Sede/no-residentes/irnr-sin-establecimiento-permanente/cuestiones-especificas-sobre-tributacion-inmuebles.html).
 
 - **Кто платит?** Налоговые нерезиденты Испании. Налоговые резиденты отражают доход от аренды и, когда применимо, вменённый доход от жилья в [IRPF](/taxes/irpf/); основное жильё имеет отдельные правила.
-- **Сроки Modelo 210:** с 2026 года действуют изменения по Orden HAC/623/2026. Для аренды ниже указаны сроки при сумме налога к уплате; для нулевого результата и возврата проверяйте отдельные правила AEAT.
-
-| Доход и способ декларирования | Период подачи и оплаты | При оплате прямым списанием (domiciliación) |
-| --- | --- | --- |
-| Renta imputada за 2025 год | 2026-01-01–2026-12-31 | 2026-01-01–2026-12-23 |
-| Renta imputada за 2026 год | 2027-04-01–2027-12-31 | 2027-04-01–2027-12-23 |
-| Аренда за 2026 год, годовая группировка | 2027-04-01–2027-04-20 | 2027-04-01–2027-04-15 |
-| Аренда за июль–сентябрь 2026, отдельные начисления | 2026-10-01–2026-10-20 | 2026-10-01–2026-10-15 |
-| Аренда за октябрь–декабрь 2026, отдельные начисления | 2027-04-01–2027-04-20 | 2027-04-01–2027-04-15 |
-
-Группировка доходов от аренды стала годовой с доходов 2024 года. Новые апрельские сроки применяются к доходам за 2026 год с указанными переходными исключениями. [Уведомление AEAT об изменениях Modelo 210](https://sede.agenciatributaria.gob.es/Sede/todas-gestiones/impuestos-tasas/impuesto-sobre-renta-no-residentes/modelo-210-irnr______a-no-residentes-permanente_/nota-modificaciones-plazos-presentacion-modelo-210.html).
+- **Сроки Modelo 210:** зависят от вида дохода, налогового периода, способа декларирования и оплаты. Актуальные сроки и переходные правила смотрите в [уведомлении AEAT об изменениях Modelo 210](https://sede.agenciatributaria.gob.es/Sede/todas-gestiones/impuestos-tasas/impuesto-sobre-renta-no-residentes/modelo-210-irnr______a-no-residentes-permanente_/nota-modificaciones-plazos-presentacion-modelo-210.html).
 - **Где проверить и подать?** Официальный сайт Agencia Tributaria: [Информация по IRNR для нерезидентов без постоянного представительства](https://sede.agenciatributaria.gob.es/Sede/en_gb/no-residentes/irnr-sin-establecimiento-permanente.html) и [Форма 210 для подачи](https://sede.agenciatributaria.gob.es/Sede/en_gb/procedimientoini/GF00.shtml).
 
 ## Plusvalía (Impuesto sobre el Incremento de Valor de los Terrenos de Naturaleza Urbana) — налог на прирост стоимости городской земли
