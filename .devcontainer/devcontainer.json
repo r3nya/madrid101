@@ -1,6 +1,6 @@
 {
   "name": "madrid101-astro",
-  "image": "mcr.microsoft.com/devcontainers/typescript-node:22",
+  "image": "mcr.microsoft.com/devcontainers/typescript-node:24",
   "forwardPorts": [4321],
   "postCreateCommand": "npm install",
   "postStartCommand": "npm run dev",
