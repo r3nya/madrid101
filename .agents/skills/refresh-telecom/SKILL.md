@@ -6,7 +6,7 @@ description: Use when updating Madrid101's telecom provider guide, checking oper
 
 # Refresh the telecom guide
 
-Update `src/content/docs/housing/providers/telecom.mdx` from official sources. Keep the article in Russian and its static content in MDX. Reuse Starlight components as in `src/content/docs/housing/long-term-rental.mdx`.
+Update `src/content/docs/housing/providers/telecom.mdx` from official sources. Keep the article in Russian and its static content in MDX. Use the `Badge` and `LinkCard` components from `@astrojs/starlight/components`.
 
 ## Check the offers
 
