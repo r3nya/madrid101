@@ -8,7 +8,6 @@
   },
   "formatter": {
     "oxfmt": {
-      "command": ["npx", "--no-install", "oxfmt", "--write", "$FILE"],
       "extensions": [
         ".js",
         ".mjs",
