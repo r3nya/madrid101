@@ -16,24 +16,28 @@ lastUpdated: 2026-11-02
 ## Основные компании
 
 ### FREE2MOVE (включая SHARE NOW / EMOV)
+
 - **Парк:** около 700 электромобилей
 - **Модели:** Fiat 500e, Peugeot e-208 и другие электрические модели Stellantis
 - **Особенности:** Free-floating по Home Area; тарифы по минутам, часам и дням; уличная парковка в зоне сервиса бесплатна; есть точки у аэропорта Барахас
 - **Приложение:** [Android](https://play.google.com/store/apps/details?id=com.car2go) | [iOS](https://apps.apple.com/es/app/id514921710)
 
 ### WIBLE
+
 - **Парк:** более 650 автомобилей
 - **Модели:** Kia Niro PHEV, Kia XCeed (гибриды-плагины)
 - **Особенности:** Одна из самых широких зон обслуживания (включая пригороды); метка CERO — доступ в Madrid Central и парковка в SER
 - **Приложение:** [Android](https://play.google.com/store/apps/details?id=com.vulog.carshare.kia) | [iOS](https://apps.apple.com/es/app/id1407339605)
 
 ### guppy (бывший GoTo)
+
 - **Парк:** порядка 500+ электромобилей в Мадриде (в т.ч. бывший парк GoTo и часть машин закрывшегося ZITY)
 - **Модели:** Renault Zoe, Dacia Spring и др. (100% электрические)
 - **Особенности:** Free-floating в зоне guppy; межпровинциальные поездки между городами guppy; точки у аэропорта Барахас и IFEMA
 - **Приложение:** [Android](https://play.google.com/store/apps/details?id=com.guppy.app) | [iOS](https://apps.apple.com/app/guppy-car-sharing/id1472994364)
 
 ### VOLTIO
+
 - **Парк:** около 1000 электромобилей (проект Mutua Madrileña)
 - **Модели:** Fiat 500e и Opel Corsa-e (100% электрические)
 - **Особенности:** Free-floating; зона шире M-30 (пригороды); доступен также через Cabify (категория Carsharing)

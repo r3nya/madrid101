@@ -5,13 +5,14 @@ keywords: "Tarjeta Sanitaria, медицинская карта Мадрид, и
 author: "Madrid 101"
 canonicalUrl: "https://madrid101.xyz/healthcare/tarjeta-sanitaria/"
 articleSection: "Медицина"
-tags: ["Tarjeta Sanitaria", "медицина", "Мадрид", "страховка", "Seguridad Social", "здравоохранение"]
+tags:
+  ["Tarjeta Sanitaria", "медицина", "Мадрид", "страховка", "Seguridad Social", "здравоохранение"]
 lastUpdated: 2026-06-30
 sidebar:
   order: 1
 ---
 
-import { Steps } from '@astrojs/starlight/components';
+import { Aside, Steps } from "@astrojs/starlight/components";
 
 :::note[Tarjeta Sanitaria]
 Это документ, выданный Департаментом здравоохранения Мадридского сообщества, который удостоверяет личность граждан как пользователей системы общественного здравоохранения Мадридского сообщества и облегчает доступ к медицинским услугам.
@@ -19,6 +20,7 @@ import { Steps } from '@astrojs/starlight/components';
 :::
 
 ## Как оформить?
+
 :::caution
 Для работы с [sede-tu.seg-social.gob.es](https://sede-tu.seg-social.gob.es/), необходимо иметь [цифровую подпись](/documents/digital-certificate/).
 :::
@@ -29,17 +31,20 @@ import { Steps } from '@astrojs/starlight/components';
 ### Оффлайн
 
 <Steps>
+
 1. [Найти государственную поликлинику по прописке](https://centrossanitarios.sanidadmadrid.org/CentrosDireccion/misCentroPorDireccion.aspx)
 
 1. Подготовить документы:
-    - TIE
-    - [Прописка](/documents/residence-registration/)
-    - Документ из соцстраха
-      - Открыть сайт [sede-tu.seg-social.gob.es](https://sede-tu.seg-social.gob.es/)
-      - В пункте “ASISTENCIA SANITARIA” скачать сертификат (кнопка “DESCARGAR CERTIFICADO”)
-    :::tip
-    Если вы только зарегистрировались в соцстрахе и не можете скачать сертификат, то необходимо подождать первого списания за соцстрах
-    :::
+   - TIE
+   - [Прописка](/documents/residence-registration/)
+   - Документ из соцстраха
+     - Открыть сайт [sede-tu.seg-social.gob.es](https://sede-tu.seg-social.gob.es/)
+     - В пункте “ASISTENCIA SANITARIA” скачать сертификат (кнопка “DESCARGAR CERTIFICADO”)
+
+   <Aside type="tip">
+     Если вы только зарегистрировались в соцстрахе и не можете скачать сертификат, то необходимо
+     подождать первого списания за соцстрах
+   </Aside>
 
 1. Прийти в поликлинику со всеми подготовленными документами, чтобы получить Tarjeta Sanitaria. После подачи заявки, выдадут временную бумагу по которой можно обращаться в поликлинику, там же указан семейный врач.
 1. Ожидание самой карты – 3 недели. Забирать в той же поликлинике, где оформляли заявку.
@@ -49,15 +54,19 @@ import { Steps } from '@astrojs/starlight/components';
 ### Онлайн
 
 <Steps>
+
 1. Заполнить форму заявления на [sede.comunidad.madrid/prestacion-social/tarjeta-sanitaria/tramitar](https://sede.comunidad.madrid/prestacion-social/tarjeta-sanitaria/tramitar). После подачи заявки, в электронный кабинет придёт подтверждение.
 1. На следующий день, придёт временная бумага по которой можно обращаться в поликлинику, там же указан семейный врач.
 1. Саму карту, нужно будет забрать в поликлинике, примерно через месяц.
+
 </Steps>
 
 ## Как добавить к своему соц страху фамильяра (ребёнка, пареху)?
 
 <Steps>
+
 1. Открыть сайт [sede-tu.seg-social.gob.es](https://sede-tu.seg-social.gob.es/) ([Прямая ссылка на необходимый раздел](https://sede-tu.seg-social.gob.es/wps/myportal/tussR/tuss))
 2. В блоке "ASISTENCIA SANITARIA" выбрать "Añadir beneficiario" / "Ver beneficiarios"
 3. Ввести данные фамильяра. Для ребёнка нужно добавить свидетельство о рождении, для партнёра – свидетельство о браке.
+
 </Steps>

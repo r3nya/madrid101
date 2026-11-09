@@ -7,32 +7,20 @@
     }
   },
   "formatter": {
-    "biome": {
-      "command": ["npm", "run", "biome:format"],
+    "oxfmt": {
       "extensions": [
         ".js",
+        ".mjs",
         ".ts",
         ".jsx",
         ".tsx",
         ".json",
         ".astro",
         ".md",
-        ".mdx"
+        ".mdx",
+        ".yaml",
+        ".yml"
       ]
-    }
-  },
-  "command": {
-    "build": {
-      "template": "Run npm run build to build the project",
-      "description": "Build the project"
-    },
-    "lint": {
-      "template": "Run npm run biome:check to check code formatting and linting",
-      "description": "Check code formatting and linting"
-    },
-    "format": {
-      "template": "Run npm run biome:format to format code",
-      "description": "Format code with biome"
     }
   }
 }

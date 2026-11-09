@@ -12,7 +12,7 @@ lastUpdated: 2026-11-08
 ## Сроки оплаты
 
 - **Период добровольной оплаты** ежегодно публикует Ayuntamiento de Madrid. Перед оплатой проверьте срок в извещении и на [портале IVTM](https://agenciatributaria.madrid.es/portales/contribuyente/es/Impuestos-tasas-y-precios-publicos/Vehiculos-de-Traccion-Mecanica-IVTM-/).
-- При просрочке начисляются надбавки (*recargos*), а в предусмотренных законом случаях также проценты за просрочку
+- При просрочке начисляются надбавки (_recargos_), а в предусмотренных законом случаях также проценты за просрочку
 
 ## Проверка начисленного налога
 
@@ -23,6 +23,7 @@ lastUpdated: 2026-11-08
 ### Онлайн
 
 Оплатить налог можно через официальный сайт мэрии Мадрида:
+
 - [Портал оплаты налогов Мадрида](https://agenciatributaria.madrid.es/portales/contribuyente/es/Gestiones-y-tramites/Pagos/Pago-de-impuestos-tasas-precios-publicos-y-multas-de-circulacion/?vgnextfmt=default&vgnextchannel=27b0e9ef4fad6810VgnVCM2000001f4a900aRCRD)
 
 ### Другие способы
@@ -53,7 +54,8 @@ lastUpdated: 2026-11-08
 ## Расчет суммы налога
 
 Сумма налога зависит от нескольких факторов:
-- Налоговая мощность легкового автомобиля (*caballos fiscales*), которая отличается от мощности двигателя в лошадиных силах
+
+- Налоговая мощность легкового автомобиля (_caballos fiscales_), которая отличается от мощности двигателя в лошадиных силах
 - Тип транспортного средства
 - Муниципалитет регистрации
 

@@ -11,6 +11,7 @@ lastUpdated: 2024-11-29
 :::
 
 Есть четыре водоёма, где купаться всё же разрешено:
+
 - [Presillas de Rascafria](https://maps.app.goo.gl/nukUoxpvQqTb5yuQ6)
 - [Playa de Estremera](https://maps.app.goo.gl/2nkJQmhZ5mxNWjEUA)
 - [Playa del Alberche](https://maps.app.goo.gl/8c6FCM7uEKWmxV7r9)
@@ -24,7 +25,6 @@ lastUpdated: 2024-11-29
 
 - [Las Berceas](https://entradas.cercedilla.es/)
 - [Riosequillo](https://arearecreativa.buitrago.org/)
-
 
 ## Каяки, сапы
 

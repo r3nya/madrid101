@@ -1,4 +1,4 @@
-# Madrid101 
+# Madrid101
 
 ## 🧞 Commands
 

@@ -26,6 +26,7 @@ lastUpdated: 2026-09-14
 Ниже — краткие ориентиры по районам Мадрида, сгруппированные «для кого» они чаще всего подходят. Внутри каждого района могут быть очень разные кварталы; всегда проверяйте конкретную улицу днём и ночью и учитывайте транспорт до работы/школы.
 
 Транспорт и связность (в общих чертах):
+
 - Метро: покрывает большинство районов внутри M‑30 и значительную часть внешних; подробности и советы — в [«Общественный транспорт»](/transport/public/).
 - Cercanías (пригородные электрички): быстрые пересадки и связь с окраинами через узлы Atocha, Sol, Chamartín, Nuevos Ministerios; удобно для юга/востока (Vallecas, [Villaverde](https://www.google.com/maps/search/?api=1&query=Villaverde%2C%20Madrid), [Vicálvaro](https://www.google.com/maps/search/?api=1&query=Vic%C3%A1lvaro%2C%20Madrid)) и севера ([Chamartín](https://www.google.com/maps/search/?api=1&query=Chamart%C3%ADn%2C%20Madrid), [Fuencarral–El Pardo](https://www.google.com/maps/search/?api=1&query=Fuencarral-El%20Pardo%2C%20Madrid)). См. также [«Поезда»](/transport/trains#renfe-combinado-cercanías).
 - Автобусы EMT: закрывают «белые пятна» без метро; ночью работают [«совы» (маршруты N)](/transport/public#ночные-автобусы-autobuses-nocturnos-búhos-de-madrid) от Cibeles — см. [«Общественный транспорт»](/transport/public/).
