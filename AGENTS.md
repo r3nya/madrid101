@@ -80,7 +80,7 @@ All content lives in `/src/content/docs/` with these main sections:
 - **Audience**: Digital nomads, expats, residents in Madrid
 - **Tone**: Helpful, neutral, practical
 - **Facts**: Include official sources, addresses, phone numbers, costs, requirements
-- **Dates**: Use `YYYY-MM-DD` format
+- **Dates**: Use Russian dates in article text (e.g., `9 ноября 2026 года`). Keep `YYYY-MM-DD` for machine-readable frontmatter such as `lastUpdated`.
 - **Grammar Check**: Always check grammar when updating content in `/src/content/docs/`
 
 ### Content Formatting

@@ -1,179 +1,241 @@
 ---
 title: Телекоммуникации
-description: Провайдеры интернета и мобильной связи в Мадриде
-lastUpdated: 2026-09-14
+description: "Провайдеры интернета и мобильной связи в Мадриде: скорости, eSIM, 5G и условия договоров"
+lastUpdated: 2026-11-09
+tableOfContents:
+  maxHeadingLevel: 4
 sidebar:
   order: 2
 ---
 
-import { LinkCard, CardGrid } from '@astrojs/starlight/components';
+import { Badge, LinkCard } from '@astrojs/starlight/components';
+
+Проверено по официальным сайтам 9 ноября 2026 года. Доступность оптоволокна зависит от адреса, а eSIM и 5G — от тарифа и совместимости устройства.
+
+Скорость в метках — максимальная заявленная скорость домашнего оптоволокна в каталоге, а не результат замера или гарантия подключения по любому адресу. **Без permanencia** означает отсутствие обязательного срока для домашнего интернета; отдельные условия мобильной связи указаны в описании. **Prepago** — мобильная связь по предоплате. Отсутствие метки не означает, что услуга недоступна: неподтверждённые возможности здесь не отмечены.
 
 ## Операторы связи
 
 ### Основные операторы
 
 #### Movistar
-- Крупнейший оператор в Испании
-- Предлагает полный спектр услуг: интернет, ТВ, мобильная связь
-- Имеет собственную оптоволоконную сеть
-- Высокое качество связи, но относительно высокие цены
-- Эксклюзивные права на Champions League; LaLiga — совместно с DAZN (не эксклюзив)
-- Специализированные каналы для спортивного контента: футбол, Формула 1, MotoGP с поддержкой 4K
+
+<Badge text="До 10 Гбит/с" variant="success" size="small" />
+<Badge text="eSIM" variant="note" size="small" />
+<Badge text="5G" variant="note" size="small" />
+<Badge text="Без permanencia" variant="tip" size="small" />
+
+- Есть оптоволокно, мобильная связь и ТВ. До 10 Гбит/с — дополнительная опция к пакету miMovistar: 5 €/мес. для Max и Ilimitado, 10 €/мес. для Base, сверх стоимости пакета. Нужны подходящее покрытие по адресу и роутер Smart WiFi 7. См. [условия miMovistar, раздел «Servicio Fibra hasta 10 Gb» и приложение 2](https://prod.adb.col.movistar.es/content/dam/movistar/contratos/701_COL_CAST_Condiciones_particulares_del_servicio_de_Conectividad_miMovistar.pdf).
+- [eSIM](https://www.movistar.es/tarifas-moviles/esim) доступна для совместимых устройств. Для prepago получение QR-кода оформляют через магазин Movistar.
+- [Обязательного срока по тарифам нет](https://www.movistar.es/atencion-cliente/permanencia), но рассрочка или аренда устройства создаёт отдельные платёжные обязательства.
+
 <LinkCard title="Movistar" description="Интернет, ТВ и мобильная связь" href="https://www.movistar.es/" />
 
 #### Orange
-- С июня 2026 Orange владеет 100% MasOrange; бренды Orange, MásMóvil, Yoigo и др. сохраняются
-- Конкурентные цены
-- Хорошее покрытие 5G
-- Предлагает пакетные решения
-<LinkCard title="Orange" description="Интернет и мобильная связь" href="https://www.orange.es/" />
+
+<Badge text="До 10 Гбит/с" variant="success" size="small" />
+<Badge text="eSIM" variant="note" size="small" />
+<Badge text="5G" variant="note" size="small" />
+
+- [Оптоволокно 5 и 10 Гбит/с](https://ayuda.orange.es/particulares/internet-y-wi-fi/mi-fibra/3016-fibra-orange-hasta-10-gbps) доступно по отдельным адресам и требует подходящего роутера. Для тарифа 10 Гбит/с технический максимум полезной скорости составляет около 8 Гбит/с из-за служебного трафика.
+- [eSIM](https://ayuda.orange.es/particulares/movil/mi-movil/configurar/2385-primeros-pasos-con-tu-tarjeta-esim-en-linea-principal) доступна для contrato и prepago.
+- Для нового подключения оптоволокна обычно действует [permanencia 12 месяцев](https://ayuda.orange.es/particulares/mi-orange/otras-gestiones/600-compromiso-de-permanencia-y-penalizacion). Акционные скидки и покупка устройства могут менять условия мобильной линии.
+
+<LinkCard title="Orange" description="Интернет, ТВ и мобильная связь" href="https://www.orange.es/" />
 
 #### Vodafone
-- Широкий выбор тарифов
-- Хорошее покрытие в городах
-- Предлагает пакеты с ТВ-каналами
-- Есть специальные предложения для молодежи
-<LinkCard title="Vodafone" description="Интернет и мобильная связь" href="https://www.vodafone.es/" />
+
+<Badge text="До 1 Гбит/с" variant="success" size="small" />
+<Badge text="eSIM" variant="note" size="small" />
+<Badge text="5G" variant="note" size="small" />
+
+- В [домашних тарифах](https://www.vodafone.es/c/tienda-online/particulares/configurador/) есть оптоволокно до 1 Гбит/с и пакеты с мобильной связью и ТВ.
+- [eSIM](https://ayudacliente.vodafone.es/particulares/movil/esim/que-requisitos-son-necesarios-para-activar-la-esim/) поддерживается для contrato и prepago; способ оформления и стоимость замены зависят от канала обращения.
+- Если требуется установка оптоволокна, [обязательный срок обычно составляет 12 месяцев](https://ayudacliente.vodafone.es/particulares/detalles-de-tu-contrato/tus-contratos/que-compromisos-de-permanencia-existen/). Для мобильной связи отдельно проверяйте условия скидок и устройств.
+
+<LinkCard title="Vodafone" description="Интернет, ТВ и мобильная связь" href="https://www.vodafone.es/" />
 
 ### Виртуальные и альтернативные операторы
 
 #### MásMóvil
-- Входит в группу Orange (с июня 2026 — Orange 100% MasOrange); бренды сохраняются
-- Собственная сеть 4G покрывает 98,5% населения Испании
-- Использует также инфраструктуру Orange и Movistar для максимального покрытия
-- Привлекательные цены и простые тарифные планы
+
+<Badge text="До 1 Гбит/с" variant="success" size="small" />
+<Badge text="eSIM" variant="note" size="small" />
+<Badge text="5G" variant="note" size="small" />
+
+- Есть [оптоволокно до 1 Гбит/с и мобильные пакеты](https://www.masmovil.es/fibra-optica).
+- [eSIM](https://www.masmovil.es/ayuda-clientes/e-sim) оформляют через магазины, перечисленные оператором; требуется совместимый телефон.
+- [Обязательный срок](https://www.masmovil.es/ayuda-clientes/que-permanencia-hay-en-tarifas-masmovil): для оптоволокна с мобильной связью — 3 месяца, только оптоволокна — 12 месяцев. Мобильный тариф отдельно — без permanencia; устройство в рассрочку может добавить обязательства.
+
 <LinkCard title="MásMóvil" description="Интернет и мобильная связь" href="https://www.masmovil.es/" />
 
 #### Yoigo
-- Четвертый по величине оператор мобильной связи в Испании
-- Имеет собственные сети GSM/2G, UMTS/3G и LTE/4G
-- Использует национальный роуминг Orange и Movistar для расширенного покрытия
-- Конкурентные цены и простые тарифные планы
-- Без длительных контрактов
+
+<Badge text="До 1 Гбит/с" variant="success" size="small" />
+<Badge text="eSIM" variant="note" size="small" />
+<Badge text="5G" variant="note" size="small" />
+
+- Есть [оптоволокно до 1 Гбит/с](https://www.yoigo.com/fibra-optica). Мобильные тарифы поддерживают 5G и eSIM; оформление eSIM описано в [мобильном каталоге](https://www.yoigo.com/tarifas-moviles).
+- Мобильная связь отдельно — без обязательного срока, если нет связанных обязательств по устройству. Для пакетов с оптоволокном обычно требуется 3 месяца.
+- Для отдельного оптоволокна [справка](https://www.yoigo.com/ayuda/permanencia-en-tarifa-y-penalizacion) указывает 12 месяцев, а [текущая страница предложения](https://www.yoigo.com/solo-internet) — 3. Перед оформлением проверьте срок в условиях именно выбранного договора.
+
 <LinkCard title="Yoigo" description="Интернет и мобильная связь" href="https://www.yoigo.com/" />
 
 #### Jazztel
-- Принадлежит Orange с 2015 года
-- Конкурентные цены на пакетные предложения (интернет + мобильная связь)
-- Использует инфраструктуру Orange
-- Известен агрессивными промо-акциями для новых клиентов
-- Предлагает оптоволоконный интернет до 1 Гбит/с
+
+<Badge text="До 1 Гбит/с" variant="success" size="small" />
+<Badge text="eSIM" variant="note" size="small" />
+<Badge text="5G" variant="note" size="small" />
+
+- В [каталоге](https://www.jazztel.com/tarifas) есть оптоволокно до 1 Гбит/с и мобильные тарифы с 5G.
+- Оператор подтверждает [поддержку eSIM](https://www.jazztel.com/novedades/mejores-tarifas-movil/) для совместимых устройств; не путайте её с отдельной услугой MultiSIM.
+- Для [пакетов оптоволокна и мобильной связи](https://www.jazztel.com/ofertas) предусмотрено 12 месяцев permanencia. Для отдельного мобильного тарифа обязательного срока нет.
+
 <LinkCard title="Jazztel" description="Интернет и мобильная связь" href="https://www.jazztel.com/" />
 
 #### Digi
-- Уже MNO (собственная мобильная сеть), не чистый MVNO на Movistar
-- Доступ к современным технологиям: 4G/LTE (с 2017) и 5G (с 2023)
-- В мае 2024 заключил долгосрочное соглашение с Telefónica (Movistar)
-- Самые низкие цены на рынке
-- Популярен среди экспатов благодаря выгодным тарифам с международными звонками
+
+<Badge text="До 10 Гбит/с" variant="success" size="small" />
+<Badge text="eSIM" variant="note" size="small" />
+<Badge text="5G" variant="note" size="small" />
+<Badge text="Prepago" variant="caution" size="small" />
+
+- [PRO-DIGI 10 Гбит/с](https://www.digimobil.es/fibra-optica/pro-digi/10gb) доступен в соответствующей зоне собственной сети. На устройствах доступно примерно 8 Гбит/с; для такой скорости нужно подходящее проводное оборудование.
+- [eSIM](https://www.digimobil.es/esim/) доступна для мобильных тарифов contrato. Для нового номера её выбирают при оформлении, действующие клиенты запрашивают её через Mi DIGI. При переносе номера уточните порядок получения eSIM заранее.
+- Для оптоволокна действует обязательный срок 3 месяца с пропорциональной компенсацией установки при раннем уходе. Мобильная связь — без permanencia.
+
 <LinkCard title="Digi" description="Интернет и мобильная связь" href="https://www.digimobil.es/" />
 
 #### Lowi
-- Виртуальный оператор, работающий на сети Vodafone
-- Гибкие тарифы с возможностью накопления неиспользованных гигабайтов
-- Простое управление через приложение
-- Отсутствие долгосрочных контрактов
+
+<Badge text="До 1 Гбит/с" variant="success" size="small" />
+<Badge text="eSIM" variant="note" size="small" />
+<Badge text="5G" variant="note" size="small" />
+
+- Есть [оптоволокно до 1 Гбит/с](https://www.lowi.es/solo-fibra/1gb/); мобильная связь работает в сети Vodafone.
+- [eSIM](https://www.lowi.es/esim/) бесплатна и доступна в мобильных тарифах и пакетах с оптоволокном. Это eSIM для основного устройства, а не услуга для умных часов.
+- Мобильная связь — без permanencia. Для оптоволокна [обязательный срок составляет 3 или 12 месяцев](https://www.lowi.es/asistencia/atencion-al-cliente/hay-permanencia-en-lowi/) в зависимости от предложения; отдельный тариф 1 Гбит/с указывает 12 месяцев.
+
 <LinkCard title="Lowi" description="Мобильная связь и интернет" href="https://www.lowi.es/" />
 
 #### O2
-- Принадлежит Movistar (Telefónica)
-- Использует сеть Movistar
-- Более низкие цены чем у Movistar при том же качестве сети
-- Без permanencia (контрактных обязательств)
-- Простые и понятные тарифы без дополнительных услуг
+
+<Badge text="До 1 Гбит/с" variant="success" size="small" />
+<Badge text="eSIM" variant="note" size="small" />
+<Badge text="5G" variant="note" size="small" />
+<Badge text="Без permanencia" variant="tip" size="small" />
+
+- Оптоволокно до 1 Гбит/с в сети Telefónica. [В условиях тарифа](https://web.static.o2online.es/media/public/resumen_contrato_-_1gb.pdf) указано отсутствие обязательного срока и штрафа за прекращение услуги.
+- Есть [eSIM](https://o2online.es/ayuda/esim/) и [5G+](https://o2online.es/ayuda/la-tecnologia-5g-llega-a-o2/) на совместимых устройствах в зоне покрытия.
+- При расторжении нужно вернуть предоставленный роутер; рассрочка на устройство имеет отдельные условия.
+
 <LinkCard title="O2" description="Интернет и мобильная связь" href="https://o2online.es/" />
 
 #### Pepephone
-- Известен высоким качеством обслуживания клиентов
-- Прозрачные тарифы без скрытых платежей
-- Входит в группу MásMóvil
-- Использует сети Yoigo, Orange и Movistar, обеспечивая широкое покрытие
-- Предлагает как мобильную связь, так и оптоволоконный интернет
-- [Реферальная ссылка](https://ppph.es/bosquepepe?mgm=T3MBQYNX), обещают посадить дерево
+
+<Badge text="До 1 Гбит/с" variant="success" size="small" />
+<Badge text="eSIM" variant="note" size="small" />
+<Badge text="5G" variant="note" size="small" />
+<Badge text="Без permanencia" variant="tip" size="small" />
+
+- [Оптоволокно до 1 Гбит/с](https://www.pepephone.com/adsl-fibra-movil/fibra-1gb-movil?pepe-tv=true) и мобильные тарифы без permanencia. После отключения нужно вернуть роутер.
+- [eSIM](https://www.pepephone.com/descarga-tu-esim) бесплатна; её можно выбрать при покупке мобильного тарифа или запросить позже.
+- Есть [реферальная программа](https://ppph.es/bosquepepe?mgm=T3MBQYNX); условия проверяйте перед оформлением.
+
 <LinkCard title="Pepephone" description="Интернет и мобильная связь" href="https://www.pepephone.com/" />
 
 #### Simyo
-- Дочерняя компания Orange
-- Использует сеть Orange
-- Очень гибкий конструктор тарифов (можно выбрать точное количество минут и гигабайт)
-- Накопление неиспользованных гигабайт
-- Нет обязательств по сроку контракта (кроме случаев покупки телефона)
+
+<Badge text="До 1 Гбит/с" variant="success" size="small" />
+<Badge text="eSIM" variant="note" size="small" />
+<Badge text="5G" variant="note" size="small" />
+<Badge text="Prepago" variant="caution" size="small" />
+
+- [Оптоволокно до 1 Гбит/с](https://www.simyo.es/tarifas/fibra.html) работает в сети Orange. Стоимость зависит в том числе от сочетания с основным мобильным тарифом.
+- [eSIM](https://blog.simyo.es/llega-la-esim-a-simyo/) и 5G доступны для contrato и prepago на совместимых устройствах.
+- Мобильная связь — без permanencia. Для бесплатной установки оптоволокна нужны [3 месяца обслуживания](https://www.simyo.es/preguntas-frecuentes/mi-fibra.html); при более раннем уходе взимают пропорциональную часть стоимости установки.
+
 <LinkCard title="Simyo" description="Мобильная связь и оптоволокно" href="https://www.simyo.es/" />
 
 #### Finetwork
-- Виртуальный оператор на сети Vodafone
-- Одни из самых низких цен на рынке
-- Возможность накапливать и делиться гигабайтами с другими пользователями Finetwork
-- Хорошее покрытие благодаря сети Vodafone
-- Поддержка пользователей из Испании
-<LinkCard title="Finetwork" description="Мобильная связь и оптоволокно" href="https://www.finetwork.com/" />
+
+<Badge text="5G" variant="note" size="small" />
+<Badge text="Мобильная без permanencia" variant="tip" size="small" />
+
+- На finetwork.es представлены мобильные тарифы [бренда Vodafone, запущенного в 2026 году](https://www.saladeprensa.vodafone.es/c/notas-prensa/np-finetlaunch/).
+- Для этого предложения подтверждены 5G и отсутствие обязательного срока мобильного договора. Поддержку eSIM уточните перед переносом номера.
+- Не переносите сюда условия с finetwork.com: там указано другое юридическое лицо. Для уже действующего договора ориентируйтесь на своего поставщика и его условия.
+
+<LinkCard title="Finetwork" description="Мобильная связь, бренд Vodafone" href="https://finetwork.es/" />
 
 #### Suop
-- Первый "совместный" (collaborative) оператор в Испании
-- В управление вовлечено сообщество пользователей (можно получать бонусы за активность на форуме)
-- Использует сеть Orange
-- Простые тарифы без скрытых условий
-- Нет permanencia на мобильную связь
+
+<Badge text="До 1 Гбит/с" variant="success" size="small" />
+<Badge text="eSIM" variant="note" size="small" />
+<Badge text="5G" variant="note" size="small" />
+<Badge text="Prepago" variant="caution" size="small" />
+
+- Есть [оптоволокно до 1 Гбит/с](https://www.suop.es/tarifas-fibra-movil). Обязательный срок зависит от сети: прямое подключение — 3 месяца, [косвенное подключение](https://www.suop.es/ttb/tarifas-fibra-movil) — 12 месяцев.
+- [eSIM](https://www.suop.es/esim) доступна для contrato и prepago. [5G](https://www.suop.es/tarifas/cobertura-5g) поддерживается на актуальных тарифах; для некоторых старых тарифов нужен переход на новый.
+- Мобильная связь отдельно — без обязательного срока. Оптоволокно не включает стационарный телефон.
+
 <LinkCard title="Suop" description="Мобильная связь и интернет" href="https://www.suop.es/" />
 
 #### Adamo
-- Специализируется на высокоскоростном оптоволокне (до 1000 Мбит/с)
-- Основной фокус на расширение сети в регионах и пригородах, куда не доходят другие операторы
-- Собственная оптоволоконная сеть
-- Выгодные предложения "Интернет + Мобильная связь"
-- Часто является единственным вариантом высокоскоростного интернета в частном секторе
-<LinkCard title="Adamo" description="Высокоскоростной интернет" href="https://adamo.es/" />
+
+<Badge text="До 1 Гбит/с" variant="success" size="small" />
+<Badge text="eSIM" variant="note" size="small" />
+<Badge text="5G" variant="note" size="small" />
+
+- Есть [оптоволокно до 1 Гбит/с](https://adamo.es/es/fibra) с обязательным сроком 12 месяцев. Проверяйте покрытие конкретного дома.
+- [eSIM](https://adamo.es/es/helpcenter/movil/ofreceis-esim-y-multisim) доступна действующим клиентам: при новом подключении сначала активируют физическую SIM, затем меняют её на eSIM.
+- Мобильные пакеты поддерживают 5G. eSIM не означает наличие отдельной услуги MultiSIM.
+
+<LinkCard title="Adamo" description="Интернет и мобильная связь" href="https://adamo.es/es" />
+
+#### Lebara
+
+<Badge text="eSIM" variant="note" size="small" />
+<Badge text="5G" variant="note" size="small" />
+<Badge text="Prepago" variant="caution" size="small" />
+<Badge text="Международные звонки" variant="caution" size="small" />
+
+- Мобильная связь по предоплате без обязательного срока. Пакеты обновляются каждые 28 дней, а не раз в календарный месяц.
+- [eSIM](https://lebaraspain.es/esim/es) можно оформить онлайн, но активировать её нужно на территории Испании.
+- В отдельных пакетах есть международные минуты. Проверяйте список направлений и тип номера: российские мобильные номера в международный пакет не входят.
+
+<LinkCard title="Lebara" description="Мобильная связь по предоплате" href="https://lebaraspain.es/" />
+
+#### Avatel
+
+<Badge text="До 1 Гбит/с" variant="success" size="small" />
+<Badge text="eSIM" variant="note" size="small" />
+
+- В [действующих предложениях](https://avatel.es/condiciones-generales/) есть оптоволокно до 1 Гбит/с. Доступность и окончательные условия зависят от адреса.
+- [eSIM](https://avatel.es/ayuda/faq/como-puedo-solicitar-y-activar-la-esim/) оформляют действующим клиентам через магазин Avatel. На дату проверки указана разовая плата 12,10 €.
+- Акционные пакеты требуют 12 месяцев обслуживания. В [справке](https://avatel.es/ayuda/faq/las-tarifas-de-fibra-y-movil-tienen-permanencia/) есть и вариант без обязательного срока, но с другими ценой и платой за установку; проверяйте условия выбранного предложения.
+
+<LinkCard title="Avatel" description="Оптоволокно, мобильная связь и ТВ" href="https://avatel.es/" />
 
 ### Спутниковый интернет
 
 #### Starlink
-- Спутниковый интернет от SpaceX
-- Идеальное решение для отдаленных районов без оптоволокна
-- Планы: Standard 100, Standard 200 и Priority Max (скорость зависит от тарифа, не фиксированные 100–200 Мбит/с)
-- Относительно высокая стоимость оборудования и ежемесячной подписки
-- Простая самостоятельная установка
-- Возможность использования в разных местах (с дополнительной платой за роуминг)
-<LinkCard title="Starlink" description="Спутниковый интернет" href="https://www.starlink.com/es" />
 
+<Badge text="Спутниковый интернет" variant="success" size="small" />
 
-## Важная информация
+Вариант для дома, где нет подходящего проводного подключения. Перед заказом проверьте доступность по адресу, требования к установке антенны, оборудование и условия выбранного плана. Скорость и возможности использования в поездках зависят от плана; переносимость не следует автоматически считать включённой в домашнюю подписку.
 
-### На что обратить внимание
+<LinkCard title="Starlink" description="Спутниковый интернет" href="https://www.starlink.com/es/residential" />
 
-- Проверьте доступность оптоволокна по вашему адресу
-- Уточните permanencia (минимальный срок контракта) и штрафы за досрочное расторжение
-- Проверьте скрытые платежи (установка оборудования, активация)
+## Как сравнить качество связи
 
-### Полезные советы
+- [Статистика CNMC для Мадрида](https://calidadtelecos.cnmc.gob.es/en/statistics/madrid) показывает измерения скорости и задержки по операторам. Учитывайте выбранный период, тип подключения и количество тестов.
+- [Отчёт nPerf о домашнем интернете в Испании](https://media.nperf.com/files/publications/ES/ES-Barometer-fixe-connections-nPerf-2025_7831.pdf) сравнивает скорость, задержку, работу сайтов и видео за период с 1 апреля 2025 года по 31 марта 2026 года. Это общенациональная выборка, а не обещание результата в вашей квартире.
 
-:::tip[Для новых клиентов]
-- Большинство операторов предлагают скидки на первые 2-3 месяца
-- Процесс подключения обычно занимает менее недели
-:::
+## Перед подключением
 
-:::tip[Для существующих клиентов]
-- Операторы часто предлагают скидки при продлении, но с условием permanencia
-- При постоянных проблемах со связью угроза перехода к другому оператору может ускорить решение проблем
-- Обновление роутера обычно происходит ночью (3-4 часа), учитывайте это если работаете в ночное время
-:::
-
-### Необходимые документы
-
-Для заключения контракта потребуются:
-- DNI/NIE
-- Банковские реквизиты
-- Документ о праве пользования помещением
-- Иногда требуется депозит (для иностранцев)
-
-:::tip
-- Многие операторы предлагают специальные цены для новых клиентов
-- Часто выгоднее брать пакет услуг (интернет + мобильная связь)
-- Внимательно читайте условия контракта, особенно про минимальный срок
-:::
-
-### Перенос номера
-
-- Вы можете сохранить свой номер при смене оператора
-- Процесс занимает 1-2 рабочих дня
-- Услуга бесплатная
-- Запрос на перенос номера делает новый оператор
+- Проверьте покрытие оптоволокна по точному адресу и доступность выбранной скорости. Для 5G проверьте покрытие в местах, где пользуетесь телефоном.
+- Для eSIM проверьте модель устройства, доступность на своём тарифе, способ выдачи QR-кода и стоимость замены. eSIM для телефона не обязательно поддерживает умные часы или MultiSIM.
+- Сравните постоянную цену после окончания скидки, плату за установку и оставшийся обязательный срок. Отсутствие permanencia не отменяет возврат роутера или оплату устройства в рассрочку.
+- Список документов зависит от оператора и способа оплаты. Обычно запрашивают документ, удостоверяющий личность, и банковские реквизиты; для предоплаты могут принимать паспорт. Проверьте это до оформления.
+- При переносе мобильного номера заявку подаёт новый оператор. Не закрывайте старую линию самостоятельно до завершения переноса. Срок и дату согласуйте при подаче заявки.
