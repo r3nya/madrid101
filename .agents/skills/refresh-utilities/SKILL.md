@@ -1,5 +1,4 @@
 ---
-
 name: refresh-utilities
 description: Use when updating Madrid101's electricity and gas provider guide or checking supplier offers, regulated tariffs and contract conditions for that page.
 ---

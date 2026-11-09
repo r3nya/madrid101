@@ -29,15 +29,7 @@ export const onRequest = defineRouteMiddleware((context) => {
     attrs: { name: "twitter:image", content: ogImageUrl.href },
   });
 
-  const entry = context.locals.starlightRoute.entry?.data as any;
-
-  // Add canonical URL if specified
-  if (entry?.canonicalUrl) {
-    head.push({
-      tag: "link",
-      attrs: { rel: "canonical", href: entry.canonicalUrl },
-    });
-  }
+  const entry = context.locals.starlightRoute.entry?.data;
 
   // Add keywords meta tag
   if (entry?.keywords) {
@@ -68,8 +60,7 @@ export const onRequest = defineRouteMiddleware((context) => {
     "@context": "https://schema.org",
     "@type": entry?.articleSection === "Главная" ? "WebSite" : "Article",
     headline: entry?.title || "Madrid 101",
-    description:
-      entry?.description || "FAQ по Мадриду для номадов и эмигрантов",
+    description: entry?.description || "FAQ по Мадриду для номадов и эмигрантов",
     url: entry?.canonicalUrl || context.url.href,
     image: ogImageUrl.href,
     datePublished: entry?.lastUpdated || "2024-01-01",

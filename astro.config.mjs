@@ -10,19 +10,16 @@ import { SITE_CONFIG } from "./src/data/config.ts";
 export default defineConfig({
   site: "https://madrid101.xyz/",
   redirects: {
-    "/faq/city-authorities/digital-certificate":
-      "/documents/digital-certificate",
+    "/faq/city-authorities/digital-certificate": "/documents/digital-certificate",
     "/faq/city-authorities/nota-simple": "/documents/nota-simple",
-    "/faq/city-authorities/residence-registration":
-      "/documents/residence-registration",
+    "/faq/city-authorities/residence-registration": "/documents/residence-registration",
     "/faq/education/school-for-children": "/education/school-for-children",
     "/faq/finance/basic-account": "/finance/basic-account",
     "/faq/finance/currency-exchange": "/finance/currency-exchange",
     "/faq/finance/mortgage": "/finance/mortgage",
     "/faq/healthcare/appointments": "/healthcare/appointments",
     "/faq/healthcare/dental-services": "/healthcare/dental-services",
-    "/faq/healthcare/tarjeta-sanitaria-europea":
-      "/healthcare/tarjeta-sanitaria-europea",
+    "/faq/healthcare/tarjeta-sanitaria-europea": "/healthcare/tarjeta-sanitaria-europea",
     "/faq/healthcare/tarjeta-sanitaria": "/healthcare/tarjeta-sanitaria",
     "/faq/maps/districts": "/housing/districts",
     "/faq/welcome": "/welcome",
@@ -267,9 +264,7 @@ export default defineConfig({
                 {
                   label: "Клубы",
                   collapsed: true,
-                  items: [
-                    { autogenerate: { directory: "spare-time/football" } },
-                  ],
+                  items: [{ autogenerate: { directory: "spare-time/football" } }],
                 },
               ],
             },
@@ -291,9 +286,7 @@ export default defineConfig({
               items: [
                 {
                   label: "🔫 Airsoft",
-                  items: [
-                    { autogenerate: { directory: "spare-time/airsoft" } },
-                  ],
+                  items: [{ autogenerate: { directory: "spare-time/airsoft" } }],
                 },
                 {
                   label: "Хакерспейсы",

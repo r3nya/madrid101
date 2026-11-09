@@ -66,9 +66,7 @@ async function submitToIndexNow(urls) {
       const sitemap = await fetchAndParseSitemap(sitemapUrl);
       // It's possible a sitemap has no URLs
       if (sitemap.urlset.url) {
-        const pageUrls = sitemap.urlset.url.map((u) =>
-          u.loc[0].replace("http://", "https://"),
-        );
+        const pageUrls = sitemap.urlset.url.map((u) => u.loc[0].replace("http://", "https://"));
         allUrls = allUrls.concat(pageUrls);
         console.log(`Found ${pageUrls.length} URLs in ${sitemapUrl}.`);
       } else {

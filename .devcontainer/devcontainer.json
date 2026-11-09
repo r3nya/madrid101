@@ -2,14 +2,15 @@
   "name": "madrid101-astro",
   "image": "mcr.microsoft.com/devcontainers/typescript-node:24",
   "forwardPorts": [4321],
-  "postCreateCommand": "npm install",
+  "postCreateCommand": "npm ci",
   "postStartCommand": "npm run dev",
   "features": {},
   "customizations": {
     "vscode": {
       "extensions": [
         "astro-build.astro-vscode",
-        "biomejs.biome",
+        "dbaeumer.vscode-eslint",
+        "oxc.oxc-vscode",
         "EditorConfig.EditorConfig"
       ]
     }

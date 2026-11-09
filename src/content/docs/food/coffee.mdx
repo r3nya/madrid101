@@ -12,12 +12,13 @@ sidebar:
   order: 4
 ---
 
-import { LinkCard } from '@astrojs/starlight/components';
-import { coffeeLinks, coffeeRoasters } from '@/data/coffee';
+import { LinkCard } from "@astrojs/starlight/components";
+import { coffeeLinks, coffeeRoasters } from "@/data/coffee";
 
 ## Кофейная карта
 
 {coffeeLinks.map((link) => (
+
   <LinkCard title={link.title} href={link.href} />
 ))}
 
@@ -34,8 +35,10 @@ import { coffeeLinks, coffeeRoasters } from '@/data/coffee';
   <tbody>
     {coffeeRoasters.map((roaster, index) => (
       <tr key={index}>
-        <td><a href={roaster.url}>{roaster.name}</a></td>
-        <td>{roaster.subscription ? '☕' : '-'}</td>
+        <td>
+          <a href={roaster.url}>{roaster.name}</a>
+        </td>
+        <td>{roaster.subscription ? "☕" : "-"}</td>
         <td>{roaster.location}</td>
       </tr>
     ))}
