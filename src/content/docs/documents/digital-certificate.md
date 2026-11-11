@@ -1,7 +1,9 @@
 ---
-title: Цифровая подпись
+title: "Цифровая подпись в Испании: FNMT, Cl@ve и ACCV"
 description: FNMT, Cl@ve, ACCV – цифровые подписи в Испании
-lastUpdated: 2026-09-14
+lastUpdated: 2026-11-11
+sidebar:
+  label: Цифровая подпись
 ---
 
 ## Виды цифровых подписей

@@ -1,7 +1,9 @@
 ---
-title: Airsoft permit (tarjeta de armas 4ª)
+title: "Разрешение на страйкбольное оружие в Испании: tarjeta de armas"
 description: Гайд по получению оружейной лицензии для airsoft в Мадриде
-lastUpdated: 2025-08-11
+lastUpdated: 2026-11-11
+sidebar:
+  label: Airsoft permit (tarjeta de armas 4ª)
 ---
 
 В Испании airsoft реплики классифицируются как оружие, следовательно для того, чтобы играть со своей репликой, нужно получать оружейную лицензию - tarjeta de armas categoria 4a.

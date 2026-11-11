@@ -1,7 +1,9 @@
 ---
-title: Airsoft площадки
+title: "Airsoft: площадки для страйкбола в Мадриде"
 description: Airsoft площадки в Мадриде и окрестностях - где играть и как добираться
-lastUpdated: 2025-08-11
+lastUpdated: 2026-11-11
+sidebar:
+  label: Airsoft площадки
 ---
 
 ## Список площадок

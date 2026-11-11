@@ -1,7 +1,9 @@
 ---
-title: Número de Seguridad Social
+title: "Número de Seguridad Social: номер соцстрахования в Испании"
 description: Как получить номер социального страхования в Испании
-lastUpdated: 2026-09-14
+lastUpdated: 2026-11-11
+sidebar:
+  label: Número de Seguridad Social
 ---
 
 Número de Seguridad Social (NUSS) — номер социального страхования в Испании. Это 12-значный номер, который присваивается один раз и остаётся с вами навсегда.
