@@ -1,5 +1,6 @@
 import sitemap from "@astrojs/sitemap";
 import starlight from "@astrojs/starlight";
+import contentUtils from "@inox-tools/content-utils";
 import { defineConfig } from "astro/config";
 import compress from "astro-compress";
 import starlightLinksValidator from "starlight-links-validator";
@@ -33,6 +34,7 @@ export default defineConfig({
     },
   },
   integrations: [
+    contentUtils(),
     starlight({
       // Use the route data middleware to add the Open Graph images.
       routeMiddleware: "./src/routeData.ts",

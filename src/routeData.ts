@@ -1,6 +1,7 @@
 import { defineRouteMiddleware } from "@astrojs/starlight/route-data";
+import { getOldestCommitDate } from "@it-astro:content/git";
 
-export const onRequest = defineRouteMiddleware((context) => {
+export const onRequest = defineRouteMiddleware(async (context) => {
   // Get the URL of the generated image for the current page using its ID and
   // append the `.png` file extension.
   const ogImageUrl = new URL(
@@ -63,8 +64,16 @@ export const onRequest = defineRouteMiddleware((context) => {
     description: entry?.description || "FAQ по Мадриду для номадов и эмигрантов",
     url: entry?.canonicalUrl || context.url.href,
     image: ogImageUrl.href,
-    datePublished: entry?.lastUpdated || "2024-01-01",
-    dateModified: new Date().toISOString().split("T")[0],
+    // Both come from git history (Starlight's lastUpdated honors a frontmatter override).
+    // Starlight's built-in 404 entry is virtual (not in the collection), so it has no git history.
+    ...(context.locals.starlightRoute.id !== "404" && {
+      datePublished: toISODate(
+        await getOldestCommitDate("docs", context.locals.starlightRoute.id || "index"),
+      ),
+    }),
+    ...(context.locals.starlightRoute.lastUpdated && {
+      dateModified: toISODate(context.locals.starlightRoute.lastUpdated),
+    }),
     author: entry?.author
       ? {
           "@type": "Person",
@@ -104,3 +113,5 @@ export const onRequest = defineRouteMiddleware((context) => {
     content: JSON.stringify(structuredData),
   });
 });
+
+const toISODate = (date: Date) => date.toISOString().split("T")[0];
