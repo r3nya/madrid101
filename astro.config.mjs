@@ -149,12 +149,7 @@ export default defineConfig({
         //   href: "https://t.me/+4ccS_x5DADAwMjM6",
         // },
       ],
-      // defaultLocale: "ru",
-      // locales: {
-      //   ru: {
-      //     label: "Русский",
-      //   },
-      // },
+      locales: { root: { label: "Русский", lang: "ru" } },
       lastUpdated: true,
       sidebar: [
         {
