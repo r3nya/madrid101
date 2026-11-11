@@ -68,12 +68,12 @@ export const onRequest = defineRouteMiddleware(async (context) => {
     // Both come from git history (Starlight's lastUpdated honors a frontmatter override).
     // Starlight's built-in 404 entry is virtual (not in the collection), so it has no git history.
     ...(context.locals.starlightRoute.id !== "404" && {
-      datePublished: toISODate(
-        await getOldestCommitDate("docs", context.locals.starlightRoute.id || "index"),
-      ),
+      datePublished: (
+        await getOldestCommitDate("docs", context.locals.starlightRoute.id || "index")
+      ).toISOString(),
     }),
     ...(context.locals.starlightRoute.lastUpdated && {
-      dateModified: toISODate(context.locals.starlightRoute.lastUpdated),
+      dateModified: context.locals.starlightRoute.lastUpdated.toISOString(),
     }),
     author: entry?.author
       ? {
@@ -140,5 +140,3 @@ export const onRequest = defineRouteMiddleware(async (context) => {
     });
   }
 });
-
-const toISODate = (date: Date) => date.toISOString().split("T")[0];
