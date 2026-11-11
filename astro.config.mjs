@@ -4,7 +4,9 @@ import contentUtils from "@inox-tools/content-utils";
 import { defineConfig } from "astro/config";
 import compress from "astro-compress";
 import starlightLinksValidator from "starlight-links-validator";
+import { fileURLToPath } from "node:url";
 
+import { createSitemapSerializer } from "./scripts/sitemap.mjs";
 import { SITE_CONFIG } from "./src/data/config.ts";
 
 // https://astro.build/config
@@ -308,7 +310,11 @@ export default defineConfig({
         },
       ],
     }),
-    sitemap(),
+    sitemap({
+      serialize: createSitemapSerializer(
+        fileURLToPath(new URL("./src/content/docs/", import.meta.url)),
+      ),
+    }),
     compress(),
   ],
 });
