@@ -1,5 +1,6 @@
 import { defineRouteMiddleware } from "@astrojs/starlight/route-data";
 import { getOldestCommitDate } from "@it-astro:content/git";
+import { getCollection } from "astro:content";
 
 export const onRequest = defineRouteMiddleware(async (context) => {
   // Get the URL of the generated image for the current page using its ID and
@@ -112,6 +113,32 @@ export const onRequest = defineRouteMiddleware(async (context) => {
     attrs: { type: "application/ld+json" },
     content: JSON.stringify(structuredData),
   });
+
+  const { id } = context.locals.starlightRoute;
+  if (id && id !== "404") {
+    const docs = await getCollection("docs", ({ data }) => !data.draft);
+    const segments = id.split("/");
+    const breadcrumbs = ["index", ...segments.map((_, i) => segments.slice(0, i + 1).join("/"))]
+      .map((id) => docs.find((doc) => doc.id === id))
+      .filter((doc) => doc !== undefined);
+
+    head.push({
+      tag: "script",
+      attrs: { type: "application/ld+json" },
+      content: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        itemListElement: breadcrumbs.map((doc, i) => ({
+          "@type": "ListItem",
+          position: i + 1,
+          name: doc.data.title,
+          item:
+            doc.data.canonicalUrl ||
+            new URL(doc.id === "index" ? "/" : `/${doc.id}/`, context.site).href,
+        })),
+      }).replace(/</g, "\\u003c"),
+    });
+  }
 });
 
 const toISODate = (date: Date) => date.toISOString().split("T")[0];
