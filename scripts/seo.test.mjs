@@ -2,6 +2,7 @@
 import assert from "node:assert/strict";
 import { existsSync, globSync, readFileSync } from "node:fs";
 import { fileURLToPath } from "node:url";
+import { parse } from "parse5";
 import { parseStringPromise } from "xml2js";
 import { describe, it } from "vitest";
 
@@ -10,30 +11,60 @@ const dist = new URL("../dist/", import.meta.url);
 const origin = "https://madrid101.xyz";
 const files = enabled ? globSync("**/*.html", { cwd: fileURLToPath(dist) }).sort() : [];
 
-// Compression emits both quoted and unquoted attributes, in arbitrary order.
-function attributes(tag) {
-  return Object.fromEntries(
-    [...tag.matchAll(/([^\s=<>/]+)\s*=\s*(?:"([^"]*)"|'([^']*)'|([^\s>]+))/g)].map(
-      ([, name, double, single, bare]) => [
-        name.toLowerCase(),
-        (double ?? single ?? bare).replace(/&amp;/g, "&"),
-      ],
-    ),
-  );
+function attributes(node) {
+  return Object.fromEntries(node.attrs.map(({ name, value }) => [name, value]));
 }
+
+function parseHtml(html) {
+  const elements = [];
+  function visit(node) {
+    if (node.tagName) elements.push(node);
+    for (const child of node.childNodes ?? []) visit(child);
+  }
+  visit(parse(html));
+  return (name) => elements.filter((node) => node.tagName === name);
+}
+
+describe("HTML metadata parsing", () => {
+  it.each(["</script>", "</SCRIPT >", "</script\n>", "</script foo>", "</script/>"])(
+    "ignores fake headings in scripts and comments with %s",
+    (closingTag) => {
+      const tags = parseHtml(`<!doctype html><html lang="ru"><head>
+        <script type="application/ld+json" data-note=">">{"headline":"<h1>fake</h1>"}${closingTag}
+        <!-- <h1>comment</h1> -->
+        </head><body><h1>Real heading</h1></body></html>`);
+      assert.equal(tags("h1").length, 1);
+      assert.equal(tags("script").length, 1);
+      assert.deepEqual(attributes(tags("script")[0]), {
+        type: "application/ld+json",
+        "data-note": ">",
+      });
+    },
+  );
+
+  it("keeps real elements between scripts and ignores markup in raw text", () => {
+    const tags = parseHtml(`<script>let fake = '<meta name="robots" content="noindex">';</script >
+      <h1>Real heading</h1><script>let fake = '<h1>fake</h1>';</script>
+      <!-- <h1>comment</h1> --><style>/* <h1>fake</h1> */</style>
+      <meta name=description content="a &quot;quote&quot; &amp; >">`);
+    assert.equal(tags("h1").length, 1);
+    assert.equal(tags("script").length, 2);
+    assert.deepEqual(tags("meta").map(attributes), [
+      { name: "description", content: 'a "quote" & >' },
+    ]);
+  });
+});
 
 const pages = files.map((file) => {
   const html = readFileSync(new URL(file, dist), "utf8");
-  const markup = html.replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, "");
-  const tags = (name) => [...markup.matchAll(new RegExp(`<${name}\\b[^>]*>`, "gi"))];
-  const meta = tags("meta").map(([tag]) => attributes(tag));
-  const links = tags("link").map(([tag]) => attributes(tag));
+  const tags = parseHtml(html);
+  const meta = tags("meta").map(attributes);
+  const links = tags("link").map(attributes);
   const robots = meta
     .filter((tag) => tag.name?.toLowerCase() === "robots")
     .flatMap((tag) => (tag.content ?? "").toLowerCase().split(/[\s,]+/));
   return {
     file,
-    html,
     tags,
     meta,
     links,
@@ -88,7 +119,7 @@ describe.skipIf(!enabled)("built SEO artifacts (requires npm run build)", () => 
       assert.equal(canonical.length, 1, `${file}: expected exactly one canonical`);
       const route = file.replace(/index\.html$/, "").replace(/\.html$/, "/");
       assert.equal(canonical[0].href, `${origin}/${route}`, `${file}: canonical URL`);
-      assert.equal(attributes(tags("html")[0]?.[0] ?? "").lang, "ru", `${file}: html lang`);
+      assert.equal(attributes(tags("html")[0]).lang, "ru", `${file}: html lang`);
       assert.equal(tags("h1").length, 1, `${file}: expected exactly one H1`);
       for (const [positive, negative] of [
         ["index", "noindex"],
@@ -126,9 +157,10 @@ describe.skipIf(!enabled)("built SEO artifacts (requires npm run build)", () => 
         checkAsset(tag.content, `${file}: og:image`);
       }
       const schemas = [];
-      for (const [, attrs, json] of page.html.matchAll(/<script\b([^>]*)>([\s\S]*?)<\/script>/gi)) {
-        if (attributes(attrs).type === "application/ld+json") {
+      for (const script of tags("script")) {
+        if (attributes(script).type === "application/ld+json") {
           try {
+            const json = script.childNodes.map((node) => node.value ?? "").join("");
             const schema = JSON.parse(json);
             schemas.push(...[schema].flat());
             for (const node of [schema].flat()) checkSchema(node, page);
