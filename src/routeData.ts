@@ -5,7 +5,7 @@ import { getCollection } from "astro:content";
 import logoUrl from "./assets/logo-light.svg?url";
 
 export const onRequest = defineRouteMiddleware(async (context) => {
-  const { id, head } = context.locals.starlightRoute;
+  const { id, head, lastUpdated } = context.locals.starlightRoute;
   if (id === "404") {
     context.locals.starlightRoute.head = head.filter(
       ({ tag, attrs }) => !(tag === "meta" && attrs?.name === "robots"),
@@ -18,6 +18,7 @@ export const onRequest = defineRouteMiddleware(async (context) => {
   }
 
   const entry = context.locals.starlightRoute.entry.data;
+  const isHomepage = !id || id === "index";
   // Reuse Starlight's canonical pathname and trailing-slash formatting.
   const canonicalHref = head.find(({ tag, attrs }) => tag === "link" && attrs?.rel === "canonical")
     ?.attrs?.href;
@@ -33,6 +34,9 @@ export const onRequest = defineRouteMiddleware(async (context) => {
     }
     if (tag.tag === "meta" && tag.attrs?.property === "og:url") {
       tag.attrs.content = canonicalUrl;
+    }
+    if (tag.tag === "meta" && tag.attrs?.property === "og:type") {
+      tag.attrs.content = isHomepage ? "website" : "article";
     }
   }
 
@@ -82,57 +86,41 @@ export const onRequest = defineRouteMiddleware(async (context) => {
     });
   }
 
-  // Add structured data
-  const structuredData = {
+  const publisher = {
+    "@type": "Organization",
+    name: "Madrid 101",
+    url: context.site?.href,
+    logo: {
+      "@type": "ImageObject",
+      url: new URL(logoUrl, context.site).href,
+    },
+  };
+  const commonData = {
     "@context": "https://schema.org",
-    "@type": entry?.articleSection === "Главная" ? "WebSite" : "Article",
-    headline: entry?.title || "Madrid 101",
-    description: entry?.description || "FAQ по Мадриду для номадов и эмигрантов",
+    description: entry.description || "FAQ по Мадриду для номадов и эмигрантов",
     url: canonicalUrl,
     image: ogImageUrl.href,
-    // Both come from git history (Starlight's lastUpdated honors a frontmatter override).
-    // Starlight's built-in 404 entry is virtual (not in the collection), so it has no git history.
-    ...(context.locals.starlightRoute.id !== "404" && {
-      datePublished: (
-        await getOldestCommitDate("docs", context.locals.starlightRoute.id || "index")
-      ).toISOString(),
-    }),
-    ...(context.locals.starlightRoute.lastUpdated && {
-      dateModified: context.locals.starlightRoute.lastUpdated.toISOString(),
-    }),
-    author:
-      entry?.author && entry.author !== "Madrid 101"
-        ? {
-            "@type": "Person",
-            name: entry.author,
-          }
-        : {
-            "@type": "Organization",
-            name: "Madrid 101",
-            url: "https://madrid101.xyz",
-          },
-    publisher: {
-      "@type": "Organization",
-      name: "Madrid 101",
-      url: "https://madrid101.xyz",
-      logo: {
-        "@type": "ImageObject",
-        url: new URL(logoUrl, context.site).href,
-      },
-    },
-    mainEntityOfPage: {
-      "@type": "WebPage",
-      "@id": canonicalUrl,
-    },
+    publisher,
     inLanguage: "ru",
-    isPartOf: {
-      "@type": "WebSite",
-      name: "Madrid 101",
-      url: "https://madrid101.xyz",
-    },
-    ...(entry?.tags && { keywords: entry.tags.join(", ") }),
-    ...(entry?.articleSection && { articleSection: entry.articleSection }),
   };
+  const structuredData = isHomepage
+    ? { ...commonData, "@type": "WebSite", name: "Madrid 101" }
+    : {
+        ...commonData,
+        "@type": "Article",
+        headline: entry.title,
+        // Starlight's lastUpdated honors a frontmatter override.
+        datePublished: (await getOldestCommitDate("docs", id)).toISOString(),
+        ...(lastUpdated && { dateModified: lastUpdated.toISOString() }),
+        author:
+          entry.author && entry.author !== "Madrid 101"
+            ? { "@type": "Person", name: entry.author }
+            : { "@type": "Organization", name: "Madrid 101", url: context.site?.href },
+        mainEntityOfPage: { "@type": "WebPage", "@id": canonicalUrl },
+        isPartOf: { "@type": "WebSite", name: "Madrid 101", url: context.site?.href },
+        ...(entry.tags && { keywords: entry.tags.join(", ") }),
+        ...(entry.articleSection && { articleSection: entry.articleSection }),
+      };
 
   head.push({
     tag: "script",
@@ -140,7 +128,7 @@ export const onRequest = defineRouteMiddleware(async (context) => {
     content: JSON.stringify(structuredData),
   });
 
-  if (id && id !== "404") {
+  if (!isHomepage) {
     const docs = await getCollection("docs", ({ data }) => !data.draft);
     const segments = id.split("/");
     const breadcrumbs = ["index", ...segments.map((_, i) => segments.slice(0, i + 1).join("/"))]
