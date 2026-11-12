@@ -2,6 +2,8 @@ import { defineRouteMiddleware } from "@astrojs/starlight/route-data";
 import { getOldestCommitDate } from "@it-astro:content/git";
 import { getCollection } from "astro:content";
 
+import logoUrl from "./assets/logo-light.svg?url";
+
 export const onRequest = defineRouteMiddleware(async (context) => {
   const { id, head } = context.locals.starlightRoute;
   if (id === "404") {
@@ -97,7 +99,7 @@ export const onRequest = defineRouteMiddleware(async (context) => {
       url: "https://madrid101.xyz",
       logo: {
         "@type": "ImageObject",
-        url: "https://madrid101.xyz/logo-light.svg",
+        url: new URL(logoUrl, context.site).href,
       },
     },
     mainEntityOfPage: {
