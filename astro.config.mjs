@@ -127,14 +127,6 @@ export default defineConfig({
             content: "ru",
           },
         },
-        {
-          tag: "link",
-          attrs: {
-            rel: "alternate",
-            hreflang: "ru",
-            href: "https://madrid101.xyz/",
-          },
-        },
       ],
       social: [
         {
