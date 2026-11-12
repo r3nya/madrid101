@@ -17,6 +17,25 @@ export const onRequest = defineRouteMiddleware(async (context) => {
     return;
   }
 
+  const entry = context.locals.starlightRoute.entry.data;
+  // Reuse Starlight's canonical pathname and trailing-slash formatting.
+  const canonicalHref = head.find(({ tag, attrs }) => tag === "link" && attrs?.rel === "canonical")
+    ?.attrs?.href;
+  const canonicalUrl =
+    entry.canonicalUrl ||
+    (typeof canonicalHref === "string"
+      ? canonicalHref
+      : new URL(context.url.pathname, context.site).href);
+
+  for (const tag of head) {
+    if (tag.tag === "link" && tag.attrs?.rel === "canonical") {
+      tag.attrs.href = canonicalUrl;
+    }
+    if (tag.tag === "meta" && tag.attrs?.property === "og:url") {
+      tag.attrs.content = canonicalUrl;
+    }
+  }
+
   // Get the URL of the generated image for the current page using its ID and
   // append the `.png` file extension.
   const ogImageUrl = new URL(`/og/${id || "index"}.png`, context.site);
@@ -38,8 +57,6 @@ export const onRequest = defineRouteMiddleware(async (context) => {
     tag: "meta",
     attrs: { name: "twitter:image", content: ogImageUrl.href },
   });
-
-  const entry = context.locals.starlightRoute.entry?.data;
 
   // Add keywords meta tag
   if (entry?.keywords) {
@@ -71,7 +88,7 @@ export const onRequest = defineRouteMiddleware(async (context) => {
     "@type": entry?.articleSection === "Главная" ? "WebSite" : "Article",
     headline: entry?.title || "Madrid 101",
     description: entry?.description || "FAQ по Мадриду для номадов и эмигрантов",
-    url: entry?.canonicalUrl || context.url.href,
+    url: canonicalUrl,
     image: ogImageUrl.href,
     // Both come from git history (Starlight's lastUpdated honors a frontmatter override).
     // Starlight's built-in 404 entry is virtual (not in the collection), so it has no git history.
@@ -105,7 +122,7 @@ export const onRequest = defineRouteMiddleware(async (context) => {
     },
     mainEntityOfPage: {
       "@type": "WebPage",
-      "@id": entry?.canonicalUrl || context.url.href,
+      "@id": canonicalUrl,
     },
     inLanguage: "ru",
     isPartOf: {
