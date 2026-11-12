@@ -74,34 +74,14 @@ const pages = files.map((file) => {
     notFound: file === "404.html" || file === "404/index.html",
   };
 });
+const contentPages = pages.filter((page) => !page.redirect && !page.notFound);
 
 function checkAsset(value, label) {
-  if (Array.isArray(value)) return value.forEach((item) => checkAsset(item, label));
-  if (value && typeof value === "object") {
-    const url = value.url ?? value.contentUrl ?? value["@id"];
-    assert.ok(url, `${label}: image object needs a URL`);
-    return checkAsset(url, label);
-  }
   assert.equal(typeof value, "string", `${label}: expected an image URL`);
   const url = new URL(value, `${origin}/`);
   assert.equal(url.origin, origin, `${label}: expected an asset on the canonical origin`);
   const asset = new URL(`.${url.pathname}`, dist);
   assert.ok(existsSync(asset), `${label}: missing dist${url.pathname}`);
-}
-
-function checkSchema(node, page) {
-  if (!node || typeof node !== "object") return;
-  const types = [node["@type"]].flat();
-  if (page.notFound) {
-    assert.ok(!types.includes("Article"), `${page.file}: 404 must not have Article markup`);
-  }
-  for (const [key, value] of Object.entries(node)) {
-    if (key === "image" || key === "logo") checkAsset(value, `${page.file}: JSON-LD ${key}`);
-    else if (typeof value === "object") {
-      if (Array.isArray(value)) value.forEach((item) => checkSchema(item, page));
-      else checkSchema(value, page);
-    }
-  }
 }
 
 describe.skipIf(!enabled)("built SEO artifacts (requires npm run build)", () => {
@@ -161,23 +141,68 @@ describe.skipIf(!enabled)("built SEO artifacts (requires npm run build)", () => 
         if (attributes(script).type === "application/ld+json") {
           try {
             const json = script.childNodes.map((node) => node.value ?? "").join("");
-            const schema = JSON.parse(json);
-            schemas.push(...[schema].flat());
-            for (const node of [schema].flat()) checkSchema(node, page);
+            schemas.push(JSON.parse(json));
           } catch (error) {
             throw new Error(`${file}: JSON-LD: ${error.message}`, { cause: error });
           }
         }
       }
-      if (!notFound) {
+      if (notFound) {
+        assert.equal(schemas.length, 0, `${file}: 404 must not have JSON-LD`);
+      } else {
         const homepage = file === "index.html";
         const type = homepage ? "WebSite" : "Article";
+        assert.equal(schemas.length, homepage ? 1 : 2, `${file}: JSON-LD count`);
+        for (const schema of schemas) {
+          assert.equal(schema["@context"], "https://schema.org", `${file}: JSON-LD context`);
+        }
         const schema = schemas.find((node) => node["@type"] === type);
         assert.ok(schema, `${file}: missing ${type} JSON-LD`);
         assert.equal(schema.url, canonical[0].href, `${file}: JSON-LD canonical`);
-        if (homepage) assert.equal(schema.name, "Madrid 101", `${file}: site name`);
-        if (schema.author?.name === "Madrid 101") {
-          assert.equal(schema.author["@type"], "Organization", `${file}: site author type`);
+        assert.equal(
+          schema.image,
+          meta.find((tag) => tag.property === "og:image").content,
+          `${file}: JSON-LD image matches Open Graph`,
+        );
+        checkAsset(schema.publisher?.logo?.url, `${file}: publisher logo`);
+        if (homepage) {
+          assert.equal(schema.name, "Madrid 101", `${file}: site name`);
+        } else {
+          assert.ok(schema.headline?.trim(), `${file}: missing headline`);
+          assert.ok(schema.author?.name?.trim(), `${file}: missing author`);
+          assert.equal(
+            schema.author["@type"],
+            schema.author.name === "Madrid 101" ? "Organization" : "Person",
+            `${file}: author type`,
+          );
+          for (const field of ["datePublished", "dateModified"]) {
+            assert.match(
+              schema[field],
+              /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}\.\d{3}Z$/,
+              `${file}: ${field}`,
+            );
+          }
+          const breadcrumb = schemas.find((node) => node["@type"] === "BreadcrumbList");
+          assert.ok(breadcrumb, `${file}: missing BreadcrumbList`);
+          const expected = contentPages
+            .map((parent) => parent.canonical[0].href)
+            .filter((url) => canonical[0].href.startsWith(url))
+            .sort((a, b) => a.length - b.length);
+          assert.deepEqual(
+            breadcrumb.itemListElement.map((item) => item.item),
+            expected,
+            `${file}: breadcrumb URLs`,
+          );
+          breadcrumb.itemListElement.forEach((item, index) => {
+            assert.equal(item["@type"], "ListItem", `${file}: breadcrumb type`);
+            assert.equal(item.position, index + 1, `${file}: breadcrumb position`);
+            assert.ok(item.name?.trim(), `${file}: breadcrumb name`);
+          });
+          assert.equal(
+            breadcrumb.itemListElement.at(-1).name,
+            schema.headline,
+            `${file}: breadcrumb matches article headline`,
+          );
         }
         const ogUrl = meta.filter((tag) => tag.property === "og:url");
         assert.equal(ogUrl.length, 1, `${file}: expected exactly one og:url`);
@@ -204,8 +229,7 @@ describe.skipIf(!enabled)("built SEO artifacts (requires npm run build)", () => 
     }
     const urls = await readSitemap(new URL("/sitemap-index.xml", origin));
     assert.equal(new Set(urls).size, urls.length, "sitemap contains duplicate URLs");
-    const expected = pages
-      .filter((page) => !page.redirect && !page.notFound)
+    const expected = contentPages
       .filter((page) => !page.robots.includes("noindex") && !page.robots.includes("none"))
       .map((page) => page.canonical[0]?.href);
     assert.deepEqual(

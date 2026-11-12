@@ -20,21 +20,10 @@ export const onRequest = defineRouteMiddleware(async (context) => {
   const entry = context.locals.starlightRoute.entry.data;
   const isHomepage = !id || id === "index";
   // Reuse Starlight's canonical pathname and trailing-slash formatting.
-  const canonicalHref = head.find(({ tag, attrs }) => tag === "link" && attrs?.rel === "canonical")
+  const canonicalUrl = head.find(({ tag, attrs }) => tag === "link" && attrs?.rel === "canonical")
     ?.attrs?.href;
-  const canonicalUrl =
-    entry.canonicalUrl ||
-    (typeof canonicalHref === "string"
-      ? canonicalHref
-      : new URL(context.url.pathname, context.site).href);
 
   for (const tag of head) {
-    if (tag.tag === "link" && tag.attrs?.rel === "canonical") {
-      tag.attrs.href = canonicalUrl;
-    }
-    if (tag.tag === "meta" && tag.attrs?.property === "og:url") {
-      tag.attrs.content = canonicalUrl;
-    }
     if (tag.tag === "meta" && tag.attrs?.property === "og:type") {
       tag.attrs.content = isHomepage ? "website" : "article";
     }
@@ -145,9 +134,7 @@ export const onRequest = defineRouteMiddleware(async (context) => {
           "@type": "ListItem",
           position: i + 1,
           name: doc.data.title,
-          item:
-            doc.data.canonicalUrl ||
-            new URL(doc.id === "index" ? "/" : `/${doc.id}/`, context.site).href,
+          item: new URL(doc.id === "index" ? "/" : `/${doc.id}/`, context.site).href,
         })),
       }).replace(/</g, "\\u003c"),
     });
