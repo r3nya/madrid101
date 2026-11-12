@@ -109,13 +109,6 @@ export default defineConfig({
         {
           tag: "meta",
           attrs: {
-            name: "robots",
-            content: "index, follow",
-          },
-        },
-        {
-          tag: "meta",
-          attrs: {
             name: "language",
             content: "ru",
           },
@@ -125,14 +118,6 @@ export default defineConfig({
           attrs: {
             "http-equiv": "content-language",
             content: "ru",
-          },
-        },
-        {
-          tag: "link",
-          attrs: {
-            rel: "alternate",
-            hreflang: "ru",
-            href: "https://madrid101.xyz/",
           },
         },
       ],

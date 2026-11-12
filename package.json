@@ -12,6 +12,7 @@
     "astro": "astro",
     "test": "vitest",
     "test:run": "vitest run",
+    "test:seo": "SEO_TEST=1 vitest run scripts/seo.test.mjs",
     "lint": "eslint . --max-warnings 0",
     "lint:fix": "eslint . --fix",
     "format": "oxfmt --write .",
@@ -41,6 +42,7 @@
     "eslint-plugin-jsx-a11y-x": "0.2.0",
     "globals": "17.14.0",
     "oxfmt": "0.77.0",
+    "parse5": "7.3.0",
     "typescript-eslint": "8.72.1",
     "vitest": "^5.0.2"
   },

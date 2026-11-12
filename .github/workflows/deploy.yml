@@ -59,6 +59,9 @@ jobs:
         env:
           PUBLIC_SNOW_FALL_ENABLED: ${{ steps.snowfall.outputs.enabled }}
 
+      - name: Validate generated SEO metadata
+        run: npm run test:seo
+
       - name: Upload Pages artifact
         if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
         uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5

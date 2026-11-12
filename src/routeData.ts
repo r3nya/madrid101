@@ -2,16 +2,36 @@ import { defineRouteMiddleware } from "@astrojs/starlight/route-data";
 import { getOldestCommitDate } from "@it-astro:content/git";
 import { getCollection } from "astro:content";
 
+import logoUrl from "./assets/logo-light.svg?url";
+
 export const onRequest = defineRouteMiddleware(async (context) => {
+  const { id, head, lastUpdated } = context.locals.starlightRoute;
+  if (id === "404") {
+    context.locals.starlightRoute.head = head.filter(
+      ({ tag, attrs }) => !(tag === "meta" && attrs?.name === "robots"),
+    );
+    context.locals.starlightRoute.head.push({
+      tag: "meta",
+      attrs: { name: "robots", content: "noindex,follow" },
+    });
+    return;
+  }
+
+  const entry = context.locals.starlightRoute.entry.data;
+  const isHomepage = !id || id === "index";
+  // Reuse Starlight's canonical pathname and trailing-slash formatting.
+  const canonicalUrl = head.find(({ tag, attrs }) => tag === "link" && attrs?.rel === "canonical")
+    ?.attrs?.href;
+
+  for (const tag of head) {
+    if (tag.tag === "meta" && tag.attrs?.property === "og:type") {
+      tag.attrs.content = isHomepage ? "website" : "article";
+    }
+  }
+
   // Get the URL of the generated image for the current page using its ID and
   // append the `.png` file extension.
-  const ogImageUrl = new URL(
-    `/og/${context.locals.starlightRoute.id || "index"}.png`,
-    context.site,
-  );
-
-  // Get the array of all tags to include in the `<head>` of the current page.
-  const { head } = context.locals.starlightRoute;
+  const ogImageUrl = new URL(`/og/${id || "index"}.png`, context.site);
 
   // Add the `<meta/>` tags for the Open Graph images.
   head.push({
@@ -30,8 +50,6 @@ export const onRequest = defineRouteMiddleware(async (context) => {
     tag: "meta",
     attrs: { name: "twitter:image", content: ogImageUrl.href },
   });
-
-  const entry = context.locals.starlightRoute.entry?.data;
 
   // Add keywords meta tag
   if (entry?.keywords) {
@@ -57,65 +75,49 @@ export const onRequest = defineRouteMiddleware(async (context) => {
     });
   }
 
-  // Add structured data
-  const structuredData = {
-    "@context": "https://schema.org",
-    "@type": entry?.articleSection === "Главная" ? "WebSite" : "Article",
-    headline: entry?.title || "Madrid 101",
-    description: entry?.description || "FAQ по Мадриду для номадов и эмигрантов",
-    url: entry?.canonicalUrl || context.url.href,
-    image: ogImageUrl.href,
-    // Both come from git history (Starlight's lastUpdated honors a frontmatter override).
-    // Starlight's built-in 404 entry is virtual (not in the collection), so it has no git history.
-    ...(context.locals.starlightRoute.id !== "404" && {
-      datePublished: (
-        await getOldestCommitDate("docs", context.locals.starlightRoute.id || "index")
-      ).toISOString(),
-    }),
-    ...(context.locals.starlightRoute.lastUpdated && {
-      dateModified: context.locals.starlightRoute.lastUpdated.toISOString(),
-    }),
-    author: entry?.author
-      ? {
-          "@type": "Person",
-          name: entry.author,
-        }
-      : {
-          "@type": "Organization",
-          name: "Madrid 101",
-          url: "https://madrid101.xyz",
-        },
-    publisher: {
-      "@type": "Organization",
-      name: "Madrid 101",
-      url: "https://madrid101.xyz",
-      logo: {
-        "@type": "ImageObject",
-        url: "https://madrid101.xyz/logo-light.svg",
-      },
+  const publisher = {
+    "@type": "Organization",
+    name: "Madrid 101",
+    url: context.site?.href,
+    logo: {
+      "@type": "ImageObject",
+      url: new URL(logoUrl, context.site).href,
     },
-    mainEntityOfPage: {
-      "@type": "WebPage",
-      "@id": entry?.canonicalUrl || context.url.href,
-    },
-    inLanguage: "ru",
-    isPartOf: {
-      "@type": "WebSite",
-      name: "Madrid 101",
-      url: "https://madrid101.xyz",
-    },
-    ...(entry?.tags && { keywords: entry.tags.join(", ") }),
-    ...(entry?.articleSection && { articleSection: entry.articleSection }),
   };
+  const commonData = {
+    "@context": "https://schema.org",
+    description: entry.description || "FAQ по Мадриду для номадов и эмигрантов",
+    url: canonicalUrl,
+    image: ogImageUrl.href,
+    publisher,
+    inLanguage: "ru",
+  };
+  const structuredData = isHomepage
+    ? { ...commonData, "@type": "WebSite", name: "Madrid 101" }
+    : {
+        ...commonData,
+        "@type": "Article",
+        headline: entry.title,
+        // Starlight's lastUpdated honors a frontmatter override.
+        datePublished: (await getOldestCommitDate("docs", id)).toISOString(),
+        ...(lastUpdated && { dateModified: lastUpdated.toISOString() }),
+        author:
+          entry.author && entry.author !== "Madrid 101"
+            ? { "@type": "Person", name: entry.author }
+            : { "@type": "Organization", name: "Madrid 101", url: context.site?.href },
+        mainEntityOfPage: { "@type": "WebPage", "@id": canonicalUrl },
+        isPartOf: { "@type": "WebSite", name: "Madrid 101", url: context.site?.href },
+        ...(entry.tags && { keywords: entry.tags.join(", ") }),
+        ...(entry.articleSection && { articleSection: entry.articleSection }),
+      };
 
   head.push({
     tag: "script",
     attrs: { type: "application/ld+json" },
-    content: JSON.stringify(structuredData),
+    content: JSON.stringify(structuredData).replace(/</g, "\\u003c"),
   });
 
-  const { id } = context.locals.starlightRoute;
-  if (id && id !== "404") {
+  if (!isHomepage) {
     const docs = await getCollection("docs", ({ data }) => !data.draft);
     const segments = id.split("/");
     const breadcrumbs = ["index", ...segments.map((_, i) => segments.slice(0, i + 1).join("/"))]
@@ -132,9 +134,7 @@ export const onRequest = defineRouteMiddleware(async (context) => {
           "@type": "ListItem",
           position: i + 1,
           name: doc.data.title,
-          item:
-            doc.data.canonicalUrl ||
-            new URL(doc.id === "index" ? "/" : `/${doc.id}/`, context.site).href,
+          item: new URL(doc.id === "index" ? "/" : `/${doc.id}/`, context.site).href,
         })),
       }).replace(/</g, "\\u003c"),
     });

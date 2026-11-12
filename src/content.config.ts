@@ -8,7 +8,6 @@ export const collections = {
     loader: glob({ pattern: "**/*.{md,mdx}", base: "./src/content/docs" }),
     schema: docsSchema({
       extend: z.object({
-        canonicalUrl: z.url().optional(),
         keywords: z.string().optional(),
         author: z.string().optional(),
         robots: z.string().optional(),
