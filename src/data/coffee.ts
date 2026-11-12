@@ -113,12 +113,6 @@ export const coffeeRoasters = [
     location: "Мадрид",
   },
   {
-    name: "Lyv coffee",
-    url: "https://www.lyvcoffee.com/",
-    subscription: false,
-    location: "Малага",
-  },
-  {
     name: "MALAKABRA",
     url: "https://malakabra.com",
     subscription: false,

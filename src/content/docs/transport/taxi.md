@@ -1,7 +1,7 @@
 ---
-title: Такси и сервисы заказа поездок
+title: "Такси в Мадриде: тарифы и приложения"
 description: Информация о такси и альтернативных сервисах заказа поездок в Мадриде
-lastUpdated: 2026-11-03
+lastUpdated: 2026-11-11
 sidebar:
   label: Такси
 ---
@@ -20,12 +20,12 @@ sidebar:
 
 Тарифы одинаковые для всех такси в зоне совместного обслуживания (Área de Prestación Conjunta — Мадрид и соседние муниципалитеты).
 
-| | Тариф 1 | Тариф 2 |
-|---|---|---|
-| Когда действует | Рабочие дни пн–пт, 7:00–21:00 | Каждый день 21:00–7:00, а также сб, вс и праздники весь день |
-| Посадка | 2,55 € | 3,20 € |
-| Километр | 1,40 € | 1,60 € |
-| Час (пробки и ожидание) | 27 € | 29 € |
+|                         | Тариф 1                       | Тариф 2                                                      |
+| ----------------------- | ----------------------------- | ------------------------------------------------------------ |
+| Когда действует         | Рабочие дни пн–пт, 7:00–21:00 | Каждый день 21:00–7:00, а также сб, вс и праздники весь день |
+| Посадка                 | 2,55 €                        | 3,20 €                                                       |
+| Километр                | 1,40 €                        | 1,60 €                                                       |
+| Час (пробки и ожидание) | 27 €                          | 29 €                                                         |
 
 Номер текущего тарифа показывается на таксометре и на световом табло на крыше.
 
@@ -65,20 +65,25 @@ sidebar:
 ### Официальные такси-сервисы
 
 #### TXMAD
+
 - Официальное приложение такси Мадрида, работает от имени мэрии
 - [Android](https://play.google.com/store/apps/details?id=es.madrid.GTAXIMVTAXAND&hl=en_US) | [iOS](https://apps.apple.com/es/app/txmad/id1253402459)
 
 #### Freenow by Lyft (бывший MyTaxi)
+
 - [Android](https://play.google.com/store/apps/details?id=taxi.android.client) | [iOS](https://apps.apple.com/app/id357852748)
 
 #### PideTaxi (Radio Teléfono Taxi)
+
 - Телефон: [+34 915 478 200](tel:+34915478200)
 - [Android](https://play.google.com/store/apps/details?id=es.sooft.pidetaxi&hl=es) | [iOS](https://apps.apple.com/es/app/pidetaxi/id737441460) | [AppGallery](https://appgallery.huawei.com/#/app/C101709185)
 
 #### Tele Taxi
+
 - Телефон: [+34 913 712 131](tel:+34913712131)
 
 #### Joinup
+
 - В основном для корпоративных клиентов, но можно ездить и частным образом
 - Телефон: [+34 915 331 464](tel:+34915331464)
 - [Android](https://play.google.com/store/apps/details?id=com.joinuptaxi.passenger)
@@ -86,13 +91,16 @@ sidebar:
 ### Альтернативные сервисы (VTC)
 
 #### Cabify
+
 - Испанский сервис, головной офис в Мадриде
 - [Android](https://play.google.com/store/apps/details?id=com.cabify.rider) | [iOS](https://apps.apple.com/es/app/cabify/id476087442)
 
 #### Uber
+
 - [Android](https://play.google.com/store/apps/details?id=com.ubercab) | [iOS](https://apps.apple.com/app/id368677368)
 
 #### Bolt
+
 - [Android](https://play.google.com/store/apps/details?id=ee.mtakso.client) | [iOS](https://apps.apple.com/app/id675033630)
 
 VTC — это машины с водителем, которые работают только по предварительному заказу через приложение. Поймать на улице или взять на стоянке такую машину нельзя. Цену сервис показывает заранее, и у каждого свои правила.

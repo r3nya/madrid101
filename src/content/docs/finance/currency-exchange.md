@@ -1,11 +1,14 @@
 ---
-title: Обмен валюты
+title: "Обмен валюты в Мадриде"
 description: Поиск наиболее выгодного курса обмена валюты в Мадриде
 tableOfContents: false
-lastUpdated: 2025-12-16
+lastUpdated: 2026-11-11
+sidebar:
+  label: Обмен валюты
 ---
 
 Для поиска наиболее выгодного курса обмена валюты в Мадриде рекомендуем использовать следующий ресурс:
+
 - [cambiator.es](https://www.cambiator.es/en/)
 
 ### GBTC Finance

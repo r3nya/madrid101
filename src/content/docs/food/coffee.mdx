@@ -1,23 +1,24 @@
 ---
-title: Кофе
+title: "Кофе в Мадриде: кофейни и обжарщики"
 description: Лучшие кофейни, места для покупки зерна и кофейные подписки в Мадриде. Гид по кофе в испанской столице.
 keywords: "кофе Мадрид, кофейни, зерно кофе, кофейные подписки, specialty coffee Испания"
 author: "Madrid 101"
-canonicalUrl: "https://madrid101.xyz/food/coffee/"
 articleSection: "Еда"
 tags: ["кофе", "кофейни", "Мадрид", "зерно", "подписки", "specialty coffee"]
-lastUpdated: 2026-10-07
+lastUpdated: 2026-11-11
 tableOfContents: false
 sidebar:
+  label: Кофе
   order: 4
 ---
 
-import { LinkCard } from '@astrojs/starlight/components';
-import { coffeeLinks, coffeeRoasters } from '@/data/coffee';
+import { LinkCard } from "@astrojs/starlight/components";
+import { coffeeLinks, coffeeRoasters } from "@/data/coffee";
 
 ## Кофейная карта
 
 {coffeeLinks.map((link) => (
+
   <LinkCard title={link.title} href={link.href} />
 ))}
 
@@ -34,8 +35,10 @@ import { coffeeLinks, coffeeRoasters } from '@/data/coffee';
   <tbody>
     {coffeeRoasters.map((roaster, index) => (
       <tr key={index}>
-        <td><a href={roaster.url}>{roaster.name}</a></td>
-        <td>{roaster.subscription ? '☕' : '-'}</td>
+        <td>
+          <a href={roaster.url}>{roaster.name}</a>
+        </td>
+        <td>{roaster.subscription ? "☕" : "-"}</td>
         <td>{roaster.location}</td>
       </tr>
     ))}

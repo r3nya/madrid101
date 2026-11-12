@@ -1,28 +1,28 @@
 import sitemap from "@astrojs/sitemap";
 import starlight from "@astrojs/starlight";
+import contentUtils from "@inox-tools/content-utils";
 import { defineConfig } from "astro/config";
 import compress from "astro-compress";
 import starlightLinksValidator from "starlight-links-validator";
+import { fileURLToPath } from "node:url";
 
+import { createSitemapSerializer } from "./scripts/sitemap.mjs";
 import { SITE_CONFIG } from "./src/data/config.ts";
 
 // https://astro.build/config
 export default defineConfig({
   site: "https://madrid101.xyz/",
   redirects: {
-    "/faq/city-authorities/digital-certificate":
-      "/documents/digital-certificate",
+    "/faq/city-authorities/digital-certificate": "/documents/digital-certificate",
     "/faq/city-authorities/nota-simple": "/documents/nota-simple",
-    "/faq/city-authorities/residence-registration":
-      "/documents/residence-registration",
+    "/faq/city-authorities/residence-registration": "/documents/residence-registration",
     "/faq/education/school-for-children": "/education/school-for-children",
     "/faq/finance/basic-account": "/finance/basic-account",
     "/faq/finance/currency-exchange": "/finance/currency-exchange",
     "/faq/finance/mortgage": "/finance/mortgage",
     "/faq/healthcare/appointments": "/healthcare/appointments",
     "/faq/healthcare/dental-services": "/healthcare/dental-services",
-    "/faq/healthcare/tarjeta-sanitaria-europea":
-      "/healthcare/tarjeta-sanitaria-europea",
+    "/faq/healthcare/tarjeta-sanitaria-europea": "/healthcare/tarjeta-sanitaria-europea",
     "/faq/healthcare/tarjeta-sanitaria": "/healthcare/tarjeta-sanitaria",
     "/faq/maps/districts": "/housing/districts",
     "/faq/welcome": "/welcome",
@@ -36,6 +36,7 @@ export default defineConfig({
     },
   },
   integrations: [
+    contentUtils(),
     starlight({
       // Use the route data middleware to add the Open Graph images.
       routeMiddleware: "./src/routeData.ts",
@@ -108,13 +109,6 @@ export default defineConfig({
         {
           tag: "meta",
           attrs: {
-            name: "robots",
-            content: "index, follow",
-          },
-        },
-        {
-          tag: "meta",
-          attrs: {
             name: "language",
             content: "ru",
           },
@@ -124,14 +118,6 @@ export default defineConfig({
           attrs: {
             "http-equiv": "content-language",
             content: "ru",
-          },
-        },
-        {
-          tag: "link",
-          attrs: {
-            rel: "alternate",
-            hreflang: "ru",
-            href: "https://madrid101.xyz/",
           },
         },
       ],
@@ -152,12 +138,7 @@ export default defineConfig({
         //   href: "https://t.me/+4ccS_x5DADAwMjM6",
         // },
       ],
-      // defaultLocale: "ru",
-      // locales: {
-      //   ru: {
-      //     label: "Русский",
-      //   },
-      // },
+      locales: { root: { label: "Русский", lang: "ru" } },
       lastUpdated: true,
       sidebar: [
         {
@@ -267,9 +248,7 @@ export default defineConfig({
                 {
                   label: "Клубы",
                   collapsed: true,
-                  items: [
-                    { autogenerate: { directory: "spare-time/football" } },
-                  ],
+                  items: [{ autogenerate: { directory: "spare-time/football" } }],
                 },
               ],
             },
@@ -291,9 +270,7 @@ export default defineConfig({
               items: [
                 {
                   label: "🔫 Airsoft",
-                  items: [
-                    { autogenerate: { directory: "spare-time/airsoft" } },
-                  ],
+                  items: [{ autogenerate: { directory: "spare-time/airsoft" } }],
                 },
                 {
                   label: "Хакерспейсы",
@@ -318,7 +295,11 @@ export default defineConfig({
         },
       ],
     }),
-    sitemap(),
+    sitemap({
+      serialize: createSitemapSerializer(
+        fileURLToPath(new URL("./src/content/docs/", import.meta.url)),
+      ),
+    }),
     compress(),
   ],
 });
