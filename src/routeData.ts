@@ -3,15 +3,21 @@ import { getOldestCommitDate } from "@it-astro:content/git";
 import { getCollection } from "astro:content";
 
 export const onRequest = defineRouteMiddleware(async (context) => {
+  const { id, head } = context.locals.starlightRoute;
+  if (id === "404") {
+    context.locals.starlightRoute.head = head.filter(
+      ({ tag, attrs }) => !(tag === "meta" && attrs?.name === "robots"),
+    );
+    context.locals.starlightRoute.head.push({
+      tag: "meta",
+      attrs: { name: "robots", content: "noindex,follow" },
+    });
+    return;
+  }
+
   // Get the URL of the generated image for the current page using its ID and
   // append the `.png` file extension.
-  const ogImageUrl = new URL(
-    `/og/${context.locals.starlightRoute.id || "index"}.png`,
-    context.site,
-  );
-
-  // Get the array of all tags to include in the `<head>` of the current page.
-  const { head } = context.locals.starlightRoute;
+  const ogImageUrl = new URL(`/og/${id || "index"}.png`, context.site);
 
   // Add the `<meta/>` tags for the Open Graph images.
   head.push({
@@ -114,7 +120,6 @@ export const onRequest = defineRouteMiddleware(async (context) => {
     content: JSON.stringify(structuredData),
   });
 
-  const { id } = context.locals.starlightRoute;
   if (id && id !== "404") {
     const docs = await getCollection("docs", ({ data }) => !data.draft);
     const segments = id.split("/");

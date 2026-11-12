@@ -109,13 +109,6 @@ export default defineConfig({
         {
           tag: "meta",
           attrs: {
-            name: "robots",
-            content: "index, follow",
-          },
-        },
-        {
-          tag: "meta",
-          attrs: {
             name: "language",
             content: "ru",
           },
