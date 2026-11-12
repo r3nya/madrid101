@@ -16,7 +16,7 @@ tags:
     "финансы",
   ]
 tableOfContents: false
-lastUpdated: 2026-11-12
+lastUpdated: 2026-11-11
 ---
 
 Сборник ответов на частые вопросы чата «Номады в Мадриде».

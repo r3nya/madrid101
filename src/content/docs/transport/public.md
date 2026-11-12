@@ -5,7 +5,7 @@ keywords: "метро Мадрид, автобусы Мадрид, трансп�
 author: "Madrid 101"
 articleSection: "Транспорт"
 tags: ["транспорт", "метро", "автобусы", "Мадрид", "билеты", "тарифы", "Cercanías"]
-lastUpdated: 2026-11-12
+lastUpdated: 2026-11-11
 sidebar:
   label: Общественный транспорт
 ---

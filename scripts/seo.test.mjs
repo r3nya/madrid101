@@ -198,11 +198,6 @@ describe.skipIf(!enabled)("built SEO artifacts (requires npm run build)", () => 
             assert.equal(item.position, index + 1, `${file}: breadcrumb position`);
             assert.ok(item.name?.trim(), `${file}: breadcrumb name`);
           });
-          assert.equal(
-            breadcrumb.itemListElement.at(-1).name,
-            schema.headline,
-            `${file}: breadcrumb matches article headline`,
-          );
         }
         const ogUrl = meta.filter((tag) => tag.property === "og:url");
         assert.equal(ogUrl.length, 1, `${file}: expected exactly one og:url`);

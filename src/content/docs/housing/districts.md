@@ -5,7 +5,7 @@ keywords: "районы Мадрида, где жить Мадрид, карты
 author: "Madrid 101"
 articleSection: "FAQ"
 tags: ["районы", "Мадрид", "жилье", "карты", "кварталы", "недвижимость"]
-lastUpdated: 2026-11-12
+lastUpdated: 2026-11-11
 sidebar:
   label: Районы города
 ---
