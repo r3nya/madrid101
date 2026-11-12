@@ -83,16 +83,17 @@ export const onRequest = defineRouteMiddleware(async (context) => {
     ...(context.locals.starlightRoute.lastUpdated && {
       dateModified: context.locals.starlightRoute.lastUpdated.toISOString(),
     }),
-    author: entry?.author
-      ? {
-          "@type": "Person",
-          name: entry.author,
-        }
-      : {
-          "@type": "Organization",
-          name: "Madrid 101",
-          url: "https://madrid101.xyz",
-        },
+    author:
+      entry?.author && entry.author !== "Madrid 101"
+        ? {
+            "@type": "Person",
+            name: entry.author,
+          }
+        : {
+            "@type": "Organization",
+            name: "Madrid 101",
+            url: "https://madrid101.xyz",
+          },
     publisher: {
       "@type": "Organization",
       name: "Madrid 101",
