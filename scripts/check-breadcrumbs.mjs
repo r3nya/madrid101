@@ -42,7 +42,7 @@ for (const [path, expectedPaths] of [
     readFileSync(new URL(`../dist/${expectedPaths[index].slice(1)}index.html`, import.meta.url));
   });
   if (path === "transport/taxi/index.html") {
-    assert.equal(breadcrumb.itemListElement.at(-1).name, "Такси и сервисы заказа поездок");
+    assert.equal(breadcrumb.itemListElement.at(-1).name, "Такси в Мадриде: тарифы и приложения");
   }
 }
 
