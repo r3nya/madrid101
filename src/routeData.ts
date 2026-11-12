@@ -125,7 +125,7 @@ export const onRequest = defineRouteMiddleware(async (context) => {
   head.push({
     tag: "script",
     attrs: { type: "application/ld+json" },
-    content: JSON.stringify(structuredData),
+    content: JSON.stringify(structuredData).replace(/</g, "\\u003c"),
   });
 
   if (!isHomepage) {
