@@ -12,6 +12,7 @@
     "astro": "astro",
     "test": "vitest",
     "test:run": "vitest run",
+    "test:seo": "SEO_TEST=1 vitest run scripts/seo.test.mjs && node scripts/check-breadcrumbs.mjs",
     "lint": "eslint . --max-warnings 0",
     "lint:fix": "eslint . --fix",
     "format": "oxfmt --write .",
