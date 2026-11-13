@@ -2,13 +2,6 @@ import { describe, expect, it } from "vitest";
 import { coffeeRoasters, coffeeRoasterGroups } from "./coffee";
 
 describe("Coffee Roasters URLs", () => {
-  it("has valid URLs for all roasters", () => {
-    for (const roaster of coffeeRoasters) {
-      expect(roaster.url).toBeTruthy();
-      expect(() => new URL(roaster.url)).not.toThrow();
-    }
-  });
-
   it.each(coffeeRoasters)(
     "keeps the website available on the same domain for $name",
     {
@@ -17,11 +10,9 @@ describe("Coffee Roasters URLs", () => {
     async (roaster) => {
       const response = await fetch(roaster.url, {
         method: "HEAD",
-        redirect: "follow",
         signal: AbortSignal.timeout(8000),
       });
 
-      expect(response.ok).toBe(true);
       expect(response.status).toBe(200);
       expect(new URL(response.url).hostname.replace(/^www\./, "")).toBe(
         new URL(roaster.url).hostname.replace(/^www\./, ""),
@@ -47,15 +38,13 @@ describe("Coffee roaster groups", () => {
 
 describe("Madrid coffee reviews", () => {
   const madridRoasters = coffeeRoasters.filter((roaster) => roaster.region === "madrid");
+  // Swedish locale formats the Madrid calendar date as YYYY-MM-DD.
+  const today = new Intl.DateTimeFormat("sv-SE", {
+    timeZone: "Europe/Madrid",
+  }).format(new Date());
 
   it.each(madridRoasters)("has a recent manual check for $name", (roaster) => {
-    expect("lastChecked" in roaster).toBe(true);
-    if (!("lastChecked" in roaster)) return;
-
     const checkedAt = Date.parse(`${roaster.lastChecked}T00:00:00Z`);
-    const today = new Intl.DateTimeFormat("sv-SE", {
-      timeZone: "Europe/Madrid",
-    }).format(new Date());
     const ageDays = (Date.parse(`${today}T00:00:00Z`) - checkedAt) / 86400000;
 
     expect(ageDays).toBeGreaterThanOrEqual(0);
@@ -70,7 +59,6 @@ describe("Madrid coffee reviews", () => {
     expect(reviewed.length).toBeGreaterThan(0);
 
     for (const roaster of reviewed) {
-      if (!("reviews" in roaster)) continue;
       expect(new Set(roaster.reviews.map((review) => review.url)).size).toBe(
         roaster.reviews.length,
       );
