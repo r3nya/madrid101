@@ -17,12 +17,6 @@ export const coffeeRoasters = [
     location: "Барселона",
     region: "spain",
   },
-  // {
-  //   name: "Becafre",
-  //   url: "https://becafre.com/en",
-  //   subscription: true,
-  //   location: "Уэльва, Андалусия",
-  // },
   {
     name: "Alquimista Coffee Lab",
     url: "https://alquimista.cafe/",
