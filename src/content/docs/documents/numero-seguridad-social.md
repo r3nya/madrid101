@@ -1,29 +1,30 @@
 ---
 title: "Número de Seguridad Social: номер соцстрахования в Испании"
 description: Как получить номер социального страхования в Испании
-lastUpdated: 2026-11-11
+lastUpdated: 2026-11-13
 sidebar:
   label: Número de Seguridad Social
+  order: 3
 ---
 
 Número de Seguridad Social (NUSS) — номер социального страхования в Испании. Это 12-значный номер, который присваивается один раз и остаётся с вами навсегда.
 
 ## Зачем нужен
 
-- Работа по найму или как autónomo
+- Работа по найму или в качестве autónomo
 - Доступ к государственной медицине
-- Получение пособий (безработица, декрет, больничный)
+- Получение пособий по безработице, в связи с рождением ребёнка и временной нетрудоспособностью
 - Начисление пенсии
 
 ## Как получить
 
 ### Онлайн через Import@ss
 
-1. Откройте [Solicitar el Número de la Seguridad Social](https://portal.seg-social.gob.es/wps/portal/importass/importass/Categorias/Altas,%20bajas%20y%20modificaciones/Altas%20y%20afiliacion%20de%20trabajadores/Solicitar%20el%20numero%20de%20la%20Seguridad%20Social) на Import@ss
-2. С [цифровым сертификатом](/documents/digital-certificate) или Cl@ve — номер обычно присваивается сразу
-3. Без Cl@ve и сертификата — загрузите фото обеих сторон DNI/NIE/паспорта и selfie с документом; TGSS проверит заявку
+1. Откройте [страницу запроса номера социального страхования](https://portal.seg-social.gob.es/wps/portal/importass/importass/Categorias/Altas,%20bajas%20y%20modificaciones/Altas%20y%20afiliacion%20de%20trabajadores/Solicitar%20el%20numero%20de%20la%20Seguridad%20Social) на Import@ss
+2. С [цифровым сертификатом](/documents/digital-certificate/) или Cl@ve — номер обычно присваивается сразу
+3. Без Cl@ve и сертификата — загрузите фото обеих сторон DNI/NIE/паспорта и селфи с документом; TGSS проверит заявку
 
-### Уже есть номер
+### Если номер уже есть
 
 Скачайте [Acreditación del Número de la Seguridad Social](https://portal.seg-social.gob.es/wps/portal/importass/importass/Categorias/Vida%20laboral%20e%20informes/Informes%20sobre%20tu%20situacion%20laboral/Acreditacion_NUSS) в Import@ss (PDF).
 
@@ -37,7 +38,7 @@ Número de Seguridad Social (NUSS) — номер социального стр�
 
 - Паспорт или NIE/TIE
 - Форма [TA.1](https://www.seg-social.es/wps/portal/wss/internet/Trabajadores/Afiliacion/10817/31190/572) (скачать и заполнить заранее)
-- [Прописка](/documents/residence-registration) (empadronamiento) — могут попросить
+- [Прописка](/documents/residence-registration/) (empadronamiento) — могут попросить
 
 ## Полезные ссылки
 

@@ -1,17 +1,18 @@
 ---
 title: "Vida laboral: отчёт о трудовом стаже в Испании"
 description: Как получить отчёт о трудовом стаже в Испании
-lastUpdated: 2026-11-11
+lastUpdated: 2026-11-13
 sidebar:
   label: Vida laboral
+  order: 4
 ---
 
-Informe de Vida Laboral — официальный документ, содержащий полную историю вашей трудовой деятельности в Испании. Показывает все периоды работы, работодателей и уплаченные взносы в систему социального страхования.
+Informe de Vida Laboral — официальный документ, содержащий полную историю вашей трудовой деятельности в Испании. В нём указаны все периоды работы, работодатели и уплаченные взносы в систему социального страхования.
 
 ## Зачем нужен
 
 - Оформление ипотеки (банки запрашивают для проверки стабильности дохода)
-- Подача на пособие по безработице (paro)
+- Подача заявления на пособие по безработице (paro)
 - Расчёт будущей пенсии
 - Подтверждение стажа для получения гражданства
 - Смена работы (некоторые работодатели просят)
@@ -21,23 +22,23 @@ Informe de Vida Laboral — официальный документ, содер�
 ### Онлайн (моментально)
 
 1. Зайдите на [Import@ss](https://portal.seg-social.gob.es/)
-2. Авторизуйтесь через [цифровой сертификат](/documents/digital-certificate) или Cl@ve
+2. Авторизуйтесь через [цифровой сертификат](/documents/digital-certificate/) или Cl@ve
 3. Перейдите в раздел «Vida laboral e informes»
 4. Выберите «Informe de vida laboral»
 5. Скачайте PDF
 
 Документ генерируется мгновенно.
 
-### По SMS (без сертификата)
+### По СМС (без сертификата)
 
-1. Откройте [страницу запроса по SMS](https://portal.seg-social.gob.es/wps/portal/importass/importass/Categorias/Vida+laboral+e+informes/Informes+sobre+tu+situacion+laboral/Informe+de+tu+vida+laboral)
-2. Введите [номер социального страхования](/documents/numero-seguridad-social) и номер телефона
-3. Получите SMS с кодом
-4. Документ придёт на email или по почте
+1. Откройте [страницу запроса по СМС](https://portal.seg-social.gob.es/wps/portal/importass/importass/Categorias/Vida+laboral+e+informes/Informes+sobre+tu+situacion+laboral/Informe+de+tu+vida+laboral)
+2. Введите [номер социального страхования](/documents/numero-seguridad-social/) и номер телефона
+3. Получите СМС с кодом
+4. Документ придёт на электронную почту или по почте
 
 ### Лично в офисе
 
-Обратитесь в любой офис [Tesorería General de la Seguridad Social](https://www.seg-social.es/wps/portal/wss/internet/OficinaSeguridadSocial) с паспортом/NIE.
+Обратитесь в любой офис [Tesorería General de la Seguridad Social](https://www.seg-social.es/wps/portal/wss/internet/OficinaSeguridadSocial) с паспортом или NIE.
 
 ## Что содержит документ
 
@@ -51,4 +52,4 @@ Informe de Vida Laboral — официальный документ, содер�
 ## Полезные ссылки
 
 - [Import@ss — личный кабинет](https://portal.seg-social.gob.es/)
-- [Запрос Vida laboral по SMS](https://portal.seg-social.gob.es/wps/portal/importass/importass/Categorias/Vida+laboral+e+informes/Informes+sobre+tu+situacion+laboral/Informe+de+tu+vida+laboral)
+- [Запрос Vida laboral по СМС](https://portal.seg-social.gob.es/wps/portal/importass/importass/Categorias/Vida+laboral+e+informes/Informes+sobre+tu+situacion+laboral/Informe+de+tu+vida+laboral)

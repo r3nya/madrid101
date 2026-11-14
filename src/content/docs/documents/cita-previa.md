@@ -1,9 +1,10 @@
 ---
 title: "Cita previa: запись в госучреждения Испании"
 description: Как записаться на приём в государственные учреждения Испании
-lastUpdated: 2026-11-11
+lastUpdated: 2026-11-13
 sidebar:
   label: Cita previa
+  order: 1
 ---
 
 Cita previa — предварительная запись на приём. Без неё в большинство госучреждений Испании попасть невозможно. Записывайтесь заранее — слоты разбирают быстро.
@@ -14,7 +15,7 @@ Cita previa — предварительная запись на приём. Б�
 
 Запись на миграционные и полицейские процедуры — через **ICPPlus**:
 
-- [Хаб ICPPlus](https://sede.administracionespublicas.gob.es/pagina/index/directorio/icpplus/)
+- [Информация о записи через ICPPlus](https://sede.administracionespublicas.gob.es/pagina/index/directorio/icpplus/)
 - [Записаться (ICPPlus)](https://icp.administracionelectronica.gob.es/icpplus/index.html)
 
 **Extranjería** — продление резиденции, разрешения на работу, статус беженца.
@@ -24,30 +25,30 @@ Cita previa — предварительная запись на приём. Б�
 **Policía Nacional** — NIE, TIE, отпечатки (huella):
 
 - **NIE** — номер иностранца
-- **TIE** — пластиковая карта (выдача / продление)
+- **TIE** — пластиковая карта (выдача или продление)
 - Huella — снятие отпечатков для TIE
 
 - Провинция → «Policía - Toma de huellas» или «Expedición de Tarjeta de Identidad de Extranjero»
 
 ### Seguridad Social: INSS и TGSS
 
-Это разные органы — каналы записи разные.
+Это разные ведомства с разными каналами записи.
 
-#### INSS (престации и пенсии)
+#### INSS (пособия и пенсии)
 
-Пособия, пенсия, IMV и другие prestaciones.
+Пособия, пенсии, IMV и другие социальные выплаты (prestaciones).
 
 - [Cita previa INSS](https://sede.seg-social.gob.es/wps/portal/sede/sede/Ciudadanos/cita+previa+para+pensiones+y+otras+prestaciones/13cita+previa+para+pensiones+y+otras+prestaciones)
 
-#### TGSS (афилиация и cotización)
+#### TGSS (регистрация и страховые взносы)
 
-[Номер соцстрахования](/documents/numero-seguridad-social/), cotización, autónomos, deudas.
+[Номер соцстрахования](/documents/numero-seguridad-social/), страховые взносы (cotización), вопросы самозанятости (autónomos) и задолженности (deudas).
 
-Обычно **без cita previa**: онлайн через [Import@ss](https://portal.seg-social.gob.es/) или лично в офис TGSS (пн–пт, утро; уточняйте расписание).
+Обычно **без cita previa**: онлайн через [Import@ss](https://portal.seg-social.gob.es/) или лично в офисе TGSS (пн–пт, утром; уточняйте расписание).
 
 ### Hacienda / AEAT (налоговая)
 
-Вопросы по налогам, censo, получение справок. Приём в офисах AEAT — только по записи (кроме подачи документов через registro). Учтите: через этот сервис не помогают заполнить декларацию Renta — запись на помощь с Renta открывается отдельно, во время кампании.
+Вопросы по налогам, налоговому учёту (censo), получение справок. Приём в офисах AEAT — только по записи (кроме подачи документов через регистрационную службу, registro). Учтите: через этот сервис не помогают заполнить декларацию Renta — запись на помощь с Renta открывается отдельно, во время кампании.
 
 - [Записаться на приём (Asistencia y Cita)](https://sede.agenciatributaria.gob.es/Sede/procedimientoini/GC29.shtml) → «Asistencia y Cita para particulares»
 - Также можно через приложение «AEAT» или по телефону [+34 913 335 333](tel:+34913335333) (пн–пт, 9:00–19:00; в августе до 15:00)
@@ -71,7 +72,7 @@ Cita previa — предварительная запись на приём. Б�
 - **Проверяйте утром** — новые слоты обычно появляются в 8:00–9:00
 - **Используйте несколько браузеров** — иногда помогает при высокой нагрузке
 - **Сохраняйте подтверждение** — justificante de cita нужно показать на входе
-- **Приходите вовремя** — опоздание = потеря записи
+- **Приходите вовремя** — из-за опоздания можно потерять запись
 
 ## Полезные сервисы
 
