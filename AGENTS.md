@@ -84,6 +84,9 @@ All content lives in `/src/content/docs/` with these main sections:
   - Other characters come last
   - Example: `sidebar: order: 1` for first page alphabetically
   - When adding new pages, update existing order numbers to maintain alphabetical sequence
+- Exception: a section's introductory/overview page always comes first, before the alphabetically sorted pages
+  - Use `index.mdx` in the section folder (`sort-sidebar` skips index files), or pin the intro page first in `astro.config.mjs`
+  - Example: in "⚽ Футбол", `spare-time/football-tickets` is pinned first in `astro.config.mjs`, then the "Клубы" group (`spare-time/football/`) is sorted alphabetically
 
 ### Writing Standards
 
