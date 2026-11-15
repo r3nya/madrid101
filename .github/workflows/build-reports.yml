@@ -1,0 +1,49 @@
+name: PR Build Reports
+
+on:
+  pull_request:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  compressed-size:
+    name: Compressed size comparison
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      contents: read
+      pull-requests: write
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+
+      - name: Compare compressed JS, CSS, and HTML
+        id: sizes
+        uses: preactjs/compressed-size-action@f322c295dde06a1cb7ccaef105732dd8a726d1d9 # v2
+        with:
+          pattern: dist/**/*.{js,css,html}
+          compression: gzip
+          strip-hash: '\.([A-Za-z0-9_-]{8})(?=\.(?:js|css)$)'
+          omit-unchanged: true
+          minimum-change-threshold: 100
+          sort-by: Change:desc
+        env:
+          PUBLIC_SNOW_FALL_ENABLED: "false"
+
+      - name: Save report in the job summary
+        env:
+          REPORT: ${{ steps.sizes.outputs.comment-body }}
+        run: |
+          printf '%s\n' "$REPORT" >> "$GITHUB_STEP_SUMMARY"
