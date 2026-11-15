@@ -93,6 +93,7 @@ All content lives in `/src/content/docs/` with these main sections:
 - **Primary Language**: Russian
 - **Audience**: Digital nomads, expats, residents in Madrid
 - **Tone**: Helpful, neutral, practical
+- **Краткость, принцип 80/20**: Пишите простым языком и оставляйте главное, что поможет большинству читателей принять решение или выполнить действие. Убирайте повторы, очевидные пояснения и подробности ради полноты. Редкие случаи и технические детали давайте ссылкой на источник, если они не нужны для основного сценария. Используйте привычные слова вместо придуманных терминов.
 - **Facts**: Include official sources, addresses, phone numbers, costs, requirements
 - **Dates**: Use Russian dates in article text (e.g., `9 ноября 2026 года`). Keep `YYYY-MM-DD` for machine-readable frontmatter such as `lastUpdated`.
 - **Grammar Check**: Always check grammar when updating content in `/src/content/docs/`
