@@ -31,6 +31,8 @@ const { title, diagram } = Astro.props;
         const { default: mermaid } = await import("mermaid");
         mermaid.initialize({
           startOnLoad: false,
+          layout: "elk",
+          look: "neo",
           theme,
           securityLevel: "strict",
           themeVariables: { fontSize: "20px" },
