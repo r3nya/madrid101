@@ -27,7 +27,7 @@ updates:
         - "*"
     # Groups for version updates - security updates create individual PRs automatically
     groups:
-      # Production dependencies (all except astro-related)
+      # Production dependencies (all except astro-related and vitest)
       prod-dependencies:
         dependency-type: "production"
         patterns:
@@ -37,6 +37,8 @@ updates:
           - "@astrojs/*"
           - "astro-*"
           - "starlight-*"
+          - "vitest"
+          - "@vitest/ui"
         applies-to: "version-updates"
         update-types:
           - "minor"
@@ -52,11 +54,20 @@ updates:
         update-types:
           - "minor"
           - "patch"
-      # Development dependencies
+      # Vitest + UI — bump together (incl. majors)
+      vitest:
+        patterns:
+          - "vitest"
+          - "@vitest/ui"
+        applies-to: "version-updates"
+      # Development dependencies (except vitest)
       dev-dependencies:
         dependency-type: "development"
         patterns:
           - "*"
+        exclude-patterns:
+          - "vitest"
+          - "@vitest/ui"
         applies-to: "version-updates"
         update-types:
           - "minor"

@@ -1,8 +1,10 @@
 ---
-title: Стоматологические услуги
+title: "Стоматологические услуги в Мадриде: ОМС и PADI"
 description: Стоматологические услуги в Мадриде по ОМС и программа PADI
 tableOfContents: true
-lastUpdated: 2026-09-14
+lastUpdated: 2026-11-11
+sidebar:
+  label: Стоматологические услуги
 ---
 
 Государственная стоматология в Comunidad de Madrid идёт через **Unidades de Salud Bucodental (USBD)** в центрах первичной помощи (`Centro de Salud`).

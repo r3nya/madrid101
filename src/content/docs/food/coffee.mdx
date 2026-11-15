@@ -1,43 +1,77 @@
 ---
-title: Кофе
+title: "Кофе в Мадриде: кофейни и обжарщики"
 description: Лучшие кофейни, места для покупки зерна и кофейные подписки в Мадриде. Гид по кофе в испанской столице.
 keywords: "кофе Мадрид, кофейни, зерно кофе, кофейные подписки, specialty coffee Испания"
 author: "Madrid 101"
-canonicalUrl: "https://madrid101.xyz/food/coffee/"
 articleSection: "Еда"
 tags: ["кофе", "кофейни", "Мадрид", "зерно", "подписки", "specialty coffee"]
-lastUpdated: 2025-10-11
+lastUpdated: 2026-11-13
 tableOfContents: false
 sidebar:
+  label: Кофе
   order: 4
 ---
 
-import { LinkCard } from '@astrojs/starlight/components';
-import { coffeeLinks, coffeeRoasters } from '@/data/coffee';
+import { LinkCard } from "@astrojs/starlight/components";
+import { coffeeLinks, coffeeRoasterGroups } from "@/data/coffee";
 
 ## Кофейная карта
 
 {coffeeLinks.map((link) => (
+
   <LinkCard title={link.title} href={link.href} />
 ))}
 
-## Где купить зерна
+## Где купить зёрна
 
-<table>
-  <thead>
-    <tr>
-      <th>Название</th>
-      <th>Подписка</th>
-      <th>Локация</th>
-    </tr>
-  </thead>
-  <tbody>
-    {coffeeRoasters.map((roaster, index) => (
-      <tr key={index}>
-        <td><a href={roaster.url}>{roaster.name}</a></td>
-        <td>{roaster.subscription ? '☕' : '-'}</td>
-        <td>{roaster.location}</td>
-      </tr>
-    ))}
-  </tbody>
-</table>
+:::note[Как выбрать кофе]
+
+- Выбирайте под свою кофеварку: **filtro** — фильтр, **espresso** — эспрессо-машина, **italiana / moka** — гейзерная.
+- **En grano** — в зёрнах, **molido** — молотый. Без кофемолки закажите помол под свой способ приготовления.
+- **Fecha de tueste** — дата обжарки, ищите её на упаковке. Для знакомства возьмите небольшую пачку.
+
+Подробнее: [как выбрать кофе у El Magnífico](https://cafeselmagnifico.com/guia-para-comprar-cafe-de-especialidad-y-no-fallar-en-el-intento/) и [о зерне и помоле у Ineffable](https://ineffablecoffee.com/blogs/aprendizaje-y-cultura-cafetera/cafe-en-grano).
+
+:::
+
+{coffeeRoasterGroups.map((group) => (
+
+  <section aria-labelledby={group.id}>
+    <h3 id={group.id}>{group.title}</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Название</th>
+          <th>Подписка</th>
+          {group.id !== "madrid" && <th>Локация</th>}
+          {group.id === "madrid" && <th>Отзывы</th>}
+        </tr>
+      </thead>
+      <tbody>
+        {group.roasters.map((roaster) => (
+          <tr>
+            <td>
+              <a href={roaster.url}>{roaster.name}</a>
+              {group.id === "madrid" && roaster.location !== "Мадрид" && ` (${roaster.location})`}
+            </td>
+            <td>{roaster.subscription ? "☕" : "-"}</td>
+            {group.id !== "madrid" && <td>{roaster.location}</td>}
+            {group.id === "madrid" && (
+              <td>
+                {"reviews" in roaster
+                  ? roaster.reviews.map((review) => (
+                      <div>
+                        <a href={review.url} aria-label={`${review.label}: ${roaster.name}`}>
+                          {review.label}
+                        </a>
+                      </div>
+                    ))
+                  : "—"}
+              </td>
+            )}
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </section>
+))}

@@ -1,7 +1,9 @@
 ---
-title: Базовый банковский счёт
+title: "Базовый банковский счёт в Испании: cuenta básica"
 description: Информация о базовом банковском счёте (cuenta básica) в Испании, его преимуществах и процедуре оформления
-lastUpdated: 2025-02-25
+lastUpdated: 2026-11-11
+sidebar:
+  label: Базовый банковский счёт
 ---
 
 ## Что такое базовый банковский счёт?
@@ -44,20 +46,20 @@ lastUpdated: 2025-02-25
 
 Вот список основных банков, предлагающих базовые счета в Испании (есть и другие):
 
-| Банк | Ссылка на информацию о базовом счёте |
-|------|--------------------------------------|
-| BBVA | [Cuenta de Pago Básica BBVA](https://www.bbva.es/personas/productos/cuentas/cuenta-pago-basica.html) |
-| CaixaBank | [Cuenta de Pago Básico](https://www.caixabank.es/particular/cuentas/cuenta-de-pago-basica.html) |
+| Банк            | Ссылка на информацию о базовом счёте                                                                                       |
+| --------------- | -------------------------------------------------------------------------------------------------------------------------- |
+| BBVA            | [Cuenta de Pago Básica BBVA](https://www.bbva.es/personas/productos/cuentas/cuenta-pago-basica.html)                       |
+| CaixaBank       | [Cuenta de Pago Básico](https://www.caixabank.es/particular/cuentas/cuenta-de-pago-basica.html)                            |
 | Banco Santander | [Cuenta de Pago Básica](https://www.bancosantander.es/particulares/cuentas-tarjetas/cuentas-corrientes/cuenta-pago-basica) |
-| Bankinter | [Cuenta de Pago Básica](https://www.bankinter.com/banca/cuentas-tarjetas/cuentas/cuenta-pago-basica) |
-| Abanca | [Cuenta de Pago Básica](https://www.abanca.com/es/cuentas/cuenta-pago-basica/) |
-| Unicaja | [Cuenta de Pago Básica](https://www.unicajabanco.es/es/particulares/cuentas-y-tarjetas/cuentas/cuenta-de-pago-basica) |
-| Kutxabank | [Cuenta de Pago Básica](https://www.kutxabank.es/es/particulares/cuentas/cuenta-de-pago-basica.html) |
+| Bankinter       | [Cuenta de Pago Básica](https://www.bankinter.com/banca/cuentas-tarjetas/cuentas/cuenta-pago-basica)                       |
+| Abanca          | [Cuenta de Pago Básica](https://www.abanca.com/es/cuentas/cuenta-pago-basica/)                                             |
+| Unicaja         | [Cuenta de Pago Básica](https://www.unicajabanco.es/es/particulares/cuentas-y-tarjetas/cuentas/cuenta-de-pago-basica)      |
+| Kutxabank       | [Cuenta de Pago Básica](https://www.kutxabank.es/es/particulares/cuentas/cuenta-de-pago-basica.html)                       |
 
 ## Цифровые банки с базовыми счетами
 
-| Банк | Ссылка на информацию о базовом счёте |
-|------|--------------------------------------|
+| Банк    | Ссылка на информацию о базовом счёте                          |
+| ------- | ------------------------------------------------------------- |
 | Revolut | [Basic Account](https://www.revolut.com/es-ES/basic-account/) |
 
 ## Дополнительные советы
