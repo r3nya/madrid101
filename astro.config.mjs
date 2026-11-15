@@ -3,7 +3,6 @@ import starlight from "@astrojs/starlight";
 import contentUtils from "@inox-tools/content-utils";
 import { defineConfig } from "astro/config";
 import compress from "astro-compress";
-import mermaid from "astro-mermaid";
 import starlightLinksValidator from "starlight-links-validator";
 import { fileURLToPath } from "node:url";
 
@@ -37,13 +36,6 @@ export default defineConfig({
     },
   },
   integrations: [
-    mermaid({
-      enableLog: false,
-      mermaidConfig: {
-        themeVariables: { fontSize: "20px" },
-        flowchart: { nodeSpacing: 20, rankSpacing: 30, padding: 10 },
-      },
-    }),
     contentUtils(),
     starlight({
       // Use the route data middleware to add the Open Graph images.

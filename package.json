@@ -27,7 +27,6 @@
     "@zachleat/snow-fall": "^1.0.3",
     "astro": "^7.4.12",
     "astro-compress": "^2.4.3",
-    "astro-mermaid": "^2.2.0",
     "astro-og-canvas": "^0.13.2",
     "mermaid": "^11.17.2",
     "sharp": "^0.35.5",
