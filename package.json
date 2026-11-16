@@ -28,7 +28,7 @@
     "astro": "^7.4.12",
     "astro-compress": "^2.4.3",
     "astro-og-canvas": "^0.13.2",
-    "mermaid": "^11.17.2",
+    "mermaid": "^12.2.0",
     "sharp": "^0.35.5",
     "starlight-links-validator": "^0.27.0",
     "typescript": "^6.0.3",
