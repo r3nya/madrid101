@@ -22,12 +22,12 @@
   "dependencies": {
     "@astrojs/check": "^0.9.12",
     "@astrojs/sitemap": "^3.7.4",
-    "@astrojs/starlight": "^0.42.8",
+    "@astrojs/starlight": "^0.42.10",
     "@inox-tools/content-utils": "0.16.0",
     "@zachleat/snow-fall": "^1.0.3",
     "astro": "^7.4.12",
     "astro-compress": "^2.4.3",
-    "astro-og-canvas": "^0.13.2",
+    "astro-og-canvas": "^0.13.3",
     "mermaid": "^12.3.0",
     "sharp": "^0.35.5",
     "starlight-links-validator": "^0.27.0",
@@ -35,7 +35,7 @@
     "xml2js": "^0.6.2"
   },
   "devDependencies": {
-    "@astrojs/compiler-rs": "0.5.1",
+    "@astrojs/compiler-rs": "0.5.2",
     "@eslint/js": "10.0.1",
     "@vitest/ui": "^5.0.5",
     "eslint": "10.14.0",
