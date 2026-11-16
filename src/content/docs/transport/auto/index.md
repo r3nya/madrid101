@@ -1,7 +1,7 @@
 ---
 title: "Автомобилистам в Мадриде: парковки, штрафы и ZBE"
 description: "Информация для автомобилистов в Мадриде: штрафы, парковки, зоны пониженных выбросов, полезные приложения"
-lastUpdated: 2026-11-11
+lastUpdated: 2026-11-13
 sidebar:
   label: Общая информация
 ---
@@ -34,7 +34,7 @@ sidebar:
 
 ### Парковки
 
-#### Подземные/гаражные парковки
+#### Подземные и гаражные парковки
 
 - Indigo Neo ([Android](https://play.google.com/store/apps/details?id=com.opngo.live), [iOS](https://apps.apple.com/es/app/indigo-neo-ex-opngo/id1109398417))
 - P-App Interparking ([Android](https://play.google.com/store/apps/details?id=ipkhApp.Droid), [iOS](https://apps.apple.com/es/app/p-app/id1219330408))
@@ -48,7 +48,7 @@ sidebar:
 - Bip&Drive ([Android](https://play.google.com/store/apps/details?id=com.bipdrive.appmovil&hl=en-US), [iOS](https://apps.apple.com/es/app/bip-drive-parking-gasolineras/id1101193002))
 - EasyPark ([Android](https://play.google.com/store/apps/details?id=net.easypark.android), [iOS](https://apps.apple.com/es/app/easypark-parking-made-easy/id449594317?l=en-GB))
 
-## Сайты по покупке/продаже автомобилей
+## Сайты для покупки и продажи автомобилей
 
 - [coches.net](https://www.coches.net)
 - [wallapop.com](https://es.wallapop.com/coches-segunda-mano)
