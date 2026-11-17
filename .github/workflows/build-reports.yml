@@ -6,6 +6,10 @@ on:
 permissions:
   contents: read
 
+env:
+  # The runner's Chrome has a usable sandbox; Chrome for Testing does not.
+  PUPPETEER_EXECUTABLE_PATH: /opt/google/chrome/chrome
+
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true

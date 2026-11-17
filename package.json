@@ -28,7 +28,6 @@
     "astro": "^7.4.12",
     "astro-compress": "^2.4.3",
     "astro-og-canvas": "^0.13.3",
-    "mermaid": "^12.3.0",
     "sharp": "^0.35.5",
     "starlight-links-validator": "^0.27.0",
     "typescript": "^6.0.3",
@@ -37,13 +36,16 @@
   "devDependencies": {
     "@astrojs/compiler-rs": "0.5.2",
     "@eslint/js": "10.0.1",
+    "@mermaid-js/mermaid-cli": "^12.2.0",
     "@vitest/ui": "^5.0.5",
     "eslint": "10.14.0",
     "eslint-plugin-astro": "3.2.1",
     "eslint-plugin-jsx-a11y-x": "0.2.0",
     "globals": "17.14.0",
+    "mermaid": "^12.3.0",
     "oxfmt": "0.77.0",
     "parse5": "8.0.1",
+    "puppeteer": "^25.17.0",
     "typescript-eslint": "8.72.1",
     "vitest": "^5.0.2"
   },
@@ -58,6 +60,7 @@
   "allowScripts": {
     "esbuild@0.27.7": true,
     "sharp@0.34.5": true,
-    "fsevents@2.3.3": true
+    "fsevents@2.3.3": true,
+    "puppeteer@25.17.0": true
   }
 }

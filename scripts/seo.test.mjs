@@ -44,6 +44,31 @@ describe.skipIf(!enabled)("built SEO artifacts (requires npm run build)", () => 
     assert.ok(pages.some((page) => page.notFound));
   });
 
+  it("pre-renders accessible light and dark diagrams without a client renderer", () => {
+    const nodes = elements(parse(read("housing/providers/utilities/index.html")));
+    const diagrams = nodes.filter(
+      (node) => node.tagName === "div" && attrs(node).class?.split(" ").includes("diagram"),
+    );
+    assert.equal(diagrams.length, 2);
+    const ids = diagrams
+      .flatMap((node) => elements(node).map((el) => attrs(el).id))
+      .filter(Boolean);
+    assert.equal(new Set(ids).size, ids.length);
+    for (const diagram of diagrams) {
+      const svg = elements(diagram).find((node) => node.tagName === "svg");
+      assert.ok(svg && attrs(svg).viewBox);
+      for (const name of ["aria-labelledby", "aria-describedby"]) {
+        assert.ok(ids.includes(attrs(svg)[name]));
+      }
+    }
+    assert.deepEqual(
+      globSync("_astro/*.js", { cwd: fileURLToPath(dist) }).filter((file) =>
+        /mermaid|elk|dagre/i.test(file),
+      ),
+      [],
+    );
+  });
+
   it.each(pages.filter((page) => page.notFound))("$file is noindex without JSON-LD", (page) => {
     assert.ok(page.noindex);
     assert.deepEqual(page.schemas, []);
