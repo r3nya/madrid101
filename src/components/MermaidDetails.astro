@@ -1,66 +1,62 @@
 ---
+import { createHash } from "node:crypto";
+import { renderMermaid } from "@mermaid-js/mermaid-cli";
+import puppeteer from "puppeteer";
+
 interface Props {
   title: string;
   diagram: string;
 }
 
 const { title, diagram } = Astro.props;
+const id = createHash("sha256").update(diagram).digest("hex").slice(0, 12);
+const browser = await puppeteer.launch();
+let light: string;
+let dark: string;
+try {
+  const render = async (theme: "default" | "dark") => {
+    const { data } = await renderMermaid(browser, diagram, "svg", {
+      svgId: `mermaid-${id}-${theme}`,
+      backgroundColor: "transparent",
+      fontEmbed: false,
+      mermaidConfig: {
+        layout: "elk",
+        look: "neo",
+        theme,
+        securityLevel: "strict",
+        deterministicIds: true,
+        deterministicIDSeed: `${id}-${theme}`,
+        themeVariables: { fontSize: "20px" },
+        flowchart: { nodeSpacing: 20, rankSpacing: 30, padding: 10 },
+      },
+    });
+    return new TextDecoder().decode(data);
+  };
+  [light, dark] = await Promise.all([render("default"), render("dark")]);
+} finally {
+  await browser.close();
+}
 ---
 
-<details data-mermaid={diagram}>
+<details>
   <summary>{title}</summary>
-  <div class="diagram" aria-live="polite"></div>
+  <div class="diagram light" set:html={light} />
+  <div class="diagram dark" set:html={dark} />
 </details>
-
-<script>
-  for (const details of document.querySelectorAll<HTMLDetailsElement>("details[data-mermaid]")) {
-    const output = details.querySelector<HTMLElement>(".diagram");
-    const definition = details.dataset.mermaid;
-    if (!output || !definition) continue;
-
-    let rendering = false;
-    let renderedTheme: string | undefined;
-
-    const render = async () => {
-      const theme = document.documentElement.dataset.theme === "dark" ? "dark" : "default";
-      if (!details.open || rendering || renderedTheme === theme) return;
-
-      rendering = true;
-      output.textContent = "Загружаем схему…";
-      try {
-        const { default: mermaid } = await import("mermaid");
-        mermaid.initialize({
-          startOnLoad: false,
-          layout: "elk",
-          look: "neo",
-          theme,
-          securityLevel: "strict",
-          themeVariables: { fontSize: "20px" },
-          flowchart: { nodeSpacing: 20, rankSpacing: 30, padding: 10 },
-        });
-        const { svg } = await mermaid.render(`mermaid-${crypto.randomUUID()}`, definition);
-        output.innerHTML = svg;
-        renderedTheme = theme;
-      } catch (error) {
-        output.textContent = "Не удалось загрузить схему. Закройте блок и откройте снова.";
-        console.error("Mermaid diagram failed to render", error);
-      } finally {
-        rendering = false;
-      }
-    };
-
-    details.addEventListener("toggle", render);
-    new MutationObserver(render).observe(document.documentElement, {
-      attributes: true,
-      attributeFilter: ["data-theme"],
-    });
-  }
-</script>
 
 <style>
   .diagram {
     margin-block: 1rem;
     text-align: center;
+  }
+  .dark {
+    display: none;
+  }
+  :global([data-theme="dark"]) .light {
+    display: none;
+  }
+  :global([data-theme="dark"]) .dark {
+    display: block;
   }
   .diagram :global(svg) {
     max-width: 100%;
