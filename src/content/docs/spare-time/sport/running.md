@@ -1,7 +1,7 @@
 ---
 title: "Бег в Мадриде: маршруты и события"
 description: Беговые маршруты и события в Мадриде
-lastUpdated: 2026-11-13
+lastUpdated: 2026-11-18
 sidebar:
   order: 1
   label: Бег
@@ -187,7 +187,7 @@ sidebar:
 | [48º MEDIA MARATON DE MORATALAZ](http://www.aamoratalaz.com/)                                   | 21,097 км, 10 км                           | MORATALAZ                                                 |
 | [61º TROFEO CANGURO DE CROSS](http://www.clubcanguroaac.es/)                                    | 0,5 км, 8 км                               | MONCLOA – ARAVACA                                         |
 | [XII CARRERA Y CAMINATA POPULAR MUEVETE POR LA DIABETES](http://www.diabetesmadrid.org/)        | 2 км, 5 км, 10 км                          | MONCLOA – ARAVACA                                         |
-| [PONLE FRENO MADRID](http://www.compromiso.atresmedia)                                          | 5 км, 10 км                                | SALAMANCA, CENTRO, TETUÁN, CHAMARTÍN                      |
+| [PONLE FRENO MADRID](https://compromiso.atresmedia.com/)                                        | 5 км, 10 км                                | SALAMANCA, CENTRO, TETUÁN, CHAMARTÍN                      |
 | [XI CARRERA DE LAS CIUDADES CONTRA EL CÁNCER DE PÁNCREAS](http://www.carreracancerpancreas.es/) | 5 км, 10 км, Пеший маршрут, детские забеги | BARAJAS                                                   |
 | [CORRE POR UN MUNDO SOSTENIBLE](http://www.correporunmundosostenible.com/)                      | 3 км, 10,5 км                              | USERA, VILLAVERDE                                         |
 | [CARRERA VUELA](http://www.carreravuela.es/)                                                    | 5 км, 10 км, 21 км                         | HORTALEZA                                                 |
