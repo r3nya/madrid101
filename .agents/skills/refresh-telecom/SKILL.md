@@ -1,5 +1,4 @@
 ---
-
 name: refresh-telecom
 description: Use when updating Madrid101's telecom provider guide, checking operator offers, or refreshing speed, eSIM, 5G and contract badges.
 ---
@@ -21,7 +20,7 @@ Update `src/content/docs/housing/providers/telecom.mdx` from official sources. K
 Place small badges below operator headings. Keep headings literal so Starlight can include them in the table of contents. Reuse the existing import:
 
 ```mdx
-import { Badge, LinkCard } from '@astrojs/starlight/components';
+import { Badge, LinkCard } from "@astrojs/starlight/components";
 
 <Badge text="eSIM" variant="note" size="small" />
 ```
@@ -32,6 +31,7 @@ import { Badge, LinkCard } from '@astrojs/starlight/components';
 | eSIM and 5G                     | `note`    | Confirmed support on eligible devices and plans      |
 | No minimum commitment           | `tip`     | Specify fibre or mobile scope                        |
 | Prepaid or international calls  | `caution` | Explain eligibility and destination restrictions     |
+
 - Use Russian labels and standard names such as eSIM and 5G. Prefer up to four useful badges per operator. Explain the legend once; an omitted badge means unconfirmed, not necessarily unavailable.
 - Distinguish advertised speed from usable throughput. Confirm that the residential offer is commercially available; a rollout announcement or router capability alone is insufficient. Explain address and equipment limits, eligible bundles and any add-on fee beside the badge. Prefer direct current product or contract terms over community posts.
 - Explain eSIM restrictions: contract-only, physical SIM first, store visits or activation within Spain. Phone eSIM does not establish smartwatch or MultiSIM support.
