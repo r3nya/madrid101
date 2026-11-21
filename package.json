@@ -1,7 +1,7 @@
 {
   "name": "how-to-madrid",
-  "type": "module",
   "version": "0.0.1",
+  "type": "module",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
@@ -12,33 +12,55 @@
     "astro": "astro",
     "test": "vitest",
     "test:run": "vitest run",
-    "biome:format": "npx @biomejs/biome format --write",
-    "biome:lint": "npx @biomejs/biome lint",
-    "biome:check": "npx @biomejs/biome check --write",
-    "biome:check:unsafe": "npx @biomejs/biome check --write --unsafe",
-    "biome:ci": "npx @biomejs/biome ci ."
+    "test:seo": "SEO_TEST=1 vitest run scripts/seo.test.mjs",
+    "lint": "eslint . --max-warnings 0",
+    "lint:fix": "eslint . --fix",
+    "format": "oxfmt --write .",
+    "format:check": "oxfmt --check .",
+    "check": "npm run lint && npm run format:check"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.12",
     "@astrojs/sitemap": "^3.7.4",
-    "@astrojs/starlight": "^0.42.7",
+    "@astrojs/starlight": "^0.42.10",
+    "@inox-tools/content-utils": "0.16.0",
     "@zachleat/snow-fall": "^1.0.3",
-    "astro": "^7.4.0",
+    "astro": "^7.4.12",
     "astro-compress": "^2.4.3",
-    "astro-og-canvas": "^0.13.2",
+    "astro-og-canvas": "^0.13.3",
     "sharp": "^0.35.5",
     "starlight-links-validator": "^0.27.0",
     "typescript": "^6.0.3",
     "xml2js": "^0.6.2"
   },
   "devDependencies": {
-    "@biomejs/biome": "2.5.15",
+    "@astrojs/compiler-rs": "0.5.2",
+    "@eslint/js": "10.0.1",
+    "@mermaid-js/mermaid-cli": "^12.2.0",
     "@vitest/ui": "^5.0.5",
+    "eslint": "10.14.0",
+    "eslint-plugin-astro": "3.2.1",
+    "eslint-plugin-jsx-a11y-x": "0.2.0",
+    "globals": "17.14.0",
+    "mermaid": "^12.3.0",
+    "oxfmt": "0.77.0",
+    "parse5": "8.0.1",
+    "puppeteer": "^25.17.0",
+    "typescript-eslint": "8.72.1",
     "vitest": "^5.0.2"
+  },
+  "overrides": {
+    "astro-compress": {
+      "deepmerge-ts": "8.0.2",
+      "sharp": "$sharp",
+      "svgo": "4.1.0"
+    },
+    "minimatch@>=7 <11.0.1": "11.0.1"
   },
   "allowScripts": {
     "esbuild@0.27.7": true,
     "sharp@0.34.5": true,
-    "fsevents@2.3.3": true
+    "fsevents@2.3.3": true,
+    "puppeteer@25.17.0": true
   }
 }
