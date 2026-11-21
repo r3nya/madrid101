@@ -26,17 +26,17 @@ export const { getStaticPaths, GET } = await OGImageRoute({
         [246, 255, 248],
       ],
       border: { color: [107, 144, 128], width: 20 },
-      padding: 120,
+      padding: 80,
       font: {
         title: {
-          size: 72,
+          size: 56,
           lineHeight: 1.2,
           families: ["Inter", "Noto Sans", "Noto Color Emoji"],
           weight: "Medium",
           color: [0, 0, 0],
         },
         description: {
-          size: 42,
+          size: 36,
           lineHeight: 1.2,
           families: ["Noto Sans", "Noto Color Emoji"],
           weight: "Normal",
