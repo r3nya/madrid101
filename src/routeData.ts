@@ -51,22 +51,6 @@ export const onRequest = defineRouteMiddleware(async (context) => {
     attrs: { name: "twitter:image", content: ogImageUrl.href },
   });
 
-  // Add keywords meta tag
-  if (entry?.keywords) {
-    head.push({
-      tag: "meta",
-      attrs: { name: "keywords", content: entry.keywords },
-    });
-  }
-
-  // Add author meta tag
-  if (entry?.author) {
-    head.push({
-      tag: "meta",
-      attrs: { name: "author", content: entry.author },
-    });
-  }
-
   // Add robots meta tag
   if (entry?.robots) {
     head.push({
@@ -101,14 +85,9 @@ export const onRequest = defineRouteMiddleware(async (context) => {
         // Starlight's lastUpdated honors a frontmatter override.
         datePublished: (await getOldestCommitDate("docs", id)).toISOString(),
         ...(lastUpdated && { dateModified: lastUpdated.toISOString() }),
-        author:
-          entry.author && entry.author !== "Madrid 101"
-            ? { "@type": "Person", name: entry.author }
-            : { "@type": "Organization", name: "Madrid 101", url: context.site?.href },
+        author: { "@type": "Organization", name: "Madrid 101", url: context.site?.href },
         mainEntityOfPage: { "@type": "WebPage", "@id": canonicalUrl },
         isPartOf: { "@type": "WebSite", name: "Madrid 101", url: context.site?.href },
-        ...(entry.tags && { keywords: entry.tags.join(", ") }),
-        ...(entry.articleSection && { articleSection: entry.articleSection }),
       };
 
   head.push({
