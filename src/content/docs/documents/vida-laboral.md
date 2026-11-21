@@ -1,55 +1,50 @@
 ---
 title: "Vida laboral: отчёт о трудовом стаже в Испании"
-description: Как получить отчёт о трудовом стаже в Испании
-lastUpdated: 2026-11-13
+description: Как быстро скачать отчёт о трудовом стаже в Испании (Informe de Vida Laboral) онлайн, по СМС или заказать почтой.
+lastUpdated: 2026-11-21
 sidebar:
   label: Vida laboral
   order: 4
 ---
 
-Informe de Vida Laboral — официальный документ, содержащий полную историю вашей трудовой деятельности в Испании. В нём указаны все периоды работы, работодатели и уплаченные взносы в систему социального страхования.
+**Informe de Vida Laboral** — официальная выписка о вашем трудовом стаже в Испании. Она показывает периоды регистрации в соцстрахе (_alta_ — постановка на учёт, _baja_ — снятие), работодателей и накопленный стаж.
+
+Работу за границей отчёт не включает, а суммы страховых баз нужно смотреть в отдельной выписке — _Informe de bases de cotización_. Если вы никогда не были зарегистрированы в _Seguridad Social_ (испанский соцстрах), получить _Vida laboral_ нельзя.
 
 ## Зачем нужен
 
-- Оформление ипотеки (банки запрашивают для проверки стабильности дохода)
-- Подача заявления на пособие по безработице (paro)
+- Оформление ипотеки — банки просят для проверки стабильности дохода
+- Подача заявления на пособие по безработице (_paro_)
 - Расчёт будущей пенсии
-- Подтверждение стажа для получения гражданства
-- Смена работы (некоторые работодатели просят)
+- Подтверждение стажа для гражданства
+- Смена работы (иногда просят новые работодатели)
 
 ## Как получить
 
-### Онлайн (моментально)
+### Онлайн с сертификатом или Cl@ve (мгновенно)
 
-1. Зайдите на [Import@ss](https://portal.seg-social.gob.es/)
-2. Авторизуйтесь через [цифровой сертификат](/documents/digital-certificate/) или Cl@ve
-3. Перейдите в раздел «Vida laboral e informes»
-4. Выберите «Informe de vida laboral»
-5. Скачайте PDF
-
-Документ генерируется мгновенно.
+1. Зайдите на портал [Import@ss](https://portal.seg-social.gob.es/).
+2. Авторизуйтесь через [цифровой сертификат](/documents/digital-certificate/) или Cl@ve.
+3. Откройте раздел «Vida laboral e informes» → «Informe de vida laboral».
+4. Скачайте PDF — файл формируется сразу.
 
 ### По СМС (без сертификата)
 
-1. Откройте [страницу запроса по СМС](https://portal.seg-social.gob.es/wps/portal/importass/importass/Categorias/Vida+laboral+e+informes/Informes+sobre+tu+situacion+laboral/Informe+de+tu+vida+laboral)
-2. Введите [номер социального страхования](/documents/numero-seguridad-social/) и номер телефона
-3. Получите СМС с кодом
-4. Документ придёт на электронную почту или по почте
+1. Откройте [страницу запроса на Import@ss](https://portal.seg-social.gob.es/wps/portal/importass/importass/Categorias/Vida+laboral+e+informes/Informes+sobre+tu+situacion+laboral/Informe+de+tu+vida+laboral).
+2. Введите DNI или NIE, дату рождения и мобильный номер, уже привязанный в **TGSS** (казначейство соцстраха).
+3. Подтвердите вход кодом из СМС.
+4. Откройте отчёт и сразу скачайте PDF — ждать письмо на email или по почте не нужно.
 
-### Лично в офисе
+### По почте или лично
 
-Обратитесь в любой офис [Tesorería General de la Seguridad Social](https://www.seg-social.es/wps/portal/wss/internet/OficinaSeguridadSocial) с паспортом или NIE.
+Если не получается войти онлайн, на том же [Import@ss](https://portal.seg-social.gob.es/wps/portal/importass/importass/Categorias/Vida+laboral+e+informes/Informes+sobre+tu+situacion+laboral/Informe+de+tu+vida+laboral) есть отдельный способ — доставка бумажной копии на домашний адрес, указанный в базе TGSS.
 
-## Что содержит документ
+Если нужна личная помощь, найдите ближайший [офис TGSS](https://www.seg-social.es/wps/portal/wss/internet/OficinaSeguridadSocial) и заранее уточните, нужна ли запись (_cita previa_) и какие документы взять с собой.
 
-- ФИО и номер социального страхования
-- Список всех работодателей (название компании, CIF)
+## Что внутри документа
+
+- Имя, фамилия и [номер социального страхования](/documents/numero-seguridad-social/)
+- Список работодателей (название компании и CIF — налоговый номер)
 - Даты начала и окончания каждого контракта
 - Тип контракта и режим работы
-- Количество дней в каждом периоде
-- Общий накопленный стаж
-
-## Полезные ссылки
-
-- [Import@ss — личный кабинет](https://portal.seg-social.gob.es/)
-- [Запрос Vida laboral по СМС](https://portal.seg-social.gob.es/wps/portal/importass/importass/Categorias/Vida+laboral+e+informes/Informes+sobre+tu+situacion+laboral/Informe+de+tu+vida+laboral)
+- Число дней в каждом периоде и общий накопленный стаж
