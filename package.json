@@ -37,7 +37,7 @@
     "@astrojs/compiler-rs": "0.5.2",
     "@eslint/js": "10.0.1",
     "@mermaid-js/mermaid-cli": "^12.2.0",
-    "@vitest/ui": "^5.0.5",
+    "@vitest/ui": "^5.1.0",
     "eslint": "10.14.0",
     "eslint-plugin-astro": "3.2.1",
     "eslint-plugin-jsx-a11y-x": "0.2.0",
