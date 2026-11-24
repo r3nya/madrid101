@@ -2,7 +2,7 @@
 title: Жизнь в Мадриде
 description: Полное руководство по жизни в Мадриде для номадов и эмигрантов. FAQ по жилью, транспорту, медицине, образованию и многому другому.
 template: splash
-lastUpdated: 2026-11-11
+lastUpdated: 2026-11-22
 hero:
   title: Madrid 101
   tagline: FAQ по Мадриду для номадов и эмигрантов
@@ -17,74 +17,175 @@ hero:
       variant: primary
 ---
 
-import { Card, CardGrid } from "@astrojs/starlight/components";
-import { SITE_CONFIG } from "@/data/config.ts";
+import { Card, CardGrid, LinkCard } from "@astrojs/starlight/components";
 import Footer from "@/components/Footer.astro";
 import SnowFall from "@/components/SnowFall.astro";
 
 <SnowFall />
 
-<CardGrid stagger>
+## Первые шаги
+
+<CardGrid>
+  <LinkCard
+    title="Прописка (Empadronamiento)"
+    description="С неё начинаются госуслуги, медкарта и запись детей в школу"
+    href="/documents/residence-registration/"
+  />
+  <LinkCard
+    title="Районы Мадрида"
+    description="Карты, рейтинги и подбор района по образу жизни — где лучше поселиться"
+    href="/housing/districts/"
+  />
+  <LinkCard
+    title="Транспортные карты"
+    description="Как оформить карту Multi или Abono и экономить на метро и автобусах"
+    href="/transport/transport-cards/"
+  />
+  <LinkCard
+    title="Цифровая подпись (FNMT, Cl@ve, ACCV)"
+    description="Доступ к испанским госсервисам онлайн без лишних походов по офисам"
+    href="/documents/digital-certificate/"
+  />
+</CardGrid>
+
+## Обустроиться
+
+<CardGrid>
   <Card title="Документы" icon="document">
-    [Прописка](/documents/residence-registration/), [Nota simple](/documents/nota-simple/),
-    [Цифровая подпись (FNMT, Cl@ve)](/documents/digital-certificate/), [Номер
-    соцстрахования](/documents/numero-seguridad-social/), [Vida laboral](/documents/vida-laboral/),
-    [Cita previa](/documents/cita-previa/)
+    <ul>
+      <li>[Прописка (Empadronamiento)](/documents/residence-registration/)</li>
+      <li>[Cita previa: запись в госучреждения](/documents/cita-previa/)</li>
+      <li>[Цифровая подпись (FNMT, Cl@ve)](/documents/digital-certificate/)</li>
+      <li>[Номер соцстрахования (NSS)](/documents/numero-seguridad-social/)</li>
+      <li>[Vida laboral: отчёт о стаже](/documents/vida-laboral/)</li>
+      <li>[Nota simple: выписка о недвижимости](/documents/nota-simple/)</li>
+    </ul>
   </Card>
-  <Card title="Жильё" icon="moon">
-    [Районы города](/housing/districts/), [Где искать?](/housing/resources/),
-    [Телекоммуникации](/housing/providers/telecom/), [Коммунальные
-    услуги](/housing/providers/utilities/)
+  <Card title="Жильё и быт" icon="sun">
+    <ul>
+      <li>[Районы города](/housing/districts/)</li>
+      <li>
+        {"Аренда: "}
+        <a href="/housing/long-term-rental/">долгосрочная</a>
+        {", "}
+        <a href="/housing/short-term-rental/">краткосрочная</a>
+        {", "}
+        <a href="/housing/co-living/">коливинг</a>
+      </li>
+      <li>[Интернет и мобильная связь](/housing/providers/telecom/)</li>
+      <li>[Электричество и газ](/housing/providers/utilities/)</li>
+      <li>[Сортировка бытовых отходов](/waste-management/waste-sorting/)</li>
+    </ul>
+  </Card>
+  <Card title="Финансы и налоги" icon="analytics">
+    <ul>
+      <li>[Базовый банковский счёт](/finance/basic-account/)</li>
+      <li>[Обмен валюты](/finance/currency-exchange/)</li>
+      <li>[Подтверждение доходов (Payroll)](/finance/payroll/)</li>
+      <li>[Ипотека](/finance/mortgage/)</li>
+      <li>[Подоходный налог (IRPF)](/taxes/irpf/)</li>
+      <li>[Налоги на недвижимость](/taxes/property-taxes/)</li>
+    </ul>
   </Card>
   <Card title="Медицина" icon="heart">
-    [Tarjeta Sanitaria](/healthcare/tarjeta-sanitaria/), [Tarjeta Sanitaria
-    Europea](/healthcare/tarjeta-sanitaria-europea/), [Записаться на
-    прием](/healthcare/appointments/)
-  </Card>
-  <Card title="Финансы" icon="seti:db">
-    [Базовый счет](/finance/basic-account/), [Обмен валют](/finance/currency-exchange/),
-    [Ипотека](/finance/mortgage/)
-  </Card>
-  <Card title="Налоги" icon="seti:shell">
-    [Подоходный налог (IRPF)](/taxes/irpf/), [На недвижимость](/taxes/property-taxes/)
-  </Card>
-  <Card title="Образование" icon="open-book">
-    [Школы для детей](/education/school-for-children/), [Русские школы и
-    кружки](/education/russian-supplementary/)
-  </Card>
-  <Card title="Транспорт" icon="rocket">
-    [Общественный транспорт](/transport/public/), [Информация для автомобилистов](/transport/auto/),
-    [Поезда](/transport/trains/), [Каршеринг](/transport/carsharing/),
-    [Мотошеринг](/transport/motosharing/), [Такси](/transport/taxi/)
-  </Card>
-  <Card title="Еда" icon="approve-check-circle">
-    [Где найти такую-то еду?](/food/where-to-find/), [Кофе](/food/coffee/), [Чай](/food/tea/),
-    [Испанская кухня](/food/spanish/), [Коробки с едой](/food/food-subscriptions/), [Коробки с
-    вином](/food/wine-subscriptions/)
-  </Card>
-  <Card title="Испанский язык" icon="translate">
-    [Языковые курсы](/spanish/language-courses/), [Мобильные приложения для
-    изучения](/spanish/apps/)
-  </Card>
-  <Card title="Услуги и сервисы" icon="seti:bicep">
-    [Выгул собак и передержка животных](/services/pets/), [Клининг](/services/cleaning/),
-    [Няни](/services/nannies/), [Присяжные переводчики](/services/traductor-jurado/), [Торты на
-    заказ](/services/cakes-order/), [Фото / Видео](/services/photo-video/),
-    [Цветы](/services/flowers/), [Экскурсии](/services/excursions/)
-  </Card>
-  <Card title="Досуг" icon="information">
-    [Афиши, театры, музеи, концерты](/spare-time/culture/events/), [Парки и
-    аттракционы](/spare-time/theme-parks/), [Спорт](/spare-time/sport/), [Книги на русском
-    языке](/spare-time/russian-books), [Хакерспейсы](/spare-time/hackerspaces/), [Сбор
-    грибов](/spare-time/mushroom-foraging/), [Билеты на футбол](/spare-time/football-tickets),
-    [Airsoft](/spare-time/airsoft/)
-  </Card>
-  <Card title="Управление отходами" icon="threads">
-    [Сортировка бытовых отходов](/waste-management/waste-sorting/)
-  </Card>
-  <Card title="Сообщество" icon="comment">
-    [Чаты](/groups/chats/)
+    <ul>
+      <li>[Tarjeta Sanitaria: медкарта в Мадриде](/healthcare/tarjeta-sanitaria/)</li>
+      <li>[Tarjeta Sanitaria Europea (TSE)](/healthcare/tarjeta-sanitaria-europea/)</li>
+      <li>[Запись к врачу](/healthcare/appointments/)</li>
+      <li>[Стоматология и программа PADI](/healthcare/dental-services/)</li>
+    </ul>
   </Card>
 </CardGrid>
+
+## Жить в городе
+
+<CardGrid>
+  <Card title="Транспорт" icon="rocket">
+    <ul>
+      <li>
+        <a href="/transport/public/">Общественный транспорт</a>
+        {" и "}
+        <a href="/transport/transport-cards/">транспортные карты</a>
+      </li>
+      <li>Авто: [парковки и ZBE](/transport/auto/), [налог IVTM](/transport/auto/auto-tax/)</li>
+      <li>
+        {"Права: "}
+        <a href="/transport/auto/driver-license/">получение</a>
+        {", "}
+        <a href="/transport/auto/exchange/">обмен</a>
+        {", "}
+        <a href="/transport/auto/permiso-internacional/">МВУ</a>
+      </li>
+      <li>[Велосипеды и Bicimad](/transport/bike/)</li>
+      <li>
+        <a href="/transport/carsharing/">Каршеринг</a>
+        {", "}
+        <a href="/transport/motosharing/">мотошеринг</a>
+        {", "}
+        <a href="/transport/taxi/">такси</a>
+      </li>
+      <li>[Поезда по Испании](/transport/trains/)</li>
+    </ul>
+  </Card>
+  <Card title="Еда и напитки" icon="seti:coffee">
+    <ul>
+      <li>[Где найти привычную еду](/food/where-to-find/)</li>
+      <li>[Испанские деликатесы](/food/spanish/)</li>
+      <li>[Кофе и обжарщики](/food/coffee/)</li>
+      <li>[Чай с доставкой](/food/tea/)</li>
+      <li>[Коробки с едой](/food/food-subscriptions/)</li>
+      <li>[Коробки с вином](/food/wine-subscriptions/)</li>
+    </ul>
+  </Card>
+  <Card title="Услуги и сервисы" icon="setting">
+    <ul>
+      <li>[Присяжные переводчики (Jurado)](/services/traductor-jurado/)</li>
+      <li>[Клининг](/services/cleaning/)</li>
+      <li>[Няни](/services/nannies/)</li>
+      <li>[Выгул и передержка животных](/services/pets/)</li>
+      <li>[Фото- и видеосъёмка](/services/photo-video/)</li>
+      <li>[Цветы](/services/flowers/) и [торты на заказ](/services/cakes-order/)</li>
+      <li>[Экскурсии по музеям](/services/excursions/)</li>
+    </ul>
+  </Card>
+  <Card title="Язык и образование" icon="open-book">
+    <ul>
+      <li>[Курсы испанского языка](/spanish/language-courses/)</li>
+      <li>[Приложения для изучения испанского](/spanish/apps/)</li>
+      <li>[Школы для детей](/education/school-for-children/)</li>
+      <li>[Русские школы и кружки](/education/russian-supplementary/)</li>
+    </ul>
+  </Card>
+  <Card title="Культура и спорт" icon="star">
+    <ul>
+      <li>[Афиша: театры, музеи, концерты](/spare-time/culture/events/)</li>
+      <li>
+        <a href="/spare-time/sport/">Спорт</a>
+        {": "}
+        <a href="/spare-time/sport/padel/">падел</a>
+        {", "}
+        <a href="/spare-time/sport/running/">бег</a>
+        {", "}
+        <a href="/spare-time/sport/water/">водный спорт</a>
+      </li>
+      <li>[Билеты на футбол](/spare-time/football-tickets/)</li>
+      <li>[Парки и аттракционы](/spare-time/theme-parks/)</li>
+    </ul>
+  </Card>
+  <Card title="Хобби и книги" icon="puzzle">
+    <ul>
+      <li>[Книги на русском языке](/spare-time/russian-books/)</li>
+      <li>[Хакерспейсы](/spare-time/hackerspaces/)</li>
+      <li>[Сбор грибов](/spare-time/mushroom-foraging/)</li>
+      <li>[Airsoft (страйкбол)](/spare-time/airsoft/)</li>
+    </ul>
+  </Card>
+</CardGrid>
+
+<LinkCard
+  title="Чаты и русскоязычные сообщества Мадрида"
+  description="Общие чаты, районы, хобби, родители, спорт и локальные рекомендации"
+  href="/groups/chats/"
+/>
 
 <Footer />
